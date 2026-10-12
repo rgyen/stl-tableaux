@@ -1,0 +1,1621 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sspaceex version="0.2" math="SpaceEx">
+	<component id="140435843308272">
+		<param name="x" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="vx" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk0" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="gClk" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="vy" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="y" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<location id="0" name="mode_id_0" x="200" y="200" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 4) &amp; 
+y' == vy &amp; 
+vy' == (-0.1 * vx - 2)</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &gt;= 40 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+y &gt;= 40 &amp; 
+vx &lt;= 30 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vx &gt; (-2 - 0.5)</invariant>
+		</location>
+		<location id="1" name="mode_id_1" x="210" y="210" width="100" height="100">
+			<flow>x' == 0.0 &amp; 
+vy' == 0.0 &amp; 
+y' == 0.0 &amp; 
+vx' == 0.0 &amp; 
+clk0' == 0.0 &amp; 
+gClk' == 1.0 &amp; 
+clk1' == 0.0</flow>
+			<invariant>gClk &gt;= 0.0 &amp; 
+gClk &lt;= 5.0</invariant>
+		</location>
+		<location id="2" name="mode_id_2" x="220" y="220" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 3) &amp; 
+vy' == (-0.1 * vx - 1) &amp; 
+y' == vy</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vx &gt;= -5 &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vx &gt; (-2 - 0.5) &amp; 
+vy &gt;= -5</invariant>
+		</location>
+		<location id="3" name="mode_id_3" x="230" y="230" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 3) &amp; 
+vy' == (-0.1 * vx - 1) &amp; 
+y' == vy</flow>
+			<invariant>x &lt; (30 + 0.5) &amp; 
+x &lt;= 50 &amp; 
+-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vx &gt;= -5 &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vy &gt;= -5</invariant>
+		</location>
+		<location id="4" name="mode_id_4" x="240" y="240" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vy' == (-0.1 * vx + 6) &amp; 
+vx' == ((0.07 * x + 0.1 * vy) + 4) &amp; 
+y' == vy</flow>
+			<invariant>x &lt; (30 + 0.5) &amp; 
+x &lt;= 50 &amp; 
+-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x</invariant>
+		</location>
+		<location id="5" name="mode_id_5" x="250" y="250" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 3) &amp; 
+vy' == (-0.1 * vx - 1) &amp; 
+y' == vy</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vx &gt;= -5 &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vx &gt; (-2 - 0.5) &amp; 
+vy &gt;= -5</invariant>
+		</location>
+		<location id="6" name="mode_id_6" x="260" y="260" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 4) &amp; 
+y' == vy &amp; 
+vy' == (-0.1 * vx - 2)</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &gt;= 40 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+y &gt;= 40 &amp; 
+vx &lt;= 30 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vx &gt; (-2 - 0.5)</invariant>
+		</location>
+		<location id="7" name="mode_id_7" x="270" y="270" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vy' == (-0.1 * vx + 6) &amp; 
+vx' == ((0.07 * x + 0.1 * vy) + 4) &amp; 
+y' == vy</flow>
+			<invariant>x &lt; (30 + 0.5) &amp; 
+x &lt;= 50 &amp; 
+-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x</invariant>
+		</location>
+		<location id="8" name="mode_id_8" x="280" y="280" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 3) &amp; 
+vy' == (-0.1 * vx - 1) &amp; 
+y' == vy</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vx &gt;= -5 &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vx &gt; (-2 - 0.5) &amp; 
+vy &gt;= -5</invariant>
+		</location>
+		<location id="9" name="mode_id_9" x="290" y="290" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vy' == (-0.1 * vx + 6) &amp; 
+vx' == ((0.07 * x + 0.1 * vy) + 4) &amp; 
+y' == vy</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x</invariant>
+		</location>
+		<location id="10" name="mode_id_10" x="300" y="300" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 3) &amp; 
+vy' == (-0.1 * vx - 1) &amp; 
+y' == vy</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vx &gt;= -5 &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vy &gt;= -5</invariant>
+		</location>
+		<location id="11" name="mode_id_11" x="310" y="310" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 4) &amp; 
+y' == vy &amp; 
+vy' == (-0.1 * vx - 2)</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &gt;= 40 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+y &gt;= 40 &amp; 
+vx &lt;= 30 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vx &gt; (-2 - 0.5)</invariant>
+		</location>
+		<location id="12" name="mode_id_12" x="320" y="320" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 3) &amp; 
+vy' == (-0.1 * vx - 1) &amp; 
+y' == vy</flow>
+			<invariant>x &lt; (30 + 0.5) &amp; 
+x &lt;= 50 &amp; 
+-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vx &gt;= -5 &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vy &gt;= -5</invariant>
+		</location>
+		<location id="13" name="mode_id_13" x="330" y="330" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 3) &amp; 
+vy' == (-0.1 * vx - 1) &amp; 
+y' == vy</flow>
+			<invariant>x &lt; (30 + 0.5) &amp; 
+x &lt;= 50 &amp; 
+-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vx &gt;= -5 &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x &amp; 
+vx &gt; (-2 - 0.5) &amp; 
+vy &gt;= -5</invariant>
+		</location>
+		<location id="14" name="mode_id_14" x="340" y="340" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+x' == vx &amp; 
+vx' == ((0.07 * x + 0.1 * vy) - 4) &amp; 
+y' == vy &amp; 
+vy' == (-0.1 * vx - 2)</flow>
+			<invariant>-30 &lt;= vy &amp; 
+x &gt;= 40 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+y &gt;= 40 &amp; 
+vx &lt;= 30 &amp; 
+gClk &lt;= 5.0 &amp; 
+-100 &lt;= x</invariant>
+		</location>
+		<transition source="3" target="10">
+			<guard>clk0 &lt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="10">
+			<guard>clk0 &lt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="3" target="7">
+			<guard>-30 &lt;= vy &amp; 
+vy &lt;= -4 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vx &lt;= -4 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="5" target="13">
+			<guard>clk0 &gt;= 0.0</guard>
+			<assignment>vy := vy &amp; 
+y := y &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="9" target="10">
+			<guard>-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vy &gt;= 3 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+vx &gt;= 3 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="8">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="7" target="9">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="5" target="3">
+			<guard>clk0 &gt;= 0.0</guard>
+			<assignment>vy := vy &amp; 
+y := y &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="7" target="10">
+			<guard>-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vy &gt;= 3 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+vx &gt;= 3 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="7" target="9">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="0">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="5" target="10">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="9" target="14">
+			<guard>-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &gt; 45 &amp; 
+y &gt; 45 &amp; 
+-100 &lt;= y &amp; 
+x &lt;= 100 &amp; 
+vx &lt;= 30 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="7" target="10">
+			<guard>-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vy &gt;= 3 &amp; 
+clk1 &gt;= 4.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+vx &gt;= 3 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="7" target="9">
+			<guard>clk0 &lt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="12">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="8" target="12">
+			<guard />
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="1" target="6">
+			<guard />
+			<assignment>vy := vy &amp; 
+y := y &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+gClk := 0.0 &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="10">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="0">
+			<guard>clk0 &lt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="8">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="10" target="9">
+			<guard>-30 &lt;= vy &amp; 
+vy &lt;= -4 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vx &lt;= -4 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="7" target="10">
+			<guard>-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vy &gt;= 3 &amp; 
+-100 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+vx &gt;= 3 &amp; 
+clk0 &lt;= 0.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="8">
+			<guard>clk0 &lt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="7" target="3">
+			<guard>-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vy &gt;= 3 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+vx &gt;= 3 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="14">
+			<guard>clk0 &lt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="5" target="2">
+			<guard>clk0 &gt;= 0.0</guard>
+			<assignment>vy := vy &amp; 
+y := y &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="8">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+-100 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+clk0 &lt;= 0.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="5" target="12">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="10">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+-100 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+clk0 &lt;= 0.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="2">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="12">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+-100 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+clk0 &lt;= 0.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="12">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="12" target="4">
+			<guard>-30 &lt;= vy &amp; 
+vy &lt;= -4 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vx &lt;= -4 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="10">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="12">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+clk1 &gt;= 4.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="13" target="10">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="10">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="12">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+clk1 &gt;= 4.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="12">
+			<guard>clk0 &lt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="5">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="8">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="13" target="10">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="13" target="8">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="3">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>vy := vy &amp; 
+y := y &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="10">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="13" target="12">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="0" target="8">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="13">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>vy := vy &amp; 
+y := y &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="12" target="9">
+			<guard>-30 &lt;= vy &amp; 
+vy &lt;= -4 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vx &lt;= -4 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="14" target="10">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="8">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="12">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="0">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="0" target="10">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="12">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="11">
+			<guard>clk0 &gt;= 0.0</guard>
+			<assignment>vy := vy &amp; 
+y := y &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="4" target="10">
+			<guard>-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vy &gt;= 3 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+vx &gt;= 3 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="5" target="8">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="10">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+clk1 &gt;= 4.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="0" target="14">
+			<guard>gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="2">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>vy := vy &amp; 
+y := y &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="4" target="9">
+			<guard />
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="0">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="13" target="12">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="0">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="8">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+clk1 &gt;= 4.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="2" target="12">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="4" target="12">
+			<guard>-30 &lt;= vy &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vy &gt;= 3 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+vx &gt;= 3 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="6" target="8">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="3" target="9">
+			<guard>-30 &lt;= vy &amp; 
+vy &lt;= -4 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vx &lt;= -4 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="11" target="8">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+clk1 &gt;= 4.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="3" target="10">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="8" target="10">
+			<guard>gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="13" target="8">
+			<guard>clk0 &gt;= 0.0 &amp; 
+gClk &gt;= 5.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="12" target="10">
+			<guard />
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="3" target="9">
+			<guard>-30 &lt;= vy &amp; 
+vy &lt;= -4 &amp; 
+y &lt;= 100 &amp; 
+clk0 &gt;= 0.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vx &lt;= -4 &amp; 
+clk1 &gt;= 4.0 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="0" target="12">
+			<guard>-30 &lt;= vy &amp; 
+x &lt;= 50 &amp; 
+y &lt;= 100 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+y &lt;= 50 &amp; 
+-100 &lt;= x</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="3" target="10">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+		<transition source="3" target="9">
+			<guard>-30 &lt;= vy &amp; 
+vy &lt;= -4 &amp; 
+y &lt;= 100 &amp; 
+gClk &gt;= 5.0 &amp; 
+-30 &lt;= vx &amp; 
+vy &lt;= 30 &amp; 
+vx &lt;= -4 &amp; 
+-100 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+-100 &lt;= y &amp; 
+vx &lt;= 30 &amp; 
+clk0 &lt;= 0.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vy := vy &amp; 
+y := y &amp; 
+x := x &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+vx := vx</assignment>
+		</transition>
+	</component>
+	<component id="system">
+		<param name="x" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="vx" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk0" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="gClk" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="vy" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="y" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<bind component="140435843308272" as="subsystem">
+			<map key="x">x</map>
+			<map key="vx">vx</map>
+			<map key="clk0">clk0</map>
+			<map key="gClk">gClk</map>
+			<map key="vy">vy</map>
+			<map key="y">y</map>
+			<map key="clk1">clk1</map>
+		</bind>
+	</component>
+</sspaceex>

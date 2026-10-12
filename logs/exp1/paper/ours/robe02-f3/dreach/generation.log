@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/robe02/robe02.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/robe02/robe02-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/robe02/robe02.model
+  automaton info: (# mode: 1, # jump: 0)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : ([][ 2.5, 5.1 ] ((x < (1 + 0.5)) U[ 0.0, inf ) (x < (2 + 0.5))))
+    size      : 4
+  Config
+    bound     : 1
+    threshold : 0.5
+
+  finish construction
+    running time: 0.481s
+    tableau info: (# vertex: 25, # edge: 119)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.129s
+    tableau info: (# vertex: 10, # edge: 37)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.002s
+  automaton info: (# mode: 9, # jump: 34)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.003s
+  automaton info: (# mode: 10, # jump: 37)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.140s
+  automaton info: (# mode: 10, # jump: 37)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 10, # jump: 37)
+
+Converting the automaton to an input model of dreach
+  model file  : log/robe02/f3/dreach/model/model.drh
+  script file : log/robe02/f3/dreach/run.sh
+  running time: 0.448s

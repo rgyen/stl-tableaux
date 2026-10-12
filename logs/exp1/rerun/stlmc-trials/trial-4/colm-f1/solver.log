@@ -1,0 +1,8 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm.model
+> selected solver: dreal
+> threshold : 0.5
+max procs: 5
+bound: 0
+# bound: 0, 1
+bound: 1
+# bound: 1, 4

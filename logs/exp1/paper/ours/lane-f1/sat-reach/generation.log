@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/lane/lane.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/lane/lane-f1.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/linear/lane/lane.model
+  automaton info: (# mode: 7, # jump: 6)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f1
+    formula   : ([][ 20.0, 50.0 ] (<>[ 5.0, 8.0 ] (sx >= (30 - 0.1))))
+    size      : 3
+  Config
+    bound     : 5
+    threshold : 0.1
+
+  finish construction
+    running time: 1.565s
+    tableau info: (# vertex: 31, # edge: 248)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 1.282s
+    tableau info: (# vertex: 13, # edge: 53)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.003s
+  automaton info: (# mode: 12, # jump: 50)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.080s
+  automaton info: (# mode: 85, # jump: 725)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 1.045s
+  automaton info: (# mode: 4, # jump: 4)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 4, # jump: 4)
+
+Converting the automaton to an input model of sat-reach
+  model file  : log/lane/f1/sat-reach/model/model.xml
+  conf  file  : log/lane/f1/sat-reach/model/model.cfg
+  script file : log/lane/f1/sat-reach/run.sh
+  running time: 0.008s

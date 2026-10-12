@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/card/card.model -goal f3 -default-cfg ../../src/default.cfg -solver dreach -o log >& log/card/f3/dreach/gen-log.txt
+
+# solver-launch
+bash out/card/f3/dreach/run.sh

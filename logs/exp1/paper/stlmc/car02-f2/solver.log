@@ -1,0 +1,15 @@
+> running a model: ../../benchmarks/exp1/nonlinear/car02/car02.model
+> selected solver: dreal
+> threshold : 0.5
+max procs: 5
+bound: 0
+# bound: 0, 2
+bound: 1
+# bound: 1, 20
+bound: 2
+total loop : 42
+size : 1426
+goal : ((<>[1.0,2.0] (ry >= 1)) R[0.0,2.0] (theta1 > 2))
+result : False at bound 2 (time bound: 5)
+running time 107.87515 seconds
+======================================

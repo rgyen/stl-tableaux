@@ -1,0 +1,31 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp2-automata/f73/default.cfg
+  file cfg     : /home/artifact/stl-tableaux/benchmarks/exp2/pool.cfg
+
+---------------------------------
+---- STL Tableau Construction ---
+---------------------------------
+
+Information
+  goal    : f73
+  formula : ([][ 0.0, inf ) (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))
+  size    : 6
+  depth   : 3
+
+  finish construction
+    running time: 2.634s
+    tableau info: (# vertex: 57, # edge: 523)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 12.612s
+    tableau info: (# vertex: 5, # edge: 13)
+
+Total info
+  running time: 15.290s

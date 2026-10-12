@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/colm/colm.model
+  automaton info: (# mode: 1, # jump: 0)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : ((<>[ 10.0, 20.0 ] (x <= (4 + 0.5))) R[ 0.0, inf ) (y < (6 + 0.5)))
+    size      : 4
+  Config
+    bound     : 2
+    threshold : 0.5
+
+  finish construction
+    running time: 0.122s
+    tableau info: (# vertex: 9, # edge: 22)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.001s
+    tableau info: (# vertex: 7, # edge: 13)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 6, # jump: 10)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.001s
+  automaton info: (# mode: 7, # jump: 13)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.039s
+  automaton info: (# mode: 7, # jump: 13)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 7, # jump: 13)
+
+Converting the automaton to an input model of dreach
+  model file  : log/colm/f3/dreach/model/model.drh
+  script file : log/colm/f3/dreach/run.sh
+  running time: 0.635s

@@ -1,0 +1,1299 @@
+mode: mode_27,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_27,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_27,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_27,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_27,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_27,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_27,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_27,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_27 to mode_3 ...
+Done.
+Dealing with the jump from mode_27 to mode_11 ...
+Done.
+Dealing with the jump from mode_27 to mode_13 ...
+Done.
+Dealing with the jump from mode_27 to mode_6 ...
+Done.
+Dealing with the jump from mode_27 to mode_29 ...
+Done.
+mode: mode_3,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_3 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_15 ...
+Done.
+Dealing with the jump from mode_3 to mode_31 ...
+Done.
+Dealing with the jump from mode_3 to mode_23 ...
+Done.
+Dealing with the jump from mode_3 to mode_22 ...
+Done.
+Dealing with the jump from mode_3 to mode_19 ...
+Done.
+Dealing with the jump from mode_3 to mode_21 ...
+Done.
+Dealing with the jump from mode_3 to mode_8 ...
+Done.
+Dealing with the jump from mode_3 to mode_4 ...
+Done.
+Dealing with the jump from mode_3 to mode_32 ...
+Done.
+Dealing with the jump from mode_3 to mode_34 ...
+Done.
+Dealing with the jump from mode_3 to mode_18 ...
+Done.
+Dealing with the jump from mode_3 to mode_16 ...
+Done.
+Dealing with the jump from mode_3 to mode_17 ...
+Done.
+Dealing with the jump from mode_3 to mode_5 ...
+Done.
+Dealing with the jump from mode_3 to mode_10 ...
+Done.
+Dealing with the jump from mode_3 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_14 ...
+Done.
+Dealing with the jump from mode_3 to mode_25 ...
+Done.
+mode: mode_11,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_11,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_11,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_11,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_11,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_11,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_11,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_11,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_11 to mode_16 ...
+Done.
+Dealing with the jump from mode_11 to mode_4 ...
+Done.
+Dealing with the jump from mode_11 to mode_16 ...
+Done.
+Dealing with the jump from mode_11 to mode_32 ...
+Done.
+Dealing with the jump from mode_11 to mode_10 ...
+Done.
+Dealing with the jump from mode_11 to mode_32 ...
+Done.
+Dealing with the jump from mode_11 to mode_10 ...
+Done.
+Dealing with the jump from mode_11 to mode_18 ...
+Done.
+Dealing with the jump from mode_11 to mode_4 ...
+Done.
+Dealing with the jump from mode_11 to mode_20 ...
+Done.
+Dealing with the jump from mode_11 to mode_22 ...
+Done.
+Dealing with the jump from mode_11 to mode_31 ...
+Done.
+Dealing with the jump from mode_11 to mode_34 ...
+Done.
+Dealing with the jump from mode_11 to mode_17 ...
+Done.
+Dealing with the jump from mode_11 to mode_8 ...
+Done.
+Dealing with the jump from mode_11 to mode_5 ...
+Done.
+Dealing with the jump from mode_11 to mode_25 ...
+Done.
+Dealing with the jump from mode_11 to mode_21 ...
+Done.
+Dealing with the jump from mode_11 to mode_15 ...
+Done.
+mode: mode_13,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_13,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_13,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_13,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_13,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_13,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_13,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_13,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_13 to mode_9 ...
+Done.
+Dealing with the jump from mode_13 to mode_0 ...
+Done.
+Dealing with the jump from mode_13 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_13 to mode_2 ...
+Done.
+Dealing with the jump from mode_13 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_13 to mode_26 ...
+Done.
+Dealing with the jump from mode_13 to mode_12 ...
+Done.
+mode: mode_6,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_6,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_6,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_6,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_6,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_6,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_6,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_6,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_6 to mode_9 ...
+Done.
+Dealing with the jump from mode_6 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_6 to mode_12 ...
+Done.
+Dealing with the jump from mode_6 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_6 to mode_24 ...
+Done.
+mode: mode_29,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_29,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_29,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_29,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_29,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_29,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_29,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_29,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_29 to mode_32 ...
+Done.
+Dealing with the jump from mode_29 to mode_16 ...
+Done.
+Dealing with the jump from mode_29 to mode_35 ...
+Done.
+Dealing with the jump from mode_29 to mode_36 ...
+Done.
+Dealing with the jump from mode_29 to mode_4 ...
+Done.
+Dealing with the jump from mode_29 to mode_10 ...
+Done.
+Dealing with the jump from mode_29 to mode_28 ...
+Done.
+Dealing with the jump from mode_29 to mode_25 ...
+Done.
+Dealing with the jump from mode_29 to mode_5 ...
+Done.
+mode: mode_15,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_15 to mode_35 ...
+Done.
+Dealing with the jump from mode_15 to mode_36 ...
+Done.
+Dealing with the jump from mode_15 to mode_31 ...
+Done.
+mode: mode_31,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_31,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_31,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_31,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_31,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_31,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_31,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_31,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_31,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_31,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_31,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_31 to mode_15 ...
+Done.
+Dealing with the jump from mode_31 to mode_35 ...
+Done.
+Dealing with the jump from mode_31 to mode_36 ...
+Done.
+mode: mode_23,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_23,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_23,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_23,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_23,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_23,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_23,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_23,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_23,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_23,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_23,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_23,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_23,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_23,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_23 to mode_31 ...
+Done.
+Dealing with the jump from mode_23 to mode_15 ...
+Done.
+Dealing with the jump from mode_23 to mode_19 ...
+Done.
+Dealing with the jump from mode_23 to mode_34 ...
+Done.
+Dealing with the jump from mode_23 to mode_35 ...
+Done.
+Dealing with the jump from mode_23 to mode_17 ...
+Done.
+Dealing with the jump from mode_23 to mode_36 ...
+Done.
+mode: mode_22,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_22,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_22,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_22,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_22,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_22,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_22,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_22,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_22,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_22,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_22,	time = 4.310390,	step = 0.477059,	order = 6
+Dealing with the jump from mode_22 to mode_8 ...
+Done.
+Dealing with the jump from mode_22 to mode_15 ...
+Done.
+Dealing with the jump from mode_22 to mode_34 ...
+Done.
+Dealing with the jump from mode_22 to mode_23 ...
+Done.
+Dealing with the jump from mode_22 to mode_31 ...
+Done.
+Dealing with the jump from mode_22 to mode_19 ...
+Done.
+Dealing with the jump from mode_22 to mode_36 ...
+Done.
+Dealing with the jump from mode_22 to mode_17 ...
+Done.
+Dealing with the jump from mode_22 to mode_35 ...
+Done.
+mode: mode_19,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_19,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_19,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_19,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_19,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_19,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_19,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_19,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_19 to mode_17 ...
+Done.
+Dealing with the jump from mode_19 to mode_23 ...
+Done.
+Dealing with the jump from mode_19 to mode_31 ...
+Done.
+Dealing with the jump from mode_19 to mode_36 ...
+Done.
+Dealing with the jump from mode_19 to mode_35 ...
+Done.
+Dealing with the jump from mode_19 to mode_34 ...
+Done.
+Dealing with the jump from mode_19 to mode_15 ...
+Done.
+mode: mode_21,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_21,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_21,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_21,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_21,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_21,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_21,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_21,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_21,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_21,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_21,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_21,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_21,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_21,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_21 to mode_17 ...
+Done.
+Dealing with the jump from mode_21 to mode_15 ...
+Done.
+Dealing with the jump from mode_21 to mode_34 ...
+Done.
+Dealing with the jump from mode_21 to mode_17 ...
+Done.
+Dealing with the jump from mode_21 to mode_31 ...
+Done.
+Dealing with the jump from mode_21 to mode_31 ...
+Done.
+Dealing with the jump from mode_21 to mode_23 ...
+Done.
+Dealing with the jump from mode_21 to mode_18 ...
+Done.
+Dealing with the jump from mode_21 to mode_7 ...
+Done.
+Dealing with the jump from mode_21 to mode_19 ...
+Done.
+Dealing with the jump from mode_21 to mode_30 ...
+Done.
+Dealing with the jump from mode_21 to mode_34 ...
+Done.
+Dealing with the jump from mode_21 to mode_15 ...
+Done.
+Dealing with the jump from mode_21 to mode_1 ...
+Done.
+Dealing with the jump from mode_21 to mode_33 ...
+Done.
+mode: mode_8,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_8 to mode_31 ...
+Done.
+Dealing with the jump from mode_8 to mode_23 ...
+Done.
+Dealing with the jump from mode_8 to mode_35 ...
+Done.
+Dealing with the jump from mode_8 to mode_17 ...
+Done.
+Dealing with the jump from mode_8 to mode_19 ...
+Done.
+Dealing with the jump from mode_8 to mode_22 ...
+Done.
+Dealing with the jump from mode_8 to mode_36 ...
+Done.
+Dealing with the jump from mode_8 to mode_15 ...
+Done.
+Dealing with the jump from mode_8 to mode_34 ...
+Done.
+mode: mode_4,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_4 to mode_35 ...
+Done.
+Dealing with the jump from mode_4 to mode_10 ...
+Done.
+Dealing with the jump from mode_4 to mode_36 ...
+Done.
+mode: mode_32,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_32 to mode_16 ...
+Done.
+Dealing with the jump from mode_32 to mode_31 ...
+Done.
+Dealing with the jump from mode_32 to mode_17 ...
+Done.
+Dealing with the jump from mode_32 to mode_15 ...
+Done.
+Dealing with the jump from mode_32 to mode_34 ...
+Done.
+mode: mode_34,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_34 to mode_15 ...
+Done.
+Dealing with the jump from mode_34 to mode_17 ...
+Done.
+Dealing with the jump from mode_34 to mode_31 ...
+Done.
+mode: mode_18,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_18 to mode_33 ...
+Done.
+Dealing with the jump from mode_18 to mode_7 ...
+Done.
+Dealing with the jump from mode_18 to mode_21 ...
+Done.
+Dealing with the jump from mode_18 to mode_34 ...
+Done.
+Dealing with the jump from mode_18 to mode_19 ...
+Done.
+Dealing with the jump from mode_18 to mode_30 ...
+Done.
+Dealing with the jump from mode_18 to mode_34 ...
+Done.
+Dealing with the jump from mode_18 to mode_31 ...
+Done.
+Dealing with the jump from mode_18 to mode_17 ...
+Done.
+Dealing with the jump from mode_18 to mode_15 ...
+Done.
+Dealing with the jump from mode_18 to mode_23 ...
+Done.
+Dealing with the jump from mode_18 to mode_15 ...
+Done.
+Dealing with the jump from mode_18 to mode_31 ...
+Done.
+Dealing with the jump from mode_18 to mode_17 ...
+Done.
+Dealing with the jump from mode_18 to mode_1 ...
+Done.
+mode: mode_16,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_16,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_16,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_16,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_16,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_16,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_16,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_16,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_16,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_16,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_16,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_16,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_16,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_16,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_16 to mode_32 ...
+Done.
+Dealing with the jump from mode_16 to mode_31 ...
+Done.
+Dealing with the jump from mode_16 to mode_34 ...
+Done.
+Dealing with the jump from mode_16 to mode_15 ...
+Done.
+Dealing with the jump from mode_16 to mode_17 ...
+Done.
+mode: mode_17,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_17,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_17,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_17,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_17,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_17,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_17,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_17,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_17,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_17,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_17,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_17,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_17,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_17,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_17 to mode_31 ...
+Done.
+Dealing with the jump from mode_17 to mode_15 ...
+Done.
+Dealing with the jump from mode_17 to mode_34 ...
+Done.
+mode: mode_5,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_5,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_5,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_5,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_5,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_5,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_5,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_5,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_5,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_5,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_5,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_5,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_5,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_5,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_5 to mode_34 ...
+Done.
+Dealing with the jump from mode_5 to mode_17 ...
+Done.
+Dealing with the jump from mode_5 to mode_25 ...
+Done.
+Dealing with the jump from mode_5 to mode_23 ...
+Done.
+Dealing with the jump from mode_5 to mode_31 ...
+Done.
+Dealing with the jump from mode_5 to mode_19 ...
+Done.
+Dealing with the jump from mode_5 to mode_35 ...
+Done.
+Dealing with the jump from mode_5 to mode_36 ...
+Done.
+Dealing with the jump from mode_5 to mode_15 ...
+Done.
+mode: mode_10,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_10,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_10,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_10,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_10,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_10,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_10,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_10,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_10,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_10,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_10,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_10 to mode_4 ...
+Done.
+Dealing with the jump from mode_10 to mode_35 ...
+Done.
+Dealing with the jump from mode_10 to mode_36 ...
+Done.
+mode: mode_14,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_14,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_14,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_14,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_14,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_14,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_14,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_14,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_14,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_14,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_14,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_14,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_14,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_14,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_14 to mode_16 ...
+Done.
+Dealing with the jump from mode_14 to mode_32 ...
+Done.
+Dealing with the jump from mode_14 to mode_17 ...
+Done.
+Dealing with the jump from mode_14 to mode_34 ...
+Done.
+Dealing with the jump from mode_14 to mode_23 ...
+Done.
+Dealing with the jump from mode_14 to mode_19 ...
+Done.
+Dealing with the jump from mode_14 to mode_36 ...
+Done.
+Dealing with the jump from mode_14 to mode_35 ...
+Done.
+Dealing with the jump from mode_14 to mode_31 ...
+Done.
+Dealing with the jump from mode_14 to mode_15 ...
+Done.
+Dealing with the jump from mode_14 to mode_5 ...
+Done.
+Dealing with the jump from mode_14 to mode_25 ...
+Done.
+Dealing with the jump from mode_14 to mode_22 ...
+Done.
+Dealing with the jump from mode_14 to mode_10 ...
+Done.
+Dealing with the jump from mode_14 to mode_8 ...
+Done.
+Dealing with the jump from mode_14 to mode_4 ...
+Done.
+Dealing with the jump from mode_14 to mode_21 ...
+Done.
+Dealing with the jump from mode_14 to mode_18 ...
+Done.
+Dealing with the jump from mode_14 to mode_3 ...
+Done.
+mode: mode_25,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_25 to mode_34 ...
+Done.
+Dealing with the jump from mode_25 to mode_36 ...
+Done.
+Dealing with the jump from mode_25 to mode_17 ...
+Done.
+Dealing with the jump from mode_25 to mode_35 ...
+Done.
+Dealing with the jump from mode_25 to mode_31 ...
+Done.
+Dealing with the jump from mode_25 to mode_15 ...
+Done.
+Dealing with the jump from mode_25 to mode_5 ...
+Done.
+Dealing with the jump from mode_25 to mode_19 ...
+Done.
+Dealing with the jump from mode_25 to mode_23 ...
+Done.
+mode: mode_16,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_16,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_16,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_16,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_16,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_16,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_16,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_16,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_16,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_16,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_16,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_16,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_16,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_16,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_16 to mode_32 ...
+Done.
+Dealing with the jump from mode_16 to mode_31 ...
+Done.
+Dealing with the jump from mode_16 to mode_34 ...
+Done.
+Dealing with the jump from mode_16 to mode_15 ...
+Done.
+Dealing with the jump from mode_16 to mode_17 ...
+Done.
+mode: mode_4,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_4 to mode_35 ...
+Done.
+Dealing with the jump from mode_4 to mode_10 ...
+Done.
+Dealing with the jump from mode_4 to mode_36 ...
+Done.
+mode: mode_16,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_16,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_16,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_16,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_16,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_16,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_16,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_16,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_16,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_16,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_16,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_16 to mode_32 ...
+Done.
+Dealing with the jump from mode_16 to mode_31 ...
+Done.
+Dealing with the jump from mode_16 to mode_34 ...
+Done.
+Dealing with the jump from mode_16 to mode_15 ...
+Done.
+Dealing with the jump from mode_16 to mode_17 ...
+Done.
+mode: mode_32,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_32 to mode_16 ...
+Done.
+Dealing with the jump from mode_32 to mode_31 ...
+Done.
+Dealing with the jump from mode_32 to mode_17 ...
+Done.
+Dealing with the jump from mode_32 to mode_15 ...
+Done.
+Dealing with the jump from mode_32 to mode_34 ...
+Done.
+mode: mode_10,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_10,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_10,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_10,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_10,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_10,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_10,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_10,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_10,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_10,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_10,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_10 to mode_4 ...
+Done.
+Dealing with the jump from mode_10 to mode_35 ...
+Done.
+Dealing with the jump from mode_10 to mode_36 ...
+Done.
+mode: mode_32,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_32 to mode_16 ...
+Done.
+Dealing with the jump from mode_32 to mode_31 ...
+Done.
+Dealing with the jump from mode_32 to mode_17 ...
+Done.
+Dealing with the jump from mode_32 to mode_15 ...
+Done.
+Dealing with the jump from mode_32 to mode_34 ...
+Done.
+mode: mode_10,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_10,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_10,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_10,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_10,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_10,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_10,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_10,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_10,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_10,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_10,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_10 to mode_4 ...
+Done.
+Dealing with the jump from mode_10 to mode_35 ...
+Done.
+Dealing with the jump from mode_10 to mode_36 ...
+Done.
+mode: mode_18,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_18,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_18 to mode_33 ...
+Done.
+Dealing with the jump from mode_18 to mode_7 ...
+Done.
+Dealing with the jump from mode_18 to mode_21 ...
+Done.
+Dealing with the jump from mode_18 to mode_34 ...
+Done.
+Dealing with the jump from mode_18 to mode_19 ...
+Done.
+Dealing with the jump from mode_18 to mode_30 ...
+Done.
+Dealing with the jump from mode_18 to mode_34 ...
+Done.
+Dealing with the jump from mode_18 to mode_31 ...
+Done.
+Dealing with the jump from mode_18 to mode_17 ...
+Done.
+Dealing with the jump from mode_18 to mode_15 ...
+Done.
+Dealing with the jump from mode_18 to mode_23 ...
+Done.
+Dealing with the jump from mode_18 to mode_15 ...
+Done.
+Dealing with the jump from mode_18 to mode_31 ...
+Done.
+Dealing with the jump from mode_18 to mode_17 ...
+Done.
+Dealing with the jump from mode_18 to mode_1 ...
+Done.
+mode: mode_4,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_4,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_4 to mode_35 ...
+Done.
+Dealing with the jump from mode_4 to mode_10 ...
+Done.
+Dealing with the jump from mode_4 to mode_36 ...
+Done.
+mode: mode_20,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_20,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_20,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_20,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_20,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_20,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_20,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_20,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_20,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_20,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_20,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_20,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_20,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_20,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_20 to mode_18 ...
+Done.
+Dealing with the jump from mode_20 to mode_25 ...
+Done.
+Dealing with the jump from mode_20 to mode_5 ...
+Done.
+Dealing with the jump from mode_20 to mode_34 ...
+Done.
+Dealing with the jump from mode_20 to mode_22 ...
+Done.
+Dealing with the jump from mode_20 to mode_8 ...
+Done.
+Dealing with the jump from mode_20 to mode_17 ...
+Done.
+Dealing with the jump from mode_20 to mode_11 ...
+Done.
+Dealing with the jump from mode_20 to mode_10 ...
+Done.
+Dealing with the jump from mode_20 to mode_4 ...
+Done.
+Dealing with the jump from mode_20 to mode_21 ...
+Done.
+Dealing with the jump from mode_20 to mode_10 ...
+Done.
+Dealing with the jump from mode_20 to mode_16 ...
+Done.
+Dealing with the jump from mode_20 to mode_16 ...
+Done.
+Dealing with the jump from mode_20 to mode_32 ...
+Done.
+Dealing with the jump from mode_20 to mode_4 ...
+Done.
+Dealing with the jump from mode_20 to mode_31 ...
+Done.
+Dealing with the jump from mode_20 to mode_32 ...
+Done.
+Dealing with the jump from mode_20 to mode_15 ...
+Done.
+mode: mode_22,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_22,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_22,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_22,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_22,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_22,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_22,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_22,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_22,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_22,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_22,	time = 4.310390,	step = 0.477059,	order = 6
+Dealing with the jump from mode_22 to mode_8 ...
+Done.
+Dealing with the jump from mode_22 to mode_15 ...
+Done.
+Dealing with the jump from mode_22 to mode_34 ...
+Done.
+Dealing with the jump from mode_22 to mode_23 ...
+Done.
+Dealing with the jump from mode_22 to mode_31 ...
+Done.
+Dealing with the jump from mode_22 to mode_19 ...
+Done.
+Dealing with the jump from mode_22 to mode_36 ...
+Done.
+Dealing with the jump from mode_22 to mode_17 ...
+Done.
+Dealing with the jump from mode_22 to mode_35 ...
+Done.
+mode: mode_31,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_31,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_31,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_31,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_31,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_31,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_31,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_31,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_31,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_31,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_31,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_31 to mode_15 ...
+Done.
+Dealing with the jump from mode_31 to mode_35 ...
+Done.
+Dealing with the jump from mode_31 to mode_36 ...
+Done.
+mode: mode_34,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_34,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_34 to mode_15 ...
+Done.
+Dealing with the jump from mode_34 to mode_17 ...
+Done.
+Dealing with the jump from mode_34 to mode_31 ...
+Done.
+mode: mode_17,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_17,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_17,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_17,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_17,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_17,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_17,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_17,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_17,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_17,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_17,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_17,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_17,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_17,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_17 to mode_31 ...
+Done.
+Dealing with the jump from mode_17 to mode_15 ...
+Done.
+Dealing with the jump from mode_17 to mode_34 ...
+Done.
+mode: mode_8,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_8,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_8 to mode_31 ...
+Done.
+Dealing with the jump from mode_8 to mode_23 ...
+Done.
+Dealing with the jump from mode_8 to mode_35 ...
+Done.
+Dealing with the jump from mode_8 to mode_17 ...
+Done.
+Dealing with the jump from mode_8 to mode_19 ...
+Done.
+Dealing with the jump from mode_8 to mode_22 ...
+Done.
+Dealing with the jump from mode_8 to mode_36 ...
+Done.
+Dealing with the jump from mode_8 to mode_15 ...
+Done.
+Dealing with the jump from mode_8 to mode_34 ...
+Done.
+mode: mode_5,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_5,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_5,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_5,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_5,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_5,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_5,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_5,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_5,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_5,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_5,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_5 to mode_34 ...
+Done.
+Dealing with the jump from mode_5 to mode_17 ...
+Done.
+Dealing with the jump from mode_5 to mode_25 ...
+Done.
+Dealing with the jump from mode_5 to mode_23 ...
+Done.
+Dealing with the jump from mode_5 to mode_31 ...
+Done.
+Dealing with the jump from mode_5 to mode_19 ...
+Done.
+Dealing with the jump from mode_5 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_5 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_5 to mode_15 ...
+Done.
+mode: mode_25,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_25,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_25 to mode_34 ...
+Done.
+Dealing with the jump from mode_25 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_25 to mode_17 ...
+Done.
+Dealing with the jump from mode_25 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_25 to mode_31 ...
+Done.
+Dealing with the jump from mode_25 to mode_15 ...
+Done.
+Dealing with the jump from mode_25 to mode_5 ...
+Done.
+Dealing with the jump from mode_25 to mode_19 ...
+Done.
+Dealing with the jump from mode_25 to mode_23 ...
+Done.
+mode: mode_21,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_21,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_21,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_21,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_21,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_21,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_21,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_21,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_21,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_21,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_21,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_21,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_21,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_21,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_21 to mode_17 ...
+Done.
+Dealing with the jump from mode_21 to mode_15 ...
+Done.
+Dealing with the jump from mode_21 to mode_34 ...
+Done.
+Dealing with the jump from mode_21 to mode_17 ...
+Done.
+Dealing with the jump from mode_21 to mode_31 ...
+Done.
+Dealing with the jump from mode_21 to mode_31 ...
+Done.
+Dealing with the jump from mode_21 to mode_23 ...
+Done.
+Dealing with the jump from mode_21 to mode_18 ...
+Done.
+Dealing with the jump from mode_21 to mode_7 ...
+Done.
+Dealing with the jump from mode_21 to mode_19 ...
+Done.
+Dealing with the jump from mode_21 to mode_30 ...
+Done.
+Dealing with the jump from mode_21 to mode_34 ...
+Done.
+Dealing with the jump from mode_21 to mode_15 ...
+Done.
+Dealing with the jump from mode_21 to mode_1 ...
+Done.
+Dealing with the jump from mode_21 to mode_33 ...
+Done.
+mode: mode_15,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_15,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_15 to mode_35 ...
+Done.
+Dealing with the jump from mode_15 to mode_36 ...
+Done.
+Dealing with the jump from mode_15 to mode_31 ...
+Done.
+mode: mode_9,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_9,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_9,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_9,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_9,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_9,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_9,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_9,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_9,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_9,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_9,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_9 to mode_12 ...
+Done.
+Dealing with the jump from mode_9 to mode_36 ...
+Done.
+Dealing with the jump from mode_9 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_9 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_9 to mode_35 ...
+Done.
+mode: mode_0,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_0,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_0,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_0,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_0,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_0,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_0,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_0,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_0 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_0 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_0 to mode_26 ...
+Done.
+Dealing with the jump from mode_0 to mode_9 ...
+Done.
+Dealing with the jump from mode_0 to mode_12 ...
+Done.
+mode: mode_2,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_2,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_2,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_2,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_2,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_2,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_2,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_2,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_2,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_2,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_2,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_2,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_2,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_2,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_2 to mode_26 ...
+Done.
+Dealing with the jump from mode_2 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_2 to mode_12 ...
+Done.
+Dealing with the jump from mode_2 to mode_0 ...
+Done.
+Dealing with the jump from mode_2 to mode_13 ...
+Done.
+Dealing with the jump from mode_2 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_2 to mode_9 ...
+Done.
+mode: mode_26,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_26,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_26,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_26,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_26,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_26,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_26,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_26,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_26,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_26,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_26,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_26 to mode_9 ...
+Done.
+Dealing with the jump from mode_26 to mode_12 ...
+Done.
+Dealing with the jump from mode_26 to mode_0 ...
+Done.
+Dealing with the jump from mode_26 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_26 to mode_35 ...
+No intersection detected.
+Done.
+mode: mode_12,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_12 to mode_35 ...
+Done.
+Dealing with the jump from mode_12 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_9 ...
+Done.
+Dealing with the jump from mode_12 to mode_36 ...
+Done.
+Dealing with the jump from mode_12 to mode_35 ...
+No intersection detected.
+Done.
+mode: mode_9,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_9,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_9,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_9,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_9,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_9,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_9,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_9,	time = 2.858972,	step = 0.487179,	order = 6
+Dealing with the jump from mode_9 to mode_12 ...
+Done.
+Dealing with the jump from mode_9 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_9 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_9 to mode_35 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_9 to mode_35 ...
+No intersection detected.
+Done.
+mode: mode_12,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_12,	time = 3.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_12 to mode_35 ...
+Done.
+Dealing with the jump from mode_12 to mode_36 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_9 ...
+Done.
+Dealing with the jump from mode_12 to mode_36 ...
+Done.
+Dealing with the jump from mode_12 to mode_35 ...
+No intersection detected.
+Done.
+mode: mode_24,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_24,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_24,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_24,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_24,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_24,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_24,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_24,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_24,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_24,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_24,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_24,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_24,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_24,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_24 to mode_35 ...
+Done.
+Dealing with the jump from mode_24 to mode_6 ...
+Done.
+Dealing with the jump from mode_24 to mode_36 ...
+Done.
+Dealing with the jump from mode_24 to mode_9 ...
+Done.
+Dealing with the jump from mode_24 to mode_12 ...
+Done.
+mode: mode_32,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_32,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_32 to mode_16 ...
+Done.
+Dealing with the jump from mode_32 to mode_31 ...
+Done.
+Dealing with the jump from mode_32 to mode_17 ...
+Done.
+Dealing with the jump from mode_32 to mode_15 ...
+Done.
+Dealing with the jump from mode_32 to mode_34 ...
+Done.
+mode: mode_16,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_16,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_16,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_16,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_16,	time = 1.526275,	step = 0.366025,	order = 6
+mode: mode_16,	time = 1.928903,	step = 0.402628,	order = 6
+mode: mode_16,	time = 2.371793,	step = 0.442890,	order = 6
+mode: mode_16,	time = 2.858972,	step = 0.487179,	order = 6
+mode: mode_16,	time = 3.346151,	step = 0.487179,	order = 6
+mode: mode_16,	time = 3.833331,	step = 0.487179,	order = 6
+mode: mode_16,	time = 4.320510,	step = 0.487179,	order = 6
+Dealing with the jump from mode_16 to mode_32 ...
+Done.
+Dealing with the jump from mode_16 to mode_31 ...
+Done.
+Dealing with the jump from mode_16 to mode_34 ...
+Done.
+Dealing with the jump from mode_16 to mode_15 ...
+Done.
+Dealing with the jump from mode_16 to mode_17 ...
+Done.
+
+Computation completed: 523 flowpipe(s) computed.
+
+[1mResult of the safety verification on the computed flowpipes: [0m[1m[31mUNSAFE
+
+[0mTotal time cost:[1m 18.548192[0m seconds.
+

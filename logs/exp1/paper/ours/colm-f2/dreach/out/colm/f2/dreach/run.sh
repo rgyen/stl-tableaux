@@ -1,0 +1,1 @@
+/usr/bin/time ./../../3rd_party/dreal/dReach -l 0 -u 2 ./log/colm/f2/dreach/model/model.drh >& ./log/colm/f2/dreach/out-log.txt

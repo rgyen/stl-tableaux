@@ -1,0 +1,6 @@
+{
+  "id": "vand-f1",
+  "model": "vand",
+  "formula_id": "f1",
+  "dynamics": "nonlinear"
+}

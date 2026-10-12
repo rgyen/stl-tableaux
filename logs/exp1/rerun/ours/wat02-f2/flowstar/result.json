@@ -1,0 +1,22 @@
+{
+  "id": "wat02-f2",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "0114e4171c67432e8fe4750937404ec2bf357df3aefdcedcdd4cd8dd9f8fbd7c",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.2759104473516345
+  },
+  "composed_ha": [
+    15,
+    64
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 0.31765195075422525,
+  "solver_seconds": 0.31765195075422525,
+  "phase": "solver",
+  "outcome": "unsafe"
+}

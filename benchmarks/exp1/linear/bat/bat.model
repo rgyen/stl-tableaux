@@ -1,0 +1,52 @@
+# logging: ode
+# model description:
+#
+# There are two fully charged batteries, and a control
+# system that switches load between these batteries.
+# The goal of the control system is to achieve longer
+# battery lifetime.
+
+int modeId;
+[-10, 10] g1;
+[-10, 10] d1;
+
+# state
+# 1 : ON
+# 2 : OFF
+# 3 : DEAD
+{ mode: modeId = 1;
+  inv:  g1 >= 0;
+  flow: d/dt[d1] = 2 + (0.122 * d1) ;
+        d/dt[g1] = -0.5 ;
+  jump:
+        g1 > 1 =>
+          (and (modeId' = 2) (d1' = d1) (g1' = g1));
+        g1 <= 0.5 =>
+          (and (modeId' = 3) (d1' = d1) (g1' = g1));
+}
+{ mode: modeId = 2;
+  inv:  d1 > 0;
+  flow: d/dt[d1] = -(0.05 * d1) ;
+        d/dt[g1] = 0 ;
+  jump:
+        g1 > 1 =>
+          (and (modeId' = 1) (d1' = d1) (g1' = g1));
+}
+{ mode: modeId = 3;
+  inv:
+  flow: d/dt[d1] = 0 ;
+        d/dt[g1] = 0 ;
+  jump:
+}
+
+init:
+modeId = 1; 8 <= g1; g1 <= 8.5; 
+0 <= d1; d1 <= 0.1;
+
+proposition:
+
+# bound: 5, timebound: 10
+goal:
+[f1]: <>[1.1, 4] (d1 >= 1 R[0.0, inf) g1 <= 7) ; 
+[f2]: [][1, 3](<>[0, 5] d1 > 1.5); 
+[f3]: [][0.0, inf) (g1 > 6 -> <>[1.1, 6] d1 >= 3); 

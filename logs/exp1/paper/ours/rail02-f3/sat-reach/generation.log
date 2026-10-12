@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/rail02/rail02.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/rail02/rail02-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/linear/rail02/rail02.model
+  automaton info: (# mode: 4, # jump: 5)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : ([][ 0.0, inf ) (<>[ 2.0, 4.0 ] (vb > (-10 - 1.0))))
+    size      : 3
+  Config
+    bound     : 5
+    threshold : 1
+
+  finish construction
+    running time: 0.145s
+    tableau info: (# vertex: 0, # edge: 0)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.001s
+    tableau info: (# vertex: 4, # edge: 4)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 3, # jump: 2)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.004s
+  automaton info: (# mode: 13, # jump: 35)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.181s
+  automaton info: (# mode: 13, # jump: 30)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 13, # jump: 30)
+
+Converting the automaton to an input model of sat-reach
+  model file  : log/rail02/f3/sat-reach/model/model.xml
+  conf  file  : log/rail02/f3/sat-reach/model/model.cfg
+  script file : log/rail02/f3/sat-reach/run.sh
+  running time: 0.014s

@@ -1,0 +1,77 @@
+?input_file: stl_mc | stl_goals
+stl_mc: declaration+ mode_module+ init_decl props? goal_decl
+stl_goals: (goal_unit ";")*
+?declaration: TYPE NAME ";" -> mode_var_decl
+            | var_range NAME ";" -> variable_var_decl
+            | "const" NAME "=" const_expr ";" -> const_decl
+?const_expr: const_sum
+?const_sum: const_product | const_sum "+" const_product -> const_add | const_sum "-" const_product -> const_sub
+?const_product: const_power | const_product "*" const_power -> const_mul | const_product "/" const_power -> const_div
+?const_power: const_atom | const_power "^" const_atom -> const_pow
+?const_atom: number_literal | NAME -> const_name | BOOL -> boolean
+?expression: sum
+?sum: product | sum ADD product -> binary_expr
+?product: power | product MUL power -> binary_expr
+?power: expr_unary | power "^" expr_unary -> power_expr
+?expr_unary: expr_atom | MINUS expr_unary -> neg_expr | FUNC expr_unary -> func_expr
+?expr_atom: number_literal | NAME -> expr_name | INITIAL -> initial_value | "(" expression ")"
+?condition: cond_unary | condition REL cond_unary -> condition_compare
+?cond_unary: NOT cond_unary -> negate | BOOLOP condition condition+ -> prefix_boolean | cond_atom
+?cond_atom: BOOL -> boolean | expression REL expression -> compare | NAME -> cond_name | "(" condition ")"
+?jump_redecl: NEXT REL expression -> jump_compare
+            | NEXT REL BOOL -> jump_boolean
+            | NEXT -> jump_name
+            | NOT jump_redecl -> negate
+            | BOOLOP jump_redecl jump_redecl+ -> prefix_boolean
+            | "(" jump_redecl ")"
+var_range: "[" NUMBER "]" -> exact_range
+         | LEFT ENDPOINT "," ENDPOINT RIGHT -> range
+mode_module: "{" mode_decl inv_decl flow_decl jump_decl "}"
+mode_decl: "mode" ":" (condition ";")+
+inv_decl: "inv" ":" (condition ";")*
+flow_decl: "flow" ":" (diff_eq+ | sol_eq+)
+diff_eq: "d/dt" "[" NAME "]" "=" expression ";"
+sol_eq: NAME "(" "t" ")" "=" expression ";"
+jump_decl: "jump" ":" jump_unit*
+jump_unit: condition "=>" jump_redecl ";"
+init_decl: "init" ":" (condition ";")+
+interval: LEFT NUMBER "," ENDPOINT RIGHT -> time_interval
+        | "=" NUMBER -> exact_range
+?formula: implication
+?implication: temporal | implication "->" temporal -> implies
+?temporal: bool_formula | temporal TEMP interval bool_formula -> binary_temporal
+?bool_formula: formula_unary | bool_formula BOOLOP formula_unary -> binary_boolean
+?formula_unary: NOT formula_unary -> negate
+              | TEMPUN interval bool_formula -> unary_temporal
+              | BOOLOP formula+ -> prefix_boolean
+              | formula_atom
+?formula_atom: "(" formula ")" | BOOL -> boolean | NAME -> proposition | expression REL expression -> compare
+props: "proposition" ":" prop*
+prop: "[" NAME "]" ":" condition ";"
+goal_decl: "goal" ":" (goal_unit ";")*
+?goal_unit: "[" NAME "]" ":" formula -> labeled_goal
+TYPE.3: /(?i:bool|int|real)\b/
+BOOL.3: /(?i:true|false)\b/
+NOT.3: /(?i:not)\b/ | "~"
+BOOLOP.3: /(?:and|And|or|Or)\b/
+FUNC.3: /(?:sin|cos|tan|arcsin|arccos|arctan|sqrt)\b/
+TEMP: "U" | "R"
+TEMPUN: "[]" | "<>"
+REL: ">=" | "<=" | ">" | "<" | "!=" | "="
+ADD: "+" | "-"
+MUL: "*" | "/"
+LEFT: "[" | "("
+RIGHT: "]" | ")"
+NEXT.4: /[A-Za-z_][A-Za-z_0-9]*'/
+INITIAL.4: /[A-Za-z_][A-Za-z_0-9]*\(0\)/
+NAME: /[A-Za-z_][A-Za-z_0-9]*/
+NUMBER.5: /-?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?/
+ENDPOINT: /-?inf\b/ | NUMBER
+%import common.WS
+%ignore WS
+%ignore /#[^\r\n]*/
+%ignore /(?s:''' .*? ''')/x
+
+number_literal.2: NUMBER -> number
+
+MINUS: /-(?![0-9])/

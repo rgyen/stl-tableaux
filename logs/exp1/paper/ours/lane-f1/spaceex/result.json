@@ -1,0 +1,13 @@
+{
+  "id": "lane-f1",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    4,
+    4
+  ],
+  "status": "complete",
+  "solver_seconds": 0.62,
+  "outcome": "safe"
+}

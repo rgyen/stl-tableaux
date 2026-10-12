@@ -1,0 +1,22 @@
+> running a model: ../../benchmarks/exp1/linear/thm02/thm02.model
+> selected solver: dreal
+> threshold : 0.5
+max procs: 5
+bound: 0
+# bound: 0, 2
+bound: 1
+# bound: 1, 14
+bound: 2
+# bound: 2, 62
+bound: 3
+# bound: 3, 269
+bound: 4
+# bound: 4, 1155
+bound: 5
+# bound: 5, 4645
+total loop : 6147
+size : 1133
+goal : (<>[0.0,17.0] ((x0 >= 19) U[0.0,inf) (x1 <= 19)))
+result : True up to bound 5 (time bound: 25)
+running time 2871.22971 seconds
+======================================

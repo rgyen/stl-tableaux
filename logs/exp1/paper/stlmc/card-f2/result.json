@@ -1,0 +1,8 @@
+{
+  "id": "card-f2",
+  "tool": "stlmc",
+  "timeout_seconds": 3600,
+  "status": "timeout",
+  "outcome": "timeout",
+  "solver_seconds": 3600.0
+}

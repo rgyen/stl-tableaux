@@ -1,0 +1,15 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac02/spac02.model
+> selected solver: dreal
+> threshold : 0.005
+max procs: 5
+bound: 0
+# bound: 0, 0
+bound: 1
+# bound: 1, 4
+bound: 2
+# bound: 2, 20
+bound: 3
+# bound: 3, 55
+bound: 4
+# bound: 4, 446
+bound: 5

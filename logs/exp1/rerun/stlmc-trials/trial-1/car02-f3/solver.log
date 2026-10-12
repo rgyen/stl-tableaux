@@ -1,0 +1,13 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/car02/car02.model
+> selected solver: dreal
+> threshold : 0.001
+max procs: 5
+bound: 0
+# bound: 0, 0
+bound: 1
+# bound: 1, 15
+bound: 2
+# bound: 2, 627
+bound: 3
+# bound: 3, 5761
+bound: 4

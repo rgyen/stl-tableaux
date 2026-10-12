@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/linear/wat01/wat01.model -model-cfg ../../benchmarks/exp1/linear/wat01/wat01.cfg -model-specific-cfg ../../benchmarks/exp1/linear/wat01/wat01-f3.cfg -parallel-core 5 -verbose >& log/wat01/f3/stlmc/out-log.txt

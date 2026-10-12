@@ -1,0 +1,14 @@
+{
+  "id": "rail02-f2",
+  "status": "complete",
+  "host": "node2",
+  "started_utc": "2026-10-12T03:56:19.810226+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "3fa57d284bed466d7fd7ef55817d6010aeec7f668bed5a503ddea252c27a16e4",
+  "exit_code": 0,
+  "outcome": "violated-candidate",
+  "wall_seconds": 1800.3998014079407,
+  "solver_status": null
+}

@@ -1,0 +1,6 @@
+{
+  "id": "colm-f1",
+  "model": "colm",
+  "formula_id": "f1",
+  "dynamics": "nonlinear"
+}

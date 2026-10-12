@@ -1,0 +1,457 @@
+mode: mode_9,	time = 0.500000,	step = 0.500000,	order = 12
+mode: mode_9,	time = 1.000000,	step = 0.500000,	order = 12
+mode: mode_9,	time = 1.500000,	step = 0.500000,	order = 12
+mode: mode_9,	time = 2.000000,	step = 0.500000,	order = 12
+Dealing with the jump from mode_9 to mode_6 ...
+Done.
+Dealing with the jump from mode_9 to mode_4 ...
+Done.
+mode: mode_6,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_6,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_6,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_6,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_6,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_6,	time = 1.727589,	step = 0.201314,	order = 12
+mode: mode_6,	time = 1.949034,	step = 0.221445,	order = 12
+mode: mode_6,	time = 2.192624,	step = 0.243590,	order = 12
+Dealing with the jump from mode_6 to mode_6 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_6 to mode_12 ...
+Done.
+Dealing with the jump from mode_6 to mode_5 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_6 to mode_2 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_6 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_6 to mode_7 ...
+Done.
+Dealing with the jump from mode_6 to mode_4 ...
+Done.
+Dealing with the jump from mode_6 to mode_3 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_6 to mode_11 ...
+No intersection detected.
+Done.
+mode: mode_4,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_4,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_4,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_4,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_4,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_4,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_4,	time = 2.150348,	step = 0.221445,	order = 12
+Dealing with the jump from mode_4 to mode_10 ...
+Done.
+Dealing with the jump from mode_4 to mode_8 ...
+Done.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_0 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_7 ...
+Done.
+Dealing with the jump from mode_4 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_3 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_8 ...
+No intersection detected.
+Done.
+mode: mode_12,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_12,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_12,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_12,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_12,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_12,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_12,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_12 to mode_2 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_3 ...
+Done.
+Dealing with the jump from mode_12 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_7 ...
+Done.
+Dealing with the jump from mode_12 to mode_7 ...
+Done.
+Dealing with the jump from mode_12 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_5 ...
+Done.
+Dealing with the jump from mode_12 to mode_6 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_12 ...
+Done.
+mode: mode_7,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_7,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_7,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_7,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_7,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_7,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_7,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_7 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_3 ...
+Done.
+Dealing with the jump from mode_7 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_7 ...
+Done.
+Dealing with the jump from mode_7 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_0 ...
+Done.
+mode: mode_4,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_4,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_4,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_4,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_4,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_4,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_4,	time = 2.150348,	step = 0.221445,	order = 12
+Dealing with the jump from mode_4 to mode_10 ...
+Done.
+Dealing with the jump from mode_4 to mode_8 ...
+Done.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_0 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_7 ...
+Done.
+Dealing with the jump from mode_4 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_3 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_8 ...
+No intersection detected.
+Done.
+mode: mode_10,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_10,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_10,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_10,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_10,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_10,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_10,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_10 to mode_0 ...
+Done.
+Dealing with the jump from mode_10 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_10 to mode_10 ...
+Done.
+Dealing with the jump from mode_10 to mode_1 ...
+No intersection detected.
+Done.
+mode: mode_8,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_8,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_8,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_8,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_8,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_8,	time = 1.727589,	step = 0.201314,	order = 12
+mode: mode_8,	time = 1.949034,	step = 0.221445,	order = 12
+mode: mode_8,	time = 2.192624,	step = 0.243590,	order = 12
+Dealing with the jump from mode_8 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_8 to mode_10 ...
+Done.
+Dealing with the jump from mode_8 to mode_0 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_8 to mode_1 ...
+No intersection detected.
+Done.
+mode: mode_7,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_7,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_7,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_7,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_7,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_7,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_7,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_7 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_3 ...
+Done.
+Dealing with the jump from mode_7 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_7 ...
+Done.
+Dealing with the jump from mode_7 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_0 ...
+Done.
+mode: mode_3,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_3,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_3,	time = 0.827500,	step = 0.302500,	order = 12
+Dealing with the jump from mode_3 to mode_3 ...
+Done.
+Dealing with the jump from mode_3 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_7 ...
+Done.
+Dealing with the jump from mode_3 to mode_0 ...
+Done.
+Dealing with the jump from mode_3 to mode_0 ...
+Done.
+Dealing with the jump from mode_3 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_10 ...
+Done.
+mode: mode_7,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_7,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_7,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_7,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_7,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_7,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_7,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_7 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_3 ...
+Done.
+Dealing with the jump from mode_7 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_7 ...
+Done.
+Dealing with the jump from mode_7 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_0 ...
+Done.
+mode: mode_7,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_7,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_7,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_7,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_7,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_7,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_7,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_7 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_3 ...
+Done.
+Dealing with the jump from mode_7 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_7 ...
+Done.
+Dealing with the jump from mode_7 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_0 ...
+Done.
+mode: mode_5,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_5,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_5,	time = 0.827500,	step = 0.302500,	order = 12
+Dealing with the jump from mode_5 to mode_2 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_5 to mode_12 ...
+Done.
+Dealing with the jump from mode_5 to mode_6 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_5 to mode_5 ...
+Done.
+Dealing with the jump from mode_5 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_5 to mode_7 ...
+Done.
+Dealing with the jump from mode_5 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_5 to mode_3 ...
+Done.
+Dealing with the jump from mode_5 to mode_3 ...
+Done.
+mode: mode_12,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_12,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_12,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_12,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_12,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_12,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_12,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_12 to mode_2 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_3 ...
+Done.
+Dealing with the jump from mode_12 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_7 ...
+Done.
+Dealing with the jump from mode_12 to mode_7 ...
+Done.
+Dealing with the jump from mode_12 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_5 ...
+Done.
+Dealing with the jump from mode_12 to mode_6 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_12 to mode_12 ...
+Done.
+mode: mode_10,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_10,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_10,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_10,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_10,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_10,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_10,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_10 to mode_0 ...
+Done.
+Dealing with the jump from mode_10 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_10 to mode_10 ...
+Done.
+Dealing with the jump from mode_10 to mode_1 ...
+No intersection detected.
+Done.
+mode: mode_10,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_10,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_10,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_10,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_10,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_10,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_10,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_10 to mode_0 ...
+Done.
+Dealing with the jump from mode_10 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_10 to mode_10 ...
+Done.
+Dealing with the jump from mode_10 to mode_1 ...
+No intersection detected.
+Done.
+mode: mode_3,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_3,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_3,	time = 0.827500,	step = 0.302500,	order = 12
+Dealing with the jump from mode_3 to mode_3 ...
+Done.
+Dealing with the jump from mode_3 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_7 ...
+Done.
+Dealing with the jump from mode_3 to mode_0 ...
+Done.
+Dealing with the jump from mode_3 to mode_0 ...
+Done.
+Dealing with the jump from mode_3 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_3 to mode_10 ...
+Done.
+mode: mode_7,	time = 0.250000,	step = 0.250000,	order = 12
+mode: mode_7,	time = 0.525000,	step = 0.275000,	order = 12
+mode: mode_7,	time = 0.827500,	step = 0.302500,	order = 12
+mode: mode_7,	time = 1.160250,	step = 0.332750,	order = 12
+mode: mode_7,	time = 1.526275,	step = 0.366025,	order = 12
+mode: mode_7,	time = 1.928903,	step = 0.402628,	order = 12
+mode: mode_7,	time = 2.371793,	step = 0.442890,	order = 12
+Dealing with the jump from mode_7 to mode_8 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_10 ...
+Done.
+Dealing with the jump from mode_7 to mode_1 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_3 ...
+Done.
+Dealing with the jump from mode_7 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_7 ...
+Done.
+Dealing with the jump from mode_7 to mode_11 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_0 ...
+Done.
+
+Computation completed: 114 flowpipe(s) computed.
+
+[1mResult of the safety verification on the computed flowpipes: [0m[1m[31mUNSAFE
+
+[0mTotal time cost:[1m 4.898917[0m seconds.
+

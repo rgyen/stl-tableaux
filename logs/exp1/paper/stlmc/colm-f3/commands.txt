@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/nonlinear/colm/colm.model -model-cfg ../../benchmarks/exp1/nonlinear/colm/colm.cfg -model-specific-cfg ../../benchmarks/exp1/nonlinear/colm/colm-f3.cfg -parallel-core 5 -verbose >& log/colm/f3/stlmc/out-log.txt

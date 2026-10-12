@@ -1,0 +1,69 @@
+dReal Options:
+For k = 0, dReach tried 0 feasible paths, all of them are unsat.
+For k = 1, dReach tried 0 feasible paths, all of them are unsat.
+For k = 2, dReach tried 0 feasible paths, all of them are unsat.
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_3_0.smt2, PATH : [3,1,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_3_1.smt2, PATH : [3,1,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_3_2.smt2, PATH : [3,6,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_3_3.smt2, PATH : [3,6,8,2]
+unsat
+For k = 3, dReach tried 4 feasible paths, all of them are unsat.
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_0.smt2, PATH : [3,1,7,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_1.smt2, PATH : [3,1,8,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_2.smt2, PATH : [3,6,1,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_3.smt2, PATH : [3,6,1,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_4.smt2, PATH : [3,6,4,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_5.smt2, PATH : [3,6,4,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_6.smt2, PATH : [3,6,5,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_7.smt2, PATH : [3,6,5,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_8.smt2, PATH : [3,6,7,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_4_9.smt2, PATH : [3,6,8,7,2]
+unsat
+For k = 4, dReach tried 10 feasible paths, all of them are unsat.
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_0.smt2, PATH : [3,1,7,8,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_1.smt2, PATH : [3,1,8,7,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_2.smt2, PATH : [3,6,1,7,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_3.smt2, PATH : [3,6,1,8,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_4.smt2, PATH : [3,6,4,6,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_5.smt2, PATH : [3,6,4,6,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_6.smt2, PATH : [3,6,4,7,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_7.smt2, PATH : [3,6,4,8,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_8.smt2, PATH : [3,6,5,4,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_9.smt2, PATH : [3,6,5,4,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_10.smt2, PATH : [3,6,5,6,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_11.smt2, PATH : [3,6,5,6,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_12.smt2, PATH : [3,6,5,7,8,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_13.smt2, PATH : [3,6,5,8,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_14.smt2, PATH : [3,6,7,8,7,2]
+unsat
+SMT: ./kmbae-lovo/lovo/f1/dreach/model/model_5_15.smt2, PATH : [3,6,8,7,8,2]
+unsat
+For k = 5, dReach tried 16 feasible paths, all of them are unsat.
+0.82user 0.26system 0:01.24elapsed 87%CPU (0avgtext+0avgdata 16200maxresident)k
+48inputs+1432outputs (0major+97326minor)pagefaults 0swaps

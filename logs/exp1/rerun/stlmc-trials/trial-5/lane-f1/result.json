@@ -1,0 +1,14 @@
+{
+  "id": "lane-f1",
+  "status": "complete",
+  "host": "node2",
+  "started_utc": "2026-10-12T08:58:49.620778+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "2be69efac8b77bdc68c84dc59475f3080614990c89c8119c7d41c78fd2a3b61b",
+  "exit_code": 0,
+  "outcome": "bounded-satisfied",
+  "wall_seconds": 3.3984980839304626,
+  "solver_status": null
+}

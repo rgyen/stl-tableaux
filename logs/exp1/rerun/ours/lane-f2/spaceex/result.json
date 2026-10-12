@@ -1,0 +1,22 @@
+{
+  "id": "lane-f2",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "2be69efac8b77bdc68c84dc59475f3080614990c89c8119c7d41c78fd2a3b61b",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.5210383590310812
+  },
+  "composed_ha": [
+    4,
+    5
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 0.26839350163936615,
+  "solver_seconds": 0.26839350163936615,
+  "phase": "solver",
+  "outcome": "safe"
+}

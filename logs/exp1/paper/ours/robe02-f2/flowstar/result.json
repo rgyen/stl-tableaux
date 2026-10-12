@@ -1,0 +1,13 @@
+{
+  "id": "robe02-f2",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    11,
+    38
+  ],
+  "status": "timeout",
+  "solver_seconds": 3600.0,
+  "outcome": "timeout"
+}

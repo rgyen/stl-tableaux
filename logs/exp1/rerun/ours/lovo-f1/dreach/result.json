@@ -1,0 +1,22 @@
+{
+  "id": "lovo-f1",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "d08f1963cfa9a7e6e79ecc5a3c1a49c0191597941473e91f4ace5f17306c16ff",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 2.105486780870706
+  },
+  "composed_ha": [
+    7,
+    18
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 1.8845370588824153,
+  "solver_seconds": 1.8845370588824153,
+  "phase": "solver",
+  "outcome": "bounded_unsat"
+}

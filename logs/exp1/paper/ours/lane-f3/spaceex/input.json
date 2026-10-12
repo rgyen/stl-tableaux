@@ -1,0 +1,6 @@
+{
+  "id": "lane-f3",
+  "model": "lane",
+  "formula_id": "f3",
+  "dynamics": "linear"
+}

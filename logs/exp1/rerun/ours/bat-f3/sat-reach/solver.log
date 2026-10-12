@@ -1,0 +1,30 @@
+Parsing model ... 
+Model parsing complete.
+
+
+-----Statistics for Safety Analysis-----------
+Model is SAFE
+number of abstract ce-paths found for exploration: 0
+Number of concrete ce trajectories found: 0
+Number of refinements performed when searching: 0
+Time to search concrete counter-example(s) from the abstract path(s) (user time in seconds):0
+
+
+Total paths visited by our old Algorithm: 126
+
+Total paths visited by our new Algorithm: 186
+
+Number of postC operation done: 37
+sh: 1: graph: not found
+
+-----Statistics for Bounded Model Checking-----------
+
+Wall Time  (in Seconds) = 2.194
+
+User Time  (in Seconds) = 2.06
+
+System Time  (in Seconds) = 0
+
+CPU Usage:(%) = 2.92614
+Memory Used= 23.1875 MB
+BMC: The model is SAFE

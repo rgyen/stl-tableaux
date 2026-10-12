@@ -1,0 +1,14 @@
+{
+  "id": "f150",
+  "formula_file": "benchmarks/exp2/pool.txt",
+  "prepared": "(<>[ 0.0, 3.0 ] (or (and (x1 > (-1.0 - 0.01)) (x3 < (-1.0 + 0.01))) (and (x3 < (0.0 + 0.01)) ([][ 0.0, 3.0 ] (x3 < (-1.0 + 0.01))))))",
+  "size": 9,
+  "depth": 2,
+  "resolution": 1,
+  "operators": [
+    "FinallyFormula",
+    "GloballyFormula"
+  ],
+  "complexity": 22,
+  "prepared_sha256": "2486ca27db0a378b0636451bff7a52a1c5ff5a44c9bf69a9a7b78467cb6c1b06"
+}

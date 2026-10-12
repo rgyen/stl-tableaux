@@ -1,0 +1,26 @@
+mode: mode_0,	time = 0.500000,	step = 0.500000,	order = 8
+mode: mode_0,	time = 1.000000,	step = 0.500000,	order = 8
+mode: mode_0,	time = 1.500000,	step = 0.500000,	order = 8
+mode: mode_0,	time = 2.000000,	step = 0.500000,	order = 8
+Dealing with the jump from mode_0 to mode_5 ...
+Done.
+Dealing with the jump from mode_0 to mode_1 ...
+No intersection detected.
+mode: mode_5,	time = 0.000004,	step = 0.000004,	order = 8
+Dealing with the jump from mode_5 to mode_2 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_5 to mode_4 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_5 to mode_3 ...
+No intersection detected.
+Dealing with the jump from mode_5 to mode_1 ...
+No intersection detected.
+
+Computation completed: 5 flowpipe(s) computed.
+
+[1mResult of the safety verification on the computed flowpipes: [0m[1m[32mSAFE
+
+[0mTotal time cost:[1m 0.050329[0m seconds.
+

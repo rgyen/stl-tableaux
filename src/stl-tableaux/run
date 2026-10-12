@@ -1,0 +1,297 @@
+#!/usr/bin/env python3
+import os
+import argparse
+from stl2tableaux.encoding.automata.goal.ha_converter import *
+from stl2tableaux.parser.stlmc import *
+from stl2tableaux.parser.config import *
+from stl2tableaux.encoding.automata.goal.stl import *
+from stl2tableaux.hybrid_automaton.utils import *
+from stl2tableaux.converter.factory import ConverterFactory
+
+
+def add_identity_reset(automata: HybridAutomaton):
+    v_s = get_ha_vars(automata)
+    
+    for jp in get_jumps(automata):
+        r_v = {v for v, _ in jp.reset}
+        s_r = {(v, v) for v in v_s.difference(r_v)}
+
+        jp.add_reset(*s_r)
+
+
+def get_formula_info(goal: StlGoal):
+    size = size_of_formula(goal._formula)
+    depth = count_nested(goal._formula)
+    return goal._formula, size, depth
+
+
+def get_config_info(config: Configuration):
+    common = config.get_section("common")
+    b = common.get_value("bound")
+    t = common.get_value("threshold")
+    return b, t
+
+
+def size_of_formula(formula: Formula):
+    size = 0
+
+    q = [formula]
+    while len(q) > 0:
+        f = q.pop()
+        size += 1
+        # if isinstance(f, Temporal):
+        # size += 1
+
+        if isinstance(f, MultinaryFormula):
+            for c in f.children:
+                q.append(c)
+
+        if isinstance(f, BinaryFormula):
+            q.append(f.left)
+            q.append(f.right)
+
+        if isinstance(f, UnaryFormula):
+            q.append(f.child)
+
+    return size
+
+
+def count_nested(formula: Formula):
+
+    max_depth = -1
+
+    q = [(-1, formula)]
+    while len(q) > 0:
+        d, f = q.pop()
+        # calc current depth
+        if isinstance(f, Temporal):
+            c_d = d + 1
+        else:
+            c_d = d
+
+        if isinstance(f, MultinaryFormula):
+            for c in f.children:
+                q.append((c_d, c))
+
+        if isinstance(f, BinaryFormula):
+            q.append((c_d, f.left))
+            q.append((c_d, f.right))
+
+        if isinstance(f, UnaryFormula):      
+            q.append((c_d, f.child))
+
+        if isinstance(f, Proposition):
+            if d > max_depth:
+                max_depth = d
+
+    return max_depth
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('file', nargs='?', type=str, help="input file")
+    parser.add_argument("-o", "-out", metavar="OUT", nargs='?', type=str,
+                        help="set output directory name (default: \'out\')", default="out")
+    parser.add_argument('-goal', nargs='?', type=str, help="goal label")
+    parser.add_argument('-solver', nargs='?', type=str, choices=['spaceex', 'sat-reach', 'flowstar', 'dreach'], help="reachability solver")
+    parser.add_argument('-default-cfg', metavar='C', type=str,
+                        help="set a configuration file (default: \'./default.cfg\')")
+    parser.add_argument('-cfg', metavar='C', type=str,
+                        help="set a configuration file (default: \'<file>.cfg\')")
+    parser.add_argument('-cfg-specific', metavar='C', type=str,
+                        help="set a configuration file (default: \'<file>-<goal>.cfg\')")
+    parser.add_argument("-dump", help="dump", action="store_true")
+    args = parser.parse_args()
+
+    try:
+        # check input file
+        if args.file is None:
+            raise ValueError("should provide an input file")
+    
+        if not os.path.exists(args.file):
+            raise ValueError("\'{}\' does not exist".format(args.file))
+
+        if os.path.isdir(args.file):
+            raise ValueError("\'{}\' is not a file".format(args.file))
+        
+        fn, dir = os.path.basename(args.file).split(".")[0], os.path.abspath(os.path.dirname(args.file))
+        
+        # check goal
+        if args.goal is None:
+            raise ValueError("should give a goal label")
+        
+        # check solver
+        if args.solver is None:
+            raise ValueError("should choose a reachability solver")
+
+        # get config
+        if args.default_cfg is None:
+            args.default_cfg = "./default.cfg"
+
+        if not os.path.exists(args.default_cfg):
+            raise ValueError("default config \'{}\' does not exist".format(args.default_cfg))
+        
+        if args.cfg is None:
+            args.cfg = "{}/{}.cfg".format(dir, fn)
+
+        if not os.path.exists(args.cfg):
+            raise ValueError("\'{}\' does not exist".format(args.cfg))
+
+        if os.path.isdir(args.cfg):
+            raise ValueError("\'{}\' is not a file".format(args.cfg))
+        
+        if args.cfg_specific is None:
+            args.cfg_specific = "{}/{}-{}.cfg".format(dir, fn, args.goal)
+
+        if not os.path.exists(args.cfg_specific):
+            raise ValueError("\'{}\' does not exist".format(args.cfg_specific))
+
+        if os.path.isdir(args.cfg_specific):
+            raise ValueError("\'{}\' is not a file".format(args.cfg_specific))
+
+        print()
+        print("---------------------------------")
+        print("------ Input Configuration ------")
+        print("---------------------------------")
+        print()
+
+        # print("read \'{}\' ...".format(args.file))
+        m_a, formulas = STLmcParser().parse_from_file(args.file)
+        if m_a is None:
+            raise ValueError("run requires a system model; use gen for formula-only inputs")
+
+        print("Reading configurations")
+        print(indented_str("default cfg  : {}".format(args.default_cfg), 2))
+        config = ConfigParser().read(args.default_cfg)
+
+        print(indented_str("model cfg    : {}".format(args.cfg), 2))
+        config = ConfigParser().read(args.cfg, config)
+
+        print(indented_str("specific cfg : {}".format(args.cfg_specific), 2))
+        config = ConfigParser().read(args.cfg_specific, config)
+
+        # set dump option
+        common = config.get_section("common")
+        if args.dump:
+            common.set_value("dump", "true")
+
+        print()
+        print("-----------------------------------")
+        print("----- System Hybrid Automaton -----")
+        print("-----------------------------------")
+        print()
+        print("Reading an input model")
+        print(indented_str("file: {}".format(args.file), 2))
+        print(indented_str("automaton info: ({})".format(get_ha_size(m_a)), 2))
+        print()
+
+        labeled_goals = formulas.labeled
+
+        # add prop dict to configuration and override solver
+        common.arguments["prop_dict"] = formulas.propositions
+        common.arguments["solver"] = args.solver
+
+        # config.check_mandatory()
+
+        goals: List[StlGoal] = list()
+        for lb, raw_goal in labeled_goals.items():
+
+            if lb == args.goal:
+                goals.append(StlGoal(raw_goal, config))
+                break
+        
+        if len(goals) <= 0:
+            raise Exception("cannot find a goal named {}".format(args.goal))
+        
+        goal = goals[0]
+
+        ha_bound_proc = HaBoundProcessor(config)
+
+        print("-----------------------------------")
+        print("----- STL Tableau Construction ----")
+        print("-----------------------------------")
+        print()
+
+        print("Information")
+        f, size, depth = get_formula_info(goal)
+        b, th = get_config_info(config)
+        print(indented_str("Formula", 2))
+        print(indented_str("goal      : {}".format(args.goal), 4))
+        print(indented_str("formula   : {}".format(f), 4))
+        print(indented_str("size      : {}".format(size), 4))
+        print(indented_str("Config", 2))
+        print(indented_str("bound     : {}".format(b), 4))
+        print(indented_str("threshold : {}".format(th), 4))
+
+        g_a = goal.encode()
+
+        if args.dump:
+            with open("out-hybrid.pickle","wb") as fw:
+                pickle.dump(g_a, fw)
+
+        print()
+        print("-----------------------------------")
+        print("--- Hybrid Automata Composition ---")
+        print("-----------------------------------")
+
+        r_s = time.time()
+        automata = compose(g_a, m_a)
+        add_identity_reset(automata)
+        ha_bound_proc.add_time_bound(automata)
+        r_e = time.time()
+
+        print()
+        print("Composing the tableau and system automaton")
+        print(indented_str("running time: {:.3f}s".format(r_e - r_s), 2))
+        print(indented_str("automaton info: ({})".format(get_ha_size(automata)), 2))
+
+        if args.dump:
+            with open("out-composed-hybrid.pickle","wb") as fw:
+                pickle.dump(automata, fw)
+
+        print()
+        print("Removing contradiction")
+        c_s = time.time()
+        remove_contradiction(automata)
+        c_e = time.time()
+        print(indented_str("running time: {:.3f}s".format(c_e - c_s), 2))
+        print(indented_str("automaton info: ({})".format(get_ha_size(automata)), 2))
+
+        if args.dump:
+            with open("out-opt-composed-hybrid.pickle","wb") as fw:
+                pickle.dump(automata, fw)
+
+        # No mode survives: no system behavior can violate the property.
+        if len(automata.get_modes()) == 0:
+            print()
+            print("The composed automaton is empty; no counterexample exists")
+            print("verdict: safe")
+            raise SystemExit(0)
+
+        print()
+        print("-----------------------------------")
+        print("------- Reachability Solver -------")
+        print("-----------------------------------")
+        print()
+
+        print("Composed hybrid automaton")
+        print(indented_str("automaton info: ({})".format(get_ha_size(automata)), 2))
+        print()
+
+        print("Converting the automaton to an input model of {}".format(args.solver))
+        converter = ConverterFactory(config).createConverter()
+        converter.set_range_info(m_a.range_info)
+
+        if converter.jp_bound_needed():
+            converter.update_jp_bound()
+            ha_bound_proc.add_jump_bound(automata)
+
+        cv_s = time.time()
+        converter.convert(automata)
+        converter.write(fn, args.o)
+        cv_e = time.time()
+        print(indented_str("running time: {:.3f}s".format(cv_e - cv_s), 2))
+
+    except Exception as err:
+        print("error: {}".format(err))
+        raise SystemExit(1)

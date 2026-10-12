@@ -1,0 +1,22 @@
+{
+  "id": "robe03-f1",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "97b033445099bb09805f279ee8850b7c331fe438df2e24f97518aa7425a44c01",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 0.9211798929609358
+  },
+  "composed_ha": [
+    3,
+    2
+  ],
+  "status": "timeout",
+  "exit_code": -9,
+  "wall_seconds": 3600.0053465580568,
+  "solver_seconds": 3600.0053465580568,
+  "phase": "solver",
+  "outcome": "timeout"
+}

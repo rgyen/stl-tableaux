@@ -1,0 +1,14 @@
+{
+  "id": "card-f1",
+  "status": "timeout",
+  "host": "node2",
+  "started_utc": "2026-10-12T05:28:43.616134+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "d959f8ea20d8d847b29804249114638dc71f2c75ad3373e6cd94f33495e0289a",
+  "exit_code": -9,
+  "outcome": "unknown",
+  "wall_seconds": 3600.03804464126,
+  "solver_status": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": "vand-f2",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    4,
+    5
+  ],
+  "status": "complete",
+  "solver_seconds": 2.28,
+  "outcome": "unsafe"
+}

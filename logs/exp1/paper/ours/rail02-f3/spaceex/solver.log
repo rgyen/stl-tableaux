@@ -1,0 +1,58 @@
+Computing reachable states... 
+Iteration 0... 4 sym states passed, 2 waiting 0.00500001s
+Iteration 1... 13 sym states passed, 3 waiting 0.0140001s
+Iteration 2... 29 sym states passed, 7 waiting 0.0170001s
+Iteration 3... 32 sym states passed, 7 waiting 0.0140001s
+Iteration 4... 39 sym states passed, 9 waiting 0.0160001s
+Iteration 5... 46 sym states passed, 11 waiting 0.0150001s
+Iteration 6... 47 sym states passed, 10 waiting 0.00900001s
+Iteration 7... 49 sym states passed, 10 waiting 0.0140001s
+Iteration 8... 53 sym states passed, 11 waiting 0.0190001s
+Iteration 9... 55 sym states passed, 11 waiting 0.0100001s
+Iteration 10... 56 sym states passed, 10 waiting 0.0130001s
+Iteration 11... 59 sym states passed, 10 waiting 0.0170001s
+Iteration 12... 61 sym states passed, 10 waiting 0.0130001s
+Iteration 13... 62 sym states passed, 9 waiting 0.0130001s
+Iteration 14... 64 sym states passed, 9 waiting 0.0130001s
+Iteration 15... 65 sym states passed, 8 waiting 0.0110001s
+Iteration 16... 67 sym states passed, 8 waiting 0.0160001s
+Iteration 17... 68 sym states passed, 7 waiting 0.0110001s
+Iteration 18... 70 sym states passed, 7 waiting 0.0100001s
+Iteration 19... 71 sym states passed, 6 waiting 0.00900001s
+Iteration 20... 72 sym states passed, 5 waiting 0.0110001s
+Iteration 21... 74 sym states passed, 5 waiting 0.0110001s
+Iteration 22... 76 sym states passed, 5 waiting 0.0130001s
+Iteration 23... 78 sym states passed, 5 waiting 0.0120001s
+Iteration 24... 80 sym states passed, 5 waiting 0.0120001s
+Iteration 25... 81 sym states passed, 4 waiting 0.0120001s
+Iteration 26... 82 sym states passed, 3 waiting 0.0100001s
+Iteration 27... 83 sym states passed, 2 waiting 0.0100001s
+Iteration 28... 84 sym states passed, 1 waiting 0.00900001s
+Iteration 29... 85 sym states passed, 0 waiting 0.00900001s
+Found fixpoint after 30 iterations.
+Computing reachable states done after 0.384001s
+Forbidden states are reachable.
+Output of reachable bad states... 
+Bounds on the variables over the entire set:
+pb: [-0,68.9501]
+pb: [-0,68.9501]
+
+Location-wise bounds on the variables:
+
+Location: loc(subsystem)==mode_id_1
+pb: [-0,68.9501]
+pb: [-0,68.9501]
+
+Location: loc(subsystem)==mode_id_2
+pb: [28.4355,68.9501]
+pb: [28.4355,68.9501]
+
+Location: loc(subsystem)==mode_id_4
+pb: [-0,0.5]
+pb: [-0,0.5]
+
+Location: loc(subsystem)==mode_id_7
+pb: [-0,41.9001]
+pb: [-0,41.9001]
+
+0.204001s

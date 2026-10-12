@@ -1,0 +1,14 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/robe02/robe02.model
+> selected solver: dreal
+> threshold : 0.0005
+max procs: 5
+bound: 0
+# bound: 0, 1
+bound: 1
+# bound: 1, 1
+total loop : 2
+size : 163
+goal : (<>[0.0,inf) (x > 3))
+result : True up to bound 1 (time bound: 40)
+running time 2.33665 seconds
+======================================

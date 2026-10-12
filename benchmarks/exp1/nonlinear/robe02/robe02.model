@@ -1,0 +1,27 @@
+int modeId;
+[-5, 10] x;
+[-5, 10] y;
+[-5, 10] z;
+const alpha = 0.4;
+const beta = 100; const gamma = 100000;
+
+{ mode: modeId = 1;
+  inv:
+  flow: d/dt[x] = beta * y * z - alpha * x; 
+        d/dt[y] = alpha * x - beta * y * z - gamma * y * y; 
+        d/dt[z] = gamma * y * y;
+  jump: 
+}
+
+init:
+(modeId = 1);
+(1 <= x); (x <= 1);
+(0 <= y); (y <= 0);
+(0 <= z); (z <= 0);
+
+proposition:
+
+goal:
+[f1] : <>[0.0, inf) x > 3;
+[f2]: (y >= 2 U[0.0, inf) (<>[1.1, 2.2] z >= 1));
+[f3]: (<> [2.5, 5.1] (x >= 1 R[0.0, inf) x >= 2)); 

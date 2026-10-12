@@ -1,0 +1,87 @@
+int modeId;
+[-1000, 1000] x;
+[-1000, 1000] y;
+[-50, 50] vx;
+[-50, 50] vy;
+[0, 60] gt;
+{
+    mode:
+        modeId = 1;
+    inv:
+	(x + y) > 100;
+        gt < 50;
+    flow:
+        d/dt[x] = vx;
+        d/dt[y] = vy;
+        d/dt[gt] = 1;
+        d/dt[vx] = -0.58 * x + 0.002 * y - 2.9 * vx + 0.09 * vy;
+        d/dt[vy] = -0.0017 * x - 0.066 * y - 0.09 * vx - 2.9 * vy;
+    jump:
+        (gt >= 50) =>
+                (and (modeId' = 3)
+                    (x' = x) (y' = y) (vx' = vx) (vy' = vy) (gt' = gt));
+        (and (x >= -10) (x <= 10) (y >= -10) (y <= 10)) =>
+           (and (modeId' = 2) 
+                (x' = x) (y' = y) (vx' = vx) (vy' = vy) (gt' = gt));
+}
+{
+    mode:
+        modeId = 2;
+    inv:
+	(x + y) <= 100;
+	gt < 50;
+    flow:
+        d/dt[x] = vx;
+        d/dt[y] = vy;
+	d/dt[gt] = 1;
+	d/dt[vx] = -0.58 * x + 0.002 * y - 19.2 * vx + 0.09 * vy;
+	d/dt[vy] = -0.0026 * x - 0.57 * y - 0.09 * vx - 19.2 * vy;
+    jump:
+	(gt >= 50) => 
+		(and (modeId' = 3) 
+		    (x' = x) (y' = y) (vx' = vx) (vy' = vy) (gt' = gt));
+        (x > 10) =>
+           (and (modeId' = 1) 
+                (x' = x) (y' = y) (vx' = vx) (vy' = vy) (gt' = gt));
+        (x < -10) =>
+           (and (modeId' = 1)
+                (x' = x) (y' = y) (vx' = vx) (vy' = vy) (gt' = gt));
+        (y > 10) =>
+           (and (modeId' = 1)
+                (x' = x) (y' = y) (vx' = vx) (vy' = vy) (gt' = gt));
+        (y < -10) =>
+           (and (modeId' = 1)
+                (x' = x) (y' = y) (vx' = vx) (vy' = vy) (gt' = gt));
+}
+{
+    mode:
+	modeId = 3;
+    inv:
+    flow:
+        d/dt[x] = vx;
+        d/dt[y] = vy;
+	d/dt[gt] = 1;
+        d/dt[vx] = 0.006 * x + 0.08 * vy;
+        d/dt[vy] = -0.08 * vx;
+    jump:
+
+}
+
+init:
+(modeId = 1); 
+(x <= 925); (x >= 875); 
+(y <= 425); (y >= 375); 
+(vx = 0); (vy = 0); 
+(gt = 0);
+
+proposition:
+
+# timebound : 20
+goal:
+[f1]: [][10, 70] ((vx + vy <= -2) -> <>[0, 3] (vx + vy > 10)); # threshold: 0.1, time-horizon : 3
+[f2]: <>[20, 70] ([][1,2] (x <= 40)); # threshold: 0.1, time-horizon: 0.1, time-horizon: 3
+[f3]: [][30, 75] ((x + y >= 100) -> <>[1, 3] (x + y <= 55)); # threshold: 0.1, time-horizon: 3
+
+
+
+

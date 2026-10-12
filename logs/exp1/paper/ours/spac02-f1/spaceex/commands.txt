@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/linear/spac02/spac02.model -goal f1 -default-cfg ../../src/default.cfg -solver spaceex -o log >& log/spac02/f1/spaceex/gen-log.txt
+
+# solver-launch
+bash out/spac02/f1/spaceex/run.sh

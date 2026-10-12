@@ -1,0 +1,4 @@
+# STLmc solver
+cd /home/artifact/stl-tableaux/results/exp1-trial-3/exp1-stlmc/lovo-f1
+/home/artifact/stl-tableaux/.venv-stlmc-paper/bin/stlmc /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.model -model-cfg /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.cfg -model-specific-cfg /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo-f1.cfg -parallel-core 5 -verbose -executable-path /home/artifact/stl-tableaux/.venv-stlmc-paper/bin/dreal
+

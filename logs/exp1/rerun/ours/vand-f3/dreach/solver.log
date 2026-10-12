@@ -1,0 +1,61 @@
+dReal Options:
+For k = 0, dReach tried 0 feasible paths, all of them are unsat.
+For k = 1, dReach tried 0 feasible paths, all of them are unsat.
+For k = 2, dReach tried 0 feasible paths, all of them are unsat.
+SMT: ./out/vand/f3/dreach/model/model_3_0.smt2, PATH : [2,9,5,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_3_1.smt2, PATH : [2,11,5,7]
+unsat
+For k = 3, dReach tried 2 feasible paths, all of them are unsat.
+SMT: ./out/vand/f3/dreach/model/model_4_0.smt2, PATH : [2,9,5,1,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_4_1.smt2, PATH : [2,9,5,8,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_4_2.smt2, PATH : [2,9,5,10,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_4_3.smt2, PATH : [2,9,6,10,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_4_4.smt2, PATH : [2,11,5,1,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_4_5.smt2, PATH : [2,11,5,8,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_4_6.smt2, PATH : [2,11,5,10,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_4_7.smt2, PATH : [2,11,6,10,7]
+unsat
+For k = 4, dReach tried 8 feasible paths, all of them are unsat.
+SMT: ./out/vand/f3/dreach/model/model_5_0.smt2, PATH : [2,9,5,3,8,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_1.smt2, PATH : [2,9,5,4,10,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_2.smt2, PATH : [2,9,5,8,1,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_3.smt2, PATH : [2,9,5,10,1,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_4.smt2, PATH : [2,9,5,10,8,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_5.smt2, PATH : [2,9,6,4,10,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_6.smt2, PATH : [2,9,6,10,1,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_7.smt2, PATH : [2,9,6,10,8,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_8.smt2, PATH : [2,11,5,3,8,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_9.smt2, PATH : [2,11,5,4,10,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_10.smt2, PATH : [2,11,5,8,1,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_11.smt2, PATH : [2,11,5,10,1,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_12.smt2, PATH : [2,11,5,10,8,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_13.smt2, PATH : [2,11,6,4,10,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_14.smt2, PATH : [2,11,6,10,1,7]
+unsat
+SMT: ./out/vand/f3/dreach/model/model_5_15.smt2, PATH : [2,11,6,10,8,7]
+unsat
+For k = 5, dReach tried 16 feasible paths, all of them are unsat.
+1.45user 0.27system 0:02.22elapsed 77%CPU (0avgtext+0avgdata 28488maxresident)k
+72inputs+1680outputs (0major+163311minor)pagefaults 0swaps

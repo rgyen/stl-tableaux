@@ -1,0 +1,1 @@
+./../../../../../.tools/flowstar/flowstar ./out/robe03/f2/flowstar/model/model.fs >& ./out/robe03/f2/flowstar/out-log.txt

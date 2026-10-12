@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/thm02/thm02.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/thm02/thm02-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/linear/thm02/thm02.model
+  automaton info: (# mode: 3, # jump: 6)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : ([][ 0.0, inf ) ((x0 < (19 + 2.0)) U[ 0.0, inf ) (x1 > (17 - 2.0))))
+    size      : 4
+  Config
+    bound     : 5
+    threshold : 2.0
+
+  finish construction
+    running time: 0.142s
+    tableau info: (# vertex: 10, # edge: 28)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.005s
+    tableau info: (# vertex: 6, # edge: 11)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 5, # jump: 9)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.009s
+  automaton info: (# mode: 16, # jump: 113)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.514s
+  automaton info: (# mode: 16, # jump: 100)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 16, # jump: 100)
+
+Converting the automaton to an input model of spaceex
+  model file  : log/thm02/f3/spaceex/model/model.xml
+  conf  file  : log/thm02/f3/spaceex/model/model.cfg
+  script file : log/thm02/f3/spaceex/run.sh
+  running time: 0.015s

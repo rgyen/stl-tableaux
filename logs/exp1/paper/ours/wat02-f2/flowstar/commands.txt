@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/wat02/wat02.model -goal f2 -default-cfg ../../src/default.cfg -solver flowstar -o log >& log/wat02/f2/flowstar/gen-log.txt
+
+# solver-launch
+bash out/wat02/f2/flowstar/run.sh

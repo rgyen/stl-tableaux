@@ -1,0 +1,48 @@
+mode: mode_3,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_3,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_3 to mode_5 ...
+Done.
+mode: mode_5,	time = 0.500000,	step = 0.500000,	order = 6
+mode: mode_5,	time = 1.000000,	step = 0.500000,	order = 6
+mode: mode_5,	time = 1.500000,	step = 0.500000,	order = 6
+mode: mode_5,	time = 2.000000,	step = 0.500000,	order = 6
+mode: mode_5,	time = 2.500000,	step = 0.500000,	order = 6
+mode: mode_5,	time = 3.000000,	step = 0.500000,	order = 6
+mode: mode_5,	time = 3.500000,	step = 0.500000,	order = 6
+mode: mode_5,	time = 4.000000,	step = 0.500000,	order = 6
+Dealing with the jump from mode_5 to mode_0 ...
+No intersection detected.
+Dealing with the jump from mode_5 to mode_4 ...
+Done.
+mode: mode_4,	time = 0.250000,	step = 0.250000,	order = 6
+mode: mode_4,	time = 0.525000,	step = 0.275000,	order = 6
+mode: mode_4,	time = 0.827500,	step = 0.302500,	order = 6
+mode: mode_4,	time = 1.160250,	step = 0.332750,	order = 6
+mode: mode_4,	time = 1.343263,	step = 0.183013,	order = 6
+mode: mode_4,	time = 1.544576,	step = 0.201314,	order = 6
+mode: mode_4,	time = 1.766021,	step = 0.221445,	order = 6
+mode: mode_4,	time = 2.009611,	step = 0.243590,	order = 6
+mode: mode_4,	time = 2.277560,	step = 0.267949,	order = 6
+mode: mode_4,	time = 2.572303,	step = 0.294743,	order = 6
+mode: mode_4,	time = 2.896521,	step = 0.324218,	order = 6
+mode: mode_4,	time = 3.253160,	step = 0.356640,	order = 6
+mode: mode_4,	time = 3.645464,	step = 0.392304,	order = 6
+mode: mode_4,	time = 4.076998,	step = 0.431534,	order = 6
+Dealing with the jump from mode_4 to mode_5 ...
+Done.
+Dealing with the jump from mode_4 to mode_0 ...
+No intersection detected.
+
+[1m[31mComputation not completed: 30 flowpipe(s) computed.
+[0m[1mPlease try smaller step sizes or larger Taylor model orders.
+
+[0m[1mResult of the safety verification on the computed flowpipes: [0m[1m[32mSAFE
+
+[0mTotal time cost:[1m 0.205696[0m seconds.
+

@@ -1,0 +1,22 @@
+{
+  "id": "bat-f1",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "794c12be020a5db884da8ad6879a8172c698ca5b58bcb3ff730ddd7974e36dfe",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 2.169292189180851
+  },
+  "composed_ha": [
+    27,
+    204
+  ],
+  "status": "timeout",
+  "exit_code": -9,
+  "wall_seconds": 3600.0043411208317,
+  "solver_seconds": 3600.0043411208317,
+  "phase": "solver",
+  "outcome": "timeout"
+}

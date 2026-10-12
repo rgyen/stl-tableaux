@@ -1,0 +1,15 @@
+start: section*
+section: WORD parents? "{" assignment* "}"
+parents: "extends" WORD ("," WORD)*
+assignment: WORD "=" value?
+?value: STRING -> string_value
+      | NUMBER -> number_value
+      | RUN -> run_value
+WORD: /[A-Za-z_0-9\/.-]+/
+NUMBER: /-?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?/
+STRING: /"[^"\r\n]*"/
+RUN: "run-all" | "run-labeled-only"
+%import common.WS
+%ignore WS
+%ignore /#[^\r\n]*/
+%ignore /(?s:''' .*? ''')/x

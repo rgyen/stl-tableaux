@@ -1,0 +1,79 @@
+[ 0, 10 ] x;
+[0,4] time;
+[0,8] gClk;
+{
+    mode 1;
+    invt:
+        (and (and (0.0 <= x) (x <= 10.0)) (and (gClk >= 0.0) (and (x < 8.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = 0.8 - 0.0443 * sqrt(x);
+    jump:
+            (true) ==> @5(and (gClk' = gClk) (x' = x));
+            (and (x <= 10.0) (and (0.0 <= x) (x >= 2.0))) ==> @6(and (gClk' = gClk) (x' = x));
+}
+{
+    mode 2;
+    invt:
+        (and (gClk >= 0.0) (gClk <= 8.0));
+    flow:
+        d/dt[x] = 0.0;
+        d/dt[gClk] = 1.0;
+    jump:
+            (true) ==> @7(and (gClk' = 0.0) (x' = x));
+}
+{
+    mode 3;
+    invt:
+        (and (and (0.0 <= x) (x <= 10.0)) (and (gClk >= 0.0) (and (x < 8.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = 0.8 - 0.0443 * sqrt(x);
+    jump:
+            (true) ==> @4(and (gClk' = gClk) (x' = x));
+            (and (x <= 10.0) (and (0.0 <= x) (x >= 2.0))) ==> @7(and (gClk' = gClk) (x' = x));
+}
+{
+    mode 4;
+    invt:
+        (and (and (0.0 <= x) (and (x <= 10.0) (x < 0.0 + 0.001))) (and (gClk >= 0.0) (and (x < 8.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = 0.8 - 0.0443 * sqrt(x);
+    jump:
+            (true) ==> @1(and (gClk' = gClk) (x' = x));
+}
+{
+    mode 5;
+    invt:
+    flow:
+        d/dt[gClk] = 0.0;
+        d/dt[x] = 0.0;
+    jump:
+}
+{
+    mode 6;
+    invt:
+        (and (and (x > 1.0) (0.0 <= x)) (and (x <= 10.0) (and (gClk >= 0.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = -0.0443 * sqrt(x);
+    jump:
+            (and (x <= 10.0) (and (0.0 <= x) (x < 5.0))) ==> @1(and (gClk' = gClk) (x' = x));
+            (true) ==> @5(and (gClk' = gClk) (x' = x));
+}
+{
+    mode 7;
+    invt:
+        (and (and (x > 1.0) (0.0 <= x)) (and (x <= 10.0) (and (gClk >= 0.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = -0.0443 * sqrt(x);
+    jump:
+            (and (x <= 10.0) (and (0.0 <= x) (x < 5.0))) ==> @3(and (gClk' = gClk) (x' = x));
+            (and (x <= 10.0) (and (0.0 <= x) (x < 5.0))) ==> @4(and (gClk' = gClk) (x' = x));
+}
+init:
+@2 (and (x <= 4.5) (and (gClk = 0.0) (4.0 <= x)));
+goal:
+@5 true;

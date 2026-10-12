@@ -1,0 +1,6 @@
+{
+  "id": "oscl-f1",
+  "model": "oscl",
+  "formula_id": "f1",
+  "dynamics": "linear"
+}

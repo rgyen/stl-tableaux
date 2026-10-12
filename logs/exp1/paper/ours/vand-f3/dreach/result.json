@@ -1,0 +1,13 @@
+{
+  "id": "vand-f3",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    11,
+    42
+  ],
+  "status": "complete",
+  "solver_seconds": 1.43,
+  "outcome": "bounded_unsat"
+}

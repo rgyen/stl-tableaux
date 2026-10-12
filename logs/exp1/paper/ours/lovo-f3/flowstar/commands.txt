@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/lovo/lovo.model -goal f3 -default-cfg ../../src/default.cfg -solver flowstar -o kmbae-lovo >& kmbae-lovo/lovo/f3/flowstar/gen-log.txt
+
+# solver-launch
+bash out/lovo/f3/flowstar/run.sh

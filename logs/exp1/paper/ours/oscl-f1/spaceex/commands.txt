@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/linear/oscl/oscl.model -goal f1 -default-cfg ../../src/default.cfg -solver spaceex -o log >& log/oscl/f1/spaceex/gen-log.txt
+
+# solver-launch
+bash out/oscl/f1/spaceex/run.sh

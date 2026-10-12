@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/linear/rail02/rail02.model -goal f2 -default-cfg ../../src/default.cfg -solver sat-reach -o log >& log/rail02/f2/sat-reach/gen-log.txt
+
+# solver-launch
+bash out/rail02/f2/sat-reach/run.sh

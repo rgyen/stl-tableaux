@@ -1,0 +1,22 @@
+{
+  "id": "bat-f2",
+  "tool": "sat-reach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "794c12be020a5db884da8ad6879a8172c698ca5b58bcb3ff730ddd7974e36dfe",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.8187545812688768
+  },
+  "composed_ha": [
+    25,
+    134
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 3.138114769011736,
+  "solver_seconds": 3.138114769011736,
+  "phase": "solver",
+  "outcome": "safe"
+}

@@ -1,0 +1,4 @@
+Exception in Hyst while exporting.
+For more information about the error, use the -verbose or -debug flag.
+sat-reach: /usr/local/include/boost/smart_ptr/shared_ptr.hpp:734: typename boost::detail::sp_member_access<T>::type boost::shared_ptr<T>::operator->() const [with T = initial_state; typename boost::detail::sp_member_access<T>::type = initial_state*]: Assertion `px != 0' failed.
+log/spac02/f3/sat-reach/run.sh: line 4: 1511238 Aborted                 (core dumped) ./../../3rd_party/sat-reach/sat-reach -m log/spac02/f3/sat-reach/model/model.xml -c log/spac02/f3/sat-reach/model/model.cfg -C ../../3rd_party/sat-reach/Model-Translator.jar --time-horizon 3 --time-step 0.5 -v x,x --tmp-path log/spac02/f3/sat-reach -e bmc --depth 5

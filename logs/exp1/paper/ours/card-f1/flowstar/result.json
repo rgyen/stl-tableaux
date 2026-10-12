@@ -1,0 +1,13 @@
+{
+  "id": "card-f1",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    7,
+    13
+  ],
+  "status": "timeout",
+  "solver_seconds": 3600.0,
+  "outcome": "timeout"
+}

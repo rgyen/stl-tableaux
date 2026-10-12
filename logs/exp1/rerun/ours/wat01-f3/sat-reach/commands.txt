@@ -1,0 +1,8 @@
+# generation
+cd /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/wat01-f3/sat-reach
+/home/artifact/stl-tableaux/.venv-stlauto-paper/bin/python -u /home/artifact/stl-tableaux/src/stl-tableaux/run /home/artifact/stl-tableaux/benchmarks/exp1/linear/wat01/wat01.model -goal f3 -solver sat-reach -default-cfg /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/wat01-f3/sat-reach/default.cfg -o out
+
+# solver-launch
+cd /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/wat01-f3/sat-reach
+bash /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/wat01-f3/sat-reach/out/wat01/f3/sat-reach/run.sh
+

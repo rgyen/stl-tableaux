@@ -1,0 +1,17 @@
+{
+  "id": "f150",
+  "implementation": "automata",
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 5.483045586850494,
+  "raw": [
+    28,
+    67
+  ],
+  "reduced": [
+    11,
+    26
+  ],
+  "generation_seconds": 0.474,
+  "reduction_seconds": 0.051
+}

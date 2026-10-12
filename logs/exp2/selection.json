@@ -1,0 +1,2497 @@
+{
+  "cases": [
+    {
+      "id": "f1",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 2.0, 5.0 ] (and ([][ 0.0, 2.0 ] ((x1 >= (23.0 - 0.01)) U[ 0.0, inf ) (x2 <= (24.0 + 0.01)))) (<>[ 2.0, 10.0 ] (x2 <= (24.0 + 0.01)))))",
+      "size": 8,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "a51c5bf8748e8433dbb625c5b6ed2d27bdfbe617ced03f47c402238b183cf5f6"
+    },
+    {
+      "id": "f2",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.0, 4.0 ] (and (x2 < (19.0 + 0.01)) ([][ 5.0, 15.0 ] (x2 <= (23.0 + 0.01)))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "89b09668053ab9a988803f6db9bcfeb12131fba672df1b893c36ee4f2be6236a"
+    },
+    {
+      "id": "f3",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x2 <= (18.0 + 0.01)) R[ 0.0, inf ) (<>[ 3.0, 5.0 ] (x1 >= (19.0 - 0.01))))",
+      "size": 4,
+      "depth": 2,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 24,
+      "prepared_sha256": "30d293fc9d1cdda0ff227734a4907a792d519fb69c1419274fac11df6344803d"
+    },
+    {
+      "id": "f4",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.0, 3.0 ] (x1 > (17.0 - 0.01)))",
+      "size": 2,
+      "depth": 1,
+      "resolution": 2,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "18a1451b504deadc5dfea78b6a85e7ab9fc11ae4270c607fe3d0d0b56ad16bd8"
+    },
+    {
+      "id": "f5",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (and (x1 > (16.0 - 0.01)) ([][ 1.1, 6.0 ] (x2 < (23.0 + 0.01)))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "bc0336fa67757b5e8a9ddca78403c235c83b08a0f8d1c5acb1b734725d704a70"
+    },
+    {
+      "id": "f6",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.0, 3.0 ] (x1 < (0.0 + 0.01)))",
+      "size": 2,
+      "depth": 1,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "fabb5c4124640c94a13aa1659abbeb24c4d9a81826d20ae1da41e4dfd0942717"
+    },
+    {
+      "id": "f7",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.0, 2.2 ] (<>[ 1.0, 12.3 ] (x1 < (0.0 + 0.01))))",
+      "size": 3,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula"
+      ],
+      "complexity": 15,
+      "prepared_sha256": "6837ea16ec14c59c74afedc5fa2b55ba70dbe6bf26b9bca42050eea773712fa2"
+    },
+    {
+      "id": "f8",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.0, 2.3 ] (x1 < (0.0 + 0.01)))",
+      "size": 2,
+      "depth": 1,
+      "resolution": 2,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "823cdd81a868ebbe6bc8d8acba0e5b0a2131caab7807cadea5b39dd27256b424"
+    },
+    {
+      "id": "f9",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 2.2, 2.5 ] ([][ 1.0, 2.3 ] (x1 < (0.0 + 0.01))))",
+      "size": 3,
+      "depth": 2,
+      "resolution": 9,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 50,
+      "prepared_sha256": "2223f20cb39d03e8055df5e9be69635c0e5ae16e6a3a3bd11b14b04fc832d051"
+    },
+    {
+      "id": "f10",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (<>[ 0.0, inf ) (x2 <= (25.0 + 0.01))) (<>[ 1.0, 12.3 ] (x1 >= (0.0 - 0.01))))",
+      "size": 5,
+      "depth": 1,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula"
+      ],
+      "complexity": 18,
+      "prepared_sha256": "cd29987e0a8f9eac1583d1b9b9cc12d99eddc8e09f25e2edec9fd83f5c02d874"
+    },
+    {
+      "id": "f11",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 < (0.0 + 0.01)) R[ 0.0, inf ) (x1 > (0.0 - 0.01)))",
+      "size": 3,
+      "depth": 1,
+      "resolution": 0,
+      "operators": [
+        "ReleaseFormula"
+      ],
+      "complexity": 4,
+      "prepared_sha256": "02fe1e7947e8d0480ca445aeb30acde8f0bb02adf3303b102731046aff602dd3"
+    },
+    {
+      "id": "f12",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.2, 10.2 ] ((x1 < (0.0 + 0.01)) U[ 0.0, inf ) (x1 > (0.0 - 0.01))))",
+      "size": 4,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 18,
+      "prepared_sha256": "ab20ae7c3416dda4d4abde5aba56e4f240694f297a65a080049518d68b787e07"
+    },
+    {
+      "id": "f13",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) (<>[ 0.0, 2.6 ] (x2 > (0.0 - 0.01))))",
+      "size": 3,
+      "depth": 2,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 10,
+      "prepared_sha256": "b14b8f006f9c9be263ffebd41a1998f4a4c29276b59e8122b947af4dc6068746"
+    },
+    {
+      "id": "f14",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.2 ] ((and (x2 >= (1.0 - 0.01)) (x1 <= (1.0 + 0.01))) U[ 0.0, inf ) (x3 <= (5.0 + 0.01)))) (<>[ 1.2, 3.3 ] (x3 <= (5.0 + 0.01))))",
+      "size": 9,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "88ae31455880a9353945b433a054f806caa57179890777e82fd191126f9c81c4"
+    },
+    {
+      "id": "f15",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.5 ] ((and (x1 > (1.0 - 0.01)) (x2 <= (2.0 + 0.01))) U[ 0.0, inf ) (<>[ 0.0, inf ) (x3 <= (4.0 + 0.01))))) (<>[ 1.5, 2.3 ] (<>[ 0.0, inf ) (x3 <= (4.0 + 0.01)))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 56,
+      "prepared_sha256": "d07df50f01bd84d1c1dce6a75f8b03932a85ad811b248e14fed4c6f3d503e5f8"
+    },
+    {
+      "id": "f16",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.0, 4.0 ] (or (x2 <= (19.0 + 0.01)) (<>[ 5.0, 15.0 ] (x2 <= (23.0 + 0.01)))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "8363d741d79c41fb8682bf8436cb5dc8a6adaca1e53f81460f0d17c48def675c"
+    },
+    {
+      "id": "f17",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (<>[ 1.0, 3.0 ] (x1 <= (22.0 + 0.01))) ((x2 <= (1.0 + 0.01)) U[ 0.0, inf ) (x3 <= (1.0 + 0.01))))",
+      "size": 6,
+      "depth": 1,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "fcfbb39b0237c38751ba0c3a503356ae30684a0eacf003bff9d570be988ac1bb"
+    },
+    {
+      "id": "f18",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (<>[ 1.0, 3.0 ] (x1 <= (22.0 + 0.01))) ((x2 <= (1.0 + 0.01)) R[ 0.0, inf ) (x3 <= (1.0 + 0.01))))",
+      "size": 6,
+      "depth": 1,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "db259854d345aa561e1c52d23f0924c5a3af1f9e4d1ee1c09d2bb3e1e2a6e44f"
+    },
+    {
+      "id": "f19",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (or ([][ 1.2, 3.3 ] (x3 <= (1.0 + 0.01))) (<>[ 0.0, 1.2 ] ((x2 <= (1.0 + 0.01)) R[ 0.0, inf ) (x3 <= (1.0 + 0.01))))) ([][ 0.0, inf ) (x1 <= (22.0 + 0.01))))",
+      "size": 10,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 36,
+      "prepared_sha256": "2298724a2c390f7cd90a2e4a7ce409aaca28748bb59ed4905f553824149365f2"
+    },
+    {
+      "id": "f20",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.2, 3.3 ] (x2 <= (1.0 + 0.01))) (<>[ 0.0, 1.2 ] (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) (x2 <= (1.0 + 0.01)))))",
+      "size": 8,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "7cfafb5e28287df293f8bf15eaf45873597aedda68d6337871c7632845e3f8ca"
+    },
+    {
+      "id": "f21",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.2, 3.3 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.2 ] ((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 9,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 36,
+      "prepared_sha256": "9185b400d687d83611ed9f5ce6c9a9ead016210eef46c35cb3b50bff5fcb3a2c"
+    },
+    {
+      "id": "f22",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.2, 3.3 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.2 ] (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 10,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "ea67f4e311a85fee1afd3f8defe42ce3d3033cebd322883cfce008c4205d95fe"
+    },
+    {
+      "id": "f23",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 1.0, 2.0 ] (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "4b7f42aad4129dcb85ec0d019c1e32ab003b41a683dda67b9852323eecb61546"
+    },
+    {
+      "id": "f24",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) (<>[ 1.0, 2.0 ] (x2 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "1b88c927472d68fd8ace0e2b9d6649f4b96a21136c2e832a776978fccd65e832"
+    },
+    {
+      "id": "f25",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) (<>[ 3.0, 4.0 ] (x2 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 4,
+      "operators": [
+        "FinallyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 35,
+      "prepared_sha256": "f71224678d2aac9bdcbb6acc18096ca305d66893afe408c96fba1cf39411cf17"
+    },
+    {
+      "id": "f26",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.2 ] (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) U[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))) (<>[ 1.2, 3.3 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 10,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "2c7f06a9b05893190eed62c5d15e7fe0d8f014d6fd1073f46b5b41872c3d1774"
+    },
+    {
+      "id": "f27",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 1.0, 2.0 ] (x1 <= (22.0 + 0.01))) U[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "ff8e3b2631cc21379436e351745eba30e67abb72e47b51f50bc7b4b616f8246a"
+    },
+    {
+      "id": "f28",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] (x1 <= (22.0 + 0.01))) U[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "4c4010dfcf34c7c7bbccd63a2c88c69dad1787940ec4dfee4144261a718c1dd8"
+    },
+    {
+      "id": "f29",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) U[ 0.0, inf ) (<>[ 1.0, 2.0 ] (x2 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "7715c7345e401b3279204f8b8d610118377f091ef2d82e45f01ea593da822fc9"
+    },
+    {
+      "id": "f30",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] (x1 <= (22.0 + 0.01))) U[ 0.0, inf ) (<>[ 3.0, 4.0 ] (x2 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 4,
+      "operators": [
+        "FinallyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 35,
+      "prepared_sha256": "46ac7c09afe4ac9e7a6ec125852e92dcad333b80d159713c5734559f85f028db"
+    },
+    {
+      "id": "f31",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((or ([][ 1.0, 2.0 ] (x2 <= (1.0 + 0.01))) (<>[ 0.0, 1.0 ] ((x1 <= (1.0 + 0.01)) R[ 0.0, inf ) (x2 <= (1.0 + 0.01))))) R[ 0.0, inf ) ((x3 <= (1.0 + 0.01)) R[ 0.0, inf ) (x4 <= (1.0 + 0.01))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "d8695d187edb9fb6ba5566b20d38274a693e83cd0596aa1cb330fd75be91c1f4"
+    },
+    {
+      "id": "f32",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(((x1 <= (1.0 + 0.01)) R[ 0.0, inf ) (x2 <= (1.0 + 0.01))) U[ 0.0, inf ) ((x3 <= (1.0 + 0.01)) R[ 0.0, inf ) (x4 <= (1.0 + 0.01))))",
+      "size": 7,
+      "depth": 2,
+      "resolution": 0,
+      "operators": [
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "999a22c9d3540d27d30607e04c4f8587d6108eabe9939e10e48a7fbbf2cc323a"
+    },
+    {
+      "id": "f33",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((and ([][ 0.0, 1.0 ] ((x1 <= (1.0 + 0.01)) U[ 0.0, inf ) (x2 <= (1.0 + 0.01)))) (<>[ 1.0, 2.0 ] (x2 <= (1.0 + 0.01)))) U[ 0.0, inf ) ((x3 <= (1.0 + 0.01)) R[ 0.0, inf ) (x4 <= (1.0 + 0.01))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "14a19444849668c3c85cc0a2b91c5e2ed8b7a08205df90f954d456d6993a9293"
+    },
+    {
+      "id": "f34",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((or ([][ 1.0, 2.0 ] (x2 <= (1.0 + 0.01))) (<>[ 0.0, 1.0 ] ((x1 <= (1.0 + 0.01)) R[ 0.0, inf ) (x2 <= (1.0 + 0.01))))) R[ 0.0, inf ) ((x3 <= (1.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1.0 + 0.01))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "c4e9a6d1edaf08c9144e7cb351a9d18eb280c205985ec071dac2be90dbb036cc"
+    },
+    {
+      "id": "f35",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((and ([][ 0.0, 1.0 ] ((x1 <= (1.0 + 0.01)) U[ 0.0, inf ) (x2 <= (1.0 + 0.01)))) (<>[ 1.0, 2.0 ] (x2 <= (1.0 + 0.01)))) U[ 0.0, inf ) ((x3 <= (1.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1.0 + 0.01))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "8364394c838f4508d187b13e8f8cfb590f79ed5399fe987c98d1d692c5bb428a"
+    },
+    {
+      "id": "f36",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(((x1 <= (1.0 + 0.01)) U[ 0.0, inf ) (x2 <= (1.0 + 0.01))) R[ 0.0, inf ) ((x3 <= (1.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1.0 + 0.01))))",
+      "size": 7,
+      "depth": 2,
+      "resolution": 0,
+      "operators": [
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "1b24ef0b1f659d18abcd39bf4ac0b19f5d1ed014e39558f006ef4854e28f4cf6"
+    },
+    {
+      "id": "f37",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] ((x3 <= (1.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1.0 + 0.01)))) (<>[ 0.0, 1.0 ] (((x1 <= (1.0 + 0.01)) U[ 0.0, inf ) (x2 <= (1.0 + 0.01))) R[ 0.0, inf ) ((x3 <= (1.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1.0 + 0.01))))))",
+      "size": 13,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 48,
+      "prepared_sha256": "9eab3991de61e4b7ade109c6636fc480988de022a478eba2f2a34d6d7c7c9d9a"
+    },
+    {
+      "id": "f38",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, 2.0 ] (and ([][ 0.0, 2.0 ] ((x3 <= (1.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1.0 + 0.01)))) (<>[ 2.0, 3.0 ] (x4 <= (1.0 + 0.01)))))",
+      "size": 8,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 44,
+      "prepared_sha256": "5a3fead4457dbd27343b434fb5f75b8fb6963f23b54f8e64a076f0111417e06e"
+    },
+    {
+      "id": "f39",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, 3.0 ] (or ([][ 2.0, 3.0 ] (x4 <= (1.0 + 0.01))) (<>[ 0.0, 2.0 ] ((x3 <= (1.0 + 0.01)) R[ 0.0, inf ) (x4 <= (1.0 + 0.01))))))",
+      "size": 8,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 44,
+      "prepared_sha256": "0462d5a205fc9a162a566aa7cb403e319a48ac97ce88413fed9c37b56e9d7ff5"
+    },
+    {
+      "id": "f40",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) (x2 <= (22.0 + 0.01)))",
+      "size": 5,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 24,
+      "prepared_sha256": "bd53786c4e35aef22dd6128761642b54744384307f39726a6b2aeb02986fbfbc"
+    },
+    {
+      "id": "f41",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "5319cf3c154e54e0002f412e9fd2f4c4f0fe122f0c04c279d487463aa794cb07"
+    },
+    {
+      "id": "f42",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) U[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "172dfbae44e09916f4cb1358e10e7272e1ef578dc707935ac52cab9fe9dc056b"
+    },
+    {
+      "id": "f43",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) (x2 <= (22.0 + 0.01)))",
+      "size": 5,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 24,
+      "prepared_sha256": "b674ad5fe96a09e5737f8d7fb80abb7aa23b946aaed5da0ff87c7ee2de480b65"
+    },
+    {
+      "id": "f44",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 0.0, inf ) ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 18,
+      "prepared_sha256": "fd3990579603acf197fb1df5e6e5aefc1b64b17ddc199285f63c2c0fc6f5c407"
+    },
+    {
+      "id": "f45",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "446203dfd396f2a6a31b88b23845cd8f8251d0bc992668af68e48211bb2ba022"
+    },
+    {
+      "id": "f46",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "01a14a0f586a0ca381f622a9df0077a6a0691ab028805626e56d77f5361d32e1"
+    },
+    {
+      "id": "f47",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 18,
+      "prepared_sha256": "f9bf5fe4dc63ccc3764dda3e36ee541dc8cdb4f5e2be3c6c343511b8e0abd125"
+    },
+    {
+      "id": "f48",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.0, 2.0 ] (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "f4ad2764f22cf33c9d494a4e274813b8cd524558ed6b204c08d646d54328d2c0"
+    },
+    {
+      "id": "f49",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.0 ] ((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 1.0, 2.0 ] (x2 <= (22.0 + 0.01))))",
+      "size": 9,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "233de64189532b327db807c5577f5c5664e4b44fd498ba731652a190bbbbfec0"
+    },
+    {
+      "id": "f50",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.0 ] ((<>[ 0.0, inf ) ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))) (<>[ 1.0, 2.0 ] ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "82768be53685e738cddef52e24f4b24e2f20e4d60ba32aaf8193c3a8e27e2260"
+    },
+    {
+      "id": "f51",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.0 ] (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) U[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))) (<>[ 1.0, 2.0 ] (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 12,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 48,
+      "prepared_sha256": "6aa1441cc9d887dadcd9029c45e761f66f50d12dc0fe19e0988d52a84e3a9850"
+    },
+    {
+      "id": "f52",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] (x2 <= (22.0 + 0.01))) (<>[ 0.0, 1.0 ] ((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 9,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "cea12fe9bff4002262b3bca6a14d1f26025adbabe8aedecdc18eacd7e8c53e15"
+    },
+    {
+      "id": "f53",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] ((<>[ 0.0, inf ) ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "53ce204bcbb3d389d11deca5e64ac59eca12b8d0e44e61175c7b105dd7896db3"
+    },
+    {
+      "id": "f54",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] ((<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "81dbca80c8c8271fa5581fc63a9f83661619e28165eef1777ed238dbc0331bab"
+    },
+    {
+      "id": "f55",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))) (<>[ 0.0, 1.0 ] (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))))",
+      "size": 12,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 48,
+      "prepared_sha256": "a232a43e95587dc9aa320eaf198f4ccdf66eedd30615ba843d83253ff197ec24"
+    },
+    {
+      "id": "f56",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (or ([][ 1.0, 2.0 ] ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "7c5cdbd1ced235f9b4d88d7dbfa0692a6cc9ea0df3212b85e8627e4167630a71"
+    },
+    {
+      "id": "f57",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (or ([][ 1.0, 2.0 ] (x2 <= (22.0 + 0.01))) (<>[ 0.0, 1.0 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 10,
+      "depth": 5,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "e38365a7cb05d7bd026aa6139ba83699f9abc037213ae4899b287cf363e9145a"
+    },
+    {
+      "id": "f58",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (or ([][ 1.0, 2.0 ] ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))))))",
+      "size": 12,
+      "depth": 5,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 51,
+      "prepared_sha256": "33ceb8d958cfe52a272b68a7ff435d0d2d072da66e7932ab9b729c9bf00107c1"
+    },
+    {
+      "id": "f59",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01))))) U[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "84611c1040fbc5ddf4b5c9e9fe6699f205c90afcd6fadd3867f5e847e60e18bd"
+    },
+    {
+      "id": "f60",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.1, 2.2 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "c544caa7f8a8d4a94cc6023aa833d4dc5213579ce1d5769b316d302a849e92fe"
+    },
+    {
+      "id": "f61",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) (<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 30,
+      "prepared_sha256": "fa8ef2bdb6de0f3498bf5508e2dfad27e806279ad21eabc84be67d39096bb93d"
+    },
+    {
+      "id": "f62",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 22,
+      "prepared_sha256": "5ba0b657708a0679541c45263a281133e28604412d3363e55799d7eeb31c6a66"
+    },
+    {
+      "id": "f63",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (and ([][ 0.0, 1.0 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))) (<>[ 1.0, 2.0 ] ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01))))))",
+      "size": 12,
+      "depth": 5,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 51,
+      "prepared_sha256": "e1be7705e4bea079005d804b531c50aa66aca0c1f5cd60ca94cdb5ca95b12758"
+    },
+    {
+      "id": "f64",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) (<>[ 0.0, inf ) ([][ 1.1, 2.3 ] (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 30,
+      "prepared_sha256": "9024b7a279a6959de9294fb90640803899a1049778fd080865cae604945e011c"
+    },
+    {
+      "id": "f65",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) (<>[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 0,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 10,
+      "prepared_sha256": "0e3dd071f755ad59e2962f22af91e42420af17ce4be55f55ced68dc5d35c2870"
+    },
+    {
+      "id": "f66",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ([][ 1.2, 3.3 ] (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 30,
+      "prepared_sha256": "44d4a759003cff296d0a4976978e9990499d1be6d895930c13b4676d0e1b8725"
+    },
+    {
+      "id": "f67",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 0,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 11,
+      "prepared_sha256": "27ddb3995e7d7183d154d6a8f4f8c8e3cdc4e495927cc4ba7d5fe31e26e59184"
+    },
+    {
+      "id": "f68",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (22.0 + 0.01)))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 22,
+      "prepared_sha256": "a7da28211de0511de84c0a0406148b459dc210ee42eae9551439a70a4beea6da"
+    },
+    {
+      "id": "f69",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) (([][ 1.1, 2.2 ] (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 8,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 36,
+      "prepared_sha256": "14c75e68d1e7ccc7121d144b719ab8e78a1453fc86c87902e5fbf393a16e271f"
+    },
+    {
+      "id": "f70",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) (<>[ 0.0, inf ) ([][ 1.1, 2.3 ] (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 30,
+      "prepared_sha256": "008ad13ac44c396621701cd992f6a342236e17631c98443f66ca2909f42dc774"
+    },
+    {
+      "id": "f71",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) (<>[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 0,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 10,
+      "prepared_sha256": "99efdd923a8143a4afad2ecc6686b15d4fa06b766ffe3fe411594d4c950e08b6"
+    },
+    {
+      "id": "f72",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) ([][ 1.2, 3.3 ] (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 30,
+      "prepared_sha256": "633db7c674057747dd6773ca998878a049e874850c27dc30e348c38f9f3a5800"
+    },
+    {
+      "id": "f73",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "877a07f214ccfb08d769d253033b3e1d148bcc45513e4e7fdcae322039c64a8c"
+    },
+    {
+      "id": "f74",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 0,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 11,
+      "prepared_sha256": "093f13754f74d04c054b4313e1c3737909e4d0922ca8d0fc3c585bc313f7772b"
+    },
+    {
+      "id": "f75",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) (<>[ 0.0, inf ) ((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))))",
+      "size": 7,
+      "depth": 5,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 36,
+      "prepared_sha256": "e8a4455123ead2eb919a7c09f397a2902121d3f77edf59d1cedaf2365b8c89f1"
+    },
+    {
+      "id": "f76",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 0,
+      "operators": [
+        "ReleaseFormula"
+      ],
+      "complexity": 7,
+      "prepared_sha256": "b4bf59670844aaf2bdc5b0b422d4623048e694762ed7520658280d5950068574"
+    },
+    {
+      "id": "f77",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) (<>[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "FinallyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "2bc1d0a9384c8e7f76754b92b17b17cfa42e8b94507fa2bc2bd425d28b8ff35f"
+    },
+    {
+      "id": "f78",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "FinallyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "1160ac46da80a3be6098154a53467a124ae0501caaf0d09a2f2bf2dac1082dbd"
+    },
+    {
+      "id": "f79",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "f83c7a02bad75431a8c5fb039d99212976ef2cda2510d48a1e72421d0e21c733"
+    },
+    {
+      "id": "f80",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 7,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 10,
+      "prepared_sha256": "a9f7bf3f5cc80bd3e930417da8499efc9844c1a679f445f20c68a874e7283f3e"
+    },
+    {
+      "id": "f81",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ([][ 1.2, 3.3 ] (x2 <= (22.0 + 0.01))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "c9c43133d48216f0bedfcee05b5233d74dddb4e312a6781b2e699fdc31059ccb"
+    },
+    {
+      "id": "f82",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.2, 3.2 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.2 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "b0220713917fbd368d2fe4657e289fdc6e4ec938c21786b96e02523e8df29505"
+    },
+    {
+      "id": "f83",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) (x3 <= (22.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 0,
+      "operators": [
+        "UntilFormula"
+      ],
+      "complexity": 7,
+      "prepared_sha256": "9efb740e635b5aa16d852815223bf76cf734ec301a72e6289cd45a66c4355f78"
+    },
+    {
+      "id": "f84",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) (<>[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "FinallyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "a09b1e93adbfc58af72c1fbbbc0c4a1b347b23bb8a1ec6863884aa4ccb0b5b4c"
+    },
+    {
+      "id": "f85",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "FinallyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "419bebe25857be56f7887d00c1f4b46c66ea85d4771d56a223a5da9f1b1097bb"
+    },
+    {
+      "id": "f86",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 9,
+      "prepared_sha256": "7b62a8fa2c62d303edfba31dc1f8dfff84176aa239a76a129314e21564c27862"
+    },
+    {
+      "id": "f87",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) (([][ 0.0, inf ) (x1 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 7,
+      "depth": 3,
+      "resolution": 0,
+      "operators": [
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 10,
+      "prepared_sha256": "6d954fe9de15578560fcfdad198797ff7b457b330e65706403b8e0f679a2f237"
+    },
+    {
+      "id": "f88",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 1.2, 3.3 ] (x2 <= (22.0 + 0.01))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "98122cafa4bab7bb38b69b69aaf0d377f84b83f5fdaf243f0e4ca828ba716153"
+    },
+    {
+      "id": "f89",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.2 ] ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01))))) (<>[ 1.2, 3.3 ] ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "aa0e22e531bf5a129fbf79a32a8b39dbaf0e2063aed88362141745501d2a19bf"
+    },
+    {
+      "id": "f90",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (and ([][ 0.0, 1.2 ] ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) (x3 <= (22.0 + 0.01))))) (<>[ 1.2, 3.3 ] ((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) (x3 <= (22.0 + 0.01))))))",
+      "size": 12,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 48,
+      "prepared_sha256": "46000fa20fa8bd2809850c19be1e35d919767a8fabf6a22625881f186437d65a"
+    },
+    {
+      "id": "f91",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) (<>[ 0.0, 2.4 ] ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 5,
+      "depth": 3,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 16,
+      "prepared_sha256": "2c1720108b62ceafbe50a43c63c723aee7278cb48d09c1b8ed55f0673069255c"
+    },
+    {
+      "id": "f92",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ([][ 0.0, 1.3 ] ([][ 0.0, inf ) (x3 <= (22.0 + 0.01)))))",
+      "size": 5,
+      "depth": 3,
+      "resolution": 1,
+      "operators": [
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 16,
+      "prepared_sha256": "f896de2c4130b18f707249836c7271075a4b138b48c04607ad378a7254229d06"
+    },
+    {
+      "id": "f93",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.2, 4.2 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "580acf69a73149d276f9c1480c1d0f0611152e365771ef0c837ac81c45916523"
+    },
+    {
+      "id": "f94",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.5, 5.5 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 8,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 36,
+      "prepared_sha256": "c242ea9cc3975b1ae2f690edfcd470ff1a7008edf60cb9727a51fc8610236333"
+    },
+    {
+      "id": "f95",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x1 <= (22.0 + 0.01)) R[ 0.0, inf ) (and ([][ 0.0, 1.2 ] ((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) ((x3 <= (22.0 + 0.01)) R[ 0.0, inf ) (x4 <= (22.0 + 0.01))))) (<>[ 1.2, 3.3 ] ((x3 <= (22.0 + 0.01)) R[ 0.0, inf ) (x4 <= (22.0 + 0.01))))))",
+      "size": 13,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 51,
+      "prepared_sha256": "7d9105a74ac7abc64dcffc0f4b33da8b9c3c1a5d62469482e5e1fbd7ad5e71ef"
+    },
+    {
+      "id": "f96",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, 2.4 ] ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 20,
+      "prepared_sha256": "cb78e2a38533bfb9818fed76bdc711a3820dfded76d3d8675e3617a4fd6e895a"
+    },
+    {
+      "id": "f97",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ([][ 0.0, 1.3 ] ([][ 0.0, inf ) (x3 <= (22.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 1,
+      "operators": [
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 20,
+      "prepared_sha256": "1be91d2b319aacd215ddd5261c73156f43258865fe1e4943c24c48055b6834e3"
+    },
+    {
+      "id": "f98",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01))))) R[ 0.0, inf ) ([][ 1.2, 3.3 ] (x2 <= (22.0 + 0.01))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "91e345f286c11fbc8497975e1b7c449f92a2d8a1c440bd7f42947ee99eb8b980"
+    },
+    {
+      "id": "f99",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ([][ 1.5, 5.5 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01)))))))",
+      "size": 9,
+      "depth": 5,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "289aeefec4ca0b76d9ca50756a402591e997e592fd771df7cfb24285cb757715"
+    },
+    {
+      "id": "f100",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 1.2, 2.2 ] (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) U[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01))))",
+      "size": 7,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 40,
+      "prepared_sha256": "a22718f3bee19ee1d4814d9783657ee3a82a183a95ccf5be7e01ab247e5bd0f6"
+    },
+    {
+      "id": "f101",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.2, 2.2 ] (<>[ 0.0, inf ) ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) U[ 0.0, inf ) (x3 <= (22.0 + 0.01))))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 44,
+      "prepared_sha256": "f5418c5858ac86a043001d2e22ad57a5b59f05ec5a4844004feda3998becaa26"
+    },
+    {
+      "id": "f102",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.2, 2.2 ] ([][ 0.0, inf ) ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) ((x2 <= (22.0 + 0.01)) R[ 0.0, inf ) (x3 <= (22.0 + 0.01))))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 44,
+      "prepared_sha256": "04db0f8ca7c0fb629f9294768e5fea4db6f633210765d0ab3080f481519eb1c6"
+    },
+    {
+      "id": "f103",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.2, 2.2 ] ((x1 <= (22.0 + 0.01)) U[ 0.0, inf ) (([][ 0.0, inf ) (x2 <= (22.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x3 <= (22.0 + 0.01))))))",
+      "size": 8,
+      "depth": 4,
+      "resolution": 3,
+      "operators": [
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 48,
+      "prepared_sha256": "7e973f23de04a38c53224c0027e84fca200a71a37a664aa8043dfff560a16602"
+    },
+    {
+      "id": "f104",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.2, 2.2 ] ([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01))))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 44,
+      "prepared_sha256": "7d24f4a1dfa06cb330fea351c8dde04085cf6d22ed68266413e2607c447e8278"
+    },
+    {
+      "id": "f105",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.2, 2.2 ] (<>[ 1.2, 4.2 ] (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 8,
+      "depth": 5,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 52,
+      "prepared_sha256": "2a024736c9564f6da04fe3eb9bd47bfebc583cf8ac322684d9747710fbe1b868"
+    },
+    {
+      "id": "f106",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.2, 2.2 ] ([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (22.0 + 0.01))))) U[ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 44,
+      "prepared_sha256": "74e0e21fa95139b6114dffaf3b5591e1dcb8f4e986fb08cd94a353d963c3edeb"
+    },
+    {
+      "id": "f107",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] ((<>[ 0.0, inf ) ([][ 1.0, 2.0 ] (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "358f91cd8d4800d406280c744835fc70c3ea3b942a8752b0bd52661ab59fe72b"
+    },
+    {
+      "id": "f108",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] ((<>[ 0.0, inf ) ([][ 1.0, 2.0 ] (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "814105c92619e57f654af6ac1facdd1e9c1f0a3aef8b03f9988ad6ad49db18e1"
+    },
+    {
+      "id": "f109",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] ([][ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] (([][ 0.0, inf ) (<>[ 1.0, 2.0 ] (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "a3700fcd352361eb36f788bb96339039d3c63e2ad8c4c38ef984390149167108"
+    },
+    {
+      "id": "f110",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] (([][ 0.0, inf ) (<>[ 1.0, 2.0 ] (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "e17eb88472d952f6d412f6b2529fcea1e6606be124935c6c1864be1eb80fb338"
+    },
+    {
+      "id": "f111",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (<>[ 0.0, inf ) (or ([][ 2.0, 10.0 ] (x2 <= (24.0 + 0.01))) (<>[ 0.0, 2.0 ] ((x1 >= (23.0 - 0.01)) R[ 0.0, inf ) (x2 <= (24.0 + 0.01)))))) ((x2 <= (18.0 + 0.01)) U[ 0.0, inf ) ([][ 3.0, 5.0 ] (x1 >= (19.0 - 0.01)))))",
+      "size": 13,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 64,
+      "prepared_sha256": "b8cf85fce874e8ad15afa80b892d900d01814e46defd65e4783fb873dcaa027f"
+    },
+    {
+      "id": "f112",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (<>[ 0.0, inf ) (or ([][ 2.0, 10.0 ] (x2 <= (24.0 + 0.01))) (<>[ 0.0, 2.0 ] ((x1 >= (23.0 - 0.01)) R[ 0.0, inf ) (x2 <= (24.0 + 0.01)))))) ((<>[ 3.0, 5.0 ] (x2 <= (18.0 + 0.01))) R[ 0.0, inf ) (x1 >= (19.0 - 0.01))))",
+      "size": 13,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 64,
+      "prepared_sha256": "0ec037b873c16c5ec3a328c5c6dfaa1d8add0fc86255b9cd5f68e304af4213fe"
+    },
+    {
+      "id": "f113",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (<>[ 0.0, inf ) (or ([][ 2.0, 10.0 ] (x2 <= (24.0 + 0.01))) (<>[ 0.0, 2.0 ] ((x1 >= (23.0 - 0.01)) R[ 0.0, inf ) (x2 <= (24.0 + 0.01)))))) ((x2 <= (18.0 + 0.01)) U[ 0.0, inf ) ([][ 3.0, 5.0 ] (x3 <= (20.0 + 0.01)))))",
+      "size": 13,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 64,
+      "prepared_sha256": "57a760aff318efd84b545160191726e30a021469b0bd1d886a8b3476af1fbc9e"
+    },
+    {
+      "id": "f114",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (<>[ 0.0, inf ) (or ([][ 2.0, 10.0 ] (x2 <= (24.0 + 0.01))) (<>[ 0.0, 2.0 ] ((x1 >= (23.0 - 0.01)) R[ 0.0, inf ) (x2 <= (24.0 + 0.01)))))) ((<>[ 3.0, 5.0 ] (x2 <= (18.0 + 0.01))) R[ 0.0, inf ) (x3 <= (20.0 + 0.01))))",
+      "size": 13,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 64,
+      "prepared_sha256": "8ebd6f04956bedb47099051fe782e909259531c75d03d9c5eaa290c2fd114b4e"
+    },
+    {
+      "id": "f115",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (1137.0 + 0.01))))) R[ 0.0, inf ) ([][ 1.2, 3.3 ] (x2 <= (1137.0 + 0.01))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "394b260963fa5e4fdd98f9d1969f0da97b92a142c6c75d0b0ea7b2dccbc05f39"
+    },
+    {
+      "id": "f116",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or (x3 < (-1.0 + 0.01)) ([][ 1.5, 3.0 ] (or (x3 > (0.0 - 0.01)) (or (x1 > (-1.0 - 0.01)) (x4 > (0.0 - 0.01))))))",
+      "size": 8,
+      "depth": 1,
+      "resolution": 2,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "311c44cfb8592aa0ea9b4c52c03bbcf1fc0f11128b011696b30dc4503c5c1d7a"
+    },
+    {
+      "id": "f117",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.2, 3.3 ] ([][ 0.0, inf ) (x2 <= (1139.0 + 0.01)))) (<>[ 0.0, 1.2 ] (([][ 0.0, inf ) (x1 <= (1139.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (1139.0 + 0.01))))))",
+      "size": 10,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "728464c06fe82dcd39fc7bb733da57ab0f8f5e8d115bfcbd9575ad620aae536a"
+    },
+    {
+      "id": "f118",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.5, 3.0 ] (and ([][ 0.0, 3.0 ] (x2 < (1.0 + 0.01))) (<>[ 0.0, 3.0 ] (x3 < (0.0 + 0.01)))))",
+      "size": 6,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 24,
+      "prepared_sha256": "5ac6eae2bbc39e9a02148a0c3fcd3fd4ba156839b55b29fa2908bc3dd6b9d895"
+    },
+    {
+      "id": "f119",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.2, 3.3 ] ([][ 0.0, inf ) (x2 <= (1141.0 + 0.01)))) (<>[ 0.0, 1.2 ] ((x1 <= (1141.0 + 0.01)) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (1141.0 + 0.01))))))",
+      "size": 9,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 36,
+      "prepared_sha256": "04d9964541cfd2f22b8968098f363018af903f1f88ac4f36c4682e2c77c0d374"
+    },
+    {
+      "id": "f120",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, 3.0 ] ([][ 1.5, 3.0 ] (<>[ 1.5, 3.0 ] ([][ 0.0, 3.0 ] (and (and (x3 > (-1.0 - 0.01)) (x3 < (1.0 + 0.01))) (and (x4 > (0.0 - 0.01)) (x1 < (1.0 + 0.01))))))))",
+      "size": 11,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "c84bae82f8cf50ba275d406bc515ded18b697d1a6b180a477955575f61a54752"
+    },
+    {
+      "id": "f121",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.2 ] (([][ 0.0, inf ) (x1 <= (1143.0 + 0.01))) U[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (1143.0 + 0.01))))) (<>[ 1.2, 3.3 ] ([][ 0.0, inf ) (x2 <= (1143.0 + 0.01)))))",
+      "size": 10,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "f26cd661affc54df8557415e52fc048daa37f10a8f0c760e27364667c1dc4028"
+    },
+    {
+      "id": "f122",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ([][ 1.5, 3.0 ] (or (x3 < (-1.0 + 0.01)) (or (and (x3 < (-1.0 + 0.01)) (<>[ 0.0, 3.0 ] (x1 < (-1.0 + 0.01)))) (or (x4 < (0.0 + 0.01)) ([][ 0.0, 3.0 ] (x1 > (0.0 - 0.01))))))))",
+      "size": 13,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 48,
+      "prepared_sha256": "261797b9fed8af7a7d7ab6861ffc5e6b4642e64208453ec045fb0c8fc37ef5c7"
+    },
+    {
+      "id": "f123",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] ((x3 <= (1124.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1124.0 + 0.01)))) (<>[ 0.0, 1.0 ] (((x1 <= (1124.0 + 0.01)) U[ 0.0, inf ) (x2 <= (1124.0 + 0.01))) R[ 0.0, inf ) ((x3 <= (1124.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1124.0 + 0.01))))))",
+      "size": 13,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 48,
+      "prepared_sha256": "3d6f96b42c8aef295e9eb9df7e1987350ba25d34d0a6ee33f99c0550bc7d89f8"
+    },
+    {
+      "id": "f124",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, 3.0 ] (and ([][ 0.0, 2.0 ] ((x4 < (0.0 + 0.01)) U[ 0.0, inf ) (x2 > (0.0 - 0.01)))) (<>[ 2.0, 3.0 ] (x2 > (0.0 - 0.01)))))",
+      "size": 8,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 44,
+      "prepared_sha256": "badc50268f05effae9bacb24b7c81aac9062d75a2d1f5730d3696c9afbceecea"
+    },
+    {
+      "id": "f125",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.2, 3.3 ] (x2 <= (1126.0 + 0.01))) (<>[ 0.0, 1.2 ] (([][ 0.0, inf ) (x1 <= (1147.0 + 0.01))) R[ 0.0, inf ) (x2 <= (1126.0 + 0.01)))))",
+      "size": 8,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "f22ec611eda129d499651c04699946fddf3902dc459ad01c94353e403aa5d1bb"
+    },
+    {
+      "id": "f126",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (and (x1 > (1142.0 - 0.01)) ([][ 1.1, 6.0 ] (x2 < (1149.0 + 0.01)))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "00468abfb3363cc3a58474b4bf492e991f6a382b42671858d7f4e813267bcde6"
+    },
+    {
+      "id": "f127",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.5, 3.0 ] (or (x1 < (-1.0 + 0.01)) (and ([][ 0.0, 1.5 ] ((x2 < (1.0 + 0.01)) U[ 0.0, inf ) (x3 < (-1.0 + 0.01)))) (<>[ 1.5, 3.0 ] (x3 < (-1.0 + 0.01))))))",
+      "size": 10,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "9f94377c069cfb610213914f322231748ae5a6bee9f9b52e0a8dc7e5841f3827"
+    },
+    {
+      "id": "f128",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (1150.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (1150.0 + 0.01)))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 22,
+      "prepared_sha256": "1999f66853be224960455213a4edb7d01e1003ee03c7a7067ddda83a9c7660f7"
+    },
+    {
+      "id": "f129",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 2.0 ] ((x2 < (1.0 + 0.01)) U[ 0.0, inf ) (x3 < (-1.0 + 0.01)))) (<>[ 2.0, 3.0 ] (x3 < (-1.0 + 0.01))))",
+      "size": 7,
+      "depth": 2,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 36,
+      "prepared_sha256": "b3e1d43b020b5313f9c74aab1caca7509083ad1778166b70e50382482ff50d77"
+    },
+    {
+      "id": "f130",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or (or (x2 > (0.0 - 0.01)) (and (x1 > (-1.0 - 0.01)) ([][ 0.0, 3.0 ] (x1 > (0.0 - 0.01))))) ([][ 0.0, 3.0 ] (or (x4 > (-1.0 - 0.01)) (x3 < (-1.0 + 0.01)))))",
+      "size": 11,
+      "depth": 1,
+      "resolution": 1,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 24,
+      "prepared_sha256": "9458eba7f36c32e5f09ceed5a434f2f693ebb851925f5536504416baaf652a23"
+    },
+    {
+      "id": "f131",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (and (and (x1 < (0.0 + 0.01)) (x3 < (-1.0 + 0.01))) (or (x3 > (0.0 - 0.01)) ([][ 0.0, 3.0 ] (x4 > (-1.0 - 0.01))))) (or (x3 < (1.0 + 0.01)) ([][ 0.0, 3.0 ] (x2 < (0.0 + 0.01)))))",
+      "size": 13,
+      "depth": 1,
+      "resolution": 1,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 28,
+      "prepared_sha256": "7788c293c09f90127ea60a5723bbb3cc53f3028bddbe2a216fabfa331cd7674c"
+    },
+    {
+      "id": "f132",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (x1 <= (1154.0 + 0.01))) U[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (1154.0 + 0.01)))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "e5ca44e4ee35122e0e05116afc58fc0a81979ef9c5bd0d83356cf6e323f495d3"
+    },
+    {
+      "id": "f133",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ([][ 0.0, inf ) ([][ 0.0, inf ) (or (x1 < (1.0 + 0.01)) ([][ 1.5, 3.0 ] (x1 > (-1.0 - 0.01)))))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "a2475d12d02831ded63146094c45a68c7d9859afecb48f525bfa349e4ec0c24b"
+    },
+    {
+      "id": "f134",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] (x2 <= (1156.0 + 0.01))) (<>[ 0.0, 1.0 ] ((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (x1 <= (1156.0 + 0.01)))) R[ 0.0, inf ) (x2 <= (1156.0 + 0.01)))))",
+      "size": 9,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "92a61ce77d2aff0faddfcd5cb76ae8aea9eb93d366efe630fcf782544712ddb9"
+    },
+    {
+      "id": "f135",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] (x1 <= (1157.0 + 0.01))) U[ 0.0, inf ) (<>[ 3.0, 4.0 ] (x2 <= (1157.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 4,
+      "operators": [
+        "FinallyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 35,
+      "prepared_sha256": "9467ae374aa99a2ae8bba75ed3019477c7a4d389012d938986f6f834db20fd56"
+    },
+    {
+      "id": "f136",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((x2 <= (1154.0 + 0.01)) R[ 0.0, inf ) (<>[ 3.0, 5.0 ] (x1 >= (1155.0 - 0.01))))",
+      "size": 4,
+      "depth": 2,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 24,
+      "prepared_sha256": "0113a7a3d87a0bd2fca142477545dea9bf647aaafe3e9d8a214253eff4d330aa"
+    },
+    {
+      "id": "f137",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((or ([][ 1.0, 2.0 ] (x2 <= (1138.0 + 0.01))) (<>[ 0.0, 1.0 ] ((x1 <= (1138.0 + 0.01)) R[ 0.0, inf ) (x2 <= (1138.0 + 0.01))))) R[ 0.0, inf ) ((x3 <= (1138.0 + 0.01)) R[ 0.0, inf ) (x4 <= (1138.0 + 0.01))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "f751cd12202ac9064491e4c794c04ef8cabd5261154a041bd73e6821c8b742e4"
+    },
+    {
+      "id": "f138",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.0 ] ((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (x1 <= (1160.0 + 0.01)))) U[ 0.0, inf ) (x2 <= (1160.0 + 0.01)))) (<>[ 1.0, 2.0 ] (x2 <= (1160.0 + 0.01))))",
+      "size": 9,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "806d1725597cc0acf01b5ca1bbd10493fa6991048a1bd6156fa4a32bfba6060c"
+    },
+    {
+      "id": "f139",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, 2.4 ] ((x2 <= (1161.0 + 0.01)) R[ 0.0, inf ) (x3 <= (1161.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 20,
+      "prepared_sha256": "08cb5b2eeb24cd037082c9ff5aef4a6c0eb9c793f55745bad47752f02485ed93"
+    },
+    {
+      "id": "f140",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.5, 3.0 ] (and (x3 > (1.0 - 0.01)) (<>[ 1.5, 3.0 ] (x2 > (0.0 - 0.01)))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "beb5cbf0d363d1b206fec9dc0a7ba6a4201e7578b0988c62cd205e307ff5d8a3"
+    },
+    {
+      "id": "f141",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (1163.0 + 0.01))))) U[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (1163.0 + 0.01))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "08f1f59c76c2c84e70f0ad581cbfa9f568dfd7008ddc606bc7590f1d66e9d9a5"
+    },
+    {
+      "id": "f142",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 1.5, 3.0 ] ([][ 0.0, 3.0 ] ([][ 0.0, 3.0 ] (or (x3 < (0.0 + 0.01)) (x4 < (0.0 + 0.01))))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "1e06e60be68dd5a001400d94a2e603f835482a10d782ffc21347c96d92ba7a96"
+    },
+    {
+      "id": "f143",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.2, 3.3 ] ([][ 0.0, inf ) (x2 <= (1165.0 + 0.01)))) (<>[ 0.0, 1.2 ] (([][ 0.0, inf ) (x1 <= (1165.0 + 0.01))) R[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (1165.0 + 0.01))))))",
+      "size": 10,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "72a7beb2c77cafe078afe0b662c56433d77c71cc1989891525d760d7bb27a25f"
+    },
+    {
+      "id": "f144",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, inf ) ([][ 0.0, inf ) (or (x2 < (1.0 + 0.01)) ([][ 1.5, 3.0 ] (x3 < (1.0 + 0.01))))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "594f33335bfca43106f2fbedd067642a1d88728c302700737f7e52ea9f7f6d13"
+    },
+    {
+      "id": "f145",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((or ([][ 1.0, 2.0 ] (x2 <= (1146.0 + 0.01))) (<>[ 0.0, 1.0 ] ((x1 <= (1146.0 + 0.01)) R[ 0.0, inf ) (x2 <= (1146.0 + 0.01))))) R[ 0.0, inf ) ((x3 <= (1146.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1146.0 + 0.01))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula",
+        "UntilFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "eabea69ccf0b3f7a7ab61a227a4ec5e3bcbc88a10c2e7de3caaa3760d2de3a37"
+    },
+    {
+      "id": "f146",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 1.5, 3.0 ] (and ([][ 0.0, 3.0 ] (x3 > (0.0 - 0.01))) (<>[ 0.0, 3.0 ] (x3 < (0.0 + 0.01)))))",
+      "size": 6,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 24,
+      "prepared_sha256": "4871ef61d99dd9f5a56b7074008fcf771c0ed85dae7105bc9aad155360fe5b38"
+    },
+    {
+      "id": "f147",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.0 ] ((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (x1 <= (1169.0 + 0.01)))) U[ 0.0, inf ) (x2 <= (1169.0 + 0.01)))) (<>[ 1.0, 2.0 ] (x2 <= (1169.0 + 0.01))))",
+      "size": 9,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "f4284887ebe645951bebd0f6bffd6748b9fc5a03461ba812192fe67539de4f3c"
+    },
+    {
+      "id": "f148",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 2.0, 3.0 ] ([][ 0.0, 3.0 ] (x3 < (0.0 + 0.01))))",
+      "size": 3,
+      "depth": 2,
+      "resolution": 3,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 20,
+      "prepared_sha256": "89e6103cf3dbd8952842afbcc74976d627195780e272a4b6d29fd55d823ff012"
+    },
+    {
+      "id": "f149",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (x1 <= (1171.0 + 0.01))) U[ 0.0, inf ) (<>[ 1.0, 2.0 ] (x2 <= (1171.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "4d1cd97d511f592a9c3111ed3b2bd5b21cf1a496d04f15f6295ab8cc58fb1a56"
+    },
+    {
+      "id": "f150",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, 3.0 ] (or (and (x1 > (-1.0 - 0.01)) (x3 < (-1.0 + 0.01))) (and (x3 < (0.0 + 0.01)) ([][ 0.0, 3.0 ] (x3 < (-1.0 + 0.01))))))",
+      "size": 9,
+      "depth": 2,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 22,
+      "prepared_sha256": "2486ca27db0a378b0636451bff7a52a1c5ff5a44c9bf69a9a7b78467cb6c1b06"
+    },
+    {
+      "id": "f151",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or (x4 < (2.0 + 0.01)) ([][ 0.0, inf ) ([][ 0.0, inf ) ([][ 0.0, 3.0 ] (or (x1 > (1.0 - 0.01)) (x3 < (1.0 + 0.01)))))))",
+      "size": 8,
+      "depth": 3,
+      "resolution": 1,
+      "operators": [
+        "GloballyFormula"
+      ],
+      "complexity": 22,
+      "prepared_sha256": "a2361e33f7a9cc066bd71d12b240e35785d003678f543a5c49b672be461a9fb5"
+    },
+    {
+      "id": "f152",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.2 ] ((and (x2 >= (1153.0 - 0.01)) (x1 <= (1153.0 + 0.01))) U[ 0.0, inf ) (x3 <= (1157.0 + 0.01)))) (<>[ 1.2, 3.3 ] (x3 <= (1157.0 + 0.01))))",
+      "size": 9,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "d00b0d9499937828b2c9d396112eee0e76f63fc33659771cc3599d6bbbb838ae"
+    },
+    {
+      "id": "f153",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (x1 <= (1175.0 + 0.01))) R[ 0.0, inf ) (<>[ 1.0, 2.0 ] (x2 <= (1175.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "02fbf670324a048b885bd84053d6ab87f174d7e44fbbe82260ad24b3112193ac"
+    },
+    {
+      "id": "f154",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.0, 2.0 ] (x1 <= (1176.0 + 0.01))) U[ 0.0, inf ) ([][ 0.0, inf ) (x2 <= (1176.0 + 0.01))))",
+      "size": 5,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "8105d081024be35ed7f4d6fef57caf0952185b9eacab7c4cd28f0e877baea59f"
+    },
+    {
+      "id": "f155",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, 3.0 ] (or ([][ 2.0, 3.0 ] (x4 < (0.0 + 0.01))) (<>[ 0.0, 2.0 ] ((x3 > (1.0 - 0.01)) R[ 0.0, inf ) (x4 < (0.0 + 0.01))))))",
+      "size": 8,
+      "depth": 3,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 44,
+      "prepared_sha256": "a6e9b639bad4f454aad1b151856e4a63f0cee50eefdc17ced9ee0a4c4ed461d8"
+    },
+    {
+      "id": "f156",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "([][ 0.0, 3.0 ] (and ([][ 0.0, 1.5 ] ((or (x1 < (1.0 + 0.01)) (and (x2 > (0.0 - 0.01)) (x2 > (1.0 - 0.01)))) U[ 0.0, inf ) (x2 > (0.0 - 0.01)))) (<>[ 1.5, 3.0 ] (x2 > (0.0 - 0.01)))))",
+      "size": 12,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 45,
+      "prepared_sha256": "c793b7ce68c255ef5914e8af6e2716df188fedba5b5f4c5e76e148983c290510"
+    },
+    {
+      "id": "f157",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x1 <= (1179.0 + 0.01)))) R[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (1179.0 + 0.01))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "91cf2764310180ef1c405777169124de9a38b9f979d2133f0c6ffdf3a13278c5"
+    },
+    {
+      "id": "f158",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (<>[ 0.0, inf ) (<>[ 1.5, 3.0 ] ([][ 1.5, 3.0 ] (and (x2 < (0.0 + 0.01)) (x4 < (1.0 + 0.01)))))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "a61848001aecccbb05a4d4181f790cb5201a16144412ba2ba942451c1f37b47b"
+    },
+    {
+      "id": "f159",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or (x1 > (1.0 - 0.01)) (<>[ 0.0, 3.0 ] (or (and (x2 > (1.0 - 0.01)) (x3 > (1.0 - 0.01))) (or (x2 > (-1.0 - 0.01)) (or (x4 > (-1.0 - 0.01)) (x4 < (1.0 + 0.01)))))))",
+      "size": 12,
+      "depth": 1,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula"
+      ],
+      "complexity": 26,
+      "prepared_sha256": "705503bd1668af7d6ad3cba225e32dc60e7282f1978d67ee6223940bb8d05a7d"
+    },
+    {
+      "id": "f160",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or ([][ 1.0, 2.0 ] (x2 <= (1182.0 + 0.01))) (<>[ 0.0, 1.0 ] ((<>[ 1.0, 2.0 ] ([][ 0.0, inf ) (x1 <= (1182.0 + 0.01)))) R[ 0.0, inf ) (x2 <= (1182.0 + 0.01)))))",
+      "size": 9,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 39,
+      "prepared_sha256": "281598fea32e3d5c126a20cd30498a1973d4c55ba1acfdf510be22d6afebc3d8"
+    },
+    {
+      "id": "f161",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (1183.0 + 0.01)))) U[ 0.0, inf ) ([][ 0.0, 2.1 ] (x2 <= (1183.0 + 0.01)))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 22,
+      "prepared_sha256": "d61e966d570190a9b2dbb1bf47d2063466d63a13537e027291d9f058428cb195"
+    },
+    {
+      "id": "f162",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((<>[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (1184.0 + 0.01))))) R[ 0.0, inf ) ([][ 1.2, 3.3 ] (x2 <= (1184.0 + 0.01))))",
+      "size": 7,
+      "depth": 4,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "fd90bcd8e697f41a87e81c3a813e74ee65bb7cc79e824a510179cf68c98b2d60"
+    },
+    {
+      "id": "f163",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) ([][ 0.0, inf ) (<>[ 0.0, 2.4 ] ((x2 <= (1185.0 + 0.01)) R[ 0.0, inf ) (x3 <= (1185.0 + 0.01))))))",
+      "size": 6,
+      "depth": 4,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 20,
+      "prepared_sha256": "936e0280041e7c5f0eb709085a9493a7ab7ce8b9dae5f2df75db44ec02dd860f"
+    },
+    {
+      "id": "f164",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "((and ([][ 0.0, 1.0 ] ((x1 <= (1165.0 + 0.01)) U[ 0.0, inf ) (x2 <= (1165.0 + 0.01)))) (<>[ 1.0, 2.0 ] (x2 <= (1165.0 + 0.01)))) U[ 0.0, inf ) ((x3 <= (1165.0 + 0.01)) U[ 0.0, inf ) (x4 <= (1165.0 + 0.01))))",
+      "size": 11,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 42,
+      "prepared_sha256": "caf5c241b6f7099c6bca23e39934a4fea1eb9f887d3a3e585116c3cb6cc27e84"
+    },
+    {
+      "id": "f165",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(or (x4 < (2.0 + 0.01)) (and (or ([][ 0.0, 3.0 ] (x3 < (0.0 + 0.01))) (<>[ 0.0, 3.0 ] (x3 > (1.0 - 0.01)))) ([][ 0.0, 3.0 ] (x1 < (-1.0 + 0.01)))))",
+      "size": 10,
+      "depth": 1,
+      "resolution": 1,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula"
+      ],
+      "complexity": 22,
+      "prepared_sha256": "ad680d9b11a1b3e692620c79e673b9a77522afc3edf57291a0c4c6817fcbcc09"
+    },
+    {
+      "id": "f166",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and (<>[ 1.0, 3.0 ] (x1 <= (1188.0 + 0.01))) ((x2 <= (1167.0 + 0.01)) U[ 0.0, inf ) (x3 <= (1167.0 + 0.01))))",
+      "size": 6,
+      "depth": 1,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 21,
+      "prepared_sha256": "7ccbdd33cbb26327573be68bb396fce68ce6184e9627c95ae9cca40efd27cbe6"
+    },
+    {
+      "id": "f167",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 2.0 ] ((x2 < (0.0 + 0.01)) U[ 0.0, inf ) (x2 > (1.0 - 0.01)))) (<>[ 2.0, 3.0 ] (x2 > (1.0 - 0.01))))",
+      "size": 7,
+      "depth": 2,
+      "resolution": 3,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 36,
+      "prepared_sha256": "d9e880404bf4677b5c3fae06fc93e1459f82366980193fbec38ab3b1e831fbb9"
+    },
+    {
+      "id": "f168",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(<>[ 0.0, inf ) (and (and (x3 > (1.0 - 0.01)) (or ([][ 1.5, 3.0 ] (x2 > (0.0 - 0.01))) (<>[ 0.0, 1.5 ] ((x3 < (-1.0 + 0.01)) R[ 0.0, inf ) (x2 > (0.0 - 0.01)))))) (<>[ 1.5, 3.0 ] (x1 > (0.0 - 0.01)))))",
+      "size": 13,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 48,
+      "prepared_sha256": "518e305d414f837ad6ee937048f7ef1f42afd37e5cd7e9ee7e278722b86b09af"
+    },
+    {
+      "id": "f169",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(and ([][ 0.0, 1.2 ] ((and (x2 >= (1170.0 - 0.01)) (x1 <= (1170.0 + 0.01))) U[ 0.0, inf ) (x3 <= (1174.0 + 0.01)))) (<>[ 1.2, 3.3 ] (x3 <= (1174.0 + 0.01))))",
+      "size": 9,
+      "depth": 2,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "UntilFormula"
+      ],
+      "complexity": 33,
+      "prepared_sha256": "e3d86a5d37d84eef58dfba1504cc9fd5c268b4a7f547213c71fd2720acb22366"
+    },
+    {
+      "id": "f170",
+      "formula_file": "benchmarks/exp2/pool.txt",
+      "prepared": "(([][ 0.0, inf ) (<>[ 0.0, inf ) (x1 <= (1192.0 + 0.01)))) R[ 0.0, inf ) ([][ 1.2, 3.3 ] (x2 <= (1192.0 + 0.01))))",
+      "size": 6,
+      "depth": 3,
+      "resolution": 2,
+      "operators": [
+        "FinallyFormula",
+        "GloballyFormula",
+        "ReleaseFormula"
+      ],
+      "complexity": 27,
+      "prepared_sha256": "a02ec8e92e0c1064fde82f42dc2a61bb3045f4beef195beeb73958c07fb61bb8"
+    }
+  ]
+}

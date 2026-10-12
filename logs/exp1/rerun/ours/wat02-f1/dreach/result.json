@@ -1,0 +1,22 @@
+{
+  "id": "wat02-f1",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "0114e4171c67432e8fe4750937404ec2bf357df3aefdcedcdd4cd8dd9f8fbd7c",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.5228587589226663
+  },
+  "composed_ha": [
+    6,
+    8
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 0.17227842286229134,
+  "solver_seconds": 0.17227842286229134,
+  "phase": "solver",
+  "outcome": "bounded_unsat"
+}

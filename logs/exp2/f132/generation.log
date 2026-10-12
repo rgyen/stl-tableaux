@@ -1,0 +1,31 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp2-automata/f132/default.cfg
+  file cfg     : /home/artifact/stl-tableaux/benchmarks/exp2/pool.cfg
+
+---------------------------------
+---- STL Tableau Construction ---
+---------------------------------
+
+Information
+  goal    : f132
+  formula : (([][ 0.0, inf ) (x1 <= (1154.0 + 0.01))) U[ 0.0, inf ) (<>[ 1.1, 2.2 ] ([][ 0.0, inf ) (x2 <= (1154.0 + 0.01)))))
+  size    : 6
+  depth   : 3
+
+  finish construction
+    running time: 0.360s
+    tableau info: (# vertex: 21, # edge: 64)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.029s
+    tableau info: (# vertex: 10, # edge: 18)
+
+Total info
+  running time: 0.406s

@@ -1,0 +1,17 @@
+{
+  "id": "f125",
+  "implementation": "automata",
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 5.429941131267697,
+  "raw": [
+    37,
+    112
+  ],
+  "reduced": [
+    15,
+    45
+  ],
+  "generation_seconds": 0.512,
+  "reduction_seconds": 0.054
+}

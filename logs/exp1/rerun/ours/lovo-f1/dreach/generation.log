@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/lovo-f1/dreach/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo-f1.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f1
+    formula   : ((x < (0.0 + 1e-06)) R[ 0.0, inf ) ([][ 0.0, inf ) (y > (1.0 - 1e-06))))
+    size      : 4
+  Config
+    bound     : 5
+    threshold : 0.000001
+
+  finish construction
+    running time: 0.135s
+    tableau info: (# vertex: 11, # edge: 26)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.003s
+    tableau info: (# vertex: 5, # edge: 8)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 4, # jump: 6)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.003s
+  automaton info: (# mode: 9, # jump: 34)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.101s
+  automaton info: (# mode: 7, # jump: 18)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 7, # jump: 18)
+
+Converting the automaton to an input model of dreach
+  model file  : out/lovo/f1/dreach/model/model.drh
+  script file : out/lovo/f1/dreach/run.sh
+  running time: 0.728s

@@ -1,0 +1,19 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/rail02/rail02.model
+> selected solver: dreal
+> threshold : 2
+max procs: 5
+bound: 0
+# bound: 0, 0
+bound: 1
+# bound: 1, 13
+bound: 2
+# bound: 2, 225
+bound: 3
+# bound: 3, 2545
+bound: 4
+total loop : 8117
+size : 1389
+goal : ([][0.0,3.0] ((vb > 6) -> (<>[2.0,4.0] (vb > 32))))
+result : False at bound 4 (time bound: 8)
+running time 3106.53329 seconds
+======================================

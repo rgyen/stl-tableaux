@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/linear/wat01/wat01.model -goal f1 -default-cfg ../../src/default.cfg -solver sat-reach -o log >& log/wat01/f1/sat-reach/gen-log.txt
+
+# solver-launch
+bash out/wat01/f1/sat-reach/run.sh

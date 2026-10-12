@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/robe02/robe02.model -goal f1 -default-cfg ../../src/default.cfg -solver dreach -o log >& log/robe02/f1/dreach/gen-log.txt
+
+# solver-launch
+bash out/robe02/f1/dreach/run.sh

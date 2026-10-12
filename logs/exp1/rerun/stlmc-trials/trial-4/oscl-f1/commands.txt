@@ -1,0 +1,4 @@
+# STLmc solver
+cd /home/artifact/stl-tableaux/results/exp1-trial-4/exp1-stlmc/oscl-f1
+/home/artifact/stl-tableaux/.venv-stlmc-paper/bin/stlmc /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl.model -model-cfg /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl.cfg -model-specific-cfg /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl-f1.cfg -parallel-core 5 -verbose -executable-path /home/artifact/stl-tableaux/.venv-stlmc-paper/bin/dreal
+

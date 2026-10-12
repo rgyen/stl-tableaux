@@ -1,0 +1,15 @@
+Computing reachable states... 
+Iteration 0... 7 sym states passed, 3 waiting 0.0250001s
+Iteration 1... 16 sym states passed, 5 waiting 0.348001s
+Iteration 2... 17 sym states passed, 4 waiting 0.137001s
+Iteration 3... 18 sym states passed, 3 waiting 0.147001s
+Iteration 4... 19 sym states passed, 2 waiting 0.293001s
+Iteration 5... 20 sym states passed, 1 waiting 0.262001s
+Iteration 6... 26 sym states passed, 2 waiting 0.261001s
+Iteration 7... 27 sym states passed, 1 waiting 0.289001s
+Iteration 8... 28 sym states passed, 0 waiting 0.276001s
+Found fixpoint after 9 iterations.
+Computing reachable states done after 2.04101s
+Forbidden states are not reachable.
+Output of reachable bad states... empty set
+0s

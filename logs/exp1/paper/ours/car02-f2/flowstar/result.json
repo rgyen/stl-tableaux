@@ -1,0 +1,13 @@
+{
+  "id": "car02-f2",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    17,
+    146
+  ],
+  "status": "complete",
+  "solver_seconds": 8.94,
+  "outcome": "unsafe"
+}

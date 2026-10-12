@@ -1,0 +1,44 @@
+[ -5, 10 ] x;
+[ -5, 10 ] y;
+[ -5, 10 ] z;
+[0,20] time;
+[0,40] gClk;
+{
+    mode 1;
+    invt:
+        (and (gClk >= 0.0) (gClk <= 40.0));
+    flow:
+        d/dt[x] = 0.0;
+        d/dt[y] = 0.0;
+        d/dt[z] = 0.0;
+        d/dt[gClk] = 1.0;
+    jump:
+            (true) ==> @3(and (gClk' = 0.0) (x' = x) (y' = y) (z' = z));
+}
+{
+    mode 2;
+    invt:
+        (and (and (and (-5.0 <= y) (gClk <= 40.0)) (and (x <= 10.0) (-5.0 <= z))) (and (and (-5.0 <= x) (z <= 10.0)) (and (gClk >= 0.0) (y <= 10.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[y] = 0.4 * x - 100.0 * y * z - 100000.0 * y * y;
+        d/dt[z] = 100000.0 * y * y;
+        d/dt[x] = 100.0 * y * z - 0.4 * x;
+    jump:
+}
+{
+    mode 3;
+    invt:
+        (and (and (and (-5.0 <= y) (gClk <= 40.0)) (and (x <= 10.0) (-5.0 <= z))) (and (and (-5.0 <= x) (z <= 10.0)) (and (gClk >= 0.0) (and (x <= 3.0 + 0.0005) (y <= 10.0)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[y] = 0.4 * x - 100.0 * y * z - 100000.0 * y * y;
+        d/dt[z] = 100000.0 * y * y;
+        d/dt[x] = 100.0 * y * z - 0.4 * x;
+    jump:
+            (gClk >= 40.0) ==> @2(and (gClk' = gClk) (x' = x) (y' = y) (z' = z));
+}
+init:
+@1 (and (and (z <= 0.0) (and (1.0 <= x) (y <= 0.0))) (and (and (gClk = 0.0) (0.0 <= y)) (and (x <= 1.0) (0.0 <= z))));
+goal:
+@2 true;

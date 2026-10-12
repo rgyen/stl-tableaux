@@ -1,0 +1,22 @@
+{
+  "id": "wat02-f3",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "0114e4171c67432e8fe4750937404ec2bf357df3aefdcedcdd4cd8dd9f8fbd7c",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 3.0259432797320187
+  },
+  "composed_ha": [
+    37,
+    293
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 0.7181209423579276,
+  "solver_seconds": 0.7181209423579276,
+  "phase": "solver",
+  "outcome": "unsafe"
+}

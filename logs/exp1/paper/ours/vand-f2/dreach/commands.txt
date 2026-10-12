@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/vand/vand.model -goal f2 -default-cfg ../../src/default.cfg -solver dreach -o log >& log/vand/f2/dreach/gen-log.txt
+
+# solver-launch
+bash out/vand/f2/dreach/run.sh

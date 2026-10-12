@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/wat02-f3/dreach/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/wat02/wat02.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/wat02/wat02-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/wat02/wat02.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : (or ([][ 1.2, 3.0 ] (x <= (5.0 + 2.0))) (<>[ 0.0, 1.2 ] ((<>[ 0.0, inf ) (x > (6.0 - 2.0))) R[ 0.0, inf ) (x <= (5.0 + 2.0)))))
+    size      : 8
+  Config
+    bound     : 5
+    threshold : 2
+
+  finish construction
+    running time: 0.522s
+    tableau info: (# vertex: 38, # edge: 117)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.071s
+    tableau info: (# vertex: 19, # edge: 68)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.002s
+  automaton info: (# mode: 18, # jump: 63)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.013s
+  automaton info: (# mode: 37, # jump: 293)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.648s
+  automaton info: (# mode: 37, # jump: 293)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 37, # jump: 293)
+
+Converting the automaton to an input model of dreach
+  model file  : out/wat02/f3/dreach/model/model.drh
+  script file : out/wat02/f3/dreach/run.sh
+  running time: 0.919s

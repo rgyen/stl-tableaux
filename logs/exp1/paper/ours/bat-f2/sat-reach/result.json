@@ -1,0 +1,13 @@
+{
+  "id": "bat-f2",
+  "tool": "sat-reach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    25,
+    134
+  ],
+  "status": "complete",
+  "solver_seconds": 1.53,
+  "outcome": "safe"
+}

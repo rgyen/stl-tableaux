@@ -1,0 +1,14 @@
+{
+  "id": "bat-f2",
+  "status": "complete",
+  "host": "node3",
+  "started_utc": "2026-10-12T07:25:58.863621+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "794c12be020a5db884da8ad6879a8172c698ca5b58bcb3ff730ddd7974e36dfe",
+  "exit_code": 0,
+  "outcome": "violated-candidate",
+  "wall_seconds": 1046.06088620238,
+  "solver_status": null
+}

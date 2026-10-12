@@ -1,0 +1,22 @@
+{
+  "id": "spac01-f3",
+  "tool": "sat-reach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "1b4b21c7740eb1c5d67cc525201b6349466e5426621ace8eac7f9e63e34357f4",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 5.191618021111935
+  },
+  "composed_ha": [
+    14,
+    43
+  ],
+  "status": "error",
+  "exit_code": 134,
+  "wall_seconds": 1.0940609979443252,
+  "solver_seconds": 1.0940609979443252,
+  "phase": "solver",
+  "outcome": "error"
+}

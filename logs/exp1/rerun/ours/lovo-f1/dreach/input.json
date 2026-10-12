@@ -1,0 +1,6 @@
+{
+  "id": "lovo-f1",
+  "model": "lovo",
+  "formula_id": "f1",
+  "dynamics": "nonlinear"
+}

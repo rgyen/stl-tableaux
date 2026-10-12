@@ -1,0 +1,98 @@
+mode: mode_2,	time = 0.500000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 1.000000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 1.500000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 2.000000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 2.500000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 3.000000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 3.500000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 4.000000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 4.500000,	step = 0.500000,	order = 8
+mode: mode_2,	time = 5.000000,	step = 0.500000,	order = 8
+Dealing with the jump from mode_2 to mode_9 ...
+No intersection detected.
+Dealing with the jump from mode_2 to mode_4 ...
+Done.
+mode: mode_4,	time = 0.125000,	step = 0.125000,	order = 8
+mode: mode_4,	time = 0.262500,	step = 0.137500,	order = 8
+mode: mode_4,	time = 0.413750,	step = 0.151250,	order = 8
+mode: mode_4,	time = 0.580125,	step = 0.166375,	order = 8
+mode: mode_4,	time = 0.763138,	step = 0.183013,	order = 8
+mode: mode_4,	time = 0.964451,	step = 0.201314,	order = 8
+mode: mode_4,	time = 1.185896,	step = 0.221445,	order = 8
+mode: mode_4,	time = 1.429486,	step = 0.243590,	order = 8
+mode: mode_4,	time = 1.563460,	step = 0.133974,	order = 8
+mode: mode_4,	time = 1.710832,	step = 0.147372,	order = 8
+mode: mode_4,	time = 1.872941,	step = 0.162109,	order = 8
+mode: mode_4,	time = 2.051261,	step = 0.178320,	order = 8
+mode: mode_4,	time = 2.247413,	step = 0.196152,	order = 8
+mode: mode_4,	time = 2.463179,	step = 0.215767,	order = 8
+mode: mode_4,	time = 2.700523,	step = 0.237344,	order = 8
+mode: mode_4,	time = 2.961601,	step = 0.261078,	order = 8
+mode: mode_4,	time = 3.105194,	step = 0.143593,	order = 8
+mode: mode_4,	time = 3.263146,	step = 0.157952,	order = 8
+mode: mode_4,	time = 3.436894,	step = 0.173747,	order = 8
+mode: mode_4,	time = 3.628016,	step = 0.191122,	order = 8
+Dealing with the jump from mode_4 to mode_10 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_7 ...
+Done.
+mode: mode_7,	time = 0.062500,	step = 0.062500,	order = 8
+mode: mode_7,	time = 0.131250,	step = 0.068750,	order = 8
+mode: mode_7,	time = 0.206875,	step = 0.075625,	order = 8
+mode: mode_7,	time = 0.290063,	step = 0.083188,	order = 8
+mode: mode_7,	time = 0.381569,	step = 0.091506,	order = 8
+mode: mode_7,	time = 0.431897,	step = 0.050328,	order = 8
+mode: mode_7,	time = 0.487258,	step = 0.055361,	order = 8
+mode: mode_7,	time = 0.548156,	step = 0.060897,	order = 8
+mode: mode_7,	time = 0.615143,	step = 0.066987,	order = 8
+mode: mode_7,	time = 0.688829,	step = 0.073686,	order = 8
+mode: mode_7,	time = 0.769883,	step = 0.081054,	order = 8
+mode: mode_7,	time = 0.859043,	step = 0.089160,	order = 8
+mode: mode_7,	time = 0.908081,	step = 0.049038,	order = 8
+mode: mode_7,	time = 0.962023,	step = 0.053942,	order = 8
+mode: mode_7,	time = 1.021359,	step = 0.059336,	order = 8
+mode: mode_7,	time = 1.086628,	step = 0.065270,	order = 8
+mode: mode_7,	time = 1.158425,	step = 0.071796,	order = 8
+mode: mode_7,	time = 1.237401,	step = 0.078976,	order = 8
+mode: mode_7,	time = 1.324275,	step = 0.086874,	order = 8
+mode: mode_7,	time = 1.372055,	step = 0.047781,	order = 8
+mode: mode_7,	time = 1.424614,	step = 0.052559,	order = 8
+mode: mode_7,	time = 1.482428,	step = 0.057814,	order = 8
+mode: mode_7,	time = 1.546024,	step = 0.063596,	order = 8
+mode: mode_7,	time = 1.615980,	step = 0.069955,	order = 8
+mode: mode_7,	time = 1.692931,	step = 0.076951,	order = 8
+mode: mode_7,	time = 1.777577,	step = 0.084646,	order = 8
+mode: mode_7,	time = 1.870687,	step = 0.093111,	order = 8
+mode: mode_7,	time = 1.921898,	step = 0.051211,	order = 8
+mode: mode_7,	time = 1.978230,	step = 0.056332,	order = 8
+mode: mode_7,	time = 2.040196,	step = 0.061965,	order = 8
+mode: mode_7,	time = 2.108357,	step = 0.068162,	order = 8
+mode: mode_7,	time = 2.183335,	step = 0.074978,	order = 8
+mode: mode_7,	time = 2.265811,	step = 0.082476,	order = 8
+mode: mode_7,	time = 2.356534,	step = 0.090723,	order = 8
+mode: mode_7,	time = 2.456330,	step = 0.099796,	order = 8
+mode: mode_7,	time = 2.566105,	step = 0.109775,	order = 8
+mode: mode_7,	time = 2.626481,	step = 0.060376,	order = 8
+mode: mode_7,	time = 2.692895,	step = 0.066414,	order = 8
+mode: mode_7,	time = 2.765951,	step = 0.073055,	order = 8
+mode: mode_7,	time = 2.846311,	step = 0.080361,	order = 8
+mode: mode_7,	time = 2.934708,	step = 0.088397,	order = 8
+mode: mode_7,	time = 3.031945,	step = 0.097237,	order = 8
+mode: mode_7,	time = 3.138905,	step = 0.106960,	order = 8
+mode: mode_7,	time = 3.256562,	step = 0.117656,	order = 8
+mode: mode_7,	time = 3.385984,	step = 0.129422,	order = 8
+mode: mode_7,	time = 3.528348,	step = 0.142364,	order = 8
+mode: mode_7,	time = 3.620748,	step = 0.092400,	order = 8
+Dealing with the jump from mode_7 to mode_5 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_7 to mode_1 ...
+No intersection detected.
+Done.
+
+Computation completed: 77 flowpipe(s) computed.
+
+[1mResult of the safety verification on the computed flowpipes: [0m[1m[32mSAFE
+
+[0mTotal time cost:[1m 25.492191[0m seconds.
+

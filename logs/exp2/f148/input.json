@@ -1,0 +1,13 @@
+{
+  "id": "f148",
+  "formula_file": "benchmarks/exp2/pool.txt",
+  "prepared": "([][ 2.0, 3.0 ] ([][ 0.0, 3.0 ] (x3 < (0.0 + 0.01))))",
+  "size": 3,
+  "depth": 2,
+  "resolution": 3,
+  "operators": [
+    "GloballyFormula"
+  ],
+  "complexity": 20,
+  "prepared_sha256": "89e6103cf3dbd8952842afbcc74976d627195780e272a4b6d29fd55d823ff012"
+}

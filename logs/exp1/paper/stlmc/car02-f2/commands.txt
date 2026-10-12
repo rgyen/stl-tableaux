@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/nonlinear/car02/car02.model -model-cfg ../../benchmarks/exp1/nonlinear/car02/car02.cfg -model-specific-cfg ../../benchmarks/exp1/nonlinear/car02/car02-f2.cfg -parallel-core 5 -verbose >& log/car02/f2/stlmc/out-log.txt

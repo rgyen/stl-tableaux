@@ -1,0 +1,14 @@
+{
+  "id": "thm02-f3",
+  "status": "complete",
+  "host": "node2",
+  "started_utc": "2026-10-12T05:14:15.772423+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "8898cbdebe5473551e923c935a8ba57aa49657093989eccb71cc16a514b73e66",
+  "exit_code": 0,
+  "outcome": "violated-candidate",
+  "wall_seconds": 41.767120874952525,
+  "solver_status": null
+}

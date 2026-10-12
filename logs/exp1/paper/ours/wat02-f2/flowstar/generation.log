@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/wat02/wat02.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/wat02/wat02-f2.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/wat02/wat02.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f2
+    formula   : (([][ 0.0, 4.0 ] (x < (5 + 0.5))) U[ 0.0, inf ) (x < (2 + 0.5)))
+    size      : 4
+  Config
+    bound     : 5
+    threshold : 0.5
+
+  finish construction
+    running time: 0.237s
+    tableau info: (# vertex: 25, # edge: 49)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.020s
+    tableau info: (# vertex: 8, # edge: 14)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 7, # jump: 12)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.004s
+  automaton info: (# mode: 15, # jump: 64)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.208s
+  automaton info: (# mode: 15, # jump: 64)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 15, # jump: 64)
+
+Converting the automaton to an input model of flowstar
+  model file  : log/wat02/f2/flowstar/model/model.fs
+  script file : log/wat02/f2/flowstar/run.sh
+  running time: 0.009s

@@ -1,0 +1,14 @@
+{
+  "id": "car02-f3",
+  "status": "timeout",
+  "host": "node3",
+  "started_utc": "2026-10-12T08:59:54.708449+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "0e137b864c55485e83e23f4830e924d85c66a2ce6a25ebf50c9618b34b7a8330",
+  "exit_code": -9,
+  "outcome": "unknown",
+  "wall_seconds": 3600.0437339218333,
+  "solver_status": null
+}

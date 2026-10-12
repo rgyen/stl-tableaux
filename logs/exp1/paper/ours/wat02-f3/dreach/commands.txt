@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/wat02/wat02.model -goal f3 -default-cfg ../../src/default.cfg -solver dreach -o log >& log/wat02/f3/dreach/gen-log.txt
+
+# solver-launch
+bash out/wat02/f3/dreach/run.sh

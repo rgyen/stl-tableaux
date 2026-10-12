@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/car02/car02.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/car02/car02-f2.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/car02/car02.model
+  automaton info: (# mode: 4, # jump: 16)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f2
+    formula   : (<>[ 0.0, 2.0 ] (theta1 <= (2 + 0.5)))
+    size      : 2
+  Config
+    bound     : 5
+    threshold : 0.5
+
+  finish construction
+    running time: 0.071s
+    tableau info: (# vertex: 6, # edge: 7)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.001s
+    tableau info: (# vertex: 5, # edge: 6)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.000s
+  automaton info: (# mode: 4, # jump: 4)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.013s
+  automaton info: (# mode: 17, # jump: 146)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.713s
+  automaton info: (# mode: 17, # jump: 146)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 17, # jump: 146)
+
+Converting the automaton to an input model of flowstar
+  model file  : log/car02/f2/flowstar/model/model.fs
+  script file : log/car02/f2/flowstar/run.sh
+  running time: 0.023s

@@ -1,0 +1,29 @@
+Computing reachable states... 
+Iteration 0... 4 sym states passed, 2 waiting 0.0110001s
+Iteration 1... 5 sym states passed, 1 waiting 0.0420001s
+Iteration 2... 11 sym states passed, 2 waiting 0.0470001s
+Iteration 3... 15 sym states passed, 2 waiting 0.101001s
+Iteration 4... 19 sym states passed, 3 waiting 0.114001s
+Iteration 5... 27 sym states passed, 5 waiting 0.142001s
+Iteration 6... 28 sym states passed, 4 waiting 0.115001s
+Iteration 7... 29 sym states passed, 3 waiting 0.106001s
+Iteration 8... 34 sym states passed, 3 waiting 0.136001s
+Iteration 9... 36 sym states passed, 3 waiting 0.133001s
+Iteration 10... 37 sym states passed, 2 waiting 0.111001s
+Iteration 11... 37 sym states passed, 1 waiting 0.0240001s
+Iteration 12... 37 sym states passed, 0 waiting 0.0200001s
+Found fixpoint after 13 iterations.
+Computing reachable states done after 1.11101s
+Forbidden states are reachable.
+Output of reachable bad states... 
+Bounds on the variables over the entire set:
+clk4: [1.5,5]
+clk4: [1.5,5]
+
+Location-wise bounds on the variables:
+
+Location: loc(subsystem)==mode_id_14
+clk4: [1.5,5]
+clk4: [1.5,5]
+
+0.105001s

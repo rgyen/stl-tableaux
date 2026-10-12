@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/colm-f2/flowstar/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm-f2.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm.model
+  automaton info: (# mode: 1, # jump: 0)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f2
+    formula   : (and ([][ 0.0, 6.0 ] ((y < (100.0 + 0.5)) U[ 0.0, inf ) (x > (40.0 - 0.5)))) (<>[ 6.0, 30.0 ] (x > (40.0 - 0.5))))
+    size      : 7
+  Config
+    bound     : 2
+    threshold : 0.5
+
+  finish construction
+    running time: 0.733s
+    tableau info: (# vertex: 31, # edge: 129)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.254s
+    tableau info: (# vertex: 12, # edge: 41)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.002s
+  automaton info: (# mode: 11, # jump: 39)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.003s
+  automaton info: (# mode: 12, # jump: 41)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.123s
+  automaton info: (# mode: 12, # jump: 41)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 12, # jump: 41)
+
+Converting the automaton to an input model of flowstar
+  model file  : out/colm/f2/flowstar/model/model.fs
+  script file : out/colm/f2/flowstar/run.sh
+  running time: 0.010s

@@ -1,0 +1,17 @@
+{
+  "id": "f100",
+  "implementation": "automata",
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 955.2808633609675,
+  "raw": [
+    162,
+    1954
+  ],
+  "reduced": [
+    34,
+    412
+  ],
+  "generation_seconds": 10.583,
+  "reduction_seconds": 939.125
+}

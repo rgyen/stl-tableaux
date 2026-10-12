@@ -1,0 +1,1 @@
+./../../../../../.tools/spaceex/spaceex_exe/spaceex -m ./out/lane/f3/spaceex/model/model.xml -g ./out/lane/f3/spaceex/model/model.cfg >& ./out/lane/f3/spaceex/out-log.txt

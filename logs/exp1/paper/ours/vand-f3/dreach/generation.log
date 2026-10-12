@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/vand/vand.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/vand/vand-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/vand/vand.model
+  automaton info: (# mode: 1, # jump: 0)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : (and (<>[ 10.0, 40.0 ] (x > (40 - 1.0))) ([][ 0.0, 10.0 ] (([][ 0.0, inf ) (y <= (50 + 1.0))) U[ 0.0, inf ) (x > (40 - 1.0)))))
+    size      : 8
+  Config
+    bound     : 5
+    threshold : 1
+
+  finish construction
+    running time: 1.228s
+    tableau info: (# vertex: 46, # edge: 223)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.778s
+    tableau info: (# vertex: 11, # edge: 42)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.002s
+  automaton info: (# mode: 10, # jump: 40)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.003s
+  automaton info: (# mode: 11, # jump: 42)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.147s
+  automaton info: (# mode: 11, # jump: 42)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 11, # jump: 42)
+
+Converting the automaton to an input model of dreach
+  model file  : log/vand/f3/dreach/model/model.drh
+  script file : log/vand/f3/dreach/run.sh
+  running time: 0.378s

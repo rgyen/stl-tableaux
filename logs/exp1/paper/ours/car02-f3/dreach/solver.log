@@ -1,0 +1,2399 @@
+dReal Options:
+For k = 0, dReach tried 0 feasible paths, all of them are unsat.
+For k = 1, dReach tried 0 feasible paths, all of them are unsat.
+For k = 2, dReach tried 0 feasible paths, all of them are unsat.
+SMT: ./log/car02/f3/dreach/model/model_3_0.smt2, PATH : [24,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_3_1.smt2, PATH : [24,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_3_2.smt2, PATH : [24,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_3_3.smt2, PATH : [24,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_3_4.smt2, PATH : [24,22,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_3_5.smt2, PATH : [24,22,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_3_6.smt2, PATH : [24,22,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_3_7.smt2, PATH : [24,22,21,10]
+unsat
+For k = 3, dReach tried 8 feasible paths, all of them are unsat.
+SMT: ./log/car02/f3/dreach/model/model_4_0.smt2, PATH : [24,6,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_1.smt2, PATH : [24,6,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_2.smt2, PATH : [24,6,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_3.smt2, PATH : [24,6,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_4.smt2, PATH : [24,6,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_5.smt2, PATH : [24,6,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_6.smt2, PATH : [24,6,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_7.smt2, PATH : [24,6,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_8.smt2, PATH : [24,6,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_9.smt2, PATH : [24,6,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_10.smt2, PATH : [24,6,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_11.smt2, PATH : [24,6,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_12.smt2, PATH : [24,6,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_13.smt2, PATH : [24,6,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_14.smt2, PATH : [24,6,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_15.smt2, PATH : [24,6,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_16.smt2, PATH : [24,6,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_17.smt2, PATH : [24,6,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_18.smt2, PATH : [24,6,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_19.smt2, PATH : [24,6,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_20.smt2, PATH : [24,6,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_21.smt2, PATH : [24,6,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_22.smt2, PATH : [24,6,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_23.smt2, PATH : [24,6,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_24.smt2, PATH : [24,6,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_25.smt2, PATH : [24,6,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_26.smt2, PATH : [24,6,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_27.smt2, PATH : [24,6,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_28.smt2, PATH : [24,6,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_29.smt2, PATH : [24,6,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_30.smt2, PATH : [24,6,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_31.smt2, PATH : [24,6,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_32.smt2, PATH : [24,6,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_33.smt2, PATH : [24,6,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_34.smt2, PATH : [24,6,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_35.smt2, PATH : [24,6,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_36.smt2, PATH : [24,6,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_37.smt2, PATH : [24,6,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_38.smt2, PATH : [24,6,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_39.smt2, PATH : [24,6,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_40.smt2, PATH : [24,6,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_41.smt2, PATH : [24,6,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_42.smt2, PATH : [24,6,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_43.smt2, PATH : [24,6,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_44.smt2, PATH : [24,6,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_45.smt2, PATH : [24,6,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_46.smt2, PATH : [24,6,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_47.smt2, PATH : [24,6,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_48.smt2, PATH : [24,6,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_49.smt2, PATH : [24,6,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_50.smt2, PATH : [24,6,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_51.smt2, PATH : [24,6,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_52.smt2, PATH : [24,6,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_53.smt2, PATH : [24,6,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_54.smt2, PATH : [24,6,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_55.smt2, PATH : [24,6,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_56.smt2, PATH : [24,6,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_57.smt2, PATH : [24,6,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_58.smt2, PATH : [24,6,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_59.smt2, PATH : [24,6,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_60.smt2, PATH : [24,6,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_61.smt2, PATH : [24,6,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_62.smt2, PATH : [24,6,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_63.smt2, PATH : [24,6,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_64.smt2, PATH : [24,16,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_65.smt2, PATH : [24,16,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_66.smt2, PATH : [24,16,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_67.smt2, PATH : [24,16,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_68.smt2, PATH : [24,16,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_69.smt2, PATH : [24,16,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_70.smt2, PATH : [24,16,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_71.smt2, PATH : [24,16,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_72.smt2, PATH : [24,16,7,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_73.smt2, PATH : [24,16,7,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_74.smt2, PATH : [24,16,7,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_75.smt2, PATH : [24,16,7,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_76.smt2, PATH : [24,16,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_77.smt2, PATH : [24,16,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_78.smt2, PATH : [24,16,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_79.smt2, PATH : [24,16,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_80.smt2, PATH : [24,16,13,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_81.smt2, PATH : [24,16,13,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_82.smt2, PATH : [24,16,13,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_83.smt2, PATH : [24,16,13,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_84.smt2, PATH : [24,16,15,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_85.smt2, PATH : [24,16,15,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_86.smt2, PATH : [24,16,15,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_87.smt2, PATH : [24,16,15,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_88.smt2, PATH : [24,16,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_89.smt2, PATH : [24,16,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_90.smt2, PATH : [24,16,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_91.smt2, PATH : [24,16,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_92.smt2, PATH : [24,16,22,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_93.smt2, PATH : [24,16,22,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_94.smt2, PATH : [24,16,22,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_95.smt2, PATH : [24,16,22,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_96.smt2, PATH : [24,22,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_97.smt2, PATH : [24,22,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_98.smt2, PATH : [24,22,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_99.smt2, PATH : [24,22,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_100.smt2, PATH : [24,22,7,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_101.smt2, PATH : [24,22,7,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_102.smt2, PATH : [24,22,7,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_103.smt2, PATH : [24,22,7,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_104.smt2, PATH : [24,22,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_105.smt2, PATH : [24,22,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_106.smt2, PATH : [24,22,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_107.smt2, PATH : [24,22,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_108.smt2, PATH : [24,22,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_109.smt2, PATH : [24,22,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_110.smt2, PATH : [24,22,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_111.smt2, PATH : [24,22,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_112.smt2, PATH : [24,22,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_113.smt2, PATH : [24,22,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_114.smt2, PATH : [24,22,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_115.smt2, PATH : [24,22,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_116.smt2, PATH : [24,22,13,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_117.smt2, PATH : [24,22,13,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_118.smt2, PATH : [24,22,13,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_119.smt2, PATH : [24,22,13,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_120.smt2, PATH : [24,22,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_121.smt2, PATH : [24,22,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_122.smt2, PATH : [24,22,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_123.smt2, PATH : [24,22,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_124.smt2, PATH : [24,22,15,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_125.smt2, PATH : [24,22,15,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_126.smt2, PATH : [24,22,15,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_127.smt2, PATH : [24,22,15,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_128.smt2, PATH : [24,22,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_129.smt2, PATH : [24,22,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_130.smt2, PATH : [24,22,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_131.smt2, PATH : [24,22,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_132.smt2, PATH : [24,22,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_133.smt2, PATH : [24,22,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_134.smt2, PATH : [24,22,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_135.smt2, PATH : [24,22,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_136.smt2, PATH : [24,22,22,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_137.smt2, PATH : [24,22,22,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_138.smt2, PATH : [24,22,22,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_139.smt2, PATH : [24,22,22,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_140.smt2, PATH : [24,22,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_141.smt2, PATH : [24,22,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_142.smt2, PATH : [24,22,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_4_143.smt2, PATH : [24,22,26,21,10]
+unsat
+For k = 4, dReach tried 144 feasible paths, all of them are unsat.
+SMT: ./log/car02/f3/dreach/model/model_5_0.smt2, PATH : [24,6,1,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1.smt2, PATH : [24,6,1,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_2.smt2, PATH : [24,6,1,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_3.smt2, PATH : [24,6,1,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_4.smt2, PATH : [24,6,1,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_5.smt2, PATH : [24,6,1,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_6.smt2, PATH : [24,6,1,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_7.smt2, PATH : [24,6,1,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_8.smt2, PATH : [24,6,1,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_9.smt2, PATH : [24,6,1,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_10.smt2, PATH : [24,6,1,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_11.smt2, PATH : [24,6,1,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_12.smt2, PATH : [24,6,1,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_13.smt2, PATH : [24,6,1,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_14.smt2, PATH : [24,6,1,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_15.smt2, PATH : [24,6,1,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_16.smt2, PATH : [24,6,3,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_17.smt2, PATH : [24,6,3,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_18.smt2, PATH : [24,6,3,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_19.smt2, PATH : [24,6,3,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_20.smt2, PATH : [24,6,3,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_21.smt2, PATH : [24,6,3,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_22.smt2, PATH : [24,6,3,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_23.smt2, PATH : [24,6,3,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_24.smt2, PATH : [24,6,3,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_25.smt2, PATH : [24,6,3,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_26.smt2, PATH : [24,6,3,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_27.smt2, PATH : [24,6,3,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_28.smt2, PATH : [24,6,3,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_29.smt2, PATH : [24,6,3,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_30.smt2, PATH : [24,6,3,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_31.smt2, PATH : [24,6,3,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_32.smt2, PATH : [24,6,3,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_33.smt2, PATH : [24,6,3,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_34.smt2, PATH : [24,6,3,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_35.smt2, PATH : [24,6,3,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_36.smt2, PATH : [24,6,3,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_37.smt2, PATH : [24,6,3,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_38.smt2, PATH : [24,6,3,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_39.smt2, PATH : [24,6,3,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_40.smt2, PATH : [24,6,3,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_41.smt2, PATH : [24,6,3,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_42.smt2, PATH : [24,6,3,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_43.smt2, PATH : [24,6,3,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_44.smt2, PATH : [24,6,3,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_45.smt2, PATH : [24,6,3,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_46.smt2, PATH : [24,6,3,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_47.smt2, PATH : [24,6,3,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_48.smt2, PATH : [24,6,3,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_49.smt2, PATH : [24,6,3,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_50.smt2, PATH : [24,6,3,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_51.smt2, PATH : [24,6,3,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_52.smt2, PATH : [24,6,3,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_53.smt2, PATH : [24,6,3,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_54.smt2, PATH : [24,6,3,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_55.smt2, PATH : [24,6,3,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_56.smt2, PATH : [24,6,3,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_57.smt2, PATH : [24,6,3,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_58.smt2, PATH : [24,6,3,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_59.smt2, PATH : [24,6,3,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_60.smt2, PATH : [24,6,3,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_61.smt2, PATH : [24,6,3,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_62.smt2, PATH : [24,6,3,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_63.smt2, PATH : [24,6,3,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_64.smt2, PATH : [24,6,4,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_65.smt2, PATH : [24,6,4,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_66.smt2, PATH : [24,6,4,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_67.smt2, PATH : [24,6,4,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_68.smt2, PATH : [24,6,4,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_69.smt2, PATH : [24,6,4,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_70.smt2, PATH : [24,6,4,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_71.smt2, PATH : [24,6,4,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_72.smt2, PATH : [24,6,4,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_73.smt2, PATH : [24,6,4,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_74.smt2, PATH : [24,6,4,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_75.smt2, PATH : [24,6,4,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_76.smt2, PATH : [24,6,4,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_77.smt2, PATH : [24,6,4,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_78.smt2, PATH : [24,6,4,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_79.smt2, PATH : [24,6,4,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_80.smt2, PATH : [24,6,4,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_81.smt2, PATH : [24,6,4,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_82.smt2, PATH : [24,6,4,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_83.smt2, PATH : [24,6,4,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_84.smt2, PATH : [24,6,4,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_85.smt2, PATH : [24,6,4,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_86.smt2, PATH : [24,6,4,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_87.smt2, PATH : [24,6,4,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_88.smt2, PATH : [24,6,4,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_89.smt2, PATH : [24,6,4,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_90.smt2, PATH : [24,6,4,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_91.smt2, PATH : [24,6,4,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_92.smt2, PATH : [24,6,4,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_93.smt2, PATH : [24,6,4,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_94.smt2, PATH : [24,6,4,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_95.smt2, PATH : [24,6,4,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_96.smt2, PATH : [24,6,4,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_97.smt2, PATH : [24,6,4,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_98.smt2, PATH : [24,6,4,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_99.smt2, PATH : [24,6,4,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_100.smt2, PATH : [24,6,4,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_101.smt2, PATH : [24,6,4,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_102.smt2, PATH : [24,6,4,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_103.smt2, PATH : [24,6,4,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_104.smt2, PATH : [24,6,4,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_105.smt2, PATH : [24,6,4,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_106.smt2, PATH : [24,6,4,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_107.smt2, PATH : [24,6,4,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_108.smt2, PATH : [24,6,4,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_109.smt2, PATH : [24,6,4,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_110.smt2, PATH : [24,6,4,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_111.smt2, PATH : [24,6,4,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_112.smt2, PATH : [24,6,4,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_113.smt2, PATH : [24,6,4,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_114.smt2, PATH : [24,6,4,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_115.smt2, PATH : [24,6,4,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_116.smt2, PATH : [24,6,4,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_117.smt2, PATH : [24,6,4,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_118.smt2, PATH : [24,6,4,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_119.smt2, PATH : [24,6,4,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_120.smt2, PATH : [24,6,4,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_121.smt2, PATH : [24,6,4,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_122.smt2, PATH : [24,6,4,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_123.smt2, PATH : [24,6,4,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_124.smt2, PATH : [24,6,4,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_125.smt2, PATH : [24,6,4,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_126.smt2, PATH : [24,6,4,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_127.smt2, PATH : [24,6,4,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_128.smt2, PATH : [24,6,5,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_129.smt2, PATH : [24,6,5,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_130.smt2, PATH : [24,6,5,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_131.smt2, PATH : [24,6,5,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_132.smt2, PATH : [24,6,5,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_133.smt2, PATH : [24,6,5,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_134.smt2, PATH : [24,6,5,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_135.smt2, PATH : [24,6,5,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_136.smt2, PATH : [24,6,5,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_137.smt2, PATH : [24,6,5,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_138.smt2, PATH : [24,6,5,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_139.smt2, PATH : [24,6,5,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_140.smt2, PATH : [24,6,5,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_141.smt2, PATH : [24,6,5,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_142.smt2, PATH : [24,6,5,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_143.smt2, PATH : [24,6,5,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_144.smt2, PATH : [24,6,5,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_145.smt2, PATH : [24,6,5,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_146.smt2, PATH : [24,6,5,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_147.smt2, PATH : [24,6,5,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_148.smt2, PATH : [24,6,5,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_149.smt2, PATH : [24,6,5,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_150.smt2, PATH : [24,6,5,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_151.smt2, PATH : [24,6,5,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_152.smt2, PATH : [24,6,5,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_153.smt2, PATH : [24,6,5,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_154.smt2, PATH : [24,6,5,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_155.smt2, PATH : [24,6,5,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_156.smt2, PATH : [24,6,5,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_157.smt2, PATH : [24,6,5,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_158.smt2, PATH : [24,6,5,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_159.smt2, PATH : [24,6,5,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_160.smt2, PATH : [24,6,5,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_161.smt2, PATH : [24,6,5,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_162.smt2, PATH : [24,6,5,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_163.smt2, PATH : [24,6,5,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_164.smt2, PATH : [24,6,5,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_165.smt2, PATH : [24,6,5,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_166.smt2, PATH : [24,6,5,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_167.smt2, PATH : [24,6,5,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_168.smt2, PATH : [24,6,5,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_169.smt2, PATH : [24,6,5,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_170.smt2, PATH : [24,6,5,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_171.smt2, PATH : [24,6,5,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_172.smt2, PATH : [24,6,5,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_173.smt2, PATH : [24,6,5,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_174.smt2, PATH : [24,6,5,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_175.smt2, PATH : [24,6,5,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_176.smt2, PATH : [24,6,6,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_177.smt2, PATH : [24,6,6,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_178.smt2, PATH : [24,6,6,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_179.smt2, PATH : [24,6,6,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_180.smt2, PATH : [24,6,6,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_181.smt2, PATH : [24,6,6,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_182.smt2, PATH : [24,6,6,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_183.smt2, PATH : [24,6,6,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_184.smt2, PATH : [24,6,6,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_185.smt2, PATH : [24,6,6,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_186.smt2, PATH : [24,6,6,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_187.smt2, PATH : [24,6,6,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_188.smt2, PATH : [24,6,6,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_189.smt2, PATH : [24,6,6,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_190.smt2, PATH : [24,6,6,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_191.smt2, PATH : [24,6,6,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_192.smt2, PATH : [24,6,6,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_193.smt2, PATH : [24,6,6,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_194.smt2, PATH : [24,6,6,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_195.smt2, PATH : [24,6,6,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_196.smt2, PATH : [24,6,6,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_197.smt2, PATH : [24,6,6,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_198.smt2, PATH : [24,6,6,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_199.smt2, PATH : [24,6,6,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_200.smt2, PATH : [24,6,6,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_201.smt2, PATH : [24,6,6,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_202.smt2, PATH : [24,6,6,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_203.smt2, PATH : [24,6,6,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_204.smt2, PATH : [24,6,6,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_205.smt2, PATH : [24,6,6,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_206.smt2, PATH : [24,6,6,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_207.smt2, PATH : [24,6,6,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_208.smt2, PATH : [24,6,6,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_209.smt2, PATH : [24,6,6,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_210.smt2, PATH : [24,6,6,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_211.smt2, PATH : [24,6,6,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_212.smt2, PATH : [24,6,6,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_213.smt2, PATH : [24,6,6,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_214.smt2, PATH : [24,6,6,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_215.smt2, PATH : [24,6,6,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_216.smt2, PATH : [24,6,6,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_217.smt2, PATH : [24,6,6,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_218.smt2, PATH : [24,6,6,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_219.smt2, PATH : [24,6,6,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_220.smt2, PATH : [24,6,6,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_221.smt2, PATH : [24,6,6,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_222.smt2, PATH : [24,6,6,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_223.smt2, PATH : [24,6,6,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_224.smt2, PATH : [24,6,6,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_225.smt2, PATH : [24,6,6,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_226.smt2, PATH : [24,6,6,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_227.smt2, PATH : [24,6,6,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_228.smt2, PATH : [24,6,6,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_229.smt2, PATH : [24,6,6,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_230.smt2, PATH : [24,6,6,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_231.smt2, PATH : [24,6,6,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_232.smt2, PATH : [24,6,6,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_233.smt2, PATH : [24,6,6,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_234.smt2, PATH : [24,6,6,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_235.smt2, PATH : [24,6,6,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_236.smt2, PATH : [24,6,6,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_237.smt2, PATH : [24,6,6,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_238.smt2, PATH : [24,6,6,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_239.smt2, PATH : [24,6,6,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_240.smt2, PATH : [24,6,8,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_241.smt2, PATH : [24,6,8,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_242.smt2, PATH : [24,6,8,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_243.smt2, PATH : [24,6,8,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_244.smt2, PATH : [24,6,8,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_245.smt2, PATH : [24,6,8,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_246.smt2, PATH : [24,6,8,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_247.smt2, PATH : [24,6,8,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_248.smt2, PATH : [24,6,8,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_249.smt2, PATH : [24,6,8,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_250.smt2, PATH : [24,6,8,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_251.smt2, PATH : [24,6,8,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_252.smt2, PATH : [24,6,8,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_253.smt2, PATH : [24,6,8,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_254.smt2, PATH : [24,6,8,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_255.smt2, PATH : [24,6,8,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_256.smt2, PATH : [24,6,8,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_257.smt2, PATH : [24,6,8,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_258.smt2, PATH : [24,6,8,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_259.smt2, PATH : [24,6,8,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_260.smt2, PATH : [24,6,8,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_261.smt2, PATH : [24,6,8,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_262.smt2, PATH : [24,6,8,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_263.smt2, PATH : [24,6,8,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_264.smt2, PATH : [24,6,8,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_265.smt2, PATH : [24,6,8,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_266.smt2, PATH : [24,6,8,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_267.smt2, PATH : [24,6,8,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_268.smt2, PATH : [24,6,8,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_269.smt2, PATH : [24,6,8,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_270.smt2, PATH : [24,6,8,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_271.smt2, PATH : [24,6,8,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_272.smt2, PATH : [24,6,9,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_273.smt2, PATH : [24,6,9,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_274.smt2, PATH : [24,6,9,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_275.smt2, PATH : [24,6,9,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_276.smt2, PATH : [24,6,9,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_277.smt2, PATH : [24,6,9,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_278.smt2, PATH : [24,6,9,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_279.smt2, PATH : [24,6,9,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_280.smt2, PATH : [24,6,9,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_281.smt2, PATH : [24,6,9,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_282.smt2, PATH : [24,6,9,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_283.smt2, PATH : [24,6,9,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_284.smt2, PATH : [24,6,9,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_285.smt2, PATH : [24,6,9,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_286.smt2, PATH : [24,6,9,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_287.smt2, PATH : [24,6,9,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_288.smt2, PATH : [24,6,9,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_289.smt2, PATH : [24,6,9,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_290.smt2, PATH : [24,6,9,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_291.smt2, PATH : [24,6,9,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_292.smt2, PATH : [24,6,9,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_293.smt2, PATH : [24,6,9,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_294.smt2, PATH : [24,6,9,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_295.smt2, PATH : [24,6,9,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_296.smt2, PATH : [24,6,9,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_297.smt2, PATH : [24,6,9,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_298.smt2, PATH : [24,6,9,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_299.smt2, PATH : [24,6,9,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_300.smt2, PATH : [24,6,9,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_301.smt2, PATH : [24,6,9,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_302.smt2, PATH : [24,6,9,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_303.smt2, PATH : [24,6,9,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_304.smt2, PATH : [24,6,9,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_305.smt2, PATH : [24,6,9,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_306.smt2, PATH : [24,6,9,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_307.smt2, PATH : [24,6,9,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_308.smt2, PATH : [24,6,9,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_309.smt2, PATH : [24,6,9,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_310.smt2, PATH : [24,6,9,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_311.smt2, PATH : [24,6,9,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_312.smt2, PATH : [24,6,9,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_313.smt2, PATH : [24,6,9,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_314.smt2, PATH : [24,6,9,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_315.smt2, PATH : [24,6,9,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_316.smt2, PATH : [24,6,9,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_317.smt2, PATH : [24,6,9,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_318.smt2, PATH : [24,6,9,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_319.smt2, PATH : [24,6,9,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_320.smt2, PATH : [24,6,9,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_321.smt2, PATH : [24,6,9,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_322.smt2, PATH : [24,6,9,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_323.smt2, PATH : [24,6,9,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_324.smt2, PATH : [24,6,9,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_325.smt2, PATH : [24,6,9,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_326.smt2, PATH : [24,6,9,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_327.smt2, PATH : [24,6,9,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_328.smt2, PATH : [24,6,9,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_329.smt2, PATH : [24,6,9,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_330.smt2, PATH : [24,6,9,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_331.smt2, PATH : [24,6,9,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_332.smt2, PATH : [24,6,9,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_333.smt2, PATH : [24,6,9,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_334.smt2, PATH : [24,6,9,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_335.smt2, PATH : [24,6,9,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_336.smt2, PATH : [24,6,11,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_337.smt2, PATH : [24,6,11,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_338.smt2, PATH : [24,6,11,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_339.smt2, PATH : [24,6,11,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_340.smt2, PATH : [24,6,11,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_341.smt2, PATH : [24,6,11,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_342.smt2, PATH : [24,6,11,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_343.smt2, PATH : [24,6,11,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_344.smt2, PATH : [24,6,11,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_345.smt2, PATH : [24,6,11,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_346.smt2, PATH : [24,6,11,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_347.smt2, PATH : [24,6,11,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_348.smt2, PATH : [24,6,11,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_349.smt2, PATH : [24,6,11,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_350.smt2, PATH : [24,6,11,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_351.smt2, PATH : [24,6,11,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_352.smt2, PATH : [24,6,12,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_353.smt2, PATH : [24,6,12,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_354.smt2, PATH : [24,6,12,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_355.smt2, PATH : [24,6,12,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_356.smt2, PATH : [24,6,12,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_357.smt2, PATH : [24,6,12,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_358.smt2, PATH : [24,6,12,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_359.smt2, PATH : [24,6,12,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_360.smt2, PATH : [24,6,12,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_361.smt2, PATH : [24,6,12,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_362.smt2, PATH : [24,6,12,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_363.smt2, PATH : [24,6,12,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_364.smt2, PATH : [24,6,12,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_365.smt2, PATH : [24,6,12,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_366.smt2, PATH : [24,6,12,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_367.smt2, PATH : [24,6,12,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_368.smt2, PATH : [24,6,12,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_369.smt2, PATH : [24,6,12,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_370.smt2, PATH : [24,6,12,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_371.smt2, PATH : [24,6,12,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_372.smt2, PATH : [24,6,12,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_373.smt2, PATH : [24,6,12,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_374.smt2, PATH : [24,6,12,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_375.smt2, PATH : [24,6,12,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_376.smt2, PATH : [24,6,12,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_377.smt2, PATH : [24,6,12,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_378.smt2, PATH : [24,6,12,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_379.smt2, PATH : [24,6,12,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_380.smt2, PATH : [24,6,12,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_381.smt2, PATH : [24,6,12,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_382.smt2, PATH : [24,6,12,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_383.smt2, PATH : [24,6,12,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_384.smt2, PATH : [24,6,14,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_385.smt2, PATH : [24,6,14,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_386.smt2, PATH : [24,6,14,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_387.smt2, PATH : [24,6,14,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_388.smt2, PATH : [24,6,14,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_389.smt2, PATH : [24,6,14,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_390.smt2, PATH : [24,6,14,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_391.smt2, PATH : [24,6,14,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_392.smt2, PATH : [24,6,14,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_393.smt2, PATH : [24,6,14,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_394.smt2, PATH : [24,6,14,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_395.smt2, PATH : [24,6,14,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_396.smt2, PATH : [24,6,14,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_397.smt2, PATH : [24,6,14,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_398.smt2, PATH : [24,6,14,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_399.smt2, PATH : [24,6,14,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_400.smt2, PATH : [24,6,17,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_401.smt2, PATH : [24,6,17,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_402.smt2, PATH : [24,6,17,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_403.smt2, PATH : [24,6,17,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_404.smt2, PATH : [24,6,17,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_405.smt2, PATH : [24,6,17,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_406.smt2, PATH : [24,6,17,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_407.smt2, PATH : [24,6,17,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_408.smt2, PATH : [24,6,17,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_409.smt2, PATH : [24,6,17,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_410.smt2, PATH : [24,6,17,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_411.smt2, PATH : [24,6,17,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_412.smt2, PATH : [24,6,17,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_413.smt2, PATH : [24,6,17,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_414.smt2, PATH : [24,6,17,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_415.smt2, PATH : [24,6,17,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_416.smt2, PATH : [24,6,17,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_417.smt2, PATH : [24,6,17,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_418.smt2, PATH : [24,6,17,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_419.smt2, PATH : [24,6,17,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_420.smt2, PATH : [24,6,17,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_421.smt2, PATH : [24,6,17,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_422.smt2, PATH : [24,6,17,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_423.smt2, PATH : [24,6,17,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_424.smt2, PATH : [24,6,17,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_425.smt2, PATH : [24,6,17,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_426.smt2, PATH : [24,6,17,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_427.smt2, PATH : [24,6,17,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_428.smt2, PATH : [24,6,17,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_429.smt2, PATH : [24,6,17,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_430.smt2, PATH : [24,6,17,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_431.smt2, PATH : [24,6,17,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_432.smt2, PATH : [24,6,19,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_433.smt2, PATH : [24,6,19,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_434.smt2, PATH : [24,6,19,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_435.smt2, PATH : [24,6,19,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_436.smt2, PATH : [24,6,19,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_437.smt2, PATH : [24,6,19,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_438.smt2, PATH : [24,6,19,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_439.smt2, PATH : [24,6,19,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_440.smt2, PATH : [24,6,19,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_441.smt2, PATH : [24,6,19,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_442.smt2, PATH : [24,6,19,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_443.smt2, PATH : [24,6,19,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_444.smt2, PATH : [24,6,19,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_445.smt2, PATH : [24,6,19,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_446.smt2, PATH : [24,6,19,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_447.smt2, PATH : [24,6,19,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_448.smt2, PATH : [24,6,19,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_449.smt2, PATH : [24,6,19,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_450.smt2, PATH : [24,6,19,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_451.smt2, PATH : [24,6,19,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_452.smt2, PATH : [24,6,19,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_453.smt2, PATH : [24,6,19,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_454.smt2, PATH : [24,6,19,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_455.smt2, PATH : [24,6,19,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_456.smt2, PATH : [24,6,19,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_457.smt2, PATH : [24,6,19,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_458.smt2, PATH : [24,6,19,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_459.smt2, PATH : [24,6,19,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_460.smt2, PATH : [24,6,19,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_461.smt2, PATH : [24,6,19,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_462.smt2, PATH : [24,6,19,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_463.smt2, PATH : [24,6,19,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_464.smt2, PATH : [24,6,19,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_465.smt2, PATH : [24,6,19,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_466.smt2, PATH : [24,6,19,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_467.smt2, PATH : [24,6,19,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_468.smt2, PATH : [24,6,19,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_469.smt2, PATH : [24,6,19,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_470.smt2, PATH : [24,6,19,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_471.smt2, PATH : [24,6,19,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_472.smt2, PATH : [24,6,19,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_473.smt2, PATH : [24,6,19,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_474.smt2, PATH : [24,6,19,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_475.smt2, PATH : [24,6,19,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_476.smt2, PATH : [24,6,19,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_477.smt2, PATH : [24,6,19,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_478.smt2, PATH : [24,6,19,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_479.smt2, PATH : [24,6,19,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_480.smt2, PATH : [24,6,19,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_481.smt2, PATH : [24,6,19,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_482.smt2, PATH : [24,6,19,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_483.smt2, PATH : [24,6,19,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_484.smt2, PATH : [24,6,19,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_485.smt2, PATH : [24,6,19,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_486.smt2, PATH : [24,6,19,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_487.smt2, PATH : [24,6,19,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_488.smt2, PATH : [24,6,19,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_489.smt2, PATH : [24,6,19,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_490.smt2, PATH : [24,6,19,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_491.smt2, PATH : [24,6,19,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_492.smt2, PATH : [24,6,19,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_493.smt2, PATH : [24,6,19,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_494.smt2, PATH : [24,6,19,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_495.smt2, PATH : [24,6,19,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_496.smt2, PATH : [24,6,20,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_497.smt2, PATH : [24,6,20,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_498.smt2, PATH : [24,6,20,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_499.smt2, PATH : [24,6,20,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_500.smt2, PATH : [24,6,20,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_501.smt2, PATH : [24,6,20,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_502.smt2, PATH : [24,6,20,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_503.smt2, PATH : [24,6,20,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_504.smt2, PATH : [24,6,20,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_505.smt2, PATH : [24,6,20,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_506.smt2, PATH : [24,6,20,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_507.smt2, PATH : [24,6,20,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_508.smt2, PATH : [24,6,20,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_509.smt2, PATH : [24,6,20,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_510.smt2, PATH : [24,6,20,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_511.smt2, PATH : [24,6,20,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_512.smt2, PATH : [24,6,20,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_513.smt2, PATH : [24,6,20,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_514.smt2, PATH : [24,6,20,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_515.smt2, PATH : [24,6,20,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_516.smt2, PATH : [24,6,20,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_517.smt2, PATH : [24,6,20,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_518.smt2, PATH : [24,6,20,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_519.smt2, PATH : [24,6,20,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_520.smt2, PATH : [24,6,20,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_521.smt2, PATH : [24,6,20,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_522.smt2, PATH : [24,6,20,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_523.smt2, PATH : [24,6,20,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_524.smt2, PATH : [24,6,20,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_525.smt2, PATH : [24,6,20,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_526.smt2, PATH : [24,6,20,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_527.smt2, PATH : [24,6,20,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_528.smt2, PATH : [24,6,20,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_529.smt2, PATH : [24,6,20,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_530.smt2, PATH : [24,6,20,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_531.smt2, PATH : [24,6,20,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_532.smt2, PATH : [24,6,20,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_533.smt2, PATH : [24,6,20,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_534.smt2, PATH : [24,6,20,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_535.smt2, PATH : [24,6,20,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_536.smt2, PATH : [24,6,20,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_537.smt2, PATH : [24,6,20,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_538.smt2, PATH : [24,6,20,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_539.smt2, PATH : [24,6,20,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_540.smt2, PATH : [24,6,20,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_541.smt2, PATH : [24,6,20,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_542.smt2, PATH : [24,6,20,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_543.smt2, PATH : [24,6,20,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_544.smt2, PATH : [24,6,21,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_545.smt2, PATH : [24,6,21,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_546.smt2, PATH : [24,6,21,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_547.smt2, PATH : [24,6,21,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_548.smt2, PATH : [24,6,21,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_549.smt2, PATH : [24,6,21,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_550.smt2, PATH : [24,6,21,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_551.smt2, PATH : [24,6,21,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_552.smt2, PATH : [24,6,21,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_553.smt2, PATH : [24,6,21,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_554.smt2, PATH : [24,6,21,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_555.smt2, PATH : [24,6,21,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_556.smt2, PATH : [24,6,21,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_557.smt2, PATH : [24,6,21,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_558.smt2, PATH : [24,6,21,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_559.smt2, PATH : [24,6,21,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_560.smt2, PATH : [24,6,23,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_561.smt2, PATH : [24,6,23,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_562.smt2, PATH : [24,6,23,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_563.smt2, PATH : [24,6,23,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_564.smt2, PATH : [24,6,23,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_565.smt2, PATH : [24,6,23,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_566.smt2, PATH : [24,6,23,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_567.smt2, PATH : [24,6,23,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_568.smt2, PATH : [24,6,23,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_569.smt2, PATH : [24,6,23,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_570.smt2, PATH : [24,6,23,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_571.smt2, PATH : [24,6,23,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_572.smt2, PATH : [24,6,23,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_573.smt2, PATH : [24,6,23,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_574.smt2, PATH : [24,6,23,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_575.smt2, PATH : [24,6,23,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_576.smt2, PATH : [24,6,23,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_577.smt2, PATH : [24,6,23,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_578.smt2, PATH : [24,6,23,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_579.smt2, PATH : [24,6,23,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_580.smt2, PATH : [24,6,23,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_581.smt2, PATH : [24,6,23,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_582.smt2, PATH : [24,6,23,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_583.smt2, PATH : [24,6,23,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_584.smt2, PATH : [24,6,23,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_585.smt2, PATH : [24,6,23,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_586.smt2, PATH : [24,6,23,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_587.smt2, PATH : [24,6,23,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_588.smt2, PATH : [24,6,23,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_589.smt2, PATH : [24,6,23,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_590.smt2, PATH : [24,6,23,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_591.smt2, PATH : [24,6,23,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_592.smt2, PATH : [24,6,23,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_593.smt2, PATH : [24,6,23,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_594.smt2, PATH : [24,6,23,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_595.smt2, PATH : [24,6,23,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_596.smt2, PATH : [24,6,23,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_597.smt2, PATH : [24,6,23,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_598.smt2, PATH : [24,6,23,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_599.smt2, PATH : [24,6,23,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_600.smt2, PATH : [24,6,23,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_601.smt2, PATH : [24,6,23,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_602.smt2, PATH : [24,6,23,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_603.smt2, PATH : [24,6,23,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_604.smt2, PATH : [24,6,23,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_605.smt2, PATH : [24,6,23,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_606.smt2, PATH : [24,6,23,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_607.smt2, PATH : [24,6,23,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_608.smt2, PATH : [24,6,26,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_609.smt2, PATH : [24,6,26,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_610.smt2, PATH : [24,6,26,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_611.smt2, PATH : [24,6,26,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_612.smt2, PATH : [24,6,26,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_613.smt2, PATH : [24,6,26,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_614.smt2, PATH : [24,6,26,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_615.smt2, PATH : [24,6,26,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_616.smt2, PATH : [24,6,26,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_617.smt2, PATH : [24,6,26,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_618.smt2, PATH : [24,6,26,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_619.smt2, PATH : [24,6,26,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_620.smt2, PATH : [24,6,26,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_621.smt2, PATH : [24,6,26,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_622.smt2, PATH : [24,6,26,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_623.smt2, PATH : [24,6,26,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_624.smt2, PATH : [24,6,26,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_625.smt2, PATH : [24,6,26,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_626.smt2, PATH : [24,6,26,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_627.smt2, PATH : [24,6,26,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_628.smt2, PATH : [24,6,26,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_629.smt2, PATH : [24,6,26,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_630.smt2, PATH : [24,6,26,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_631.smt2, PATH : [24,6,26,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_632.smt2, PATH : [24,6,26,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_633.smt2, PATH : [24,6,26,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_634.smt2, PATH : [24,6,26,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_635.smt2, PATH : [24,6,26,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_636.smt2, PATH : [24,6,26,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_637.smt2, PATH : [24,6,26,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_638.smt2, PATH : [24,6,26,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_639.smt2, PATH : [24,6,26,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_640.smt2, PATH : [24,16,2,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_641.smt2, PATH : [24,16,2,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_642.smt2, PATH : [24,16,2,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_643.smt2, PATH : [24,16,2,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_644.smt2, PATH : [24,16,2,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_645.smt2, PATH : [24,16,2,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_646.smt2, PATH : [24,16,2,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_647.smt2, PATH : [24,16,2,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_648.smt2, PATH : [24,16,2,7,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_649.smt2, PATH : [24,16,2,7,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_650.smt2, PATH : [24,16,2,7,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_651.smt2, PATH : [24,16,2,7,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_652.smt2, PATH : [24,16,2,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_653.smt2, PATH : [24,16,2,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_654.smt2, PATH : [24,16,2,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_655.smt2, PATH : [24,16,2,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_656.smt2, PATH : [24,16,2,13,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_657.smt2, PATH : [24,16,2,13,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_658.smt2, PATH : [24,16,2,13,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_659.smt2, PATH : [24,16,2,13,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_660.smt2, PATH : [24,16,2,15,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_661.smt2, PATH : [24,16,2,15,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_662.smt2, PATH : [24,16,2,15,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_663.smt2, PATH : [24,16,2,15,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_664.smt2, PATH : [24,16,2,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_665.smt2, PATH : [24,16,2,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_666.smt2, PATH : [24,16,2,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_667.smt2, PATH : [24,16,2,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_668.smt2, PATH : [24,16,2,22,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_669.smt2, PATH : [24,16,2,22,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_670.smt2, PATH : [24,16,2,22,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_671.smt2, PATH : [24,16,2,22,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_672.smt2, PATH : [24,16,4,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_673.smt2, PATH : [24,16,4,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_674.smt2, PATH : [24,16,4,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_675.smt2, PATH : [24,16,4,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_676.smt2, PATH : [24,16,4,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_677.smt2, PATH : [24,16,4,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_678.smt2, PATH : [24,16,4,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_679.smt2, PATH : [24,16,4,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_680.smt2, PATH : [24,16,4,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_681.smt2, PATH : [24,16,4,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_682.smt2, PATH : [24,16,4,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_683.smt2, PATH : [24,16,4,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_684.smt2, PATH : [24,16,4,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_685.smt2, PATH : [24,16,4,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_686.smt2, PATH : [24,16,4,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_687.smt2, PATH : [24,16,4,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_688.smt2, PATH : [24,16,4,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_689.smt2, PATH : [24,16,4,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_690.smt2, PATH : [24,16,4,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_691.smt2, PATH : [24,16,4,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_692.smt2, PATH : [24,16,4,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_693.smt2, PATH : [24,16,4,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_694.smt2, PATH : [24,16,4,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_695.smt2, PATH : [24,16,4,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_696.smt2, PATH : [24,16,4,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_697.smt2, PATH : [24,16,4,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_698.smt2, PATH : [24,16,4,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_699.smt2, PATH : [24,16,4,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_700.smt2, PATH : [24,16,4,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_701.smt2, PATH : [24,16,4,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_702.smt2, PATH : [24,16,4,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_703.smt2, PATH : [24,16,4,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_704.smt2, PATH : [24,16,4,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_705.smt2, PATH : [24,16,4,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_706.smt2, PATH : [24,16,4,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_707.smt2, PATH : [24,16,4,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_708.smt2, PATH : [24,16,4,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_709.smt2, PATH : [24,16,4,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_710.smt2, PATH : [24,16,4,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_711.smt2, PATH : [24,16,4,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_712.smt2, PATH : [24,16,4,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_713.smt2, PATH : [24,16,4,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_714.smt2, PATH : [24,16,4,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_715.smt2, PATH : [24,16,4,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_716.smt2, PATH : [24,16,4,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_717.smt2, PATH : [24,16,4,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_718.smt2, PATH : [24,16,4,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_719.smt2, PATH : [24,16,4,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_720.smt2, PATH : [24,16,4,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_721.smt2, PATH : [24,16,4,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_722.smt2, PATH : [24,16,4,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_723.smt2, PATH : [24,16,4,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_724.smt2, PATH : [24,16,4,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_725.smt2, PATH : [24,16,4,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_726.smt2, PATH : [24,16,4,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_727.smt2, PATH : [24,16,4,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_728.smt2, PATH : [24,16,4,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_729.smt2, PATH : [24,16,4,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_730.smt2, PATH : [24,16,4,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_731.smt2, PATH : [24,16,4,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_732.smt2, PATH : [24,16,4,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_733.smt2, PATH : [24,16,4,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_734.smt2, PATH : [24,16,4,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_735.smt2, PATH : [24,16,4,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_736.smt2, PATH : [24,16,6,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_737.smt2, PATH : [24,16,6,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_738.smt2, PATH : [24,16,6,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_739.smt2, PATH : [24,16,6,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_740.smt2, PATH : [24,16,6,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_741.smt2, PATH : [24,16,6,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_742.smt2, PATH : [24,16,6,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_743.smt2, PATH : [24,16,6,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_744.smt2, PATH : [24,16,6,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_745.smt2, PATH : [24,16,6,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_746.smt2, PATH : [24,16,6,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_747.smt2, PATH : [24,16,6,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_748.smt2, PATH : [24,16,6,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_749.smt2, PATH : [24,16,6,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_750.smt2, PATH : [24,16,6,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_751.smt2, PATH : [24,16,6,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_752.smt2, PATH : [24,16,6,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_753.smt2, PATH : [24,16,6,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_754.smt2, PATH : [24,16,6,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_755.smt2, PATH : [24,16,6,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_756.smt2, PATH : [24,16,6,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_757.smt2, PATH : [24,16,6,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_758.smt2, PATH : [24,16,6,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_759.smt2, PATH : [24,16,6,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_760.smt2, PATH : [24,16,6,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_761.smt2, PATH : [24,16,6,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_762.smt2, PATH : [24,16,6,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_763.smt2, PATH : [24,16,6,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_764.smt2, PATH : [24,16,6,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_765.smt2, PATH : [24,16,6,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_766.smt2, PATH : [24,16,6,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_767.smt2, PATH : [24,16,6,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_768.smt2, PATH : [24,16,6,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_769.smt2, PATH : [24,16,6,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_770.smt2, PATH : [24,16,6,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_771.smt2, PATH : [24,16,6,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_772.smt2, PATH : [24,16,6,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_773.smt2, PATH : [24,16,6,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_774.smt2, PATH : [24,16,6,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_775.smt2, PATH : [24,16,6,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_776.smt2, PATH : [24,16,6,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_777.smt2, PATH : [24,16,6,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_778.smt2, PATH : [24,16,6,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_779.smt2, PATH : [24,16,6,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_780.smt2, PATH : [24,16,6,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_781.smt2, PATH : [24,16,6,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_782.smt2, PATH : [24,16,6,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_783.smt2, PATH : [24,16,6,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_784.smt2, PATH : [24,16,6,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_785.smt2, PATH : [24,16,6,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_786.smt2, PATH : [24,16,6,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_787.smt2, PATH : [24,16,6,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_788.smt2, PATH : [24,16,6,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_789.smt2, PATH : [24,16,6,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_790.smt2, PATH : [24,16,6,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_791.smt2, PATH : [24,16,6,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_792.smt2, PATH : [24,16,6,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_793.smt2, PATH : [24,16,6,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_794.smt2, PATH : [24,16,6,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_795.smt2, PATH : [24,16,6,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_796.smt2, PATH : [24,16,6,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_797.smt2, PATH : [24,16,6,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_798.smt2, PATH : [24,16,6,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_799.smt2, PATH : [24,16,6,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_800.smt2, PATH : [24,16,7,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_801.smt2, PATH : [24,16,7,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_802.smt2, PATH : [24,16,7,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_803.smt2, PATH : [24,16,7,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_804.smt2, PATH : [24,16,7,7,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_805.smt2, PATH : [24,16,7,7,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_806.smt2, PATH : [24,16,7,7,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_807.smt2, PATH : [24,16,7,7,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_808.smt2, PATH : [24,16,7,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_809.smt2, PATH : [24,16,7,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_810.smt2, PATH : [24,16,7,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_811.smt2, PATH : [24,16,7,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_812.smt2, PATH : [24,16,7,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_813.smt2, PATH : [24,16,7,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_814.smt2, PATH : [24,16,7,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_815.smt2, PATH : [24,16,7,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_816.smt2, PATH : [24,16,7,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_817.smt2, PATH : [24,16,7,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_818.smt2, PATH : [24,16,7,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_819.smt2, PATH : [24,16,7,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_820.smt2, PATH : [24,16,7,13,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_821.smt2, PATH : [24,16,7,13,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_822.smt2, PATH : [24,16,7,13,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_823.smt2, PATH : [24,16,7,13,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_824.smt2, PATH : [24,16,7,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_825.smt2, PATH : [24,16,7,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_826.smt2, PATH : [24,16,7,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_827.smt2, PATH : [24,16,7,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_828.smt2, PATH : [24,16,7,15,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_829.smt2, PATH : [24,16,7,15,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_830.smt2, PATH : [24,16,7,15,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_831.smt2, PATH : [24,16,7,15,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_832.smt2, PATH : [24,16,7,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_833.smt2, PATH : [24,16,7,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_834.smt2, PATH : [24,16,7,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_835.smt2, PATH : [24,16,7,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_836.smt2, PATH : [24,16,7,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_837.smt2, PATH : [24,16,7,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_838.smt2, PATH : [24,16,7,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_839.smt2, PATH : [24,16,7,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_840.smt2, PATH : [24,16,7,22,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_841.smt2, PATH : [24,16,7,22,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_842.smt2, PATH : [24,16,7,22,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_843.smt2, PATH : [24,16,7,22,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_844.smt2, PATH : [24,16,7,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_845.smt2, PATH : [24,16,7,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_846.smt2, PATH : [24,16,7,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_847.smt2, PATH : [24,16,7,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_848.smt2, PATH : [24,16,9,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_849.smt2, PATH : [24,16,9,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_850.smt2, PATH : [24,16,9,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_851.smt2, PATH : [24,16,9,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_852.smt2, PATH : [24,16,9,3,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_853.smt2, PATH : [24,16,9,3,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_854.smt2, PATH : [24,16,9,3,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_855.smt2, PATH : [24,16,9,3,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_856.smt2, PATH : [24,16,9,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_857.smt2, PATH : [24,16,9,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_858.smt2, PATH : [24,16,9,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_859.smt2, PATH : [24,16,9,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_860.smt2, PATH : [24,16,9,5,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_861.smt2, PATH : [24,16,9,5,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_862.smt2, PATH : [24,16,9,5,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_863.smt2, PATH : [24,16,9,5,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_864.smt2, PATH : [24,16,9,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_865.smt2, PATH : [24,16,9,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_866.smt2, PATH : [24,16,9,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_867.smt2, PATH : [24,16,9,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_868.smt2, PATH : [24,16,9,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_869.smt2, PATH : [24,16,9,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_870.smt2, PATH : [24,16,9,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_871.smt2, PATH : [24,16,9,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_872.smt2, PATH : [24,16,9,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_873.smt2, PATH : [24,16,9,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_874.smt2, PATH : [24,16,9,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_875.smt2, PATH : [24,16,9,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_876.smt2, PATH : [24,16,9,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_877.smt2, PATH : [24,16,9,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_878.smt2, PATH : [24,16,9,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_879.smt2, PATH : [24,16,9,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_880.smt2, PATH : [24,16,9,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_881.smt2, PATH : [24,16,9,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_882.smt2, PATH : [24,16,9,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_883.smt2, PATH : [24,16,9,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_884.smt2, PATH : [24,16,9,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_885.smt2, PATH : [24,16,9,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_886.smt2, PATH : [24,16,9,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_887.smt2, PATH : [24,16,9,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_888.smt2, PATH : [24,16,9,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_889.smt2, PATH : [24,16,9,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_890.smt2, PATH : [24,16,9,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_891.smt2, PATH : [24,16,9,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_892.smt2, PATH : [24,16,9,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_893.smt2, PATH : [24,16,9,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_894.smt2, PATH : [24,16,9,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_895.smt2, PATH : [24,16,9,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_896.smt2, PATH : [24,16,9,20,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_897.smt2, PATH : [24,16,9,20,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_898.smt2, PATH : [24,16,9,20,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_899.smt2, PATH : [24,16,9,20,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_900.smt2, PATH : [24,16,9,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_901.smt2, PATH : [24,16,9,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_902.smt2, PATH : [24,16,9,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_903.smt2, PATH : [24,16,9,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_904.smt2, PATH : [24,16,9,23,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_905.smt2, PATH : [24,16,9,23,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_906.smt2, PATH : [24,16,9,23,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_907.smt2, PATH : [24,16,9,23,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_908.smt2, PATH : [24,16,9,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_909.smt2, PATH : [24,16,9,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_910.smt2, PATH : [24,16,9,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_911.smt2, PATH : [24,16,9,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_912.smt2, PATH : [24,16,13,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_913.smt2, PATH : [24,16,13,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_914.smt2, PATH : [24,16,13,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_915.smt2, PATH : [24,16,13,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_916.smt2, PATH : [24,16,13,7,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_917.smt2, PATH : [24,16,13,7,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_918.smt2, PATH : [24,16,13,7,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_919.smt2, PATH : [24,16,13,7,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_920.smt2, PATH : [24,16,13,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_921.smt2, PATH : [24,16,13,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_922.smt2, PATH : [24,16,13,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_923.smt2, PATH : [24,16,13,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_924.smt2, PATH : [24,16,13,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_925.smt2, PATH : [24,16,13,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_926.smt2, PATH : [24,16,13,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_927.smt2, PATH : [24,16,13,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_928.smt2, PATH : [24,16,13,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_929.smt2, PATH : [24,16,13,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_930.smt2, PATH : [24,16,13,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_931.smt2, PATH : [24,16,13,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_932.smt2, PATH : [24,16,13,13,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_933.smt2, PATH : [24,16,13,13,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_934.smt2, PATH : [24,16,13,13,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_935.smt2, PATH : [24,16,13,13,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_936.smt2, PATH : [24,16,13,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_937.smt2, PATH : [24,16,13,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_938.smt2, PATH : [24,16,13,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_939.smt2, PATH : [24,16,13,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_940.smt2, PATH : [24,16,13,15,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_941.smt2, PATH : [24,16,13,15,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_942.smt2, PATH : [24,16,13,15,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_943.smt2, PATH : [24,16,13,15,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_944.smt2, PATH : [24,16,13,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_945.smt2, PATH : [24,16,13,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_946.smt2, PATH : [24,16,13,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_947.smt2, PATH : [24,16,13,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_948.smt2, PATH : [24,16,13,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_949.smt2, PATH : [24,16,13,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_950.smt2, PATH : [24,16,13,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_951.smt2, PATH : [24,16,13,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_952.smt2, PATH : [24,16,13,22,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_953.smt2, PATH : [24,16,13,22,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_954.smt2, PATH : [24,16,13,22,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_955.smt2, PATH : [24,16,13,22,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_956.smt2, PATH : [24,16,13,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_957.smt2, PATH : [24,16,13,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_958.smt2, PATH : [24,16,13,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_959.smt2, PATH : [24,16,13,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_960.smt2, PATH : [24,16,15,1,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_961.smt2, PATH : [24,16,15,1,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_962.smt2, PATH : [24,16,15,1,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_963.smt2, PATH : [24,16,15,1,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_964.smt2, PATH : [24,16,15,7,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_965.smt2, PATH : [24,16,15,7,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_966.smt2, PATH : [24,16,15,7,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_967.smt2, PATH : [24,16,15,7,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_968.smt2, PATH : [24,16,15,8,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_969.smt2, PATH : [24,16,15,8,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_970.smt2, PATH : [24,16,15,8,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_971.smt2, PATH : [24,16,15,8,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_972.smt2, PATH : [24,16,15,11,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_973.smt2, PATH : [24,16,15,11,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_974.smt2, PATH : [24,16,15,11,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_975.smt2, PATH : [24,16,15,11,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_976.smt2, PATH : [24,16,15,12,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_977.smt2, PATH : [24,16,15,12,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_978.smt2, PATH : [24,16,15,12,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_979.smt2, PATH : [24,16,15,12,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_980.smt2, PATH : [24,16,15,13,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_981.smt2, PATH : [24,16,15,13,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_982.smt2, PATH : [24,16,15,13,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_983.smt2, PATH : [24,16,15,13,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_984.smt2, PATH : [24,16,15,14,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_985.smt2, PATH : [24,16,15,14,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_986.smt2, PATH : [24,16,15,14,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_987.smt2, PATH : [24,16,15,14,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_988.smt2, PATH : [24,16,15,15,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_989.smt2, PATH : [24,16,15,15,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_990.smt2, PATH : [24,16,15,15,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_991.smt2, PATH : [24,16,15,15,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_992.smt2, PATH : [24,16,15,17,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_993.smt2, PATH : [24,16,15,17,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_994.smt2, PATH : [24,16,15,17,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_995.smt2, PATH : [24,16,15,17,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_996.smt2, PATH : [24,16,15,21,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_997.smt2, PATH : [24,16,15,21,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_998.smt2, PATH : [24,16,15,21,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_999.smt2, PATH : [24,16,15,21,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1000.smt2, PATH : [24,16,15,22,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1001.smt2, PATH : [24,16,15,22,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1002.smt2, PATH : [24,16,15,22,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1003.smt2, PATH : [24,16,15,22,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1004.smt2, PATH : [24,16,15,26,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1005.smt2, PATH : [24,16,15,26,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1006.smt2, PATH : [24,16,15,26,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1007.smt2, PATH : [24,16,15,26,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1008.smt2, PATH : [24,16,16,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1009.smt2, PATH : [24,16,16,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1010.smt2, PATH : [24,16,16,4,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1011.smt2, PATH : [24,16,16,4,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1012.smt2, PATH : [24,16,16,6,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1013.smt2, PATH : [24,16,16,6,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1014.smt2, PATH : [24,16,16,6,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1015.smt2, PATH : [24,16,16,6,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1016.smt2, PATH : [24,16,16,7,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1017.smt2, PATH : [24,16,16,7,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1018.smt2, PATH : [24,16,16,7,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1019.smt2, PATH : [24,16,16,7,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1020.smt2, PATH : [24,16,16,9,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1021.smt2, PATH : [24,16,16,9,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1022.smt2, PATH : [24,16,16,9,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1023.smt2, PATH : [24,16,16,9,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1024.smt2, PATH : [24,16,16,13,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1025.smt2, PATH : [24,16,16,13,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1026.smt2, PATH : [24,16,16,13,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1027.smt2, PATH : [24,16,16,13,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1028.smt2, PATH : [24,16,16,15,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1029.smt2, PATH : [24,16,16,15,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1030.smt2, PATH : [24,16,16,15,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1031.smt2, PATH : [24,16,16,15,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1032.smt2, PATH : [24,16,16,19,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1033.smt2, PATH : [24,16,16,19,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1034.smt2, PATH : [24,16,16,19,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1035.smt2, PATH : [24,16,16,19,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1036.smt2, PATH : [24,16,16,22,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1037.smt2, PATH : [24,16,16,22,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1038.smt2, PATH : [24,16,16,22,14,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1039.smt2, PATH : [24,16,16,22,21,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1040.smt2, PATH : [24,16,18,4,1,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1041.smt2, PATH : [24,16,18,4,11,10]
+unsat
+SMT: ./log/car02/f3/dreach/model/model_5_1042.smt2, PATH : [24,16,18,4,14,10]
+delta-sat with delta = 0.00100000000000000
+For k = 5, [24,16,18,4,14,10] -- SAT
+101.94user 18.07system 2:02.97elapsed 97%CPU (0avgtext+0avgdata 33360maxresident)k
+296inputs+94688outputs (0major+9025124minor)pagefaults 0swaps

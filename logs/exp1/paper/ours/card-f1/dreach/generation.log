@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/card/card.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/card/card-f1.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/card/card.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f1
+    formula   : ((<>[ 5.0, 50.0 ] (u < (0.5 + 0.1))) R[ 0.0, inf ) (v < (0.9 + 0.1)))
+    size      : 4
+  Config
+    bound     : 5
+    threshold : 0.1
+
+  finish construction
+    running time: 0.121s
+    tableau info: (# vertex: 9, # edge: 22)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.001s
+    tableau info: (# vertex: 7, # edge: 13)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 6, # jump: 10)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.005s
+  automaton info: (# mode: 13, # jump: 55)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.173s
+  automaton info: (# mode: 7, # jump: 13)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 7, # jump: 13)
+
+Converting the automaton to an input model of dreach
+  model file  : log/card/f1/dreach/model/model.drh
+  script file : log/card/f1/dreach/run.sh
+  running time: 0.605s

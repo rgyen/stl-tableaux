@@ -1,0 +1,13 @@
+{
+  "id": "wat02-f3",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    37,
+    293
+  ],
+  "status": "complete",
+  "solver_seconds": 18.55,
+  "outcome": "unsafe"
+}

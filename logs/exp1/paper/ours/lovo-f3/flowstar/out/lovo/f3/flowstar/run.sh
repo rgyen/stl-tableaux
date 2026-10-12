@@ -1,0 +1,1 @@
+./../../3rd_party/flowstar/flowstar ./kmbae-lovo/lovo/f3/flowstar/model/model.fs >& ./kmbae-lovo/lovo/f3/flowstar/out-log.txt

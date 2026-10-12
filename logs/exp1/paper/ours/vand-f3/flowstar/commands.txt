@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/vand/vand.model -goal f3 -default-cfg ../../src/default.cfg -solver flowstar -o log >& log/vand/f3/flowstar/gen-log.txt
+
+# solver-launch
+bash out/vand/f3/flowstar/run.sh

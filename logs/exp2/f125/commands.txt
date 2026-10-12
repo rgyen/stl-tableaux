@@ -1,0 +1,4 @@
+# generation
+cd /home/artifact/stl-tableaux/results/exp2-automata/f125
+/home/artifact/stl-tableaux/.venv-stlauto-paper/bin/python /home/artifact/stl-tableaux/src/stl-tableaux/gen /home/artifact/stl-tableaux/benchmarks/exp2/pool.txt -goal f125 -default-cfg /home/artifact/stl-tableaux/results/exp2-automata/f125/default.cfg -cfg /home/artifact/stl-tableaux/benchmarks/exp2/pool.cfg --tableau-only
+

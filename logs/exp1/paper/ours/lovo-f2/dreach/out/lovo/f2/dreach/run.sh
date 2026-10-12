@@ -1,0 +1,1 @@
+/usr/bin/time ./../../3rd_party/dreal/dReach -l 0 -u 5 ./kmbae-lovo/lovo/f2/dreach/model/model.drh >& ./kmbae-lovo/lovo/f2/dreach/out-log.txt

@@ -1,0 +1,13 @@
+{
+  "id": "robe02-f3",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    10,
+    37
+  ],
+  "status": "complete",
+  "solver_seconds": 0.03,
+  "outcome": "bounded_unsat"
+}

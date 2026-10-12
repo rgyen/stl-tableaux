@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/linear/spac01/spac01.model -model-cfg ../../benchmarks/exp1/linear/spac01/spac01.cfg -model-specific-cfg ../../benchmarks/exp1/linear/spac01/spac01-f1.cfg -parallel-core 5 -verbose >& log/spac01/f1/stlmc/out-log.txt

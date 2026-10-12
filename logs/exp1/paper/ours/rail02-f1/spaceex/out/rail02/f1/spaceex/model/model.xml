@@ -1,0 +1,5921 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sspaceex version="0.2" math="SpaceEx">
+	<component id="140056724377552">
+		<param name="pb" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk4" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="vb" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk0" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="gClk" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk3" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<location id="0" name="mode_id_0" x="200" y="200" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &gt; -10 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="1" name="mode_id_1" x="210" y="210" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; -10 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="2" name="mode_id_2" x="220" y="220" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; 20 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="3" name="mode_id_3" x="230" y="230" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="4" name="mode_id_4" x="240" y="240" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="5" name="mode_id_5" x="250" y="250" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &gt; 20 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="6" name="mode_id_6" x="260" y="260" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; -10 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="7" name="mode_id_7" x="270" y="270" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="8" name="mode_id_8" x="280" y="280" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; -10 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="9" name="mode_id_9" x="290" y="290" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="10" name="mode_id_10" x="300" y="300" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &gt; -10 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="11" name="mode_id_11" x="310" y="310" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="12" name="mode_id_12" x="320" y="320" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="13" name="mode_id_13" x="330" y="330" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; -10 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="14" name="mode_id_14" x="340" y="340" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 20 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="15" name="mode_id_15" x="350" y="350" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="16" name="mode_id_16" x="360" y="360" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="17" name="mode_id_17" x="370" y="370" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; -10 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="18" name="mode_id_18" x="380" y="380" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &gt; 20 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="19" name="mode_id_19" x="390" y="390" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="20" name="mode_id_20" x="400" y="400" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; -10 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="21" name="mode_id_21" x="410" y="410" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="22" name="mode_id_22" x="420" y="420" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; 20 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="23" name="mode_id_23" x="430" y="430" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; -10 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="24" name="mode_id_24" x="440" y="440" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="25" name="mode_id_25" x="450" y="450" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; 20 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="26" name="mode_id_26" x="460" y="460" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="27" name="mode_id_27" x="470" y="470" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="28" name="mode_id_28" x="480" y="480" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; 20 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="29" name="mode_id_29" x="490" y="490" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="30" name="mode_id_30" x="500" y="500" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 20 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="31" name="mode_id_31" x="510" y="510" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="32" name="mode_id_32" x="520" y="520" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="33" name="mode_id_33" x="530" y="530" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="34" name="mode_id_34" x="540" y="540" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="35" name="mode_id_35" x="550" y="550" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="36" name="mode_id_36" x="560" y="560" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="37" name="mode_id_37" x="570" y="570" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+vb' == 0.5 &amp; 
+pb' == vb &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &gt; 10 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="38" name="mode_id_38" x="580" y="580" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="39" name="mode_id_39" x="590" y="590" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 20 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="40" name="mode_id_40" x="600" y="600" width="100" height="100">
+			<flow>pb' == 0.0 &amp; 
+vb' == 0.0 &amp; 
+x' == 0.0 &amp; 
+clk4' == 0.0 &amp; 
+clk0' == 0.0 &amp; 
+gClk' == 1.0 &amp; 
+clk2' == 0.0 &amp; 
+clk1' == 0.0 &amp; 
+clk3' == 0.0</flow>
+			<invariant>gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0</invariant>
+		</location>
+		<location id="41" name="mode_id_41" x="610" y="610" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; -10 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="42" name="mode_id_42" x="620" y="620" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &gt; -10 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="43" name="mode_id_43" x="630" y="630" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="44" name="mode_id_44" x="640" y="640" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &gt; 20 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="45" name="mode_id_45" x="650" y="650" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+gClk &lt;= 8.0 &amp; 
+x &gt; 20 &amp; 
+vb &lt;= (32 + 2.0) &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="46" name="mode_id_46" x="660" y="660" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == 0.3 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &gt; 20 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="47" name="mode_id_47" x="670" y="670" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+x' == -30 &amp; 
+pb' == vb &amp; 
+vb' == 0</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+gClk &gt;= 0.0 &amp; 
+pb &lt;= 90 &amp; 
+x &gt; 60 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<location id="48" name="mode_id_48" x="680" y="680" width="100" height="100">
+			<flow>clk1' == 1.0 &amp; 
+clk0' == 1.0 &amp; 
+clk3' == 1.0 &amp; 
+clk2' == 1.0 &amp; 
+clk4' == 1.0 &amp; 
+gClk' == 1.0 &amp; 
+pb' == vb &amp; 
+vb' == -1 &amp; 
+x' == -5</flow>
+			<invariant>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+vb &gt; (6 - 2.0) &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+gClk &gt;= 0.0 &amp; 
+x &gt; -10 &amp; 
+gClk &lt;= 8.0 &amp; 
+-50 &lt;= vb</invariant>
+		</location>
+		<transition source="11" target="12">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="11" target="13">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="8" target="13">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="19" target="23">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="18" target="25">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="8" target="23">
+			<guard>clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="31" target="20">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+x &lt; 20 &amp; 
+clk2 &gt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := -4 &amp; 
+gClk := gClk &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+clk2 := 2.0</assignment>
+		</transition>
+		<transition source="4" target="37">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="27" target="45">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="20">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="43" target="19">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="48" target="41">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="13">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="18" target="12">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="18" target="30">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="18" target="19">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="31" target="4">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0</guard>
+			<assignment>clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+gClk := gClk &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+clk2 := 2.0</assignment>
+		</transition>
+		<transition source="11" target="48">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="31" target="6">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="11" target="37">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="48" target="23">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="45" target="31">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="18" target="37">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="15" target="19">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="45" target="22">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0</guard>
+			<assignment>clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+gClk := gClk &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+clk2 := 2.0</assignment>
+		</transition>
+		<transition source="18" target="14">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="45" target="4">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+gClk := gClk &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+clk2 := 2.0</assignment>
+		</transition>
+		<transition source="18" target="11">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="48" target="13">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="21">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="44" target="25">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="43" target="36">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="40" target="15">
+			<guard />
+			<assignment>clk2 := clk2 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := 0.0 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="44" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="22">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="44" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="44" target="12">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="43" target="2">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="4">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="44" target="30">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="44" target="33">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="21">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="33" target="19">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="14">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="33" target="23">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="37">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="21">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="33" target="37">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="33" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="43" target="21">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="25">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="33" target="12">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="43" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="16">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk1 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="33" target="41">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="19">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="30">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="33" target="0">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="43" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="38">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="25">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="12">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="16">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="25">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="19">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="16">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="19">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="21">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="36" target="23">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="21">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="30">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="36" target="19">
+			<guard>clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="38">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="2" target="14">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="12">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="21">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="40" target="43">
+			<guard />
+			<assignment>clk2 := clk2 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := 0.0 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="2" target="36">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="44">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="2" target="19">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="2" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="36" target="8">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="35" target="33">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="20" target="13">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="36" target="37">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="0" target="23">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="37">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="13">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="0" target="13">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="36" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="19">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk1 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="20" target="13">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="23">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="0" target="41">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="12">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="20" target="13">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="2" target="25">
+			<guard>clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="40" target="27">
+			<guard />
+			<assignment>clk3 := clk3 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := 0.0 &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="41">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="19">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="20" target="23">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk1 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="23">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="37">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="20" target="41">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="37">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="20" target="23">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="4" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="7" target="14">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="20" target="13">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="20" target="13">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="28" target="26">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="12" target="23">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="28" target="19">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="28" target="25">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="40" target="29">
+			<guard />
+			<assignment>clk3 := clk3 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := 0.0 &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="28" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="28" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="16" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="26" target="1">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="26" target="19">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="42" target="13">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="26" target="23">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="12" target="19">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="26" target="37">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="26" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="24" target="28">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="30" target="25">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="12" target="41">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="16" target="21">
+			<guard>clk2 &gt;= 4.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="24" target="26">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="38" target="12">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="24" target="25">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="38" target="30">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="40" target="47">
+			<guard />
+			<assignment>clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := 0.0 &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="24" target="16">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="30" target="19">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="24" target="19">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="23" target="13">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="24" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="24" target="21">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="30" target="37">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="24" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="30" target="12">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="30" target="14">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="16" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="1" target="23">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="23" target="13">
+			<guard>clk2 &gt;= 4.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="12" target="13">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="16" target="21">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="1" target="13">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="16" target="14">
+			<guard>0 &lt;= pb &amp; 
+clk2 &gt;= 4.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="39" target="9">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="12" target="37">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="39" target="33">
+			<guard>0 &lt;= pb &amp; 
+clk0 &lt;= 3.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="39" target="44">
+			<guard>clk0 &lt;= 3.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="39" target="26">
+			<guard>0 &lt;= pb &amp; 
+clk0 &lt;= 3.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="37" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="39" target="28">
+			<guard>clk0 &lt;= 3.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="16" target="37">
+			<guard>0 &lt;= pb &amp; 
+clk2 &gt;= 4.0 &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="9" target="17">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="16" target="19">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="16" target="25">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="9" target="33">
+			<guard>clk0 &lt;= 3.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="9" target="0">
+			<guard>0 &lt;= pb &amp; 
+clk0 &lt;= 3.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="14" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="9" target="26">
+			<guard>clk0 &lt;= 3.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="9" target="1">
+			<guard>0 &lt;= pb &amp; 
+clk0 &lt;= 3.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="47" target="39">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="32" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 20 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="25" target="37">
+			<guard>0 &lt;= pb &amp; 
+clk2 &gt;= 4.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="38" target="21">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="47" target="9">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="21" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="47" target="44">
+			<guard>0 &lt;= pb &amp; 
+clk0 &lt;= 3.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="27" target="31">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="47" target="35">
+			<guard>clk0 &lt;= 3.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="34" target="21">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="47" target="33">
+			<guard>0 &lt;= pb &amp; 
+clk0 &lt;= 3.0 &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="27" target="4">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+vb := 8 &amp; 
+clk0 := 0.0 &amp; 
+gClk := gClk &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+clk2 := 2.0</assignment>
+		</transition>
+		<transition source="47" target="28">
+			<guard>0 &lt;= pb &amp; 
+clk0 &lt;= 3.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="30">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="47" target="24">
+			<guard>clk0 &lt;= 3.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="25" target="19">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="34" target="46">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="47" target="26">
+			<guard>0 &lt;= pb &amp; 
+clk0 &lt;= 3.0 &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="25" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="21" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="15" target="14">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="25" target="14">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="27" target="22">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+gClk := gClk &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+clk4 := 0.0 &amp; 
+clk2 := 2.0</assignment>
+		</transition>
+		<transition source="17" target="0">
+			<guard>clk0 &lt;= 3.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="38" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="15" target="12">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="19" target="13">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="34" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="25">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk1 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="38" target="19">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="17" target="1">
+			<guard>clk0 &lt;= 3.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 0.0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="15" target="37">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="12">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="5" target="32">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+vb := vb &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="22" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="34" target="32">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="15" target="21">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="5" target="46">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="22" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="5" target="4">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+vb := vb &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="15" target="30">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="19">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="5" target="22">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="22" target="37">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk4 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="41" target="13">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="5" target="3">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="38" target="14">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="3" target="32">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="15" target="38">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="3" target="42">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+x &lt; 20 &amp; 
+clk2 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="11" target="19">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="27" target="7">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0</guard>
+			<assignment>clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+gClk := gClk &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+clk2 := 2.0</assignment>
+		</transition>
+		<transition source="41" target="23">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="3" target="4">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="3" target="20">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+x &lt; 20 &amp; 
+clk2 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="6" target="20">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0</guard>
+			<assignment>clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+gClk := gClk &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+clk2 := 2.0</assignment>
+		</transition>
+		<transition source="15" target="25">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="3" target="10">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="19">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="46" target="37">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+gClk &gt;= 8.0 &amp; 
+clk4 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="29" target="46">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk4 := 0.0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="29" target="34">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="15" target="16">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="19" target="37">
+			<guard>clk2 &gt;= 4.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="32" target="42">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="29" target="32">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+vb := 8 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="29" target="22">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk4 := 0.0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="22" target="4">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="46" target="32">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="29" target="7">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="11" target="41">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="29" target="4">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+vb := 8 &amp; 
+clk0 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="46" target="14">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="29" target="5">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="38" target="16">
+			<guard>clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="43" target="25">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="38" target="25">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="43" target="16">
+			<guard>clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk1 := 2.0 &amp; 
+vb := vb &amp; 
+clk3 := clk3 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="29" target="3">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="32" target="37">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+clk4 &lt;= 2.0 &amp; 
+gClk &gt;= 8.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="25" target="14">
+			<guard>clk2 &gt;= 4.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="10" target="42">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="22" target="25">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+clk3 &gt;= 4.0 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="11" target="23">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="19" target="37">
+			<guard>gClk &gt;= 8.0 &amp; 
+clk1 &gt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="10" target="20">
+			<guard>clk0 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0</guard>
+			<assignment>clk2 := clk2 &amp; 
+clk3 := 0.0 &amp; 
+clk1 := 0.0 &amp; 
+clk0 := 0.0 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+clk4 := 0.0 &amp; 
+gClk := gClk</assignment>
+		</transition>
+		<transition source="15" target="18">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="19" target="13">
+			<guard>0 &lt;= pb &amp; 
+clk2 &gt;= 4.0 &amp; 
+vb &lt;= 50 &amp; 
+x &lt; 20 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &gt;= 2.0 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := -4 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="22" target="37">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &gt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk3 &gt;= 4.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="34" target="14">
+			<guard>0 &lt;= pb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+clk2 &lt;= 2.0 &amp; 
+x &lt; 80 &amp; 
+clk4 &lt;= 2.0 &amp; 
+-20 &lt;= x &amp; 
+gClk &gt;= 8.0 &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+clk1 := clk1 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+vb := 6 &amp; 
+gClk := gClk &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="15" target="11">
+			<guard>0 &lt;= pb &amp; 
+x &lt; 70 &amp; 
+vb &lt;= 50 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+-50 &lt;= vb</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk2 := clk2 &amp; 
+vb := 8 &amp; 
+clk3 := clk3 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+		<transition source="44" target="19">
+			<guard>0 &lt;= pb &amp; 
+-50 &lt;= vb &amp; 
+vb &lt;= 50 &amp; 
+clk0 &gt;= 0.0 &amp; 
+clk1 &gt;= 0.0 &amp; 
+x &lt; 80 &amp; 
+-20 &lt;= x &amp; 
+x &lt;= 100 &amp; 
+pb &lt;= 90 &amp; 
+clk1 &lt;= 2.0</guard>
+			<assignment>clk0 := clk0 &amp; 
+clk3 := clk3 &amp; 
+vb := vb &amp; 
+clk2 := 0.0 &amp; 
+x := x &amp; 
+pb := pb &amp; 
+gClk := gClk &amp; 
+clk1 := clk1 &amp; 
+clk4 := clk4</assignment>
+		</transition>
+	</component>
+	<component id="system">
+		<param name="pb" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk4" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="vb" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk0" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="gClk" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="clk3" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<bind component="140056724377552" as="subsystem">
+			<map key="pb">pb</map>
+			<map key="clk4">clk4</map>
+			<map key="x">x</map>
+			<map key="vb">vb</map>
+			<map key="clk0">clk0</map>
+			<map key="gClk">gClk</map>
+			<map key="clk2">clk2</map>
+			<map key="clk1">clk1</map>
+			<map key="clk3">clk3</map>
+		</bind>
+	</component>
+</sspaceex>

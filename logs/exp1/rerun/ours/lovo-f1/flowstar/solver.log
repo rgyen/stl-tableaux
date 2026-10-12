@@ -1,0 +1,3303 @@
+mode: mode_3,	time = 0.500000,	step = 0.500000,	order = 8
+mode: mode_3,	time = 1.000000,	step = 0.500000,	order = 8
+mode: mode_3,	time = 1.500000,	step = 0.500000,	order = 8
+mode: mode_3,	time = 2.000000,	step = 0.500000,	order = 8
+Dealing with the jump from mode_3 to mode_4 ...
+Done.
+Dealing with the jump from mode_3 to mode_1 ...
+No intersection detected.
+mode: mode_4,	time = 0.062500,	step = 0.062500,	order = 8
+mode: mode_4,	time = 0.131250,	step = 0.068750,	order = 8
+mode: mode_4,	time = 0.206875,	step = 0.075625,	order = 8
+mode: mode_4,	time = 0.290063,	step = 0.083188,	order = 8
+mode: mode_4,	time = 0.381569,	step = 0.091506,	order = 8
+mode: mode_4,	time = 0.482226,	step = 0.100657,	order = 8
+mode: mode_4,	time = 0.592948,	step = 0.110723,	order = 8
+mode: mode_4,	time = 0.653846,	step = 0.060897,	order = 8
+mode: mode_4,	time = 0.720833,	step = 0.066987,	order = 8
+mode: mode_4,	time = 0.794519,	step = 0.073686,	order = 8
+mode: mode_4,	time = 0.875573,	step = 0.081054,	order = 8
+mode: mode_4,	time = 0.964733,	step = 0.089160,	order = 8
+mode: mode_4,	time = 1.062809,	step = 0.098076,	order = 8
+mode: mode_4,	time = 1.170692,	step = 0.107883,	order = 8
+mode: mode_4,	time = 1.289364,	step = 0.118672,	order = 8
+mode: mode_4,	time = 1.419903,	step = 0.130539,	order = 8
+mode: mode_4,	time = 1.563496,	step = 0.143593,	order = 8
+mode: mode_4,	time = 1.721448,	step = 0.157952,	order = 8
+mode: mode_4,	time = 1.762115,	step = 0.040666,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+Done.
+mode: mode_0,	time = 0.031250,	step = 0.031250,	order = 8
+mode: mode_0,	time = 0.048438,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.067344,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.088141,	step = 0.020797,	order = 8
+mode: mode_0,	time = 0.111017,	step = 0.022877,	order = 8
+mode: mode_0,	time = 0.136181,	step = 0.025164,	order = 8
+mode: mode_0,	time = 0.150022,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.165246,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.181993,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.200414,	step = 0.018421,	order = 8
+mode: mode_0,	time = 0.220678,	step = 0.020264,	order = 8
+mode: mode_0,	time = 0.242968,	step = 0.022290,	order = 8
+mode: mode_0,	time = 0.267487,	step = 0.024519,	order = 8
+mode: mode_0,	time = 0.280972,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.295806,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.312124,	step = 0.016317,	order = 8
+mode: mode_0,	time = 0.330073,	step = 0.017949,	order = 8
+mode: mode_0,	time = 0.349817,	step = 0.019744,	order = 8
+mode: mode_0,	time = 0.371535,	step = 0.021718,	order = 8
+mode: mode_0,	time = 0.383480,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.396620,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.411074,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.426973,	step = 0.015899,	order = 8
+mode: mode_0,	time = 0.444461,	step = 0.017489,	order = 8
+mode: mode_0,	time = 0.463699,	step = 0.019238,	order = 8
+mode: mode_0,	time = 0.484861,	step = 0.021162,	order = 8
+mode: mode_0,	time = 0.508138,	step = 0.023278,	order = 8
+mode: mode_0,	time = 0.520941,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.535024,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.550516,	step = 0.015491,	order = 8
+mode: mode_0,	time = 0.567556,	step = 0.017040,	order = 8
+mode: mode_0,	time = 0.586300,	step = 0.018744,	order = 8
+mode: mode_0,	time = 0.606919,	step = 0.020619,	order = 8
+mode: mode_0,	time = 0.629600,	step = 0.022681,	order = 8
+mode: mode_0,	time = 0.654549,	step = 0.024949,	order = 8
+mode: mode_0,	time = 0.668271,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.683365,	step = 0.015094,	order = 8
+mode: mode_0,	time = 0.699969,	step = 0.016603,	order = 8
+mode: mode_0,	time = 0.718232,	step = 0.018264,	order = 8
+mode: mode_0,	time = 0.738323,	step = 0.020090,	order = 8
+mode: mode_0,	time = 0.760422,	step = 0.022099,	order = 8
+mode: mode_0,	time = 0.784731,	step = 0.024309,	order = 8
+mode: mode_0,	time = 0.811471,	step = 0.026740,	order = 8
+mode: mode_0,	time = 0.840885,	step = 0.029414,	order = 8
+mode: mode_0,	time = 0.873241,	step = 0.032356,	order = 8
+mode: mode_0,	time = 0.908832,	step = 0.035591,	order = 8
+mode: mode_0,	time = 0.947982,	step = 0.039150,	order = 8
+mode: mode_0,	time = 0.991047,	step = 0.043065,	order = 8
+mode: mode_0,	time = 1.038419,	step = 0.047372,	order = 8
+mode: mode_0,	time = 1.064473,	step = 0.026054,	order = 8
+mode: mode_0,	time = 1.093133,	step = 0.028660,	order = 8
+mode: mode_0,	time = 1.124659,	step = 0.031526,	order = 8
+mode: mode_0,	time = 1.159337,	step = 0.034678,	order = 8
+mode: mode_0,	time = 1.197484,	step = 0.038146,	order = 8
+mode: mode_0,	time = 1.239445,	step = 0.041961,	order = 8
+mode: mode_0,	time = 1.262523,	step = 0.023079,	order = 8
+mode: mode_0,	time = 1.287909,	step = 0.025386,	order = 8
+mode: mode_0,	time = 1.315834,	step = 0.027925,	order = 8
+mode: mode_0,	time = 1.346552,	step = 0.030717,	order = 8
+mode: mode_0,	time = 1.380341,	step = 0.033789,	order = 8
+mode: mode_0,	time = 1.417509,	step = 0.037168,	order = 8
+mode: mode_0,	time = 1.458394,	step = 0.040885,	order = 8
+mode: mode_0,	time = 1.503368,	step = 0.044973,	order = 8
+mode: mode_0,	time = 1.552839,	step = 0.049471,	order = 8
+mode: mode_0,	time = 1.607257,	step = 0.054418,	order = 8
+mode: mode_0,	time = 1.667116,	step = 0.059860,	order = 8
+mode: mode_0,	time = 1.732962,	step = 0.065846,	order = 8
+mode: mode_0,	time = 1.805392,	step = 0.072430,	order = 8
+mode: mode_0,	time = 1.885066,	step = 0.079673,	order = 8
+mode: mode_0,	time = 1.972706,	step = 0.087641,	order = 8
+mode: mode_0,	time = 2.069111,	step = 0.096405,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+No intersection detected.
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+No intersection detected.
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_4,	time = 0.072516,	step = 0.020797,	order = 8
+mode: mode_4,	time = 0.095392,	step = 0.022877,	order = 8
+mode: mode_4,	time = 0.120556,	step = 0.025164,	order = 8
+mode: mode_4,	time = 0.134397,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.149621,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.166368,	step = 0.016747,	order = 8
+mode: mode_4,	time = 0.184789,	step = 0.018421,	order = 8
+mode: mode_4,	time = 0.205053,	step = 0.020264,	order = 8
+mode: mode_4,	time = 0.227343,	step = 0.022290,	order = 8
+mode: mode_4,	time = 0.239602,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.253088,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.267922,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.284239,	step = 0.016317,	order = 8
+mode: mode_4,	time = 0.302188,	step = 0.017949,	order = 8
+mode: mode_4,	time = 0.321932,	step = 0.019744,	order = 8
+mode: mode_4,	time = 0.343651,	step = 0.021718,	order = 8
+mode: mode_4,	time = 0.355596,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.368736,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.383189,	step = 0.014454,	order = 8
+mode: mode_4,	time = 0.399088,	step = 0.015899,	order = 8
+mode: mode_4,	time = 0.416577,	step = 0.017489,	order = 8
+mode: mode_4,	time = 0.435815,	step = 0.019238,	order = 8
+mode: mode_4,	time = 0.456976,	step = 0.021162,	order = 8
+mode: mode_4,	time = 0.468615,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.481418,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.495501,	step = 0.014083,	order = 8
+mode: mode_4,	time = 0.510992,	step = 0.015491,	order = 8
+mode: mode_4,	time = 0.528033,	step = 0.017040,	order = 8
+mode: mode_4,	time = 0.546777,	step = 0.018744,	order = 8
+mode: mode_4,	time = 0.567396,	step = 0.020619,	order = 8
+mode: mode_4,	time = 0.590077,	step = 0.022681,	order = 8
+mode: mode_4,	time = 0.602551,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.616273,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.631367,	step = 0.015094,	order = 8
+mode: mode_4,	time = 0.647971,	step = 0.016603,	order = 8
+mode: mode_4,	time = 0.666235,	step = 0.018264,	order = 8
+mode: mode_4,	time = 0.686325,	step = 0.020090,	order = 8
+mode: mode_4,	time = 0.708424,	step = 0.022099,	order = 8
+mode: mode_4,	time = 0.732733,	step = 0.024309,	order = 8
+mode: mode_4,	time = 0.759473,	step = 0.026740,	order = 8
+mode: mode_4,	time = 0.774180,	step = 0.014707,	order = 8
+mode: mode_4,	time = 0.790358,	step = 0.016178,	order = 8
+mode: mode_4,	time = 0.808154,	step = 0.017796,	order = 8
+mode: mode_4,	time = 0.827729,	step = 0.019575,	order = 8
+mode: mode_4,	time = 0.849261,	step = 0.021533,	order = 8
+mode: mode_4,	time = 0.872947,	step = 0.023686,	order = 8
+mode: mode_4,	time = 0.899002,	step = 0.026054,	order = 8
+mode: mode_4,	time = 0.927661,	step = 0.028660,	order = 8
+mode: mode_4,	time = 0.959187,	step = 0.031526,	order = 8
+mode: mode_4,	time = 0.993866,	step = 0.034678,	order = 8
+mode: mode_4,	time = 1.032012,	step = 0.038146,	order = 8
+mode: mode_4,	time = 1.073973,	step = 0.041961,	order = 8
+mode: mode_4,	time = 1.120130,	step = 0.046157,	order = 8
+mode: mode_4,	time = 1.170903,	step = 0.050773,	order = 8
+mode: mode_4,	time = 1.198828,	step = 0.027925,	order = 8
+mode: mode_4,	time = 1.229545,	step = 0.030717,	order = 8
+mode: mode_4,	time = 1.263334,	step = 0.033789,	order = 8
+mode: mode_4,	time = 1.300503,	step = 0.037168,	order = 8
+mode: mode_4,	time = 1.341388,	step = 0.040885,	order = 8
+mode: mode_4,	time = 1.386361,	step = 0.044973,	order = 8
+mode: mode_4,	time = 1.435832,	step = 0.049471,	order = 8
+mode: mode_4,	time = 1.461083,	step = 0.025251,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.072516,	step = 0.020797,	order = 8
+mode: mode_0,	time = 0.095392,	step = 0.022877,	order = 8
+mode: mode_0,	time = 0.107974,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.121815,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.137039,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.153786,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.172207,	step = 0.018421,	order = 8
+mode: mode_0,	time = 0.192471,	step = 0.020264,	order = 8
+mode: mode_0,	time = 0.203616,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.215875,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.229361,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.244195,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.260512,	step = 0.016317,	order = 8
+mode: mode_0,	time = 0.278461,	step = 0.017949,	order = 8
+mode: mode_0,	time = 0.298205,	step = 0.019744,	order = 8
+mode: mode_0,	time = 0.309064,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.321010,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.334149,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.348603,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.364502,	step = 0.015899,	order = 8
+mode: mode_0,	time = 0.381991,	step = 0.017489,	order = 8
+mode: mode_0,	time = 0.401228,	step = 0.019238,	order = 8
+mode: mode_0,	time = 0.411809,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.423448,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.436251,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.450334,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.465825,	step = 0.015491,	order = 8
+mode: mode_0,	time = 0.482866,	step = 0.017040,	order = 8
+mode: mode_0,	time = 0.501610,	step = 0.018744,	order = 8
+mode: mode_0,	time = 0.522229,	step = 0.020619,	order = 8
+mode: mode_0,	time = 0.533569,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.546044,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.559766,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.574860,	step = 0.015094,	order = 8
+mode: mode_0,	time = 0.591463,	step = 0.016603,	order = 8
+mode: mode_0,	time = 0.609727,	step = 0.018264,	order = 8
+mode: mode_0,	time = 0.629817,	step = 0.020090,	order = 8
+mode: mode_0,	time = 0.651917,	step = 0.022099,	order = 8
+mode: mode_0,	time = 0.664071,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.677441,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.692148,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.708326,	step = 0.016178,	order = 8
+mode: mode_0,	time = 0.726122,	step = 0.017796,	order = 8
+mode: mode_0,	time = 0.745697,	step = 0.019575,	order = 8
+mode: mode_0,	time = 0.767229,	step = 0.021533,	order = 8
+mode: mode_0,	time = 0.790915,	step = 0.023686,	order = 8
+mode: mode_0,	time = 0.816969,	step = 0.026054,	order = 8
+mode: mode_0,	time = 0.845629,	step = 0.028660,	order = 8
+mode: mode_0,	time = 0.877155,	step = 0.031526,	order = 8
+mode: mode_0,	time = 0.911834,	step = 0.034678,	order = 8
+mode: mode_0,	time = 0.949980,	step = 0.038146,	order = 8
+mode: mode_0,	time = 0.991941,	step = 0.041961,	order = 8
+mode: mode_0,	time = 1.038098,	step = 0.046157,	order = 8
+mode: mode_0,	time = 1.063484,	step = 0.025386,	order = 8
+mode: mode_0,	time = 1.091409,	step = 0.027925,	order = 8
+mode: mode_0,	time = 1.122127,	step = 0.030717,	order = 8
+mode: mode_0,	time = 1.155916,	step = 0.033789,	order = 8
+mode: mode_0,	time = 1.193084,	step = 0.037168,	order = 8
+mode: mode_0,	time = 1.233969,	step = 0.040885,	order = 8
+mode: mode_0,	time = 1.256456,	step = 0.022487,	order = 8
+mode: mode_0,	time = 1.281191,	step = 0.024735,	order = 8
+mode: mode_0,	time = 1.308400,	step = 0.027209,	order = 8
+mode: mode_0,	time = 1.338330,	step = 0.029930,	order = 8
+mode: mode_0,	time = 1.371253,	step = 0.032923,	order = 8
+mode: mode_0,	time = 1.407468,	step = 0.036215,	order = 8
+mode: mode_0,	time = 1.447305,	step = 0.039837,	order = 8
+mode: mode_0,	time = 1.491125,	step = 0.043820,	order = 8
+mode: mode_0,	time = 1.539327,	step = 0.048202,	order = 8
+mode: mode_0,	time = 1.592350,	step = 0.053023,	order = 8
+mode: mode_0,	time = 1.650675,	step = 0.058325,	order = 8
+mode: mode_0,	time = 1.714832,	step = 0.064157,	order = 8
+mode: mode_0,	time = 1.785405,	step = 0.070573,	order = 8
+mode: mode_0,	time = 1.863035,	step = 0.077630,	order = 8
+mode: mode_0,	time = 1.948429,	step = 0.085393,	order = 8
+mode: mode_0,	time = 2.042361,	step = 0.093933,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_4,	time = 0.072516,	step = 0.020797,	order = 8
+mode: mode_4,	time = 0.083954,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.096536,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.110376,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.125601,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.142347,	step = 0.016747,	order = 8
+mode: mode_4,	time = 0.160769,	step = 0.018421,	order = 8
+mode: mode_4,	time = 0.170901,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.182046,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.194305,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.207791,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.222625,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.238942,	step = 0.016317,	order = 8
+mode: mode_4,	time = 0.256891,	step = 0.017949,	order = 8
+mode: mode_4,	time = 0.266763,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.277622,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.289567,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.302707,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.317161,	step = 0.014454,	order = 8
+mode: mode_4,	time = 0.333060,	step = 0.015899,	order = 8
+mode: mode_4,	time = 0.350549,	step = 0.017489,	order = 8
+mode: mode_4,	time = 0.360167,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.370748,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.382387,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.395190,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.409273,	step = 0.014083,	order = 8
+mode: mode_4,	time = 0.424764,	step = 0.015491,	order = 8
+mode: mode_4,	time = 0.441805,	step = 0.017040,	order = 8
+mode: mode_4,	time = 0.451177,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.461486,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.472827,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.485301,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.499023,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.514117,	step = 0.015094,	order = 8
+mode: mode_4,	time = 0.530721,	step = 0.016603,	order = 8
+mode: mode_4,	time = 0.548984,	step = 0.018264,	order = 8
+mode: mode_4,	time = 0.559030,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.570079,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.582234,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.595604,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.610311,	step = 0.014707,	order = 8
+mode: mode_4,	time = 0.626489,	step = 0.016178,	order = 8
+mode: mode_4,	time = 0.644284,	step = 0.017796,	order = 8
+mode: mode_4,	time = 0.663859,	step = 0.019575,	order = 8
+mode: mode_4,	time = 0.674625,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.686468,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.699496,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.713826,	step = 0.014330,	order = 8
+mode: mode_4,	time = 0.729588,	step = 0.015763,	order = 8
+mode: mode_4,	time = 0.746928,	step = 0.017339,	order = 8
+mode: mode_4,	time = 0.766001,	step = 0.019073,	order = 8
+mode: mode_4,	time = 0.786981,	step = 0.020980,	order = 8
+mode: mode_4,	time = 0.810060,	step = 0.023079,	order = 8
+mode: mode_4,	time = 0.835446,	step = 0.025386,	order = 8
+mode: mode_4,	time = 0.863371,	step = 0.027925,	order = 8
+mode: mode_4,	time = 0.894089,	step = 0.030717,	order = 8
+mode: mode_4,	time = 0.927878,	step = 0.033789,	order = 8
+mode: mode_4,	time = 0.965046,	step = 0.037168,	order = 8
+mode: mode_4,	time = 0.985489,	step = 0.020442,	order = 8
+mode: mode_4,	time = 1.007975,	step = 0.022487,	order = 8
+mode: mode_4,	time = 1.032711,	step = 0.024735,	order = 8
+mode: mode_4,	time = 1.059920,	step = 0.027209,	order = 8
+mode: mode_4,	time = 1.089850,	step = 0.029930,	order = 8
+mode: mode_4,	time = 1.122772,	step = 0.032923,	order = 8
+mode: mode_4,	time = 1.158988,	step = 0.036215,	order = 8
+mode: mode_4,	time = 1.178906,	step = 0.019918,	order = 8
+mode: mode_4,	time = 1.200816,	step = 0.021910,	order = 8
+mode: mode_4,	time = 1.224917,	step = 0.024101,	order = 8
+mode: mode_4,	time = 1.251428,	step = 0.026511,	order = 8
+mode: mode_4,	time = 1.280591,	step = 0.029162,	order = 8
+mode: mode_4,	time = 1.312669,	step = 0.032079,	order = 8
+mode: mode_4,	time = 1.347956,	step = 0.035287,	order = 8
+mode: mode_4,	time = 1.386771,	step = 0.038815,	order = 8
+mode: mode_4,	time = 1.429468,	step = 0.042697,	order = 8
+mode: mode_4,	time = 1.476434,	step = 0.046966,	order = 8
+mode: mode_4,	time = 1.528097,	step = 0.051663,	order = 8
+mode: mode_4,	time = 1.584926,	step = 0.056829,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.072516,	step = 0.020797,	order = 8
+mode: mode_0,	time = 0.083954,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.096536,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.110376,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.125601,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.142347,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.160769,	step = 0.018421,	order = 8
+mode: mode_0,	time = 0.170901,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.182046,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.194305,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.207791,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.222625,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.238942,	step = 0.016317,	order = 8
+mode: mode_0,	time = 0.256891,	step = 0.017949,	order = 8
+mode: mode_0,	time = 0.266763,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.277622,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.289567,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.302707,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.317161,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.333060,	step = 0.015899,	order = 8
+mode: mode_0,	time = 0.350549,	step = 0.017489,	order = 8
+mode: mode_0,	time = 0.360167,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.370748,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.382387,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.395190,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.409273,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.424764,	step = 0.015491,	order = 8
+mode: mode_0,	time = 0.441805,	step = 0.017040,	order = 8
+mode: mode_0,	time = 0.451177,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.461486,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.472827,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.485301,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.499023,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.514117,	step = 0.015094,	order = 8
+mode: mode_0,	time = 0.530721,	step = 0.016603,	order = 8
+mode: mode_0,	time = 0.548984,	step = 0.018264,	order = 8
+mode: mode_0,	time = 0.559030,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.570079,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.582234,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.595604,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.610311,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.626489,	step = 0.016178,	order = 8
+mode: mode_0,	time = 0.644284,	step = 0.017796,	order = 8
+mode: mode_0,	time = 0.663859,	step = 0.019575,	order = 8
+mode: mode_0,	time = 0.685392,	step = 0.021533,	order = 8
+mode: mode_0,	time = 0.709078,	step = 0.023686,	order = 8
+mode: mode_0,	time = 0.735132,	step = 0.026054,	order = 8
+mode: mode_0,	time = 0.763792,	step = 0.028660,	order = 8
+mode: mode_0,	time = 0.795318,	step = 0.031526,	order = 8
+mode: mode_0,	time = 0.829996,	step = 0.034678,	order = 8
+mode: mode_0,	time = 0.868143,	step = 0.038146,	order = 8
+mode: mode_0,	time = 0.910103,	step = 0.041961,	order = 8
+mode: mode_0,	time = 0.956260,	step = 0.046157,	order = 8
+mode: mode_0,	time = 0.981647,	step = 0.025386,	order = 8
+mode: mode_0,	time = 1.009572,	step = 0.027925,	order = 8
+mode: mode_0,	time = 1.040289,	step = 0.030717,	order = 8
+mode: mode_0,	time = 1.074079,	step = 0.033789,	order = 8
+mode: mode_0,	time = 1.111247,	step = 0.037168,	order = 8
+mode: mode_0,	time = 1.152132,	step = 0.040885,	order = 8
+mode: mode_0,	time = 1.174618,	step = 0.022487,	order = 8
+mode: mode_0,	time = 1.199354,	step = 0.024735,	order = 8
+mode: mode_0,	time = 1.226563,	step = 0.027209,	order = 8
+mode: mode_0,	time = 1.256493,	step = 0.029930,	order = 8
+mode: mode_0,	time = 1.289416,	step = 0.032923,	order = 8
+mode: mode_0,	time = 1.325631,	step = 0.036215,	order = 8
+mode: mode_0,	time = 1.365467,	step = 0.039837,	order = 8
+mode: mode_0,	time = 1.387377,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.411479,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.437990,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.467152,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.499231,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.534517,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.573333,	step = 0.038815,	order = 8
+mode: mode_0,	time = 1.616029,	step = 0.042697,	order = 8
+mode: mode_0,	time = 1.662996,	step = 0.046966,	order = 8
+mode: mode_0,	time = 1.714659,	step = 0.051663,	order = 8
+mode: mode_0,	time = 1.771488,	step = 0.056829,	order = 8
+mode: mode_0,	time = 1.834000,	step = 0.062512,	order = 8
+mode: mode_0,	time = 1.902764,	step = 0.068763,	order = 8
+mode: mode_0,	time = 1.978403,	step = 0.075640,	order = 8
+mode: mode_0,	time = 2.061607,	step = 0.083204,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_4,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_4,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_4,	time = 0.150371,	step = 0.018421,	order = 8
+mode: mode_4,	time = 0.160502,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.171647,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.183907,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.197392,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.212226,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.228544,	step = 0.016317,	order = 8
+mode: mode_4,	time = 0.237518,	step = 0.008975,	order = 8
+mode: mode_4,	time = 0.247390,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.258249,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.270194,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.283334,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.297788,	step = 0.014454,	order = 8
+mode: mode_4,	time = 0.313687,	step = 0.015899,	order = 8
+mode: mode_4,	time = 0.322431,	step = 0.008744,	order = 8
+mode: mode_4,	time = 0.332050,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.342631,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.354270,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.367072,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.381155,	step = 0.014083,	order = 8
+mode: mode_4,	time = 0.396647,	step = 0.015491,	order = 8
+mode: mode_4,	time = 0.405167,	step = 0.008520,	order = 8
+mode: mode_4,	time = 0.414539,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.424849,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.436189,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.448663,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.462385,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.477479,	step = 0.015094,	order = 8
+mode: mode_4,	time = 0.494083,	step = 0.016603,	order = 8
+mode: mode_4,	time = 0.503215,	step = 0.009132,	order = 8
+mode: mode_4,	time = 0.513260,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.524310,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.536464,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.549834,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.564541,	step = 0.014707,	order = 8
+mode: mode_4,	time = 0.580719,	step = 0.016178,	order = 8
+mode: mode_4,	time = 0.589617,	step = 0.008898,	order = 8
+mode: mode_4,	time = 0.599404,	step = 0.009788,	order = 8
+mode: mode_4,	time = 0.610171,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.622014,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.635041,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.649371,	step = 0.014330,	order = 8
+mode: mode_4,	time = 0.665134,	step = 0.015763,	order = 8
+mode: mode_4,	time = 0.682473,	step = 0.017339,	order = 8
+mode: mode_4,	time = 0.692009,	step = 0.009537,	order = 8
+mode: mode_4,	time = 0.702500,	step = 0.010490,	order = 8
+mode: mode_4,	time = 0.714039,	step = 0.011539,	order = 8
+mode: mode_4,	time = 0.726732,	step = 0.012693,	order = 8
+mode: mode_4,	time = 0.740695,	step = 0.013962,	order = 8
+mode: mode_4,	time = 0.756053,	step = 0.015359,	order = 8
+mode: mode_4,	time = 0.772948,	step = 0.016895,	order = 8
+mode: mode_4,	time = 0.791532,	step = 0.018584,	order = 8
+mode: mode_4,	time = 0.811975,	step = 0.020442,	order = 8
+mode: mode_4,	time = 0.834461,	step = 0.022487,	order = 8
+mode: mode_4,	time = 0.859197,	step = 0.024735,	order = 8
+mode: mode_4,	time = 0.872801,	step = 0.013604,	order = 8
+mode: mode_4,	time = 0.887766,	step = 0.014965,	order = 8
+mode: mode_4,	time = 0.904228,	step = 0.016461,	order = 8
+mode: mode_4,	time = 0.922335,	step = 0.018108,	order = 8
+mode: mode_4,	time = 0.942253,	step = 0.019918,	order = 8
+mode: mode_4,	time = 0.964164,	step = 0.021910,	order = 8
+mode: mode_4,	time = 0.988265,	step = 0.024101,	order = 8
+mode: mode_4,	time = 1.014776,	step = 0.026511,	order = 8
+mode: mode_4,	time = 1.043938,	step = 0.029162,	order = 8
+mode: mode_4,	time = 1.076017,	step = 0.032079,	order = 8
+mode: mode_4,	time = 1.093660,	step = 0.017643,	order = 8
+mode: mode_4,	time = 1.113068,	step = 0.019408,	order = 8
+mode: mode_4,	time = 1.134416,	step = 0.021348,	order = 8
+mode: mode_4,	time = 1.157899,	step = 0.023483,	order = 8
+mode: mode_4,	time = 1.183731,	step = 0.025831,	order = 8
+mode: mode_4,	time = 1.212146,	step = 0.028415,	order = 8
+mode: mode_4,	time = 1.243402,	step = 0.031256,	order = 8
+mode: mode_4,	time = 1.277783,	step = 0.034382,	order = 8
+mode: mode_4,	time = 1.315603,	step = 0.037820,	order = 8
+mode: mode_4,	time = 1.357205,	step = 0.041602,	order = 8
+mode: mode_4,	time = 1.402967,	step = 0.045762,	order = 8
+mode: mode_4,	time = 1.453305,	step = 0.050338,	order = 8
+mode: mode_4,	time = 1.508678,	step = 0.055372,	order = 8
+mode: mode_4,	time = 1.569587,	step = 0.060909,	order = 8
+mode: mode_4,	time = 1.632991,	step = 0.063404,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.072516,	step = 0.020797,	order = 8
+mode: mode_0,	time = 0.083954,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.096536,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.110376,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.125601,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.142347,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.160769,	step = 0.018421,	order = 8
+mode: mode_0,	time = 0.170901,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.182046,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.194305,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.207791,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.222625,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.238942,	step = 0.016317,	order = 8
+mode: mode_0,	time = 0.247917,	step = 0.008975,	order = 8
+mode: mode_0,	time = 0.257789,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.268648,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.280593,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.293733,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.308186,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.324085,	step = 0.015899,	order = 8
+mode: mode_0,	time = 0.332830,	step = 0.008744,	order = 8
+mode: mode_0,	time = 0.342448,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.353029,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.364668,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.377471,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.391554,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.407045,	step = 0.015491,	order = 8
+mode: mode_0,	time = 0.415565,	step = 0.008520,	order = 8
+mode: mode_0,	time = 0.424938,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.435247,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.446587,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.459062,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.472784,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.487878,	step = 0.015094,	order = 8
+mode: mode_0,	time = 0.504481,	step = 0.016603,	order = 8
+mode: mode_0,	time = 0.513613,	step = 0.009132,	order = 8
+mode: mode_0,	time = 0.523658,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.534708,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.546863,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.560233,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.574940,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.591117,	step = 0.016178,	order = 8
+mode: mode_0,	time = 0.608913,	step = 0.017796,	order = 8
+mode: mode_0,	time = 0.618701,	step = 0.009788,	order = 8
+mode: mode_0,	time = 0.629467,	step = 0.010766,	order = 8
+mode: mode_0,	time = 0.641310,	step = 0.011843,	order = 8
+mode: mode_0,	time = 0.654337,	step = 0.013027,	order = 8
+mode: mode_0,	time = 0.668667,	step = 0.014330,	order = 8
+mode: mode_0,	time = 0.684430,	step = 0.015763,	order = 8
+mode: mode_0,	time = 0.701769,	step = 0.017339,	order = 8
+mode: mode_0,	time = 0.720842,	step = 0.019073,	order = 8
+mode: mode_0,	time = 0.741823,	step = 0.020980,	order = 8
+mode: mode_0,	time = 0.764901,	step = 0.023079,	order = 8
+mode: mode_0,	time = 0.790288,	step = 0.025386,	order = 8
+mode: mode_0,	time = 0.818213,	step = 0.027925,	order = 8
+mode: mode_0,	time = 0.848930,	step = 0.030717,	order = 8
+mode: mode_0,	time = 0.882719,	step = 0.033789,	order = 8
+mode: mode_0,	time = 0.919887,	step = 0.037168,	order = 8
+mode: mode_0,	time = 0.960772,	step = 0.040885,	order = 8
+mode: mode_0,	time = 1.005746,	step = 0.044973,	order = 8
+mode: mode_0,	time = 1.030481,	step = 0.024735,	order = 8
+mode: mode_0,	time = 1.057690,	step = 0.027209,	order = 8
+mode: mode_0,	time = 1.087620,	step = 0.029930,	order = 8
+mode: mode_0,	time = 1.120543,	step = 0.032923,	order = 8
+mode: mode_0,	time = 1.156758,	step = 0.036215,	order = 8
+mode: mode_0,	time = 1.196595,	step = 0.039837,	order = 8
+mode: mode_0,	time = 1.218505,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.242606,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.269117,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.298280,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.330358,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.365645,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.404460,	step = 0.038815,	order = 8
+mode: mode_0,	time = 1.425808,	step = 0.021348,	order = 8
+mode: mode_0,	time = 1.449292,	step = 0.023483,	order = 8
+mode: mode_0,	time = 1.475123,	step = 0.025831,	order = 8
+mode: mode_0,	time = 1.503538,	step = 0.028415,	order = 8
+mode: mode_0,	time = 1.534794,	step = 0.031256,	order = 8
+mode: mode_0,	time = 1.569176,	step = 0.034382,	order = 8
+mode: mode_0,	time = 1.606995,	step = 0.037820,	order = 8
+mode: mode_0,	time = 1.648597,	step = 0.041602,	order = 8
+mode: mode_0,	time = 1.694359,	step = 0.045762,	order = 8
+mode: mode_0,	time = 1.744698,	step = 0.050338,	order = 8
+mode: mode_0,	time = 1.800070,	step = 0.055372,	order = 8
+mode: mode_0,	time = 1.860979,	step = 0.060909,	order = 8
+mode: mode_0,	time = 1.927979,	step = 0.067000,	order = 8
+mode: mode_0,	time = 2.001680,	step = 0.073700,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_4,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_4,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_4,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_4,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.219333,	step = 0.016317,	order = 8
+mode: mode_4,	time = 0.228307,	step = 0.008975,	order = 8
+mode: mode_4,	time = 0.238179,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.249039,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.260984,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.274123,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.288577,	step = 0.014454,	order = 8
+mode: mode_4,	time = 0.296527,	step = 0.007949,	order = 8
+mode: mode_4,	time = 0.305271,	step = 0.008744,	order = 8
+mode: mode_4,	time = 0.314890,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.325471,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.337109,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.349912,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.363995,	step = 0.014083,	order = 8
+mode: mode_4,	time = 0.379486,	step = 0.015491,	order = 8
+mode: mode_4,	time = 0.388007,	step = 0.008520,	order = 8
+mode: mode_4,	time = 0.397379,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.407688,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.419029,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.431503,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.445225,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.460319,	step = 0.015094,	order = 8
+mode: mode_4,	time = 0.468621,	step = 0.008302,	order = 8
+mode: mode_4,	time = 0.477753,	step = 0.009132,	order = 8
+mode: mode_4,	time = 0.487798,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.498848,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.511002,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.524372,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.539079,	step = 0.014707,	order = 8
+mode: mode_4,	time = 0.547168,	step = 0.008089,	order = 8
+mode: mode_4,	time = 0.556066,	step = 0.008898,	order = 8
+mode: mode_4,	time = 0.565853,	step = 0.009788,	order = 8
+mode: mode_4,	time = 0.576620,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.588463,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.601490,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.615820,	step = 0.014330,	order = 8
+mode: mode_4,	time = 0.631583,	step = 0.015763,	order = 8
+mode: mode_4,	time = 0.640252,	step = 0.008670,	order = 8
+mode: mode_4,	time = 0.649789,	step = 0.009537,	order = 8
+mode: mode_4,	time = 0.660279,	step = 0.010490,	order = 8
+mode: mode_4,	time = 0.671818,	step = 0.011539,	order = 8
+mode: mode_4,	time = 0.684512,	step = 0.012693,	order = 8
+mode: mode_4,	time = 0.698474,	step = 0.013962,	order = 8
+mode: mode_4,	time = 0.713833,	step = 0.015359,	order = 8
+mode: mode_4,	time = 0.730727,	step = 0.016895,	order = 8
+mode: mode_4,	time = 0.740020,	step = 0.009292,	order = 8
+mode: mode_4,	time = 0.750241,	step = 0.010221,	order = 8
+mode: mode_4,	time = 0.761484,	step = 0.011243,	order = 8
+mode: mode_4,	time = 0.773852,	step = 0.012368,	order = 8
+mode: mode_4,	time = 0.787456,	step = 0.013604,	order = 8
+mode: mode_4,	time = 0.802421,	step = 0.014965,	order = 8
+mode: mode_4,	time = 0.818883,	step = 0.016461,	order = 8
+mode: mode_4,	time = 0.836990,	step = 0.018108,	order = 8
+mode: mode_4,	time = 0.856909,	step = 0.019918,	order = 8
+mode: mode_4,	time = 0.878819,	step = 0.021910,	order = 8
+mode: mode_4,	time = 0.902920,	step = 0.024101,	order = 8
+mode: mode_4,	time = 0.929431,	step = 0.026511,	order = 8
+mode: mode_4,	time = 0.958594,	step = 0.029162,	order = 8
+mode: mode_4,	time = 0.974633,	step = 0.016039,	order = 8
+mode: mode_4,	time = 0.992276,	step = 0.017643,	order = 8
+mode: mode_4,	time = 1.011684,	step = 0.019408,	order = 8
+mode: mode_4,	time = 1.033032,	step = 0.021348,	order = 8
+mode: mode_4,	time = 1.056515,	step = 0.023483,	order = 8
+mode: mode_4,	time = 1.082347,	step = 0.025831,	order = 8
+mode: mode_4,	time = 1.096554,	step = 0.014207,	order = 8
+mode: mode_4,	time = 1.112182,	step = 0.015628,	order = 8
+mode: mode_4,	time = 1.129373,	step = 0.017191,	order = 8
+mode: mode_4,	time = 1.148283,	step = 0.018910,	order = 8
+mode: mode_4,	time = 1.169084,	step = 0.020801,	order = 8
+mode: mode_4,	time = 1.191965,	step = 0.022881,	order = 8
+mode: mode_4,	time = 1.217134,	step = 0.025169,	order = 8
+mode: mode_4,	time = 1.230977,	step = 0.013843,	order = 8
+mode: mode_4,	time = 1.246204,	step = 0.015227,	order = 8
+mode: mode_4,	time = 1.262954,	step = 0.016750,	order = 8
+mode: mode_4,	time = 1.281380,	step = 0.018425,	order = 8
+mode: mode_4,	time = 1.301647,	step = 0.020268,	order = 8
+mode: mode_4,	time = 1.323941,	step = 0.022294,	order = 8
+mode: mode_4,	time = 1.348465,	step = 0.024524,	order = 8
+mode: mode_4,	time = 1.375441,	step = 0.026976,	order = 8
+mode: mode_4,	time = 1.405115,	step = 0.029674,	order = 8
+mode: mode_4,	time = 1.437756,	step = 0.032641,	order = 8
+mode: mode_4,	time = 1.473661,	step = 0.035905,	order = 8
+mode: mode_4,	time = 1.513157,	step = 0.039496,	order = 8
+mode: mode_4,	time = 1.556603,	step = 0.043445,	order = 8
+mode: mode_4,	time = 1.604392,	step = 0.047790,	order = 8
+mode: mode_4,	time = 1.656961,	step = 0.052569,	order = 8
+mode: mode_4,	time = 1.714787,	step = 0.057826,	order = 8
+mode: mode_4,	time = 1.772737,	step = 0.057950,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_0,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_0,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.219333,	step = 0.016317,	order = 8
+mode: mode_0,	time = 0.228307,	step = 0.008975,	order = 8
+mode: mode_0,	time = 0.238179,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.249039,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.260984,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.274123,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.288577,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.304476,	step = 0.015899,	order = 8
+mode: mode_0,	time = 0.313220,	step = 0.008744,	order = 8
+mode: mode_0,	time = 0.322839,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.333420,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.345059,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.357862,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.371945,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.387436,	step = 0.015491,	order = 8
+mode: mode_0,	time = 0.395956,	step = 0.008520,	order = 8
+mode: mode_0,	time = 0.405328,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.415638,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.426978,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.439453,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.453175,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.468269,	step = 0.015094,	order = 8
+mode: mode_0,	time = 0.484872,	step = 0.016603,	order = 8
+mode: mode_0,	time = 0.494004,	step = 0.009132,	order = 8
+mode: mode_0,	time = 0.504049,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.515099,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.527253,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.540623,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.555331,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.571508,	step = 0.016178,	order = 8
+mode: mode_0,	time = 0.589304,	step = 0.017796,	order = 8
+mode: mode_0,	time = 0.599091,	step = 0.009788,	order = 8
+mode: mode_0,	time = 0.609858,	step = 0.010766,	order = 8
+mode: mode_0,	time = 0.621701,	step = 0.011843,	order = 8
+mode: mode_0,	time = 0.634728,	step = 0.013027,	order = 8
+mode: mode_0,	time = 0.649058,	step = 0.014330,	order = 8
+mode: mode_0,	time = 0.664821,	step = 0.015763,	order = 8
+mode: mode_0,	time = 0.682160,	step = 0.017339,	order = 8
+mode: mode_0,	time = 0.701233,	step = 0.019073,	order = 8
+mode: mode_0,	time = 0.722213,	step = 0.020980,	order = 8
+mode: mode_0,	time = 0.745292,	step = 0.023079,	order = 8
+mode: mode_0,	time = 0.770678,	step = 0.025386,	order = 8
+mode: mode_0,	time = 0.798603,	step = 0.027925,	order = 8
+mode: mode_0,	time = 0.829321,	step = 0.030717,	order = 8
+mode: mode_0,	time = 0.863110,	step = 0.033789,	order = 8
+mode: mode_0,	time = 0.900278,	step = 0.037168,	order = 8
+mode: mode_0,	time = 0.941163,	step = 0.040885,	order = 8
+mode: mode_0,	time = 0.986137,	step = 0.044973,	order = 8
+mode: mode_0,	time = 1.010872,	step = 0.024735,	order = 8
+mode: mode_0,	time = 1.038081,	step = 0.027209,	order = 8
+mode: mode_0,	time = 1.068011,	step = 0.029930,	order = 8
+mode: mode_0,	time = 1.100934,	step = 0.032923,	order = 8
+mode: mode_0,	time = 1.137149,	step = 0.036215,	order = 8
+mode: mode_0,	time = 1.176986,	step = 0.039837,	order = 8
+mode: mode_0,	time = 1.198896,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.222997,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.249508,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.278671,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.310749,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.346036,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.384851,	step = 0.038815,	order = 8
+mode: mode_0,	time = 1.406199,	step = 0.021348,	order = 8
+mode: mode_0,	time = 1.429682,	step = 0.023483,	order = 8
+mode: mode_0,	time = 1.455514,	step = 0.025831,	order = 8
+mode: mode_0,	time = 1.483929,	step = 0.028415,	order = 8
+mode: mode_0,	time = 1.515185,	step = 0.031256,	order = 8
+mode: mode_0,	time = 1.549566,	step = 0.034382,	order = 8
+mode: mode_0,	time = 1.587386,	step = 0.037820,	order = 8
+mode: mode_0,	time = 1.628988,	step = 0.041602,	order = 8
+mode: mode_0,	time = 1.674750,	step = 0.045762,	order = 8
+mode: mode_0,	time = 1.725088,	step = 0.050338,	order = 8
+mode: mode_0,	time = 1.780461,	step = 0.055372,	order = 8
+mode: mode_0,	time = 1.841370,	step = 0.060909,	order = 8
+mode: mode_0,	time = 1.908370,	step = 0.067000,	order = 8
+mode: mode_0,	time = 1.982070,	step = 0.073700,	order = 8
+mode: mode_0,	time = 2.063141,	step = 0.081070,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_4,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_4,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_4,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_4,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.211174,	step = 0.008159,	order = 8
+mode: mode_4,	time = 0.220149,	step = 0.008975,	order = 8
+mode: mode_4,	time = 0.230021,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.240880,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.252825,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.265965,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.280418,	step = 0.014454,	order = 8
+mode: mode_4,	time = 0.288368,	step = 0.007949,	order = 8
+mode: mode_4,	time = 0.297112,	step = 0.008744,	order = 8
+mode: mode_4,	time = 0.306731,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.317312,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.328951,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.341753,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.355836,	step = 0.014083,	order = 8
+mode: mode_4,	time = 0.363582,	step = 0.007746,	order = 8
+mode: mode_4,	time = 0.372102,	step = 0.008520,	order = 8
+mode: mode_4,	time = 0.381475,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.391784,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.403124,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.415599,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.429321,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.444415,	step = 0.015094,	order = 8
+mode: mode_4,	time = 0.452717,	step = 0.008302,	order = 8
+mode: mode_4,	time = 0.461849,	step = 0.009132,	order = 8
+mode: mode_4,	time = 0.471894,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.482943,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.495098,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.508468,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.523175,	step = 0.014707,	order = 8
+mode: mode_4,	time = 0.531264,	step = 0.008089,	order = 8
+mode: mode_4,	time = 0.540162,	step = 0.008898,	order = 8
+mode: mode_4,	time = 0.549949,	step = 0.009788,	order = 8
+mode: mode_4,	time = 0.560715,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.572558,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.585586,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.599916,	step = 0.014330,	order = 8
+mode: mode_4,	time = 0.615678,	step = 0.015763,	order = 8
+mode: mode_4,	time = 0.624348,	step = 0.008670,	order = 8
+mode: mode_4,	time = 0.633885,	step = 0.009537,	order = 8
+mode: mode_4,	time = 0.644375,	step = 0.010490,	order = 8
+mode: mode_4,	time = 0.655914,	step = 0.011539,	order = 8
+mode: mode_4,	time = 0.668607,	step = 0.012693,	order = 8
+mode: mode_4,	time = 0.682570,	step = 0.013962,	order = 8
+mode: mode_4,	time = 0.697929,	step = 0.015359,	order = 8
+mode: mode_4,	time = 0.714823,	step = 0.016895,	order = 8
+mode: mode_4,	time = 0.724115,	step = 0.009292,	order = 8
+mode: mode_4,	time = 0.734336,	step = 0.010221,	order = 8
+mode: mode_4,	time = 0.745580,	step = 0.011243,	order = 8
+mode: mode_4,	time = 0.757948,	step = 0.012368,	order = 8
+mode: mode_4,	time = 0.771552,	step = 0.013604,	order = 8
+mode: mode_4,	time = 0.786517,	step = 0.014965,	order = 8
+mode: mode_4,	time = 0.802978,	step = 0.016461,	order = 8
+mode: mode_4,	time = 0.821086,	step = 0.018108,	order = 8
+mode: mode_4,	time = 0.841004,	step = 0.019918,	order = 8
+mode: mode_4,	time = 0.862914,	step = 0.021910,	order = 8
+mode: mode_4,	time = 0.887016,	step = 0.024101,	order = 8
+mode: mode_4,	time = 0.900271,	step = 0.013256,	order = 8
+mode: mode_4,	time = 0.914852,	step = 0.014581,	order = 8
+mode: mode_4,	time = 0.930892,	step = 0.016039,	order = 8
+mode: mode_4,	time = 0.948535,	step = 0.017643,	order = 8
+mode: mode_4,	time = 0.967943,	step = 0.019408,	order = 8
+mode: mode_4,	time = 0.989291,	step = 0.021348,	order = 8
+mode: mode_4,	time = 1.012774,	step = 0.023483,	order = 8
+mode: mode_4,	time = 1.038606,	step = 0.025831,	order = 8
+mode: mode_4,	time = 1.052813,	step = 0.014207,	order = 8
+mode: mode_4,	time = 1.068441,	step = 0.015628,	order = 8
+mode: mode_4,	time = 1.085632,	step = 0.017191,	order = 8
+mode: mode_4,	time = 1.104542,	step = 0.018910,	order = 8
+mode: mode_4,	time = 1.125343,	step = 0.020801,	order = 8
+mode: mode_4,	time = 1.148224,	step = 0.022881,	order = 8
+mode: mode_4,	time = 1.173393,	step = 0.025169,	order = 8
+mode: mode_4,	time = 1.187236,	step = 0.013843,	order = 8
+mode: mode_4,	time = 1.202463,	step = 0.015227,	order = 8
+mode: mode_4,	time = 1.219213,	step = 0.016750,	order = 8
+mode: mode_4,	time = 1.237638,	step = 0.018425,	order = 8
+mode: mode_4,	time = 1.257906,	step = 0.020268,	order = 8
+mode: mode_4,	time = 1.280200,	step = 0.022294,	order = 8
+mode: mode_4,	time = 1.304724,	step = 0.024524,	order = 8
+mode: mode_4,	time = 1.331700,	step = 0.026976,	order = 8
+mode: mode_4,	time = 1.361374,	step = 0.029674,	order = 8
+mode: mode_4,	time = 1.394015,	step = 0.032641,	order = 8
+mode: mode_4,	time = 1.429920,	step = 0.035905,	order = 8
+mode: mode_4,	time = 1.469416,	step = 0.039496,	order = 8
+mode: mode_4,	time = 1.512861,	step = 0.043445,	order = 8
+mode: mode_4,	time = 1.560651,	step = 0.047790,	order = 8
+mode: mode_4,	time = 1.613220,	step = 0.052569,	order = 8
+mode: mode_4,	time = 1.671046,	step = 0.057826,	order = 8
+mode: mode_4,	time = 1.734654,	step = 0.063608,	order = 8
+mode: mode_4,	time = 1.783263,	step = 0.048609,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_0,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_0,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.219333,	step = 0.016317,	order = 8
+mode: mode_0,	time = 0.228307,	step = 0.008975,	order = 8
+mode: mode_0,	time = 0.238179,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.249039,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.260984,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.274123,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.288577,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.296527,	step = 0.007949,	order = 8
+mode: mode_0,	time = 0.305271,	step = 0.008744,	order = 8
+mode: mode_0,	time = 0.314890,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.325471,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.337109,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.349912,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.363995,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.379486,	step = 0.015491,	order = 8
+mode: mode_0,	time = 0.388007,	step = 0.008520,	order = 8
+mode: mode_0,	time = 0.397379,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.407688,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.419029,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.431503,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.445225,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.460319,	step = 0.015094,	order = 8
+mode: mode_0,	time = 0.468621,	step = 0.008302,	order = 8
+mode: mode_0,	time = 0.477753,	step = 0.009132,	order = 8
+mode: mode_0,	time = 0.487798,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.498848,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.511002,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.524372,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.539079,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.555257,	step = 0.016178,	order = 8
+mode: mode_0,	time = 0.564155,	step = 0.008898,	order = 8
+mode: mode_0,	time = 0.573942,	step = 0.009788,	order = 8
+mode: mode_0,	time = 0.584709,	step = 0.010766,	order = 8
+mode: mode_0,	time = 0.596552,	step = 0.011843,	order = 8
+mode: mode_0,	time = 0.609579,	step = 0.013027,	order = 8
+mode: mode_0,	time = 0.623909,	step = 0.014330,	order = 8
+mode: mode_0,	time = 0.639672,	step = 0.015763,	order = 8
+mode: mode_0,	time = 0.657011,	step = 0.017339,	order = 8
+mode: mode_0,	time = 0.676084,	step = 0.019073,	order = 8
+mode: mode_0,	time = 0.697064,	step = 0.020980,	order = 8
+mode: mode_0,	time = 0.720143,	step = 0.023079,	order = 8
+mode: mode_0,	time = 0.745529,	step = 0.025386,	order = 8
+mode: mode_0,	time = 0.773454,	step = 0.027925,	order = 8
+mode: mode_0,	time = 0.804172,	step = 0.030717,	order = 8
+mode: mode_0,	time = 0.837961,	step = 0.033789,	order = 8
+mode: mode_0,	time = 0.875129,	step = 0.037168,	order = 8
+mode: mode_0,	time = 0.916014,	step = 0.040885,	order = 8
+mode: mode_0,	time = 0.938501,	step = 0.022487,	order = 8
+mode: mode_0,	time = 0.963236,	step = 0.024735,	order = 8
+mode: mode_0,	time = 0.990445,	step = 0.027209,	order = 8
+mode: mode_0,	time = 1.020375,	step = 0.029930,	order = 8
+mode: mode_0,	time = 1.053298,	step = 0.032923,	order = 8
+mode: mode_0,	time = 1.089513,	step = 0.036215,	order = 8
+mode: mode_0,	time = 1.129350,	step = 0.039837,	order = 8
+mode: mode_0,	time = 1.151260,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.175361,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.201872,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.231035,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.263113,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.298400,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.337215,	step = 0.038815,	order = 8
+mode: mode_0,	time = 1.358563,	step = 0.021348,	order = 8
+mode: mode_0,	time = 1.382047,	step = 0.023483,	order = 8
+mode: mode_0,	time = 1.407878,	step = 0.025831,	order = 8
+mode: mode_0,	time = 1.436293,	step = 0.028415,	order = 8
+mode: mode_0,	time = 1.467549,	step = 0.031256,	order = 8
+mode: mode_0,	time = 1.501931,	step = 0.034382,	order = 8
+mode: mode_0,	time = 1.539751,	step = 0.037820,	order = 8
+mode: mode_0,	time = 1.581352,	step = 0.041602,	order = 8
+mode: mode_0,	time = 1.627114,	step = 0.045762,	order = 8
+mode: mode_0,	time = 1.677453,	step = 0.050338,	order = 8
+mode: mode_0,	time = 1.732825,	step = 0.055372,	order = 8
+mode: mode_0,	time = 1.793734,	step = 0.060909,	order = 8
+mode: mode_0,	time = 1.860734,	step = 0.067000,	order = 8
+mode: mode_0,	time = 1.934435,	step = 0.073700,	order = 8
+mode: mode_0,	time = 2.015505,	step = 0.081070,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_4,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_4,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_4,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_4,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.211174,	step = 0.008159,	order = 8
+mode: mode_4,	time = 0.220149,	step = 0.008975,	order = 8
+mode: mode_4,	time = 0.230021,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.240880,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.252825,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.265965,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.280418,	step = 0.014454,	order = 8
+mode: mode_4,	time = 0.288368,	step = 0.007949,	order = 8
+mode: mode_4,	time = 0.297112,	step = 0.008744,	order = 8
+mode: mode_4,	time = 0.306731,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.317312,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.328951,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.341753,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.355836,	step = 0.014083,	order = 8
+mode: mode_4,	time = 0.363582,	step = 0.007746,	order = 8
+mode: mode_4,	time = 0.372102,	step = 0.008520,	order = 8
+mode: mode_4,	time = 0.381475,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.391784,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.403124,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.415599,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.429321,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.436868,	step = 0.007547,	order = 8
+mode: mode_4,	time = 0.445170,	step = 0.008302,	order = 8
+mode: mode_4,	time = 0.454301,	step = 0.009132,	order = 8
+mode: mode_4,	time = 0.464347,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.475396,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.487551,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.500921,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.515628,	step = 0.014707,	order = 8
+mode: mode_4,	time = 0.523717,	step = 0.008089,	order = 8
+mode: mode_4,	time = 0.532615,	step = 0.008898,	order = 8
+mode: mode_4,	time = 0.542402,	step = 0.009788,	order = 8
+mode: mode_4,	time = 0.553168,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.565011,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.578039,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.592368,	step = 0.014330,	order = 8
+mode: mode_4,	time = 0.600250,	step = 0.007881,	order = 8
+mode: mode_4,	time = 0.608920,	step = 0.008670,	order = 8
+mode: mode_4,	time = 0.618456,	step = 0.009537,	order = 8
+mode: mode_4,	time = 0.628946,	step = 0.010490,	order = 8
+mode: mode_4,	time = 0.640486,	step = 0.011539,	order = 8
+mode: mode_4,	time = 0.653179,	step = 0.012693,	order = 8
+mode: mode_4,	time = 0.667141,	step = 0.013962,	order = 8
+mode: mode_4,	time = 0.682500,	step = 0.015359,	order = 8
+mode: mode_4,	time = 0.690947,	step = 0.008447,	order = 8
+mode: mode_4,	time = 0.700239,	step = 0.009292,	order = 8
+mode: mode_4,	time = 0.710461,	step = 0.010221,	order = 8
+mode: mode_4,	time = 0.721704,	step = 0.011243,	order = 8
+mode: mode_4,	time = 0.734072,	step = 0.012368,	order = 8
+mode: mode_4,	time = 0.747676,	step = 0.013604,	order = 8
+mode: mode_4,	time = 0.762641,	step = 0.014965,	order = 8
+mode: mode_4,	time = 0.779103,	step = 0.016461,	order = 8
+mode: mode_4,	time = 0.797210,	step = 0.018108,	order = 8
+mode: mode_4,	time = 0.817128,	step = 0.019918,	order = 8
+mode: mode_4,	time = 0.828083,	step = 0.010955,	order = 8
+mode: mode_4,	time = 0.840134,	step = 0.012051,	order = 8
+mode: mode_4,	time = 0.853390,	step = 0.013256,	order = 8
+mode: mode_4,	time = 0.867971,	step = 0.014581,	order = 8
+mode: mode_4,	time = 0.884010,	step = 0.016039,	order = 8
+mode: mode_4,	time = 0.901653,	step = 0.017643,	order = 8
+mode: mode_4,	time = 0.921061,	step = 0.019408,	order = 8
+mode: mode_4,	time = 0.942409,	step = 0.021348,	order = 8
+mode: mode_4,	time = 0.965893,	step = 0.023483,	order = 8
+mode: mode_4,	time = 0.991724,	step = 0.025831,	order = 8
+mode: mode_4,	time = 1.005931,	step = 0.014207,	order = 8
+mode: mode_4,	time = 1.021559,	step = 0.015628,	order = 8
+mode: mode_4,	time = 1.038750,	step = 0.017191,	order = 8
+mode: mode_4,	time = 1.057660,	step = 0.018910,	order = 8
+mode: mode_4,	time = 1.078461,	step = 0.020801,	order = 8
+mode: mode_4,	time = 1.101342,	step = 0.022881,	order = 8
+mode: mode_4,	time = 1.126511,	step = 0.025169,	order = 8
+mode: mode_4,	time = 1.140354,	step = 0.013843,	order = 8
+mode: mode_4,	time = 1.155582,	step = 0.015227,	order = 8
+mode: mode_4,	time = 1.172332,	step = 0.016750,	order = 8
+mode: mode_4,	time = 1.190757,	step = 0.018425,	order = 8
+mode: mode_4,	time = 1.211024,	step = 0.020268,	order = 8
+mode: mode_4,	time = 1.233319,	step = 0.022294,	order = 8
+mode: mode_4,	time = 1.257843,	step = 0.024524,	order = 8
+mode: mode_4,	time = 1.284819,	step = 0.026976,	order = 8
+mode: mode_4,	time = 1.314492,	step = 0.029674,	order = 8
+mode: mode_4,	time = 1.330813,	step = 0.016321,	order = 8
+mode: mode_4,	time = 1.348766,	step = 0.017953,	order = 8
+mode: mode_4,	time = 1.368513,	step = 0.019748,	order = 8
+mode: mode_4,	time = 1.390236,	step = 0.021723,	order = 8
+mode: mode_4,	time = 1.414131,	step = 0.023895,	order = 8
+mode: mode_4,	time = 1.440416,	step = 0.026284,	order = 8
+mode: mode_4,	time = 1.469328,	step = 0.028913,	order = 8
+mode: mode_4,	time = 1.501133,	step = 0.031804,	order = 8
+mode: mode_4,	time = 1.536117,	step = 0.034985,	order = 8
+mode: mode_4,	time = 1.574600,	step = 0.038483,	order = 8
+mode: mode_4,	time = 1.616932,	step = 0.042331,	order = 8
+mode: mode_4,	time = 1.663496,	step = 0.046564,	order = 8
+mode: mode_4,	time = 1.714717,	step = 0.051221,	order = 8
+mode: mode_4,	time = 1.771060,	step = 0.056343,	order = 8
+mode: mode_4,	time = 1.779882,	step = 0.008822,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_0,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_0,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.211174,	step = 0.008159,	order = 8
+mode: mode_0,	time = 0.220149,	step = 0.008975,	order = 8
+mode: mode_0,	time = 0.230021,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.240880,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.252825,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.265965,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.280418,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.288368,	step = 0.007949,	order = 8
+mode: mode_0,	time = 0.297112,	step = 0.008744,	order = 8
+mode: mode_0,	time = 0.306731,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.317312,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.328951,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.341753,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.355836,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.363582,	step = 0.007746,	order = 8
+mode: mode_0,	time = 0.372102,	step = 0.008520,	order = 8
+mode: mode_0,	time = 0.381475,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.391784,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.403124,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.415599,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.429321,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.444415,	step = 0.015094,	order = 8
+mode: mode_0,	time = 0.452717,	step = 0.008302,	order = 8
+mode: mode_0,	time = 0.461849,	step = 0.009132,	order = 8
+mode: mode_0,	time = 0.471894,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.482943,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.495098,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.508468,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.523175,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.539353,	step = 0.016178,	order = 8
+mode: mode_0,	time = 0.548250,	step = 0.008898,	order = 8
+mode: mode_0,	time = 0.558038,	step = 0.009788,	order = 8
+mode: mode_0,	time = 0.568804,	step = 0.010766,	order = 8
+mode: mode_0,	time = 0.580647,	step = 0.011843,	order = 8
+mode: mode_0,	time = 0.593674,	step = 0.013027,	order = 8
+mode: mode_0,	time = 0.608004,	step = 0.014330,	order = 8
+mode: mode_0,	time = 0.623767,	step = 0.015763,	order = 8
+mode: mode_0,	time = 0.641107,	step = 0.017339,	order = 8
+mode: mode_0,	time = 0.650643,	step = 0.009537,	order = 8
+mode: mode_0,	time = 0.661133,	step = 0.010490,	order = 8
+mode: mode_0,	time = 0.672673,	step = 0.011539,	order = 8
+mode: mode_0,	time = 0.685366,	step = 0.012693,	order = 8
+mode: mode_0,	time = 0.699328,	step = 0.013962,	order = 8
+mode: mode_0,	time = 0.714687,	step = 0.015359,	order = 8
+mode: mode_0,	time = 0.731582,	step = 0.016895,	order = 8
+mode: mode_0,	time = 0.750166,	step = 0.018584,	order = 8
+mode: mode_0,	time = 0.770608,	step = 0.020442,	order = 8
+mode: mode_0,	time = 0.793095,	step = 0.022487,	order = 8
+mode: mode_0,	time = 0.817830,	step = 0.024735,	order = 8
+mode: mode_0,	time = 0.845039,	step = 0.027209,	order = 8
+mode: mode_0,	time = 0.874969,	step = 0.029930,	order = 8
+mode: mode_0,	time = 0.907892,	step = 0.032923,	order = 8
+mode: mode_0,	time = 0.944107,	step = 0.036215,	order = 8
+mode: mode_0,	time = 0.983944,	step = 0.039837,	order = 8
+mode: mode_0,	time = 1.005854,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.029955,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.056466,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.085629,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.117707,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.152994,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.191809,	step = 0.038815,	order = 8
+mode: mode_0,	time = 1.213157,	step = 0.021348,	order = 8
+mode: mode_0,	time = 1.236641,	step = 0.023483,	order = 8
+mode: mode_0,	time = 1.262472,	step = 0.025831,	order = 8
+mode: mode_0,	time = 1.290887,	step = 0.028415,	order = 8
+mode: mode_0,	time = 1.322143,	step = 0.031256,	order = 8
+mode: mode_0,	time = 1.356525,	step = 0.034382,	order = 8
+mode: mode_0,	time = 1.394344,	step = 0.037820,	order = 8
+mode: mode_0,	time = 1.415145,	step = 0.020801,	order = 8
+mode: mode_0,	time = 1.438026,	step = 0.022881,	order = 8
+mode: mode_0,	time = 1.463196,	step = 0.025169,	order = 8
+mode: mode_0,	time = 1.490882,	step = 0.027686,	order = 8
+mode: mode_0,	time = 1.521336,	step = 0.030455,	order = 8
+mode: mode_0,	time = 1.554836,	step = 0.033500,	order = 8
+mode: mode_0,	time = 1.591687,	step = 0.036850,	order = 8
+mode: mode_0,	time = 1.632222,	step = 0.040535,	order = 8
+mode: mode_0,	time = 1.676810,	step = 0.044589,	order = 8
+mode: mode_0,	time = 1.725858,	step = 0.049048,	order = 8
+mode: mode_0,	time = 1.779810,	step = 0.053952,	order = 8
+mode: mode_0,	time = 1.839158,	step = 0.059348,	order = 8
+mode: mode_0,	time = 1.904440,	step = 0.065282,	order = 8
+mode: mode_0,	time = 1.976250,	step = 0.071810,	order = 8
+mode: mode_0,	time = 2.055242,	step = 0.078992,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.042266,	step = 0.009453,	order = 8
+mode: mode_4,	time = 0.052664,	step = 0.010398,	order = 8
+mode: mode_4,	time = 0.064102,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.076684,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.090525,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.105749,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.114123,	step = 0.008373,	order = 8
+mode: mode_4,	time = 0.123333,	step = 0.009211,	order = 8
+mode: mode_4,	time = 0.133465,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.144610,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.156870,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.170355,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.185189,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.193348,	step = 0.008159,	order = 8
+mode: mode_4,	time = 0.202322,	step = 0.008975,	order = 8
+mode: mode_4,	time = 0.212194,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.223053,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.234999,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.248138,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.262592,	step = 0.014454,	order = 8
+mode: mode_4,	time = 0.270541,	step = 0.007949,	order = 8
+mode: mode_4,	time = 0.279286,	step = 0.008744,	order = 8
+mode: mode_4,	time = 0.288905,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.299485,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.311124,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.323927,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.338010,	step = 0.014083,	order = 8
+mode: mode_4,	time = 0.345756,	step = 0.007746,	order = 8
+mode: mode_4,	time = 0.354276,	step = 0.008520,	order = 8
+mode: mode_4,	time = 0.363648,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.373958,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.385298,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.397772,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.411494,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.419041,	step = 0.007547,	order = 8
+mode: mode_4,	time = 0.427343,	step = 0.008302,	order = 8
+mode: mode_4,	time = 0.436475,	step = 0.009132,	order = 8
+mode: mode_4,	time = 0.446520,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.457570,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.469724,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.483094,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.490448,	step = 0.007354,	order = 8
+mode: mode_4,	time = 0.498537,	step = 0.008089,	order = 8
+mode: mode_4,	time = 0.507435,	step = 0.008898,	order = 8
+mode: mode_4,	time = 0.517222,	step = 0.009788,	order = 8
+mode: mode_4,	time = 0.527988,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.539831,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.552858,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.567188,	step = 0.014330,	order = 8
+mode: mode_4,	time = 0.575070,	step = 0.007881,	order = 8
+mode: mode_4,	time = 0.583739,	step = 0.008670,	order = 8
+mode: mode_4,	time = 0.593276,	step = 0.009537,	order = 8
+mode: mode_4,	time = 0.603766,	step = 0.010490,	order = 8
+mode: mode_4,	time = 0.615306,	step = 0.011539,	order = 8
+mode: mode_4,	time = 0.627999,	step = 0.012693,	order = 8
+mode: mode_4,	time = 0.641961,	step = 0.013962,	order = 8
+mode: mode_4,	time = 0.657320,	step = 0.015359,	order = 8
+mode: mode_4,	time = 0.665767,	step = 0.008447,	order = 8
+mode: mode_4,	time = 0.675059,	step = 0.009292,	order = 8
+mode: mode_4,	time = 0.685281,	step = 0.010221,	order = 8
+mode: mode_4,	time = 0.696524,	step = 0.011243,	order = 8
+mode: mode_4,	time = 0.708892,	step = 0.012368,	order = 8
+mode: mode_4,	time = 0.722496,	step = 0.013604,	order = 8
+mode: mode_4,	time = 0.737461,	step = 0.014965,	order = 8
+mode: mode_4,	time = 0.753922,	step = 0.016461,	order = 8
+mode: mode_4,	time = 0.762976,	step = 0.009054,	order = 8
+mode: mode_4,	time = 0.772935,	step = 0.009959,	order = 8
+mode: mode_4,	time = 0.783891,	step = 0.010955,	order = 8
+mode: mode_4,	time = 0.795941,	step = 0.012051,	order = 8
+mode: mode_4,	time = 0.809197,	step = 0.013256,	order = 8
+mode: mode_4,	time = 0.823778,	step = 0.014581,	order = 8
+mode: mode_4,	time = 0.839817,	step = 0.016039,	order = 8
+mode: mode_4,	time = 0.857461,	step = 0.017643,	order = 8
+mode: mode_4,	time = 0.876868,	step = 0.019408,	order = 8
+mode: mode_4,	time = 0.898216,	step = 0.021348,	order = 8
+mode: mode_4,	time = 0.921700,	step = 0.023483,	order = 8
+mode: mode_4,	time = 0.947531,	step = 0.025831,	order = 8
+mode: mode_4,	time = 0.961738,	step = 0.014207,	order = 8
+mode: mode_4,	time = 0.977366,	step = 0.015628,	order = 8
+mode: mode_4,	time = 0.994557,	step = 0.017191,	order = 8
+mode: mode_4,	time = 1.013467,	step = 0.018910,	order = 8
+mode: mode_4,	time = 1.034268,	step = 0.020801,	order = 8
+mode: mode_4,	time = 1.057149,	step = 0.022881,	order = 8
+mode: mode_4,	time = 1.082318,	step = 0.025169,	order = 8
+mode: mode_4,	time = 1.096161,	step = 0.013843,	order = 8
+mode: mode_4,	time = 1.111389,	step = 0.015227,	order = 8
+mode: mode_4,	time = 1.128139,	step = 0.016750,	order = 8
+mode: mode_4,	time = 1.146564,	step = 0.018425,	order = 8
+mode: mode_4,	time = 1.166831,	step = 0.020268,	order = 8
+mode: mode_4,	time = 1.189126,	step = 0.022294,	order = 8
+mode: mode_4,	time = 1.201388,	step = 0.012262,	order = 8
+mode: mode_4,	time = 1.214876,	step = 0.013488,	order = 8
+mode: mode_4,	time = 1.229713,	step = 0.014837,	order = 8
+mode: mode_4,	time = 1.246033,	step = 0.016321,	order = 8
+mode: mode_4,	time = 1.263986,	step = 0.017953,	order = 8
+mode: mode_4,	time = 1.283734,	step = 0.019748,	order = 8
+mode: mode_4,	time = 1.305456,	step = 0.021723,	order = 8
+mode: mode_4,	time = 1.329351,	step = 0.023895,	order = 8
+mode: mode_4,	time = 1.355636,	step = 0.026284,	order = 8
+mode: mode_4,	time = 1.384549,	step = 0.028913,	order = 8
+mode: mode_4,	time = 1.416353,	step = 0.031804,	order = 8
+mode: mode_4,	time = 1.451337,	step = 0.034985,	order = 8
+mode: mode_4,	time = 1.489820,	step = 0.038483,	order = 8
+mode: mode_4,	time = 1.532152,	step = 0.042331,	order = 8
+mode: mode_4,	time = 1.578716,	step = 0.046564,	order = 8
+mode: mode_4,	time = 1.629937,	step = 0.051221,	order = 8
+mode: mode_4,	time = 1.686280,	step = 0.056343,	order = 8
+mode: mode_4,	time = 1.748257,	step = 0.061977,	order = 8
+mode: mode_4,	time = 1.781285,	step = 0.033027,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_0,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_0,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.211174,	step = 0.008159,	order = 8
+mode: mode_0,	time = 0.220149,	step = 0.008975,	order = 8
+mode: mode_0,	time = 0.230021,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.240880,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.252825,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.265965,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.280418,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.288368,	step = 0.007949,	order = 8
+mode: mode_0,	time = 0.297112,	step = 0.008744,	order = 8
+mode: mode_0,	time = 0.306731,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.317312,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.328951,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.341753,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.355836,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.363582,	step = 0.007746,	order = 8
+mode: mode_0,	time = 0.372102,	step = 0.008520,	order = 8
+mode: mode_0,	time = 0.381475,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.391784,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.403124,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.415599,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.429321,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.444415,	step = 0.015094,	order = 8
+mode: mode_0,	time = 0.452717,	step = 0.008302,	order = 8
+mode: mode_0,	time = 0.461849,	step = 0.009132,	order = 8
+mode: mode_0,	time = 0.471894,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.482943,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.495098,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.508468,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.523175,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.531264,	step = 0.008089,	order = 8
+mode: mode_0,	time = 0.540162,	step = 0.008898,	order = 8
+mode: mode_0,	time = 0.549949,	step = 0.009788,	order = 8
+mode: mode_0,	time = 0.560715,	step = 0.010766,	order = 8
+mode: mode_0,	time = 0.572558,	step = 0.011843,	order = 8
+mode: mode_0,	time = 0.585586,	step = 0.013027,	order = 8
+mode: mode_0,	time = 0.599916,	step = 0.014330,	order = 8
+mode: mode_0,	time = 0.615678,	step = 0.015763,	order = 8
+mode: mode_0,	time = 0.633018,	step = 0.017339,	order = 8
+mode: mode_0,	time = 0.642554,	step = 0.009537,	order = 8
+mode: mode_0,	time = 0.653044,	step = 0.010490,	order = 8
+mode: mode_0,	time = 0.664584,	step = 0.011539,	order = 8
+mode: mode_0,	time = 0.677277,	step = 0.012693,	order = 8
+mode: mode_0,	time = 0.691239,	step = 0.013962,	order = 8
+mode: mode_0,	time = 0.706598,	step = 0.015359,	order = 8
+mode: mode_0,	time = 0.723493,	step = 0.016895,	order = 8
+mode: mode_0,	time = 0.742077,	step = 0.018584,	order = 8
+mode: mode_0,	time = 0.762519,	step = 0.020442,	order = 8
+mode: mode_0,	time = 0.785006,	step = 0.022487,	order = 8
+mode: mode_0,	time = 0.809742,	step = 0.024735,	order = 8
+mode: mode_0,	time = 0.836950,	step = 0.027209,	order = 8
+mode: mode_0,	time = 0.866880,	step = 0.029930,	order = 8
+mode: mode_0,	time = 0.899803,	step = 0.032923,	order = 8
+mode: mode_0,	time = 0.936018,	step = 0.036215,	order = 8
+mode: mode_0,	time = 0.975855,	step = 0.039837,	order = 8
+mode: mode_0,	time = 0.997765,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.021866,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.048378,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.077540,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.109619,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.144905,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.164313,	step = 0.019408,	order = 8
+mode: mode_0,	time = 1.185661,	step = 0.021348,	order = 8
+mode: mode_0,	time = 1.209144,	step = 0.023483,	order = 8
+mode: mode_0,	time = 1.234976,	step = 0.025831,	order = 8
+mode: mode_0,	time = 1.263390,	step = 0.028415,	order = 8
+mode: mode_0,	time = 1.294646,	step = 0.031256,	order = 8
+mode: mode_0,	time = 1.329028,	step = 0.034382,	order = 8
+mode: mode_0,	time = 1.347938,	step = 0.018910,	order = 8
+mode: mode_0,	time = 1.368739,	step = 0.020801,	order = 8
+mode: mode_0,	time = 1.391620,	step = 0.022881,	order = 8
+mode: mode_0,	time = 1.416789,	step = 0.025169,	order = 8
+mode: mode_0,	time = 1.444475,	step = 0.027686,	order = 8
+mode: mode_0,	time = 1.474930,	step = 0.030455,	order = 8
+mode: mode_0,	time = 1.508430,	step = 0.033500,	order = 8
+mode: mode_0,	time = 1.545280,	step = 0.036850,	order = 8
+mode: mode_0,	time = 1.585815,	step = 0.040535,	order = 8
+mode: mode_0,	time = 1.630404,	step = 0.044589,	order = 8
+mode: mode_0,	time = 1.679451,	step = 0.049048,	order = 8
+mode: mode_0,	time = 1.733404,	step = 0.053952,	order = 8
+mode: mode_0,	time = 1.792751,	step = 0.059348,	order = 8
+mode: mode_0,	time = 1.858034,	step = 0.065282,	order = 8
+mode: mode_0,	time = 1.929844,	step = 0.071810,	order = 8
+mode: mode_0,	time = 2.008836,	step = 0.078992,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.042266,	step = 0.009453,	order = 8
+mode: mode_4,	time = 0.052664,	step = 0.010398,	order = 8
+mode: mode_4,	time = 0.064102,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.076684,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.090525,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.105749,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.114123,	step = 0.008373,	order = 8
+mode: mode_4,	time = 0.123333,	step = 0.009211,	order = 8
+mode: mode_4,	time = 0.133465,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.144610,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.156870,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.170355,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.185189,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.193348,	step = 0.008159,	order = 8
+mode: mode_4,	time = 0.202322,	step = 0.008975,	order = 8
+mode: mode_4,	time = 0.212194,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.223053,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.234999,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.248138,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.255365,	step = 0.007227,	order = 8
+mode: mode_4,	time = 0.263314,	step = 0.007949,	order = 8
+mode: mode_4,	time = 0.272059,	step = 0.008744,	order = 8
+mode: mode_4,	time = 0.281678,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.292259,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.303897,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.316700,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.330783,	step = 0.014083,	order = 8
+mode: mode_4,	time = 0.338529,	step = 0.007746,	order = 8
+mode: mode_4,	time = 0.347049,	step = 0.008520,	order = 8
+mode: mode_4,	time = 0.356421,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.366731,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.378071,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.390546,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.404267,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.411815,	step = 0.007547,	order = 8
+mode: mode_4,	time = 0.420116,	step = 0.008302,	order = 8
+mode: mode_4,	time = 0.429248,	step = 0.009132,	order = 8
+mode: mode_4,	time = 0.439293,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.450343,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.462497,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.475868,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.483221,	step = 0.007354,	order = 8
+mode: mode_4,	time = 0.491310,	step = 0.008089,	order = 8
+mode: mode_4,	time = 0.500208,	step = 0.008898,	order = 8
+mode: mode_4,	time = 0.509995,	step = 0.009788,	order = 8
+mode: mode_4,	time = 0.520762,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.532604,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.545632,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.559962,	step = 0.014330,	order = 8
+mode: mode_4,	time = 0.567843,	step = 0.007881,	order = 8
+mode: mode_4,	time = 0.576513,	step = 0.008670,	order = 8
+mode: mode_4,	time = 0.586049,	step = 0.009537,	order = 8
+mode: mode_4,	time = 0.596539,	step = 0.010490,	order = 8
+mode: mode_4,	time = 0.608079,	step = 0.011539,	order = 8
+mode: mode_4,	time = 0.620772,	step = 0.012693,	order = 8
+mode: mode_4,	time = 0.634734,	step = 0.013962,	order = 8
+mode: mode_4,	time = 0.650093,	step = 0.015359,	order = 8
+mode: mode_4,	time = 0.658540,	step = 0.008447,	order = 8
+mode: mode_4,	time = 0.667833,	step = 0.009292,	order = 8
+mode: mode_4,	time = 0.678054,	step = 0.010221,	order = 8
+mode: mode_4,	time = 0.689297,	step = 0.011243,	order = 8
+mode: mode_4,	time = 0.701665,	step = 0.012368,	order = 8
+mode: mode_4,	time = 0.715269,	step = 0.013604,	order = 8
+mode: mode_4,	time = 0.730234,	step = 0.014965,	order = 8
+mode: mode_4,	time = 0.746696,	step = 0.016461,	order = 8
+mode: mode_4,	time = 0.755749,	step = 0.009054,	order = 8
+mode: mode_4,	time = 0.765709,	step = 0.009959,	order = 8
+mode: mode_4,	time = 0.776664,	step = 0.010955,	order = 8
+mode: mode_4,	time = 0.788714,	step = 0.012051,	order = 8
+mode: mode_4,	time = 0.801970,	step = 0.013256,	order = 8
+mode: mode_4,	time = 0.816551,	step = 0.014581,	order = 8
+mode: mode_4,	time = 0.832590,	step = 0.016039,	order = 8
+mode: mode_4,	time = 0.850234,	step = 0.017643,	order = 8
+mode: mode_4,	time = 0.869641,	step = 0.019408,	order = 8
+mode: mode_4,	time = 0.890990,	step = 0.021348,	order = 8
+mode: mode_4,	time = 0.914473,	step = 0.023483,	order = 8
+mode: mode_4,	time = 0.927389,	step = 0.012916,	order = 8
+mode: mode_4,	time = 0.941596,	step = 0.014207,	order = 8
+mode: mode_4,	time = 0.957224,	step = 0.015628,	order = 8
+mode: mode_4,	time = 0.974415,	step = 0.017191,	order = 8
+mode: mode_4,	time = 0.993325,	step = 0.018910,	order = 8
+mode: mode_4,	time = 1.014126,	step = 0.020801,	order = 8
+mode: mode_4,	time = 1.037007,	step = 0.022881,	order = 8
+mode: mode_4,	time = 1.062176,	step = 0.025169,	order = 8
+mode: mode_4,	time = 1.076019,	step = 0.013843,	order = 8
+mode: mode_4,	time = 1.091246,	step = 0.015227,	order = 8
+mode: mode_4,	time = 1.107996,	step = 0.016750,	order = 8
+mode: mode_4,	time = 1.126421,	step = 0.018425,	order = 8
+mode: mode_4,	time = 1.146689,	step = 0.020268,	order = 8
+mode: mode_4,	time = 1.168983,	step = 0.022294,	order = 8
+mode: mode_4,	time = 1.181245,	step = 0.012262,	order = 8
+mode: mode_4,	time = 1.194733,	step = 0.013488,	order = 8
+mode: mode_4,	time = 1.209570,	step = 0.014837,	order = 8
+mode: mode_4,	time = 1.225891,	step = 0.016321,	order = 8
+mode: mode_4,	time = 1.243843,	step = 0.017953,	order = 8
+mode: mode_4,	time = 1.263591,	step = 0.019748,	order = 8
+mode: mode_4,	time = 1.285314,	step = 0.021723,	order = 8
+mode: mode_4,	time = 1.309209,	step = 0.023895,	order = 8
+mode: mode_4,	time = 1.335493,	step = 0.026284,	order = 8
+mode: mode_4,	time = 1.364406,	step = 0.028913,	order = 8
+mode: mode_4,	time = 1.396210,	step = 0.031804,	order = 8
+mode: mode_4,	time = 1.431195,	step = 0.034985,	order = 8
+mode: mode_4,	time = 1.450436,	step = 0.019242,	order = 8
+mode: mode_4,	time = 1.471602,	step = 0.021166,	order = 8
+mode: mode_4,	time = 1.494884,	step = 0.023282,	order = 8
+mode: mode_4,	time = 1.520495,	step = 0.025610,	order = 8
+mode: mode_4,	time = 1.548666,	step = 0.028172,	order = 8
+mode: mode_4,	time = 1.579655,	step = 0.030989,	order = 8
+mode: mode_4,	time = 1.613742,	step = 0.034088,	order = 8
+mode: mode_4,	time = 1.651239,	step = 0.037496,	order = 8
+mode: mode_4,	time = 1.692485,	step = 0.041246,	order = 8
+mode: mode_4,	time = 1.737855,	step = 0.045370,	order = 8
+mode: mode_4,	time = 1.782455,	step = 0.044600,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_0,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_0,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.211174,	step = 0.008159,	order = 8
+mode: mode_0,	time = 0.220149,	step = 0.008975,	order = 8
+mode: mode_0,	time = 0.230021,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.240880,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.252825,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.265965,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.280418,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.288368,	step = 0.007949,	order = 8
+mode: mode_0,	time = 0.297112,	step = 0.008744,	order = 8
+mode: mode_0,	time = 0.306731,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.317312,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.328951,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.341753,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.355836,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.363582,	step = 0.007746,	order = 8
+mode: mode_0,	time = 0.372102,	step = 0.008520,	order = 8
+mode: mode_0,	time = 0.381475,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.391784,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.403124,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.415599,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.429321,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.436868,	step = 0.007547,	order = 8
+mode: mode_0,	time = 0.445170,	step = 0.008302,	order = 8
+mode: mode_0,	time = 0.454301,	step = 0.009132,	order = 8
+mode: mode_0,	time = 0.464347,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.475396,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.487551,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.500921,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.515628,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.523717,	step = 0.008089,	order = 8
+mode: mode_0,	time = 0.532615,	step = 0.008898,	order = 8
+mode: mode_0,	time = 0.542402,	step = 0.009788,	order = 8
+mode: mode_0,	time = 0.553168,	step = 0.010766,	order = 8
+mode: mode_0,	time = 0.565011,	step = 0.011843,	order = 8
+mode: mode_0,	time = 0.578039,	step = 0.013027,	order = 8
+mode: mode_0,	time = 0.592368,	step = 0.014330,	order = 8
+mode: mode_0,	time = 0.608131,	step = 0.015763,	order = 8
+mode: mode_0,	time = 0.616801,	step = 0.008670,	order = 8
+mode: mode_0,	time = 0.626338,	step = 0.009537,	order = 8
+mode: mode_0,	time = 0.636828,	step = 0.010490,	order = 8
+mode: mode_0,	time = 0.648367,	step = 0.011539,	order = 8
+mode: mode_0,	time = 0.661060,	step = 0.012693,	order = 8
+mode: mode_0,	time = 0.675023,	step = 0.013962,	order = 8
+mode: mode_0,	time = 0.690381,	step = 0.015359,	order = 8
+mode: mode_0,	time = 0.707276,	step = 0.016895,	order = 8
+mode: mode_0,	time = 0.725860,	step = 0.018584,	order = 8
+mode: mode_0,	time = 0.746303,	step = 0.020442,	order = 8
+mode: mode_0,	time = 0.768789,	step = 0.022487,	order = 8
+mode: mode_0,	time = 0.793525,	step = 0.024735,	order = 8
+mode: mode_0,	time = 0.820734,	step = 0.027209,	order = 8
+mode: mode_0,	time = 0.850664,	step = 0.029930,	order = 8
+mode: mode_0,	time = 0.883586,	step = 0.032923,	order = 8
+mode: mode_0,	time = 0.919802,	step = 0.036215,	order = 8
+mode: mode_0,	time = 0.959638,	step = 0.039837,	order = 8
+mode: mode_0,	time = 0.981548,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.005650,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.032161,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.061323,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.093402,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.128688,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.148096,	step = 0.019408,	order = 8
+mode: mode_0,	time = 1.169444,	step = 0.021348,	order = 8
+mode: mode_0,	time = 1.192928,	step = 0.023483,	order = 8
+mode: mode_0,	time = 1.218759,	step = 0.025831,	order = 8
+mode: mode_0,	time = 1.247174,	step = 0.028415,	order = 8
+mode: mode_0,	time = 1.278430,	step = 0.031256,	order = 8
+mode: mode_0,	time = 1.312811,	step = 0.034382,	order = 8
+mode: mode_0,	time = 1.331721,	step = 0.018910,	order = 8
+mode: mode_0,	time = 1.352522,	step = 0.020801,	order = 8
+mode: mode_0,	time = 1.375403,	step = 0.022881,	order = 8
+mode: mode_0,	time = 1.400573,	step = 0.025169,	order = 8
+mode: mode_0,	time = 1.428259,	step = 0.027686,	order = 8
+mode: mode_0,	time = 1.458713,	step = 0.030455,	order = 8
+mode: mode_0,	time = 1.492213,	step = 0.033500,	order = 8
+mode: mode_0,	time = 1.529063,	step = 0.036850,	order = 8
+mode: mode_0,	time = 1.569599,	step = 0.040535,	order = 8
+mode: mode_0,	time = 1.614187,	step = 0.044589,	order = 8
+mode: mode_0,	time = 1.663235,	step = 0.049048,	order = 8
+mode: mode_0,	time = 1.717187,	step = 0.053952,	order = 8
+mode: mode_0,	time = 1.776535,	step = 0.059348,	order = 8
+mode: mode_0,	time = 1.841817,	step = 0.065282,	order = 8
+mode: mode_0,	time = 1.913627,	step = 0.071810,	order = 8
+mode: mode_0,	time = 1.992619,	step = 0.078992,	order = 8
+mode: mode_0,	time = 2.079510,	step = 0.086891,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.042266,	step = 0.009453,	order = 8
+mode: mode_4,	time = 0.052664,	step = 0.010398,	order = 8
+mode: mode_4,	time = 0.064102,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.076684,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.090525,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.105749,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.114123,	step = 0.008373,	order = 8
+mode: mode_4,	time = 0.123333,	step = 0.009211,	order = 8
+mode: mode_4,	time = 0.133465,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.144610,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.156870,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.170355,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.185189,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.193348,	step = 0.008159,	order = 8
+mode: mode_4,	time = 0.202322,	step = 0.008975,	order = 8
+mode: mode_4,	time = 0.212194,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.223053,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.234999,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.248138,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.255365,	step = 0.007227,	order = 8
+mode: mode_4,	time = 0.263314,	step = 0.007949,	order = 8
+mode: mode_4,	time = 0.272059,	step = 0.008744,	order = 8
+mode: mode_4,	time = 0.281678,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.292259,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.303897,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.316700,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.323742,	step = 0.007042,	order = 8
+mode: mode_4,	time = 0.331487,	step = 0.007746,	order = 8
+mode: mode_4,	time = 0.340008,	step = 0.008520,	order = 8
+mode: mode_4,	time = 0.349380,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.359689,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.371030,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.383504,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.397226,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.404773,	step = 0.007547,	order = 8
+mode: mode_4,	time = 0.413075,	step = 0.008302,	order = 8
+mode: mode_4,	time = 0.422207,	step = 0.009132,	order = 8
+mode: mode_4,	time = 0.432252,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.443301,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.455456,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.468826,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.476180,	step = 0.007354,	order = 8
+mode: mode_4,	time = 0.484268,	step = 0.008089,	order = 8
+mode: mode_4,	time = 0.493166,	step = 0.008898,	order = 8
+mode: mode_4,	time = 0.502954,	step = 0.009788,	order = 8
+mode: mode_4,	time = 0.513720,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.525563,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.538590,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.552920,	step = 0.014330,	order = 8
+mode: mode_4,	time = 0.560802,	step = 0.007881,	order = 8
+mode: mode_4,	time = 0.569471,	step = 0.008670,	order = 8
+mode: mode_4,	time = 0.579008,	step = 0.009537,	order = 8
+mode: mode_4,	time = 0.589498,	step = 0.010490,	order = 8
+mode: mode_4,	time = 0.601037,	step = 0.011539,	order = 8
+mode: mode_4,	time = 0.613730,	step = 0.012693,	order = 8
+mode: mode_4,	time = 0.627693,	step = 0.013962,	order = 8
+mode: mode_4,	time = 0.635372,	step = 0.007679,	order = 8
+mode: mode_4,	time = 0.643820,	step = 0.008447,	order = 8
+mode: mode_4,	time = 0.653112,	step = 0.009292,	order = 8
+mode: mode_4,	time = 0.663333,	step = 0.010221,	order = 8
+mode: mode_4,	time = 0.674576,	step = 0.011243,	order = 8
+mode: mode_4,	time = 0.686944,	step = 0.012368,	order = 8
+mode: mode_4,	time = 0.700548,	step = 0.013604,	order = 8
+mode: mode_4,	time = 0.715513,	step = 0.014965,	order = 8
+mode: mode_4,	time = 0.723744,	step = 0.008231,	order = 8
+mode: mode_4,	time = 0.732798,	step = 0.009054,	order = 8
+mode: mode_4,	time = 0.742757,	step = 0.009959,	order = 8
+mode: mode_4,	time = 0.753712,	step = 0.010955,	order = 8
+mode: mode_4,	time = 0.765763,	step = 0.012051,	order = 8
+mode: mode_4,	time = 0.779018,	step = 0.013256,	order = 8
+mode: mode_4,	time = 0.793600,	step = 0.014581,	order = 8
+mode: mode_4,	time = 0.809639,	step = 0.016039,	order = 8
+mode: mode_4,	time = 0.827282,	step = 0.017643,	order = 8
+mode: mode_4,	time = 0.846690,	step = 0.019408,	order = 8
+mode: mode_4,	time = 0.868038,	step = 0.021348,	order = 8
+mode: mode_4,	time = 0.879780,	step = 0.011742,	order = 8
+mode: mode_4,	time = 0.892695,	step = 0.012916,	order = 8
+mode: mode_4,	time = 0.906903,	step = 0.014207,	order = 8
+mode: mode_4,	time = 0.922531,	step = 0.015628,	order = 8
+mode: mode_4,	time = 0.939722,	step = 0.017191,	order = 8
+mode: mode_4,	time = 0.958632,	step = 0.018910,	order = 8
+mode: mode_4,	time = 0.979432,	step = 0.020801,	order = 8
+mode: mode_4,	time = 1.002314,	step = 0.022881,	order = 8
+mode: mode_4,	time = 1.027483,	step = 0.025169,	order = 8
+mode: mode_4,	time = 1.041326,	step = 0.013843,	order = 8
+mode: mode_4,	time = 1.056553,	step = 0.015227,	order = 8
+mode: mode_4,	time = 1.073303,	step = 0.016750,	order = 8
+mode: mode_4,	time = 1.091728,	step = 0.018425,	order = 8
+mode: mode_4,	time = 1.111996,	step = 0.020268,	order = 8
+mode: mode_4,	time = 1.134290,	step = 0.022294,	order = 8
+mode: mode_4,	time = 1.146552,	step = 0.012262,	order = 8
+mode: mode_4,	time = 1.160040,	step = 0.013488,	order = 8
+mode: mode_4,	time = 1.174877,	step = 0.014837,	order = 8
+mode: mode_4,	time = 1.191197,	step = 0.016321,	order = 8
+mode: mode_4,	time = 1.209150,	step = 0.017953,	order = 8
+mode: mode_4,	time = 1.228898,	step = 0.019748,	order = 8
+mode: mode_4,	time = 1.250621,	step = 0.021723,	order = 8
+mode: mode_4,	time = 1.274516,	step = 0.023895,	order = 8
+mode: mode_4,	time = 1.300800,	step = 0.026284,	order = 8
+mode: mode_4,	time = 1.315256,	step = 0.014456,	order = 8
+mode: mode_4,	time = 1.331159,	step = 0.015902,	order = 8
+mode: mode_4,	time = 1.348651,	step = 0.017492,	order = 8
+mode: mode_4,	time = 1.367892,	step = 0.019242,	order = 8
+mode: mode_4,	time = 1.389058,	step = 0.021166,	order = 8
+mode: mode_4,	time = 1.412340,	step = 0.023282,	order = 8
+mode: mode_4,	time = 1.437951,	step = 0.025610,	order = 8
+mode: mode_4,	time = 1.466122,	step = 0.028172,	order = 8
+mode: mode_4,	time = 1.497111,	step = 0.030989,	order = 8
+mode: mode_4,	time = 1.531198,	step = 0.034088,	order = 8
+mode: mode_4,	time = 1.568695,	step = 0.037496,	order = 8
+mode: mode_4,	time = 1.609941,	step = 0.041246,	order = 8
+mode: mode_4,	time = 1.655311,	step = 0.045370,	order = 8
+mode: mode_4,	time = 1.705219,	step = 0.049908,	order = 8
+mode: mode_4,	time = 1.760117,	step = 0.054898,	order = 8
+mode: mode_4,	time = 1.781402,	step = 0.021285,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_0,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_0,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.211174,	step = 0.008159,	order = 8
+mode: mode_0,	time = 0.220149,	step = 0.008975,	order = 8
+mode: mode_0,	time = 0.230021,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.240880,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.252825,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.265965,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.280418,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.288368,	step = 0.007949,	order = 8
+mode: mode_0,	time = 0.297112,	step = 0.008744,	order = 8
+mode: mode_0,	time = 0.306731,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.317312,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.328951,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.341753,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.355836,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.363582,	step = 0.007746,	order = 8
+mode: mode_0,	time = 0.372102,	step = 0.008520,	order = 8
+mode: mode_0,	time = 0.381475,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.391784,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.403124,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.415599,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.429321,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.436868,	step = 0.007547,	order = 8
+mode: mode_0,	time = 0.445170,	step = 0.008302,	order = 8
+mode: mode_0,	time = 0.454301,	step = 0.009132,	order = 8
+mode: mode_0,	time = 0.464347,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.475396,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.487551,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.500921,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.515628,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.523717,	step = 0.008089,	order = 8
+mode: mode_0,	time = 0.532615,	step = 0.008898,	order = 8
+mode: mode_0,	time = 0.542402,	step = 0.009788,	order = 8
+mode: mode_0,	time = 0.553168,	step = 0.010766,	order = 8
+mode: mode_0,	time = 0.565011,	step = 0.011843,	order = 8
+mode: mode_0,	time = 0.578039,	step = 0.013027,	order = 8
+mode: mode_0,	time = 0.592368,	step = 0.014330,	order = 8
+mode: mode_0,	time = 0.608131,	step = 0.015763,	order = 8
+mode: mode_0,	time = 0.616801,	step = 0.008670,	order = 8
+mode: mode_0,	time = 0.626338,	step = 0.009537,	order = 8
+mode: mode_0,	time = 0.636828,	step = 0.010490,	order = 8
+mode: mode_0,	time = 0.648367,	step = 0.011539,	order = 8
+mode: mode_0,	time = 0.661060,	step = 0.012693,	order = 8
+mode: mode_0,	time = 0.675023,	step = 0.013962,	order = 8
+mode: mode_0,	time = 0.690381,	step = 0.015359,	order = 8
+mode: mode_0,	time = 0.707276,	step = 0.016895,	order = 8
+mode: mode_0,	time = 0.725860,	step = 0.018584,	order = 8
+mode: mode_0,	time = 0.746303,	step = 0.020442,	order = 8
+mode: mode_0,	time = 0.768789,	step = 0.022487,	order = 8
+mode: mode_0,	time = 0.793525,	step = 0.024735,	order = 8
+mode: mode_0,	time = 0.820734,	step = 0.027209,	order = 8
+mode: mode_0,	time = 0.850664,	step = 0.029930,	order = 8
+mode: mode_0,	time = 0.883586,	step = 0.032923,	order = 8
+mode: mode_0,	time = 0.919802,	step = 0.036215,	order = 8
+mode: mode_0,	time = 0.959638,	step = 0.039837,	order = 8
+mode: mode_0,	time = 0.981548,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.005650,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.032161,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.061323,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.093402,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.128688,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.148096,	step = 0.019408,	order = 8
+mode: mode_0,	time = 1.169444,	step = 0.021348,	order = 8
+mode: mode_0,	time = 1.192928,	step = 0.023483,	order = 8
+mode: mode_0,	time = 1.218759,	step = 0.025831,	order = 8
+mode: mode_0,	time = 1.247174,	step = 0.028415,	order = 8
+mode: mode_0,	time = 1.278430,	step = 0.031256,	order = 8
+mode: mode_0,	time = 1.312811,	step = 0.034382,	order = 8
+mode: mode_0,	time = 1.331721,	step = 0.018910,	order = 8
+mode: mode_0,	time = 1.352522,	step = 0.020801,	order = 8
+mode: mode_0,	time = 1.375403,	step = 0.022881,	order = 8
+mode: mode_0,	time = 1.400573,	step = 0.025169,	order = 8
+mode: mode_0,	time = 1.428259,	step = 0.027686,	order = 8
+mode: mode_0,	time = 1.458713,	step = 0.030455,	order = 8
+mode: mode_0,	time = 1.492213,	step = 0.033500,	order = 8
+mode: mode_0,	time = 1.529063,	step = 0.036850,	order = 8
+mode: mode_0,	time = 1.569599,	step = 0.040535,	order = 8
+mode: mode_0,	time = 1.614187,	step = 0.044589,	order = 8
+mode: mode_0,	time = 1.663235,	step = 0.049048,	order = 8
+mode: mode_0,	time = 1.717187,	step = 0.053952,	order = 8
+mode: mode_0,	time = 1.776535,	step = 0.059348,	order = 8
+mode: mode_0,	time = 1.841817,	step = 0.065282,	order = 8
+mode: mode_0,	time = 1.913627,	step = 0.071810,	order = 8
+mode: mode_0,	time = 1.992619,	step = 0.078992,	order = 8
+mode: mode_0,	time = 2.079510,	step = 0.086891,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_4,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_4,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_4,	time = 0.042266,	step = 0.009453,	order = 8
+mode: mode_4,	time = 0.052664,	step = 0.010398,	order = 8
+mode: mode_4,	time = 0.064102,	step = 0.011438,	order = 8
+mode: mode_4,	time = 0.076684,	step = 0.012582,	order = 8
+mode: mode_4,	time = 0.090525,	step = 0.013840,	order = 8
+mode: mode_4,	time = 0.105749,	step = 0.015224,	order = 8
+mode: mode_4,	time = 0.114123,	step = 0.008373,	order = 8
+mode: mode_4,	time = 0.123333,	step = 0.009211,	order = 8
+mode: mode_4,	time = 0.133465,	step = 0.010132,	order = 8
+mode: mode_4,	time = 0.144610,	step = 0.011145,	order = 8
+mode: mode_4,	time = 0.156870,	step = 0.012259,	order = 8
+mode: mode_4,	time = 0.170355,	step = 0.013485,	order = 8
+mode: mode_4,	time = 0.185189,	step = 0.014834,	order = 8
+mode: mode_4,	time = 0.193348,	step = 0.008159,	order = 8
+mode: mode_4,	time = 0.202322,	step = 0.008975,	order = 8
+mode: mode_4,	time = 0.212194,	step = 0.009872,	order = 8
+mode: mode_4,	time = 0.223053,	step = 0.010859,	order = 8
+mode: mode_4,	time = 0.234999,	step = 0.011945,	order = 8
+mode: mode_4,	time = 0.248138,	step = 0.013140,	order = 8
+mode: mode_4,	time = 0.255365,	step = 0.007227,	order = 8
+mode: mode_4,	time = 0.263314,	step = 0.007949,	order = 8
+mode: mode_4,	time = 0.272059,	step = 0.008744,	order = 8
+mode: mode_4,	time = 0.281678,	step = 0.009619,	order = 8
+mode: mode_4,	time = 0.292259,	step = 0.010581,	order = 8
+mode: mode_4,	time = 0.303897,	step = 0.011639,	order = 8
+mode: mode_4,	time = 0.316700,	step = 0.012803,	order = 8
+mode: mode_4,	time = 0.323742,	step = 0.007042,	order = 8
+mode: mode_4,	time = 0.331487,	step = 0.007746,	order = 8
+mode: mode_4,	time = 0.340008,	step = 0.008520,	order = 8
+mode: mode_4,	time = 0.349380,	step = 0.009372,	order = 8
+mode: mode_4,	time = 0.359689,	step = 0.010309,	order = 8
+mode: mode_4,	time = 0.371030,	step = 0.011340,	order = 8
+mode: mode_4,	time = 0.383504,	step = 0.012474,	order = 8
+mode: mode_4,	time = 0.397226,	step = 0.013722,	order = 8
+mode: mode_4,	time = 0.404773,	step = 0.007547,	order = 8
+mode: mode_4,	time = 0.413075,	step = 0.008302,	order = 8
+mode: mode_4,	time = 0.422207,	step = 0.009132,	order = 8
+mode: mode_4,	time = 0.432252,	step = 0.010045,	order = 8
+mode: mode_4,	time = 0.443301,	step = 0.011050,	order = 8
+mode: mode_4,	time = 0.455456,	step = 0.012155,	order = 8
+mode: mode_4,	time = 0.468826,	step = 0.013370,	order = 8
+mode: mode_4,	time = 0.476180,	step = 0.007354,	order = 8
+mode: mode_4,	time = 0.484268,	step = 0.008089,	order = 8
+mode: mode_4,	time = 0.493166,	step = 0.008898,	order = 8
+mode: mode_4,	time = 0.502954,	step = 0.009788,	order = 8
+mode: mode_4,	time = 0.513720,	step = 0.010766,	order = 8
+mode: mode_4,	time = 0.525563,	step = 0.011843,	order = 8
+mode: mode_4,	time = 0.538590,	step = 0.013027,	order = 8
+mode: mode_4,	time = 0.545755,	step = 0.007165,	order = 8
+mode: mode_4,	time = 0.553637,	step = 0.007881,	order = 8
+mode: mode_4,	time = 0.562306,	step = 0.008670,	order = 8
+mode: mode_4,	time = 0.571843,	step = 0.009537,	order = 8
+mode: mode_4,	time = 0.582333,	step = 0.010490,	order = 8
+mode: mode_4,	time = 0.593872,	step = 0.011539,	order = 8
+mode: mode_4,	time = 0.606565,	step = 0.012693,	order = 8
+mode: mode_4,	time = 0.620528,	step = 0.013962,	order = 8
+mode: mode_4,	time = 0.628207,	step = 0.007679,	order = 8
+mode: mode_4,	time = 0.636655,	step = 0.008447,	order = 8
+mode: mode_4,	time = 0.645947,	step = 0.009292,	order = 8
+mode: mode_4,	time = 0.656168,	step = 0.010221,	order = 8
+mode: mode_4,	time = 0.667411,	step = 0.011243,	order = 8
+mode: mode_4,	time = 0.679779,	step = 0.012368,	order = 8
+mode: mode_4,	time = 0.693383,	step = 0.013604,	order = 8
+mode: mode_4,	time = 0.708348,	step = 0.014965,	order = 8
+mode: mode_4,	time = 0.716579,	step = 0.008231,	order = 8
+mode: mode_4,	time = 0.725633,	step = 0.009054,	order = 8
+mode: mode_4,	time = 0.735592,	step = 0.009959,	order = 8
+mode: mode_4,	time = 0.746547,	step = 0.010955,	order = 8
+mode: mode_4,	time = 0.758598,	step = 0.012051,	order = 8
+mode: mode_4,	time = 0.771853,	step = 0.013256,	order = 8
+mode: mode_4,	time = 0.786435,	step = 0.014581,	order = 8
+mode: mode_4,	time = 0.802474,	step = 0.016039,	order = 8
+mode: mode_4,	time = 0.820117,	step = 0.017643,	order = 8
+mode: mode_4,	time = 0.839525,	step = 0.019408,	order = 8
+mode: mode_4,	time = 0.850199,	step = 0.010674,	order = 8
+mode: mode_4,	time = 0.861940,	step = 0.011742,	order = 8
+mode: mode_4,	time = 0.874856,	step = 0.012916,	order = 8
+mode: mode_4,	time = 0.889064,	step = 0.014207,	order = 8
+mode: mode_4,	time = 0.904692,	step = 0.015628,	order = 8
+mode: mode_4,	time = 0.921882,	step = 0.017191,	order = 8
+mode: mode_4,	time = 0.940792,	step = 0.018910,	order = 8
+mode: mode_4,	time = 0.961593,	step = 0.020801,	order = 8
+mode: mode_4,	time = 0.984474,	step = 0.022881,	order = 8
+mode: mode_4,	time = 1.009644,	step = 0.025169,	order = 8
+mode: mode_4,	time = 1.023487,	step = 0.013843,	order = 8
+mode: mode_4,	time = 1.038714,	step = 0.015227,	order = 8
+mode: mode_4,	time = 1.055464,	step = 0.016750,	order = 8
+mode: mode_4,	time = 1.073889,	step = 0.018425,	order = 8
+mode: mode_4,	time = 1.094157,	step = 0.020268,	order = 8
+mode: mode_4,	time = 1.116451,	step = 0.022294,	order = 8
+mode: mode_4,	time = 1.128713,	step = 0.012262,	order = 8
+mode: mode_4,	time = 1.142201,	step = 0.013488,	order = 8
+mode: mode_4,	time = 1.157038,	step = 0.014837,	order = 8
+mode: mode_4,	time = 1.173358,	step = 0.016321,	order = 8
+mode: mode_4,	time = 1.191311,	step = 0.017953,	order = 8
+mode: mode_4,	time = 1.211059,	step = 0.019748,	order = 8
+mode: mode_4,	time = 1.232781,	step = 0.021723,	order = 8
+mode: mode_4,	time = 1.244729,	step = 0.011947,	order = 8
+mode: mode_4,	time = 1.257871,	step = 0.013142,	order = 8
+mode: mode_4,	time = 1.272328,	step = 0.014456,	order = 8
+mode: mode_4,	time = 1.288230,	step = 0.015902,	order = 8
+mode: mode_4,	time = 1.305722,	step = 0.017492,	order = 8
+mode: mode_4,	time = 1.324963,	step = 0.019242,	order = 8
+mode: mode_4,	time = 1.346129,	step = 0.021166,	order = 8
+mode: mode_4,	time = 1.369411,	step = 0.023282,	order = 8
+mode: mode_4,	time = 1.395022,	step = 0.025610,	order = 8
+mode: mode_4,	time = 1.423193,	step = 0.028172,	order = 8
+mode: mode_4,	time = 1.454182,	step = 0.030989,	order = 8
+mode: mode_4,	time = 1.488270,	step = 0.034088,	order = 8
+mode: mode_4,	time = 1.525766,	step = 0.037496,	order = 8
+mode: mode_4,	time = 1.567012,	step = 0.041246,	order = 8
+mode: mode_4,	time = 1.612382,	step = 0.045370,	order = 8
+mode: mode_4,	time = 1.662290,	step = 0.049908,	order = 8
+mode: mode_4,	time = 1.717188,	step = 0.054898,	order = 8
+mode: mode_4,	time = 1.777576,	step = 0.060388,	order = 8
+mode: mode_4,	time = 1.779110,	step = 0.001534,	order = 8
+Dealing with the jump from mode_4 to mode_0 ...
+Done.
+Dealing with the jump from mode_4 to mode_2 ...
+Done.
+Dealing with the jump from mode_4 to mode_6 ...
+Done.
+Dealing with the jump from mode_4 to mode_5 ...
+No intersection detected.
+Dealing with the jump from mode_4 to mode_1 ...
+No intersection detected.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_0,	time = 0.015625,	step = 0.015625,	order = 8
+mode: mode_0,	time = 0.032813,	step = 0.017188,	order = 8
+mode: mode_0,	time = 0.051719,	step = 0.018906,	order = 8
+mode: mode_0,	time = 0.062117,	step = 0.010398,	order = 8
+mode: mode_0,	time = 0.073555,	step = 0.011438,	order = 8
+mode: mode_0,	time = 0.086138,	step = 0.012582,	order = 8
+mode: mode_0,	time = 0.099978,	step = 0.013840,	order = 8
+mode: mode_0,	time = 0.115202,	step = 0.015224,	order = 8
+mode: mode_0,	time = 0.131949,	step = 0.016747,	order = 8
+mode: mode_0,	time = 0.141160,	step = 0.009211,	order = 8
+mode: mode_0,	time = 0.151292,	step = 0.010132,	order = 8
+mode: mode_0,	time = 0.162437,	step = 0.011145,	order = 8
+mode: mode_0,	time = 0.174696,	step = 0.012259,	order = 8
+mode: mode_0,	time = 0.188181,	step = 0.013485,	order = 8
+mode: mode_0,	time = 0.203015,	step = 0.014834,	order = 8
+mode: mode_0,	time = 0.211174,	step = 0.008159,	order = 8
+mode: mode_0,	time = 0.220149,	step = 0.008975,	order = 8
+mode: mode_0,	time = 0.230021,	step = 0.009872,	order = 8
+mode: mode_0,	time = 0.240880,	step = 0.010859,	order = 8
+mode: mode_0,	time = 0.252825,	step = 0.011945,	order = 8
+mode: mode_0,	time = 0.265965,	step = 0.013140,	order = 8
+mode: mode_0,	time = 0.280418,	step = 0.014454,	order = 8
+mode: mode_0,	time = 0.288368,	step = 0.007949,	order = 8
+mode: mode_0,	time = 0.297112,	step = 0.008744,	order = 8
+mode: mode_0,	time = 0.306731,	step = 0.009619,	order = 8
+mode: mode_0,	time = 0.317312,	step = 0.010581,	order = 8
+mode: mode_0,	time = 0.328951,	step = 0.011639,	order = 8
+mode: mode_0,	time = 0.341753,	step = 0.012803,	order = 8
+mode: mode_0,	time = 0.355836,	step = 0.014083,	order = 8
+mode: mode_0,	time = 0.363582,	step = 0.007746,	order = 8
+mode: mode_0,	time = 0.372102,	step = 0.008520,	order = 8
+mode: mode_0,	time = 0.381475,	step = 0.009372,	order = 8
+mode: mode_0,	time = 0.391784,	step = 0.010309,	order = 8
+mode: mode_0,	time = 0.403124,	step = 0.011340,	order = 8
+mode: mode_0,	time = 0.415599,	step = 0.012474,	order = 8
+mode: mode_0,	time = 0.429321,	step = 0.013722,	order = 8
+mode: mode_0,	time = 0.436868,	step = 0.007547,	order = 8
+mode: mode_0,	time = 0.445170,	step = 0.008302,	order = 8
+mode: mode_0,	time = 0.454301,	step = 0.009132,	order = 8
+mode: mode_0,	time = 0.464347,	step = 0.010045,	order = 8
+mode: mode_0,	time = 0.475396,	step = 0.011050,	order = 8
+mode: mode_0,	time = 0.487551,	step = 0.012155,	order = 8
+mode: mode_0,	time = 0.500921,	step = 0.013370,	order = 8
+mode: mode_0,	time = 0.515628,	step = 0.014707,	order = 8
+mode: mode_0,	time = 0.523717,	step = 0.008089,	order = 8
+mode: mode_0,	time = 0.532615,	step = 0.008898,	order = 8
+mode: mode_0,	time = 0.542402,	step = 0.009788,	order = 8
+mode: mode_0,	time = 0.553168,	step = 0.010766,	order = 8
+mode: mode_0,	time = 0.565011,	step = 0.011843,	order = 8
+mode: mode_0,	time = 0.578039,	step = 0.013027,	order = 8
+mode: mode_0,	time = 0.592368,	step = 0.014330,	order = 8
+mode: mode_0,	time = 0.608131,	step = 0.015763,	order = 8
+mode: mode_0,	time = 0.616801,	step = 0.008670,	order = 8
+mode: mode_0,	time = 0.626338,	step = 0.009537,	order = 8
+mode: mode_0,	time = 0.636828,	step = 0.010490,	order = 8
+mode: mode_0,	time = 0.648367,	step = 0.011539,	order = 8
+mode: mode_0,	time = 0.661060,	step = 0.012693,	order = 8
+mode: mode_0,	time = 0.675023,	step = 0.013962,	order = 8
+mode: mode_0,	time = 0.690381,	step = 0.015359,	order = 8
+mode: mode_0,	time = 0.707276,	step = 0.016895,	order = 8
+mode: mode_0,	time = 0.725860,	step = 0.018584,	order = 8
+mode: mode_0,	time = 0.746303,	step = 0.020442,	order = 8
+mode: mode_0,	time = 0.768789,	step = 0.022487,	order = 8
+mode: mode_0,	time = 0.793525,	step = 0.024735,	order = 8
+mode: mode_0,	time = 0.820734,	step = 0.027209,	order = 8
+mode: mode_0,	time = 0.850664,	step = 0.029930,	order = 8
+mode: mode_0,	time = 0.883586,	step = 0.032923,	order = 8
+mode: mode_0,	time = 0.919802,	step = 0.036215,	order = 8
+mode: mode_0,	time = 0.959638,	step = 0.039837,	order = 8
+mode: mode_0,	time = 0.981548,	step = 0.021910,	order = 8
+mode: mode_0,	time = 1.005650,	step = 0.024101,	order = 8
+mode: mode_0,	time = 1.032161,	step = 0.026511,	order = 8
+mode: mode_0,	time = 1.061323,	step = 0.029162,	order = 8
+mode: mode_0,	time = 1.093402,	step = 0.032079,	order = 8
+mode: mode_0,	time = 1.128688,	step = 0.035287,	order = 8
+mode: mode_0,	time = 1.148096,	step = 0.019408,	order = 8
+mode: mode_0,	time = 1.169444,	step = 0.021348,	order = 8
+mode: mode_0,	time = 1.192928,	step = 0.023483,	order = 8
+mode: mode_0,	time = 1.218759,	step = 0.025831,	order = 8
+mode: mode_0,	time = 1.247174,	step = 0.028415,	order = 8
+mode: mode_0,	time = 1.278430,	step = 0.031256,	order = 8
+mode: mode_0,	time = 1.312811,	step = 0.034382,	order = 8
+mode: mode_0,	time = 1.331721,	step = 0.018910,	order = 8
+mode: mode_0,	time = 1.352522,	step = 0.020801,	order = 8
+mode: mode_0,	time = 1.375403,	step = 0.022881,	order = 8
+mode: mode_0,	time = 1.400573,	step = 0.025169,	order = 8
+mode: mode_0,	time = 1.428259,	step = 0.027686,	order = 8
+mode: mode_0,	time = 1.458713,	step = 0.030455,	order = 8
+mode: mode_0,	time = 1.492213,	step = 0.033500,	order = 8
+mode: mode_0,	time = 1.529063,	step = 0.036850,	order = 8
+mode: mode_0,	time = 1.569599,	step = 0.040535,	order = 8
+mode: mode_0,	time = 1.614187,	step = 0.044589,	order = 8
+mode: mode_0,	time = 1.663235,	step = 0.049048,	order = 8
+mode: mode_0,	time = 1.717187,	step = 0.053952,	order = 8
+mode: mode_0,	time = 1.776535,	step = 0.059348,	order = 8
+mode: mode_0,	time = 1.841817,	step = 0.065282,	order = 8
+mode: mode_0,	time = 1.913627,	step = 0.071810,	order = 8
+mode: mode_0,	time = 1.992619,	step = 0.078992,	order = 8
+mode: mode_0,	time = 2.079510,	step = 0.086891,	order = 8
+Dealing with the jump from mode_0 to mode_4 ...
+Done.
+Dealing with the jump from mode_0 to mode_2 ...
+Done.
+Dealing with the jump from mode_0 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_2 to mode_6 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_6,	time = 0.000001,	step = 0.000001,	order = 8
+Dealing with the jump from mode_6 to mode_2 ...
+Done.
+mode: mode_2,	time = 0.000001,	step = 0.000001,	order = 8
+Dealin

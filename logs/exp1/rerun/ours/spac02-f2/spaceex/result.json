@@ -1,0 +1,22 @@
+{
+  "id": "spac02-f2",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "5f99f446df426dab5b662d3c174fae4963abe2f2ad5572eae9433a62d154731d",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 2.6893180860206485
+  },
+  "composed_ha": [
+    15,
+    83
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 0.25664927903562784,
+  "solver_seconds": 0.25664927903562784,
+  "phase": "solver",
+  "outcome": "safe"
+}

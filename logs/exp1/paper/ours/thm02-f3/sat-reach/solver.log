@@ -1,0 +1,31 @@
+Parsing model ... 
+Model parsing complete.
+
+
+-----Statistics for Safety Analysis-----------
+Model is SAFE
+number of abstract ce-paths found for exploration: 0
+Number of concrete ce trajectories found: 0
+Number of refinements performed when searching: 0
+Time to search concrete counter-example(s) from the abstract path(s) (user time in seconds):0
+
+
+Total paths visited by our old Algorithm: 109
+
+Total paths visited by our new Algorithm: 109
+
+Number of postC operation done: 21
+libplot error: the Plotter could not be opened, as the DISPLAY parameter is null
+graph: error: the graphing device could not be opened
+
+-----Statistics for Bounded Model Checking-----------
+
+Wall Time  (in Seconds) = 1.865
+
+User Time  (in Seconds) = 1.82
+
+System Time  (in Seconds) = 0.04
+
+CPU Usage:(%) = 3.53323
+Memory Used= 23.3672 MB
+BMC: The model is SAFE

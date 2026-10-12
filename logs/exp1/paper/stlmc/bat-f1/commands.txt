@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/linear/bat/bat.model -model-cfg ../../benchmarks/exp1/linear/bat/bat.cfg -model-specific-cfg ../../benchmarks/exp1/linear/bat/bat-f1.cfg -parallel-core 5 -verbose >& log/bat/f1/stlmc/out-log.txt

@@ -1,0 +1,31 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp2-automata/f108/default.cfg
+  file cfg     : /home/artifact/stl-tableaux/benchmarks/exp2/pool.cfg
+
+---------------------------------
+---- STL Tableau Construction ---
+---------------------------------
+
+Information
+  goal    : f108
+  formula : (or ([][ 1.0, 2.0 ] (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01)))) (<>[ 0.0, 1.0 ] ((<>[ 0.0, inf ) ([][ 1.0, 2.0 ] (x1 <= (22.0 + 0.01)))) R[ 0.0, inf ) (<>[ 0.0, inf ) (x2 <= (22.0 + 0.01))))))
+  size    : 11
+  depth   : 4
+
+  finish construction
+    running time: 10.872s
+    tableau info: (# vertex: 254, # edge: 1866)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 156.967s
+    tableau info: (# vertex: 55, # edge: 424)
+
+Total info
+  running time: 168.423s

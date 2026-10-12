@@ -1,0 +1,13 @@
+{
+  "id": "spac01-f2",
+  "tool": "sat-reach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    11,
+    25
+  ],
+  "status": "error",
+  "solver_seconds": null,
+  "outcome": "error"
+}

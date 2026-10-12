@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/card/card.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/card/card-f2.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/card/card.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f2
+    formula   : (<>( 1.0, 5.0 ) (and (u > (4 - 0.1)) ([]( 6.0, 10.0 ) (u >= (2 - 0.1)))))
+    size      : 5
+  Config
+    bound     : 5
+    threshold : 0.1
+
+  finish construction
+    running time: 1.677s
+    tableau info: (# vertex: 38, # edge: 337)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 7.450s
+    tableau info: (# vertex: 16, # edge: 75)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.004s
+  automaton info: (# mode: 15, # jump: 72)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.023s
+  automaton info: (# mode: 31, # jump: 321)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 1.030s
+  automaton info: (# mode: 16, # jump: 75)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 16, # jump: 75)
+
+Converting the automaton to an input model of flowstar
+  model file  : log/card/f2/flowstar/model/model.fs
+  script file : log/card/f2/flowstar/run.sh
+  running time: 0.012s

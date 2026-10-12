@@ -1,0 +1,84 @@
+Computing reachable states... 
+Iteration 0... 6 sym states passed, 2 waiting 0.00700001s
+Iteration 1... 60 sym states passed, 9 waiting 0.0270001s
+Iteration 2... 145 sym states passed, 16 waiting 0.0290001s
+Iteration 3... 150 sym states passed, 17 waiting 0.0180001s
+Iteration 4... 168 sym states passed, 21 waiting 0.0220001s
+Iteration 5... 172 sym states passed, 21 waiting 0.0180001s
+Iteration 6... 173 sym states passed, 20 waiting 0.0140001s
+Iteration 7... 173 sym states passed, 19 waiting 0.0190001s
+Iteration 8... 176 sym states passed, 18 waiting 0.00600001s
+Iteration 9... 177 sym states passed, 17 waiting 0.00600001s
+Iteration 10... 179 sym states passed, 17 waiting 0.00800001s
+Iteration 11... 180 sym states passed, 16 waiting 0.0160001s
+Iteration 12... 184 sym states passed, 16 waiting 0.0200001s
+Iteration 13... 192 sym states passed, 17 waiting 0.0230001s
+Iteration 14... 196 sym states passed, 18 waiting 0.0110001s
+Iteration 15... 197 sym states passed, 17 waiting 0.00800001s
+Iteration 16... 199 sym states passed, 17 waiting 0.00900001s
+Iteration 17... 209 sym states passed, 18 waiting 0.0200001s
+Iteration 18... 233 sym states passed, 22 waiting 0.0240001s
+Iteration 19... 234 sym states passed, 21 waiting 0.0190001s
+Iteration 20... 235 sym states passed, 20 waiting 0.0110001s
+Iteration 21... 240 sym states passed, 21 waiting 0.0260001s
+Iteration 22... 241 sym states passed, 20 waiting 0.0190001s
+Iteration 23... 245 sym states passed, 20 waiting 0.0210001s
+Iteration 24... 247 sym states passed, 20 waiting 0.0120001s
+Iteration 25... 248 sym states passed, 19 waiting 0.0270001s
+Iteration 26... 255 sym states passed, 19 waiting 0.0240001s
+Iteration 27... 256 sym states passed, 18 waiting 0.0100001s
+Iteration 28... 263 sym states passed, 18 waiting 0.0270001s
+Iteration 29... 278 sym states passed, 20 waiting 0.0370001s
+Iteration 30... 285 sym states passed, 20 waiting 0.0220001s
+Iteration 31... 286 sym states passed, 19 waiting 0.00900001s
+Iteration 32... 288 sym states passed, 19 waiting 0.0110001s
+Iteration 33... 289 sym states passed, 18 waiting 0.0110001s
+Iteration 34... 290 sym states passed, 17 waiting 0.0100001s
+Iteration 35... 291 sym states passed, 16 waiting 0.0180001s
+Iteration 36... 293 sym states passed, 16 waiting 0.0120001s
+Iteration 37... 297 sym states passed, 16 waiting 0.0270001s
+Iteration 38... 298 sym states passed, 15 waiting 0.0180001s
+Iteration 39... 308 sym states passed, 16 waiting 0.0390001s
+Iteration 40... 309 sym states passed, 15 waiting 0.00900001s
+Iteration 41... 310 sym states passed, 14 waiting 0.0190001s
+Iteration 42... 311 sym states passed, 13 waiting 0.0100001s
+Iteration 43... 318 sym states passed, 13 waiting 0.0260001s
+Iteration 44... 319 sym states passed, 12 waiting 0.0100001s
+Iteration 45... 320 sym states passed, 11 waiting 0.00900001s
+Iteration 46... 321 sym states passed, 10 waiting 0.00900001s
+Iteration 47... 322 sym states passed, 9 waiting 0.00900001s
+Iteration 48... 324 sym states passed, 9 waiting 0.0110001s
+Iteration 49... 331 sym states passed, 9 waiting 0.0730001s
+Iteration 50... 332 sym states passed, 8 waiting 0.00800001s
+Iteration 51... 333 sym states passed, 7 waiting 0.0110001s
+Iteration 52... 334 sym states passed, 6 waiting 0.0100001s
+Iteration 53... 341 sym states passed, 6 waiting 0.0700001s
+Iteration 54... 342 sym states passed, 5 waiting 0.0100001s
+Iteration 55... 343 sym states passed, 4 waiting 0.0180001s
+Iteration 56... 344 sym states passed, 3 waiting 0.0110001s
+Iteration 57... 345 sym states passed, 2 waiting 0.0100001s
+Iteration 58... 346 sym states passed, 1 waiting 0.0100001s
+Iteration 59... 347 sym states passed, 0 waiting 0.0100001s
+Found fixpoint after 60 iterations.
+Computing reachable states done after 1.09701s
+Forbidden states are reachable.
+Output of reachable bad states... 
+Bounds on the variables over the entire set:
+pb: [-0,59.4001]
+pb: [-0,59.4001]
+
+Location-wise bounds on the variables:
+
+Location: loc(subsystem)==mode_id_8
+pb: [-0,0.500001]
+pb: [-0,0.500001]
+
+Location: loc(subsystem)==mode_id_9
+pb: [-0,59.4001]
+pb: [-0,59.4001]
+
+Location: loc(subsystem)==mode_id_22
+pb: [-0,26.9001]
+pb: [-0,26.9001]
+
+0.615001s

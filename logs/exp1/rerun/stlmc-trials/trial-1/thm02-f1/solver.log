@@ -1,0 +1,22 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/thm02/thm02.model
+> selected solver: dreal
+> threshold : 0.5
+max procs: 5
+bound: 0
+# bound: 0, 2
+bound: 1
+# bound: 1, 17
+bound: 2
+# bound: 2, 69
+bound: 3
+# bound: 3, 284
+bound: 4
+# bound: 4, 1051
+bound: 5
+# bound: 5, 4641
+total loop : 6064
+size : 1133
+goal : (<>[0.0,17.0] ((x0 >= 19) U[0.0,inf) (x1 <= 19)))
+result : True up to bound 5 (time bound: 25)
+running time 1357.07771 seconds
+======================================

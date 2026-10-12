@@ -1,0 +1,256 @@
+[ -40, 40 ] rx;
+[ 0, 1.5 ] theta1;
+[ -40, 40 ] ry;
+[0,2] time;
+[0,5] gClk;
+{
+    mode 1;
+    invt:
+        (and (and (and (ry <= 40.0) (and (0.0 <= theta1) (rx <= 40.0))) (and (theta1 <= 1.5) (and (gClk >= 0.0) (rx > -20.0)))) (and (and (theta1 <= 1.0 + 0.001) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (-40.0 <= rx) (ry < 20.0)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[rx] = -1.0;
+        d/dt[theta1] = 0.05;
+        d/dt[ry] = 2.0 * sin(theta1);
+    jump:
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 2;
+    invt:
+        (and (and (and (ry <= 40.0) (and (0.0 <= theta1) (rx <= 40.0))) (and (theta1 <= 1.5) (and (gClk >= 0.0) (rx > -20.0)))) (and (and (theta1 <= 1.0 + 0.001) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (ry > -20.0) (-40.0 <= rx)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[rx] = -1.0;
+        d/dt[ry] = -2.0 * sin(theta1);
+        d/dt[theta1] = 0.05;
+    jump:
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 3;
+    invt:
+        (and (and (and (rx < 20.0) (and (ry <= 40.0) (0.0 <= theta1))) (and (rx <= 40.0) (and (theta1 <= 1.5) (gClk >= 0.0)))) (and (and (theta1 <= 1.0 + 0.001) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (-40.0 <= rx) (ry < 20.0)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[theta1] = 0.05;
+        d/dt[ry] = 2.0 * sin(theta1);
+        d/dt[rx] = 1.0;
+    jump:
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 4;
+    invt:
+        (and (and (and (rx < 20.0) (ry <= 40.0)) (and (0.0 <= theta1) (and (rx <= 40.0) (theta1 <= 1.5)))) (and (and (gClk >= 0.0) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (-40.0 <= rx) (ry < 20.0)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[theta1] = 0.05;
+        d/dt[ry] = 2.0 * sin(theta1);
+        d/dt[rx] = 1.0;
+    jump:
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @7(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 5;
+    invt:
+        (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (and (theta1 <= 1.5) (gClk >= 0.0)))) (and (and (rx > -20.0) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (-40.0 <= rx) (ry < 20.0)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[rx] = -1.0;
+        d/dt[theta1] = 0.05;
+        d/dt[ry] = 2.0 * sin(theta1);
+    jump:
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @14(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @11(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @9(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @5(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 6;
+    invt:
+        (and (and (and (rx < 20.0) (and (ry <= 40.0) (0.0 <= theta1))) (and (rx <= 40.0) (and (theta1 <= 1.5) (gClk >= 0.0)))) (and (and (theta1 <= 1.0 + 0.001) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (ry > -20.0) (-40.0 <= rx)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[ry] = -2.0 * sin(theta1);
+        d/dt[theta1] = 0.05;
+        d/dt[rx] = 1.0;
+    jump:
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+}
+{
+    mode 7;
+    invt:
+    flow:
+        d/dt[gClk] = 0.0;
+        d/dt[rx] = 0.0;
+        d/dt[theta1] = 0.0;
+        d/dt[ry] = 0.0;
+    jump:
+}
+{
+    mode 8;
+    invt:
+        (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (and (theta1 <= 1.5) (gClk >= 0.0)))) (and (and (rx > -20.0) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (ry > -20.0) (-40.0 <= rx)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[rx] = -1.0;
+        d/dt[ry] = -2.0 * sin(theta1);
+        d/dt[theta1] = 0.05;
+    jump:
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @7(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 9;
+    invt:
+        (and (and (and (rx < 20.0) (ry <= 40.0)) (and (0.0 <= theta1) (and (rx <= 40.0) (theta1 <= 1.5)))) (and (and (gClk >= 0.0) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (-40.0 <= rx) (ry < 20.0)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[theta1] = 0.05;
+        d/dt[ry] = 2.0 * sin(theta1);
+        d/dt[rx] = 1.0;
+    jump:
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @11(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @9(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @5(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @14(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 10;
+    invt:
+        (and (and (and (rx < 20.0) (ry <= 40.0)) (and (0.0 <= theta1) (and (rx <= 40.0) (theta1 <= 1.5)))) (and (and (gClk >= 0.0) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (ry > -20.0) (-40.0 <= rx)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[ry] = -2.0 * sin(theta1);
+        d/dt[theta1] = 0.05;
+        d/dt[rx] = 1.0;
+    jump:
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @7(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 11;
+    invt:
+        (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (and (theta1 <= 1.5) (gClk >= 0.0)))) (and (and (rx > -20.0) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (ry > -20.0) (-40.0 <= rx)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[rx] = -1.0;
+        d/dt[ry] = -2.0 * sin(theta1);
+        d/dt[theta1] = 0.05;
+    jump:
+            (true) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @11(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @9(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @14(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @5(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 12;
+    invt:
+        (and (gClk >= 0.0) (gClk <= 5.0));
+    flow:
+        d/dt[rx] = 0.0;
+        d/dt[theta1] = 0.0;
+        d/dt[ry] = 0.0;
+        d/dt[gClk] = 1.0;
+    jump:
+            (true) ==> @11(and (gClk' = 0.0) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (true) ==> @2(and (gClk' = 0.0) (rx' = rx) (ry' = ry) (theta1' = theta1));
+}
+{
+    mode 13;
+    invt:
+        (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (and (theta1 <= 1.5) (gClk >= 0.0)))) (and (and (rx > -20.0) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (-40.0 <= rx) (ry < 20.0)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[rx] = -1.0;
+        d/dt[theta1] = 0.05;
+        d/dt[ry] = 2.0 * sin(theta1);
+    jump:
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @10(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @7(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @13(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @8(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @4(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+{
+    mode 14;
+    invt:
+        (and (and (and (rx < 20.0) (ry <= 40.0)) (and (0.0 <= theta1) (and (rx <= 40.0) (theta1 <= 1.5)))) (and (and (gClk >= 0.0) (and (theta1 < 1.4) (-40.0 <= ry))) (and (gClk <= 5.0) (and (ry > -20.0) (-40.0 <= rx)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[ry] = -2.0 * sin(theta1);
+        d/dt[theta1] = 0.05;
+        d/dt[rx] = 1.0;
+    jump:
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @5(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @14(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @11(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (rx < 2.0) (-40.0 <= rx)))) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (rx >= 2.4))) (and (and (theta1 <= 1.5) (-40.0 <= ry)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @1(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (ry >= 2.4)) (and (0.0 <= theta1) (rx <= 40.0))) (and (and (rx >= 2.4) (theta1 <= 1.5)) (and (-40.0 <= ry) (-40.0 <= rx)))) ==> @2(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (true) ==> @6(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = theta1));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @9(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+            (and (and (and (ry <= 40.0) (0.0 <= theta1)) (and (rx <= 40.0) (theta1 <= 1.5))) (and (and (-40.0 <= ry) (rx < 2.0)) (and (ry < 2.0) (-40.0 <= rx)))) ==> @3(and (gClk' = gClk) (rx' = rx) (ry' = ry) (theta1' = 0.0));
+}
+init:
+@12 (and (and (0.0 <= ry) (and (ry <= 1.0) (0.0 <= rx))) (and (and (gClk = 0.0) (0.0 <= theta1)) (and (theta1 <= 1.0) (rx <= 1.0))));
+goal:
+@7 true;

@@ -1,0 +1,1 @@
+./../../3rd_party/spaceex/spaceex_exe/spaceex -m ./log/wat01/f3/spaceex/model/model.xml -g ./log/wat01/f3/spaceex/model/model.cfg >& ./log/wat01/f3/spaceex/out-log.txt

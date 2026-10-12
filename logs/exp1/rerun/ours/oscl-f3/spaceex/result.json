@@ -1,0 +1,22 @@
+{
+  "id": "oscl-f3",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "d597c97ee9b4e7dc53e5ae63a0d3beed7050da17b5373086da4169a20a2b47ec",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.8213041829876602
+  },
+  "composed_ha": [
+    25,
+    115
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 3.696503792889416,
+  "solver_seconds": 3.696503792889416,
+  "phase": "solver",
+  "outcome": "unsafe"
+}

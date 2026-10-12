@@ -1,0 +1,31 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp2-automata/f39/default.cfg
+  file cfg     : /home/artifact/stl-tableaux/benchmarks/exp2/pool.cfg
+
+---------------------------------
+---- STL Tableau Construction ---
+---------------------------------
+
+Information
+  goal    : f39
+  formula : ([][ 0.0, 3.0 ] (or ([][ 2.0, 3.0 ] (x4 <= (1.0 + 0.01))) (<>[ 0.0, 2.0 ] ((x3 <= (1.0 + 0.01)) R[ 0.0, inf ) (x4 <= (1.0 + 0.01))))))
+  size    : 8
+  depth   : 3
+
+  finish construction
+    running time: 5.769s
+    tableau info: (# vertex: 200, # edge: 936)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 62.377s
+    tableau info: (# vertex: 46, # edge: 314)
+
+Total info
+  running time: 68.647s

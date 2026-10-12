@@ -1,0 +1,2047 @@
+fmod NUMBER is
+  sort Number .
+endfm
+
+fmod INTERVAL is
+  pr NUMBER .
+
+  sort Interval .
+
+  vars LN RN : Number .
+  vars LB RB : Bool .
+
+  op |_,_,_,_| : Bool Number Number Bool -> Interval [ctor] .
+  ops inf sup : Interval -> Number .
+  eq inf(| LB, LN, RN, RB |) = LN .
+  eq sup(| LB, LN, RN, RB |) = RN .
+endfm
+
+fmod PROP is
+  sort Prop .
+endfm
+
+--- STL formula
+fmod FORMULA is
+  pr INTERVAL .
+  inc PROP .
+
+  sort Formula .
+  subsort Prop < Formula .
+
+  op _/\_ : Formula Formula -> Formula [comm ctor gather(E e) prec 55] .
+  op _\/_ : Formula Formula -> Formula [comm ctor gather(E e) prec 59] .
+  op _U_ : Formula Formula -> Formula [ctor prec 63] .
+  op _R_ : Formula Formula -> Formula [ctor prec 63] .
+  op []__ : Interval Formula -> Formula [prec 53] .
+  op <>__ : Interval Formula -> Formula [prec 53] .
+
+  op []_ : Formula -> Formula [prec 53] .
+  op <>_ : Formula -> Formula [prec 53] .
+endfm
+
+fmod CLOCK is
+  sort Clock .
+endfm
+
+view Clock from TRIV to CLOCK is
+  sort Elt to Clock .
+endv
+
+fmod CLK-RESETS is 
+  pr CLOCK .
+  pr NUMBER .
+
+  sort ClkReset .
+  op _:=_ : Clock Number -> ClkReset [ctor] .
+endfm
+
+view ClkReset from TRIV to CLK-RESETS is
+  sort Elt to ClkReset .
+endv
+
+fmod INTERVAL-PREDICATE is
+  pr CLOCK .
+  pr FORMULA .
+
+  sorts CIntvPred IntvPred .
+  subsort CIntvPred < IntvPred .
+
+  op [_]                : Formula -> IntvPred [ctor] .
+  op (_,_)-(_,_)[]__    : Bool Clock Clock Bool Interval Formula -> CIntvPred [ctor] .
+  op (_,_)-(_,_)<>__    : Bool Clock Clock Bool Interval Formula -> CIntvPred [ctor] .
+  op (_,_)-()[]__       : Bool Clock Interval Formula -> CIntvPred [ctor] .
+  op (_,_)-()<>__       : Bool Clock Interval Formula -> CIntvPred [ctor] .
+
+--- Simple version
+
+  op (_)-(_)[]__        : Clock Clock Interval Formula -> CIntvPred [ctor] .
+  op (_)-(_)<>__        : Clock Clock Interval Formula -> CIntvPred [ctor] .
+  op (_)-()[]__         : Clock Interval Formula -> CIntvPred [ctor] .
+  op (_)-()<>__         : Clock Interval Formula -> CIntvPred [ctor] .
+
+--- Prev version
+
+  op (_)==(_)[]__        : Clock Clock Interval Formula -> CIntvPred [ctor] .
+  op (_)==(_)<>__        : Clock Clock Interval Formula -> CIntvPred [ctor] .
+  op (_)==()[]__         : Clock Interval Formula -> CIntvPred [ctor] .
+  op (_)==()<>__         : Clock Interval Formula -> CIntvPred [ctor] .
+
+  op ()**()[]__        : Interval Formula -> CIntvPred [ctor] .
+  op ()**()<>__        : Interval Formula -> CIntvPred [ctor] .
+  op ()**(_)[]__       : Clock Interval Formula -> CIntvPred [ctor] .
+  op ()**(_)<>__       : Clock Interval Formula -> CIntvPred [ctor] .
+endfm
+
+fmod JUDGEMENT is 
+  sort Judgement .
+endfm
+
+view Judgement from TRIV to JUDGEMENT is
+  sort Elt to Judgement .
+endv
+
+fmod JUDGEMENTS is
+  pr FORMULA .
+  pr SET{Clock} .
+  pr SET{ClkReset} .
+  pr SET{Judgement} .
+  inc INTERVAL-PREDICATE .
+
+  sorts NonClockJudgement ClockJudgement .
+  subsort ClockJudgement < Judgement .
+  subsorts IntvPred < NonClockJudgement < Judgement .
+
+----------------------------
+------ Judgement Def. ------
+----------------------------
+
+  op * : -> Judgement [ctor] .
+  op lc? : Bool -> Judgement [ctor] .
+  op _<=[_]_ : Clock Bool Number -> Judgement [ctor] .
+  op _>=[_]_ : Clock Bool Number -> Judgement [ctor] .
+  op _<=_ : Clock Number -> Judgement [ctor] . --- simple
+  op _>=_ : Clock Number -> Judgement [ctor] . --- simple version
+  op X_ : Set{Judgement} -> Judgement [ctor prec 65 frozen (1)] .
+  op _._ : Set{ClkReset} Set{Judgement} -> Judgement [ctor prec 65 frozen(2)] .
+
+  vars Ψ Ψ' JS JS' : Set{Judgement} .
+  vars Φ Φ' : NeSet{Judgement} .
+  vars Λ Λ' : Set{ClkReset} .
+  var f : Formula .
+  vars c d : Clock .
+  vars B B' : Bool .
+  var NB : Number .
+  var I : Interval .
+  vars VS VS' : Set{Clock} .
+
+----------------------------
+-------- Membership --------
+----------------------------
+
+  mb c <=[B] NB : ClockJudgement .
+  mb c >=[B] NB : ClockJudgement .
+  mb * : ClockJudgement .
+  mb lc?(B) : NonClockJudgement .
+
+----------------------------
+------ Free variables ------
+----------------------------
+
+  op fv : Set{Judgement} -> Set{Clock} .
+  eq fv(*) = empty .
+  eq fv([f]) = empty .
+  eq fv((Φ, Φ')) = union(fv(Φ), fv(Φ')) .
+  eq fv(X Ψ) = fv(Ψ) .
+  eq fv(Λ . Ψ) = fv(Ψ) \ clkVars(Λ) .
+  eq fv(lc?(B)) = empty .
+  eq fv(empty) = empty .
+
+--- Ignore open close
+
+  eq fv((c)-()[] I f) = c .
+  eq fv((c)-()<> I f) = c .
+  eq fv((c)-(d)[] I f) = c, d .
+  eq fv((c)-(d)<> I f) = c, d .
+  eq fv(c <= NB) = c .
+  eq fv(c >= NB) = c .
+
+--- Open close 
+
+  eq fv((B,c)-()[] I f) = c .
+  eq fv((B,c)-()<> I f) = c .
+  eq fv((B,c)-(d,B')[] I f) = c, d .
+  eq fv((B,c)-(d,B')<> I f) = c, d .
+  eq fv(c <=[B] NB) = c .
+  eq fv(c >=[B] NB) = c .
+
+--- Previous version
+--- Debugging purpose
+
+  eq fv((c)==(d)[] I f) = c, d .
+  eq fv((c)==(d)<> I f) = c, d .
+  eq fv((c)==()[] I f) = c .
+  eq fv((c)==()<> I f) = c .
+  eq fv(()**()[] I f) = empty .
+  eq fv(()**()<> I f) = empty .
+  eq fv(()**(d)[] I f) = d .
+  eq fv(()**(d)<> I f) = d .
+
+----------------------------
+----- Clock variables ------
+----------------------------
+
+  op clkVars : Set{ClkReset} -> Set{Clock} .
+  eq clkVars((Λ, c := NB)) = c, clkVars(Λ) .
+  eq clkVars(empty) = empty .
+
+----------------------------
+----- Structural Rules -----
+----------------------------
+
+  eq (X Ψ), (X Ψ') = X (Ψ, Ψ') .
+ ceq (Λ . Ψ), (Λ' . Ψ') = union(Λ, Λ') . (Ψ, Ψ') 
+  if VS := clkVars(Λ) /\ VS' := clkVars(Λ') 
+  /\ intersection(VS, VS') == empty 
+  /\ intersection(VS, fv(Ψ')) == empty 
+  /\ intersection(VS', fv(Ψ)) == empty .
+
+ ceq (Λ . (Ψ, (Λ' . Ψ'))) = union(Λ, Λ') . (Ψ, Ψ') 
+  if VS := clkVars(Λ) /\ VS' := clkVars(Λ') 
+  /\ intersection(VS, VS') == empty 
+  /\ intersection(VS', fv(Ψ)) == empty .
+
+  eq (Λ . (Ψ, (Λ . Ψ'))) = Λ . (Ψ, Ψ') .
+  eq (Λ . Ψ), (Λ . Ψ') = Λ . (Ψ, Ψ') .
+
+--- this reduction is suppose to be applied to non-clock judgements only
+--- only needed for the OC case
+ ceq (Λ . Ψ), Φ = Λ . (Ψ, Φ) 
+  if Φ :: NonClockJudgement
+  /\ intersection(clkVars(Λ), fv(Φ)) == empty . 
+endfm
+
+fmod GEN-AUX is
+  pr NAT .
+  pr META-LEVEL .
+  pr CONVERSION .
+
+  vars S TY : String .
+  var N : Nat .
+
+  op idGen : String Nat -> Nat .
+  eq idGen(S, N) = downTerm(qid("$" + S + string(N, 10) + ":Nat"), 0) .
+
+  op idGen : String String Nat -> Qid .
+  eq idGen(S, TY, N) = qid("$" + S + string(N, 10) + ":" + TY) .
+endfm
+
+fmod DECOMP-CONF is
+  sort DecompConf .
+endfm
+
+view DecompConf from TRIV to DECOMP-CONF is
+  sort Elt to DecompConf .
+endv
+
+mod DECOMP-RULES-AUX is
+  pr CLOCK .
+  pr GEN-AUX .
+  pr DECOMP-CONF .
+  pr JUDGEMENTS .
+  pr STRING .
+
+  var I : Interval .
+  vars N N' N'' M M' : Nat .
+  vars N1 N2 : String .
+  vars f f1 f2 : Formula .
+  vars c c' d d' : Clock .
+  vars B B' BL BL' MB MB' : Bool .
+  vars Ψ Ψ' C L C' L' : Set{Judgement} .
+  vars GOALS INV NXT JS JS' : Set{Judgement} .
+  vars Φ Φ' : NeSet{Judgement} .
+  vars Λ Λ' : Set{ClkReset} .
+  vars NB NM : Number .
+  vars CS CS1 CS2 : Set{Clock} .
+  vars MAP MAP' MAP'' : Map .
+  var CP : CIntvPred .
+  vars GMAP GMAP' GMAP'' GMAP1 GMAP2 : GMap .
+
+--- Judgement, Invariant, Expanded intermediate goals, Counter, Counter
+  op <_::_::_::_,_> : Set{Judgement} Set{Judgement} Set{Judgement} Nat Nat -> DecompConf [ctor] .
+  op <_::_::_::_> : Set{Judgement} Set{Judgement} Set{Judgement} Nat -> DecompConf [ctor] . --- for simple
+  op wrong : -> DecompConf [ctor] .
+
+  op Num : String -> Number [ctor] .
+  op infty : -> Number [ctor] .
+  op clk : Nat -> Clock [ctor] .
+  op e-clk : -> Clock [ctor] .
+  op oc : Nat -> Bool [ctor] .
+
+  sort GenResult .
+  op {_,_} : Clock Nat -> GenResult [ctor] .
+  op {_,_} : Bool Nat -> GenResult [ctor] .
+
+  op clkGen : Set{ClkReset} Set{Clock} Number Nat -> GenResult .
+  --- ceq clkGen((Λ, c := NM), CS, NM, N) = {c, N} if not (c in CS) .
+  ---  eq clkGen(Λ, CS, NM, N) = {clk(N), N + 1} [owise] .
+  --- currently create new fresh clock variables every time
+  eq clkGen(Λ, CS, NM, N) = {clk(N), N + 1} .
+  --- eq clkGen(Λ, CS, NM, N) = {downTerm(idGen("clk", "Clock", N), e-clk), N + 1} .
+
+  op clkFreshGen : Nat -> GenResult .
+  eq clkFreshGen(N) = {clk(N), N + 1} .
+
+  op ocGen : Set{Judgement} Nat -> GenResult .
+  eq ocGen((Ψ, lc?(B)), N) = {B, N} .
+  eq ocGen(Ψ, N) = {oc(N), N + 1} [owise] .
+  --- eq ocGen(Ψ, N) = {downTerm(idGen("oc", "Bool", N), true), N + 1} [owise] .
+
+  sorts CMap CMapGenResult .
+
+  op none : -> CMap [ctor] .
+  op _:>_ : Judgement Nat -> CMap [ctor prec 40] .
+  op _;_ : CMap CMap -> CMap [ctor assoc comm id: none] .
+
+  op _in_ : Judgement CMap -> Bool .
+  eq Ψ in (Ψ :> N ; CMAP) = true .
+  eq Ψ in CMAP = false [owise] .
+
+  op getCMap : Judgement CMap -> CMap .
+  eq getCMap(Ψ, (Ψ :> N) ; CMAP) = (Ψ :> N + 1) ; CMAP .
+  eq getCMap(Ψ, CMAP) = Ψ :> 1 ; CMAP [owise] .
+
+  var CMAP : CMap .
+
+--- getIntvSize simple version
+
+  op getIntvSize : Interval -> Nat .
+  eq getIntvSize(| B, Num(N1), Num(N2), B' |) = rat(ceiling(float(N2) / (float(N2) - float(N1)))) .
+
+  op getIntvSanity : Set{Judgement} -> Nat .
+  eq getIntvSanity((c)-(d)[] I f) = getIntvSize(I) .
+  eq getIntvSanity((c)-()[] I f) = getIntvSize(I) .
+  eq getIntvSanity((c)-(d)<> I f) = getIntvSize(I) .
+  eq getIntvSanity((c)-()<> I f) = getIntvSize(I) .
+
+--- for testing purpose (hard-coded for 2)
+---  ceq < C, Λ . (L, X (C', Λ' . L')) :: N, M > = wrong
+---   if CMAP := getCount(L', getCount(L, none)) 
+---   /\ not sanity(CMAP) .
+
+ ceq < C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: N > = wrong
+  if CMAP := getCount(L', getCount(L, none)) 
+  /\ not sanity(CMAP) .
+
+  op sanity : CMap -> Bool .
+  eq sanity((Ψ :> N ; CMAP)) = N <= getIntvSanity(Ψ) and sanity(CMAP) .
+  eq sanity(none) = true . 
+
+  op getCount : Set{Judgement} CMap -> CMap .
+ ceq getCount((CP, Ψ), CMAP) = getCount(Ψ, getCMap(Ψ', CMAP))
+  if {Ψ', GMAP} := getPattern(CP) .
+ ceq getCount((Φ, Ψ), CMAP) = getCount(Ψ, CMAP) 
+  if not Φ :: CIntvPred .
+  eq getCount(empty, CMAP) = CMAP .
+
+--- make template and then matching
+
+  sorts Map GMap .
+
+  op none : -> Map [ctor] .
+  op _->_ : Clock Clock -> Map [ctor prec 40] .
+  op _->_ : Bool Bool -> Map [ctor prec 40] .
+  op _;_ : Map Map -> Map [ctor assoc comm id: none] .
+
+  op _::_ : Map Nat -> GMap [ctor] .
+
+  sorts JPattern BPattern CPattern .
+  op {_,_} : Set{Judgement} GMap -> JPattern [ctor] .
+  op {_,_} : Bool GMap -> BPattern [ctor] .
+  op {_,_} : Set{ClkReset} GMap -> CPattern [ctor] .
+
+  sort ClkInfo .
+  op {_,_} : Clock GMap -> ClkInfo .
+
+  op getClk : Clock GMap -> ClkInfo .
+  eq getClk(c, (c -> c') ; MAP :: M) = {c', (c -> c') ; MAP :: M} .
+ ceq getClk(c, MAP :: M) = {c', (c -> c'); MAP :: M + 1}
+  if c' := clk(idGen("clk", M)) [owise] .
+
+  op getJudgementPattern : JPattern -> Set{Judgement} .
+  eq getJudgementPattern({Ψ, GMAP}) = Ψ .
+
+  op getPattern : Set{Judgement} GMap -> JPattern .
+  op getPattern : Set{Judgement} -> JPattern .
+  eq getPattern(Ψ) = getPattern(Ψ, none :: 0) .
+
+  eq getPattern(*, GMAP) = {*, GMAP} .
+  eq getPattern([f], GMAP) = {[f], GMAP} .
+ ceq getPattern((Φ, Φ'), GMAP) = {(JS, JS'), GMAP''} 
+  if {JS, GMAP'} := getPattern(Φ, GMAP) 
+  /\ {JS', GMAP''} := getPattern(Φ', GMAP') .
+ ceq getPattern(c <= NB, GMAP) = {c' <= NB, GMAP'}
+  if {c', GMAP'} := getClk(c, GMAP) .
+ ceq getPattern(c >= NB, GMAP) = {c' >= NB, GMAP'}
+  if {c', GMAP'} := getClk(c, GMAP) .
+ ceq getPattern(c <=[B] NB, GMAP) = {c' <=[B'] NB, GMAP''}
+  if {c', GMAP'} := getClk(c, GMAP)
+  /\ {B', GMAP''} := getBPattern(B, GMAP') .
+ ceq getPattern(c >=[B] NB, GMAP) = {c' >=[B'] NB, GMAP''}
+  if {c', GMAP'} := getClk(c, GMAP)
+  /\ {B', GMAP''} := getBPattern(B, GMAP') .
+ ceq getPattern(X Ψ, GMAP) = {X Ψ', GMAP'}
+  if {Ψ', GMAP'} := getPattern(Ψ, GMAP) .
+ ceq getPattern(Λ . Ψ, GMAP) = {Λ' . Ψ', GMAP''}
+  if {Λ', GMAP'} := getCPattern(Λ, GMAP)
+  /\ {Ψ', GMAP''} := getPattern(Ψ, GMAP') .
+ ceq getPattern((c)-()[] I f, GMAP) = {(c')-()[] I f, GMAP'}
+  if {c', GMAP'} := getClk(c, GMAP) .
+ ceq getPattern((c)-(d)[] I f, GMAP) = {(c')-(d')[] I f, GMAP''}
+  if {c', GMAP'} := getClk(c, GMAP) /\ {d', GMAP''} := getClk(d, GMAP') .
+ ceq getPattern((c)-()<> I f, GMAP) = {(c')-()<> I f, GMAP'}
+  if {c', GMAP'} := getClk(c, GMAP) .
+ ceq getPattern((c)-(d)<> I f, GMAP) = {(c')-(d')<> I f, GMAP''}
+  if {c', GMAP'} := getClk(c, GMAP) /\ {d', GMAP''} := getClk(d, GMAP') .
+ ceq getPattern((c)==()[] I f, GMAP) = {(c')==()[] I f, GMAP'}
+  if {c', GMAP'} := getClk(c, GMAP) .
+ ceq getPattern((c)==(d)[] I f, GMAP) = {(c')==(d')[] I f, GMAP''}
+  if {c', GMAP'} := getClk(c, GMAP) /\ {d', GMAP''} := getClk(d, GMAP') .
+  eq getPattern(()**()[] I f, GMAP) = {()**()[] I f, GMAP} .
+ ceq getPattern(()**(d)[] I f, GMAP) = {()**(d')[] I f, GMAP'}
+  if {d', GMAP'} := getClk(d, GMAP) .
+ ceq getPattern((B,c)-()[] I f, GMAP) = {(B',c')-()[] I f, GMAP''}
+  if {c', GMAP'} := getClk(c, GMAP)
+  /\ {B', GMAP''} := getBPattern(B, GMAP') .
+ ceq getPattern((B,c)-(d,B')[] I f, GMAP) = {(MB,c')-(d',MB')[] I f, GMAP2}
+  if {c', GMAP'} := getClk(c, GMAP) /\ {d', GMAP''} := getClk(d, GMAP')
+  /\ {MB, GMAP1} := getBPattern(B, GMAP'') 
+  /\ {MB', GMAP2} := getBPattern(B', GMAP1) .
+ ceq getPattern((B,c)-()<> I f, GMAP) = {(B',c')-()<> I f, GMAP''}
+  if {c', GMAP'} := getClk(c, GMAP)
+  /\ {B', GMAP''} := getBPattern(B, GMAP') .
+ ceq getPattern((B,c)-(d,B')<> I f, GMAP) = {(MB,c')-(d',MB')<> I f, GMAP2}
+  if {c', GMAP'} := getClk(c, GMAP) /\ {d', GMAP''} := getClk(d, GMAP')
+  /\ {MB, GMAP1} := getBPattern(B, GMAP'') 
+  /\ {MB', GMAP2} := getBPattern(B', GMAP1) .
+ ceq getPattern(lc?(B), GMAP) = {lc?(B'), GMAP'}
+  if {B', GMAP'} := getBPattern(B, GMAP) .
+  eq getPattern(empty, GMAP) = {empty, GMAP} .
+  
+  op getCPattern : Set{ClkReset} GMap -> CPattern .
+ ceq getCPattern((c := NB, Λ), (c -> c') ; MAP :: M) = {(c' := NB, Λ'), GMAP}
+  if {Λ', GMAP} := getCPattern(Λ, (c -> c') ; MAP :: M) .
+ ceq getCPattern((c := NB, Λ), MAP :: M) = {(clk(idGen("clk", M)) := NB, Λ'), GMAP}
+  if {Λ', GMAP} := getCPattern(Λ, (c -> clk(idGen("clk", M))) ; MAP :: M + 1) [owise] .
+  eq getCPattern(empty, GMAP) = {empty, GMAP} .
+
+  op getBPattern : Bool GMap -> BPattern .
+ ceq getBPattern(B and B', GMAP) = {MB and MB', GMAP''}
+  if {MB, GMAP'} := getBPattern(B, GMAP) /\ {MB', GMAP''} := getBPattern(B', GMAP') .
+ ceq getBPattern(B or B', GMAP) = {MB or MB', GMAP''}
+  if {MB, GMAP'} := getBPattern(B, GMAP) /\ {MB', GMAP''} := getBPattern(B', GMAP') .
+ ceq getBPattern(B xor B', GMAP) = {MB xor MB', GMAP''}
+  if {MB, GMAP'} := getBPattern(B, GMAP) /\ {MB', GMAP''} := getBPattern(B', GMAP') .
+ ceq getBPattern(B implies B', GMAP) = {MB implies MB', GMAP''}
+  if {MB, GMAP'} := getBPattern(B, GMAP) /\ {MB', GMAP''} := getBPattern(B', GMAP') .
+ ceq getBPattern(not B, GMAP) = {not MB, GMAP'}
+  if {MB, GMAP'} := getBPattern(B, GMAP) .
+  eq getBPattern(true, GMAP) = {true, GMAP} .
+  eq getBPattern(false, GMAP) = {false, GMAP} .
+  eq getBPattern(oc(N), (oc(N) -> B) ; MAP :: M) 
+   = {B, (oc(N) -> B) ; MAP :: M} .
+  eq getBPattern(oc(N), MAP :: M) 
+   = {oc(idGen("oc", M)), (oc(N) -> oc(idGen("oc", M))) ; MAP :: M + 1} [owise] .
+
+--- Replace auxiliary oc variables in interval-sequence judgements.
+
+  op getRealJudgement : Set{Judgement} -> Set{Judgement} .
+  op getRealJudgementAux : Set{Judgement} GMap -> JPattern .
+ ceq getRealJudgement(Ψ) = Ψ'
+  if {Ψ', GMAP} := getRealJudgementAux(Ψ, none :: 0) .
+
+  eq getRealJudgementAux(*, GMAP) = {*, GMAP} .
+  eq getRealJudgementAux([f], GMAP) = {[f], GMAP} .
+ ceq getRealJudgementAux((Φ, Φ'), GMAP) = {(JS, JS'), GMAP''} 
+  if {JS, GMAP'} := getRealJudgementAux(Φ, GMAP) 
+  /\ {JS', GMAP''} := getRealJudgementAux(Φ', GMAP') .
+ ceq getRealJudgementAux(c <=[B] NB, GMAP) = {c <=[B'] NB, GMAP'}
+  if {B', GMAP'} := getBPattern(B, GMAP) .
+ ceq getRealJudgementAux(c >=[B] NB, GMAP) = {c >=[B'] NB, GMAP'}
+  if {B', GMAP'} := getBPattern(B, GMAP) .
+ ceq getRealJudgementAux(X Ψ, GMAP) = {X Ψ', GMAP'}
+  if {Ψ', GMAP'} := getRealJudgementAux(Ψ, GMAP) .
+ ceq getRealJudgementAux(Λ . Ψ, GMAP) = {Λ . Ψ', GMAP'}
+  if {Ψ', GMAP'} := getRealJudgementAux(Ψ, GMAP) .
+ ceq getRealJudgementAux((B,c)-()[] I f, GMAP) = {(B',c)-()[] I f, GMAP'}
+  if {B', GMAP'} := getBPattern(B, GMAP) .
+ ceq getRealJudgementAux((B,c)-(d,B')[] I f, GMAP) = {(MB,c)-(d,MB')[] I f, GMAP''}
+  if {MB, GMAP'} := getBPattern(B, GMAP) 
+  /\ {MB', GMAP''} := getBPattern(B', GMAP') .
+ ceq getRealJudgementAux((B,c)-()<> I f, GMAP) = {(B',c)-()<> I f, GMAP'}
+  if {B', GMAP'} := getBPattern(B, GMAP) .
+ ceq getRealJudgementAux((B,c)-(d,B')<> I f, GMAP) = {(MB,c)-(d,MB')<> I f, GMAP''}
+  if {MB, GMAP'} := getBPattern(B, GMAP) 
+  /\ {MB', GMAP''} := getBPattern(B', GMAP') .
+ ceq getRealJudgementAux(lc?(B), GMAP) = {lc?(B'), GMAP'}
+  if {B', GMAP'} := getBPattern(B, GMAP) .
+  eq getRealJudgementAux(empty, GMAP) = {empty, GMAP} .
+
+-----------------------
+------ reduction ------
+-----------------------
+
+  ops tt ff : -> Judgement [ctor] .
+
+  eq c <= infty = tt .
+  eq c >= infty = ff .
+  eq Φ, tt = Φ .
+
+------------------------------
+--- contradiction checking ---
+------------------------------
+
+  op isContradiction : Set{Judgement} -> Bool .
+  eq isContradiction((Ψ, ff)) = true .
+  eq isContradiction(Ψ) = false [owise] .
+
+endm
+
+view GMap from TRIV to DECOMP-RULES-AUX is
+  sort Elt to GMap .
+endv
+
+mod DECOMP-RULES-COMPLEX is
+  pr DECOMP-RULES-AUX .
+
+  vars N N' N'' M M' : Nat .
+  vars f f1 f2 : Formula .
+  var I : Interval .
+  vars c d : Clock .
+  vars B B' BL BL' : Bool .
+  vars Ψ C L C' L' NXT INV GOALS : Set{Judgement} .
+  var Φ : NeSet{Judgement} .
+  vars Λ Λ' : Set{ClkReset} .
+  var NM : Number .
+  vars CS CS1 CS2 : Set{Clock} .
+  var CMAP : CMap .
+
+-----------------------
+------- common --------
+-----------------------
+  
+  rl [and]          : < C, Λ . (L, [f1 /\ f2], X NXT) :: INV :: GOALS :: N, M > => < C, Λ . (L, [f1], [f2], X NXT) :: INV :: GOALS :: N, M > .
+  rl [or-le]        : < C, Λ . (L, [f1 \/ f2], X NXT) :: INV :: GOALS :: N, M > => < C, Λ . (L, [f1], X NXT) :: INV :: GOALS :: N, M > .
+  rl [or-ri]        : < C, Λ . (L, [f1 \/ f2], X NXT) :: INV :: GOALS :: N, M > => < C, Λ . (L, [f2], X NXT) :: INV :: GOALS :: N, M > .
+  rl [until-1]      : < C, Λ . (L, [f1 U f2] , X NXT) :: INV :: GOALS :: N, M > => < C, Λ . (L, [f1], [f2], X NXT) :: INV :: GOALS :: N, M > .
+  rl [until-2]      : < C, Λ . (L, [f1 U f2] , X NXT) :: INV :: GOALS :: N, M > => < C, Λ . (L, [f1], X ([f1 U f2]), X NXT) :: INV :: GOALS :: N, M > .
+  rl [release-1]    : < C, Λ . (L, [f1 R f2] , X NXT) :: INV :: GOALS :: N, M > => < C, Λ . (L, [f1], X NXT) :: INV :: GOALS :: N, M > .
+  rl [release-2]    : < C, Λ . (L, [f1 R f2] , X NXT) :: INV :: GOALS :: N, M > => < C, Λ . (L, [f2], X ([f1 R f2]), X NXT) :: INV :: GOALS :: N, M > .
+  rl [release-3]    : < C, Λ . (L, [f1 R f2] , X NXT) :: INV :: GOALS :: N, M > => < C, Λ . (L, [f2], X (*), X NXT) :: INV :: GOALS :: N, M > .
+
+-----------------------
+------- always --------
+-----------------------
+
+  crl [always-ipstl] : 
+     < C, Λ . (L, [[] I f], X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, ((c := Num("0.0")) . (lc?(B), (B,c)-()[] I f)), X (C', Λ' . L')) :: INV :: (GOALS, [[] I f]) :: N', M' > 
+  if {B, N'} := ocGen(L, N) /\ {c, M'} := clkGen(Λ, clkVars(Λ), Num("0.0"), M) .
+
+  rl [always-up-1] : 
+     < C, Λ . (L, (B,c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, X (c <=[not B] inf(I), *), X (C', Λ' . L')) :: INV :: (GOALS, (B,c)-()[] I f) :: N, M > .
+
+  crl [always-up-2] : 
+     < C, Λ . (L, (B,c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M >
+  => < C, Λ . (L, [f], X (c >=[B] inf(I), *), X (C', Λ' . L')) :: (INV, c <=[(not B) or BL] inf(I), lc?(BL)) :: (GOALS, (B,c)-()[] I f) :: N', M >
+  if {BL, N'} := ocGen(L, N) .
+
+  crl [always-up-3] : 
+     < C, Λ . (L, (B,c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, X (c <=[(not B) or B'] inf(I), (d := Num("0.0")) . (lc?(B'), (B,c)-(d, not B')[] I f)), X (C', Λ' . L')) :: INV :: (GOALS, (B,c)-()[] I f) :: N', M' >
+  if {B', N'} := ocGen(L', N) /\ {d, M'} := clkGen(Λ, union(union(fv(L'), clkVars(Λ')), c), Num("0.0"), M) .
+
+  crl [always-up-4] : 
+     < C, Λ . (L, (B,c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M >
+  => < C, Λ . (L, [f], 
+            X (c >=[B and (not B')] inf(I), (c := inf(I), d := Num("0.0")) . (lc?(B'), (B',c)-(d, not B')[] I f)), X (C', Λ' . L')) 
+            :: (INV, c <=[(not B) or BL] inf(I), lc?(BL)) :: (GOALS, (B,c)-()[] I f) :: N'', M' >
+  if {BL, N'} := ocGen(L, N) /\ {B', N''} := ocGen(L', N') 
+  /\ {d, M'} := clkGen(Λ, union(union(fv(L'), clkVars(Λ')), c), Num("0.0"), M) .
+
+  crl [always-updown-1] : 
+     < C, Λ . (L, (B,c)-(d,B')[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, X (c <=[(not B) or BL] inf(I), lc?(BL), (B,c)-(d,B')[] I f), X (C', Λ' . L')) :: INV :: (GOALS, (B,c)-(d,B')[] I f) :: N', M > 
+  if  {BL, N'} := ocGen(L', N) . 
+
+  rl [always-updown-2] : 
+     < C, Λ . (L, (B,c)-(d,B')[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, X (c <=[not B] inf(I), *), X (C', Λ' . L')) :: INV :: (GOALS, (B,c)-(d,B')[] I f) :: N, M > .
+
+  crl [always-updown-3] : 
+     < C, Λ . (L, (B,c)-(d,B')[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, [f], X (c >=[B] inf(I), *), X (C', Λ' . L')) 
+              :: (INV, c <=[(not B) or BL] inf(I), lc?(BL)) :: (GOALS, (B,c)-(d,B')[] I f) :: N', M >
+  if {BL, N'} := ocGen(L, N) .
+
+  crl [always-updown-4] : 
+     < C, Λ . (L, (B,c)-(d,B')[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M >
+  => < C, Λ . (L, [f], 
+            X (c >=[B and (not BL')] inf(I), d <=[B' and BL'] sup(I), 
+                (c := inf(I)) . (lc?(BL'), (BL',c)-(d, B')[] I f)), X (C', Λ' . L')) 
+            :: (INV, c <=[(not B) or BL] inf(I), lc?(BL)) :: (GOALS, (B,c)-(d,B')[] I f) :: N'', M >
+  if {BL, N'} := ocGen(L, N) /\ {BL', N''} := ocGen(L', N') .
+
+  crl [always-updown-5] : 
+     < C, Λ . (L, (B,c)-(d,B')[] I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M >
+  => < C, Λ . (L, [f], 
+            X (lc?(BL'), c >=[B and (not BL')] inf(I), d >=[(not B') or (not BL')] sup(I)), X (C', Λ' . L')) 
+            :: (INV, c <=[(not B) or BL] inf(I), lc?(BL)) :: (GOALS, (B,c)-(d,B')[] I f) :: N'', M >
+  if {BL, N'} := ocGen(L, N) /\ {BL', N''} := ocGen(L', N') .
+
+-----------------------
+----- eventually ------
+-----------------------
+
+  crl [eventually-ipstl] : 
+     < C, Λ . (L, [<> I f], X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, ((c := Num("0.0")) . (lc?(B), (B,c)-()<> I f)), X (C', Λ' . L')) :: INV :: (GOALS, [<> I f]) :: N', M' > 
+  if {B, N'} := ocGen(L, N) /\ {c, M'} := clkGen(Λ, clkVars(Λ), Num("0.0"), M) .
+
+  crl [eventually-up-1] : 
+     < C, Λ . (L, (B,c)-()<> I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, X (C', Λ' . L'), X (c <=[(not B) or B'] sup(I), (d := Num("0.0")) . (lc?(B'), (B,c)-(d, not B')<> I f))) :: INV :: (GOALS, (B,c)-()<> I f) :: N', M' >
+  if {B', N'} := ocGen(L', N) /\ {d, M'} := clkGen(Λ, union(union(fv(L'), clkVars(Λ')), c), Num("0.0"), M) .
+
+  crl [eventually-up-2] : 
+     < C, Λ . (L, (B,c)-()<> I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, [f], c <=[(not B) or BL] sup(I), lc?(BL), 
+                X (C', Λ' . L'), 
+                X (c >=[B and (not B')] inf(I), (c := inf(I), d := Num("0.0")) . (lc?(B'), (B',c)-(d, not B')<> I f))) :: INV :: (GOALS, (B,c)-()<> I f) :: N'', M' >
+  if {BL, N'} := ocGen(L, N) /\ {B', N''} := ocGen(L', N') /\ {d, M'} := clkGen(Λ, union(union(fv(L'), clkVars(Λ')), c), Num("0.0"), M) .
+
+  crl [eventually-updown-1] : 
+     < C, Λ . (L, (B,c)-(d,B')<> I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, lc?(BL), X (C', Λ' . L'), 
+                X (c <=[(not B) or (BL')] sup(I), (empty) . (lc?(BL'), (B,c)-(d,B')<> I f))) :: INV :: (GOALS, (B,c)-(d,B')<> I f) :: N'', M >
+  if {BL, N'} := ocGen(L, N) /\ {BL', N''} := ocGen(L', N') .
+
+  crl [eventually-updown-2] : 
+     < C, Λ . (L, (B,c)-(d,B')<> I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, [f], c <=[(not B) or BL] sup(I), lc?(BL), X (C', Λ' . L'), 
+                X (c >=[B and (not BL')] inf(I), d <=[B' and BL'] inf(I), 
+                  (c := inf(I)) . (lc?(BL'), (BL',c)-(d,B')<> I f))) :: INV :: (GOALS, (B,c)-(d,B')<> I f) :: N'', M >
+  if {BL, N'} := ocGen(L, N) /\ {BL', N''} := ocGen(L', N') .
+
+  crl [eventually-updown-3] : 
+     < C, Λ . (L, (B,c)-(d,B')<> I f, X (C', Λ' . L')) :: INV :: GOALS :: N, M > 
+  => < C, Λ . (L, [f], c <=[(not B) or BL] sup(I), lc?(BL), X (C', Λ' . L'), 
+                X (c >=[B and (not BL')] inf(I), d >=[(not B') or (not BL')] inf(I), lc?(BL'))) :: INV :: (GOALS, (B,c)-(d,B')<> I f) :: N'', M >
+  if {BL, N'} := ocGen(L, N) /\ {BL', N''} := ocGen(L', N') .
+endm
+
+mod DECOMP-RULES-SIMPLE is
+  pr DECOMP-RULES-AUX .
+
+  vars N N' N'' M M' : Nat .
+  vars f f1 f2 : Formula .
+  var I : Interval .
+  vars c d : Clock .
+  vars B B' BL BL' : Bool .
+  vars Ψ C L C' L' INV GOALS : Set{Judgement} .
+  var Φ : NeSet{Judgement} .
+  vars Λ Λ' : Set{ClkReset} .
+  var NM : Number .
+  vars CS CS1 CS2 : Set{Clock} .
+  var CMAP : CMap .
+
+-----------------------
+------- common --------
+-----------------------
+
+  crl [and-simp] : 
+     < C, Λ . (L, [f1 /\ f2], X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], [f2], X (C', Λ' . L')) :: INV :: (GOALS, [f1 /\ f2]) :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [or-le-simp] : 
+     < C, Λ . (L, [f1 \/ f2], X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], X (C', Λ' . L')) :: INV :: (GOALS, [f1 \/ f2]) :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [or-ri-simp] : 
+     < C, Λ . (L, [f1 \/ f2], X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f2], X (C', Λ' . L')) :: INV :: (GOALS, [f1 \/ f2]) :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [until-1-simp] : 
+     < C, Λ . (L, [f1 U f2] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], [f2], X (C', Λ' . L')) :: INV :: (GOALS, [f1 U f2]) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [until-2-simp] : 
+     < C, Λ . (L, [f1 U f2] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], X ([f1 U f2]), X (C', Λ' . L')) :: INV :: (GOALS, [f1 U f2]) :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [release-1-simp] : 
+     < C, Λ . (L, [f1 R f2] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], X (C', Λ' . L')) :: INV :: (GOALS, [f1 R f2]) :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [release-2-simp] : 
+     < C, Λ . (L, [f1 R f2] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f2], X ([f1 R f2]), X (C', Λ' . L')) :: INV :: (GOALS, [f1 R f2]) :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [release-3-simp] : 
+     < C, Λ . (L, [f1 R f2] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f2], X (*), X (C', Λ' . L')) :: INV :: (GOALS, [f1 R f2]) :: M > 
+  if not isContradiction((C, C')) .
+
+-----------------------
+------- untimed -------
+-----------------------
+  
+  crl [untimed-always-1-simp] : 
+     < C, Λ . (L, [[] f] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], X ([[] f]), X (C', Λ' . L')) :: INV :: (GOALS, [[] f]) :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [untimed-always-2-simp] : 
+     < C, Λ . (L, [[] f] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], X (*), X (C', Λ' . L')) :: INV :: (GOALS, [[] f]) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [untimed-eventually-1-simp] : 
+     < C, Λ . (L, [<> f] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], X (C', Λ' . L')) :: INV :: (GOALS, [<> f]) :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [untimed-eventually-2-simp] : 
+     < C, Λ . (L, [<> f] , X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X ([<> f]), X (C', Λ' . L')) :: INV :: (GOALS, [<> f]) :: M > 
+  if not isContradiction((C, C')) .
+
+-----------------------
+------- always --------
+-----------------------
+
+  crl [always-ipstl-simp] : 
+     < C, Λ . (L, [[] I f], X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, ((c := Num("0.0")) . ((c)-()[] I f)), X (C', Λ' . L')) :: INV :: (GOALS, [[] I f]) :: M' > 
+  if {c, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [always-up-1-simp] : 
+     < C, Λ . (L, (c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), *), X (C', Λ' . L')) :: INV :: (GOALS, (c)-()[] I f) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [always-up-2-simp] : 
+     < C, Λ . (L, (c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, [f], X (c >= inf(I), *), X (C', Λ' . L')) :: (INV, c <= inf(I)) :: (GOALS, (c)-()[] I f) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [always-up-3-simp] : 
+     < C, Λ . (L, (c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), (d := Num("0.0")) . ((c)-(d)[] I f)), X (C', Λ' . L')) :: INV :: (GOALS, (c)-()[] I f) :: M' >
+  if {d, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [always-up-3-simp-hidden-loop] : 
+     < C, Λ . (L, (c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), (c)-()[] I f), X (C', Λ' . L')) :: INV :: (GOALS, (c)-()[] I f, [[] I f]) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [always-up-4-simp] : 
+     < C, Λ . (L, (c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, [f], 
+            X (c >= inf(I), (c := inf(I), d := Num("0.0")) . ((c)-(d)[] I f)), X (C', Λ' . L')) 
+            :: (INV, c <= inf(I)) :: (GOALS, (c)-()[] I f) :: M' >
+  if {d, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [always-up-4-simp-hidden-loop] : 
+     < C, Λ . (L, (c)-()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, [f], 
+            X (c >= inf(I), (c := inf(I)) . ((c)-()[] I f)), X (C', Λ' . L')) 
+            :: (INV, c <= inf(I)) :: (GOALS, (c)-()[] I f, [[] I f]) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [always-updown-1-simp] : 
+     < C, Λ . (L, (c)-(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), (c)-(d)[] I f), X (C', Λ' . L')) :: INV :: (GOALS, (c)-(d)[] I f) :: M >
+  if not isContradiction((C, C')) . 
+
+  crl [always-updown-2-simp] : 
+     < C, Λ . (L, (c)-(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), *), X (C', Λ' . L')) :: INV :: (GOALS, (c)-(d)[] I f) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [always-updown-3-simp] : 
+     < C, Λ . (L, (c)-(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], X (c >= inf(I), *), X (C', Λ' . L')) 
+              :: (INV, c <= inf(I)) :: (GOALS, (c)-(d)[] I f) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [always-updown-4-simp] : 
+     < C, Λ . (L, (c)-(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, [f], 
+            X (c >= inf(I), d <= sup(I), 
+                (c := inf(I)) . ((c)-(d)[] I f)), X (C', Λ' . L')) 
+            :: (INV, c <= inf(I)) :: (GOALS, (c)-(d)[] I f) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [always-updown-5-simp] : 
+     < C, Λ . (L, (c)-(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, [f], 
+            X (c >= inf(I), d >= sup(I)), X (C', Λ' . L')) 
+            :: (INV, c <= inf(I)) :: (GOALS, (c)-(d)[] I f) :: M > 
+  if not isContradiction((C, C')) /\ not (sup(I) == infty) .
+
+-----------------------
+----- eventually ------
+-----------------------
+
+  crl [eventually-ipstl-simp] : 
+     < C, Λ . (L, [<> I f], X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, ((c := Num("0.0")) . ((c)-()<> I f)), X (C', Λ' . L')) :: INV :: (GOALS, [<> I f]) :: M' > 
+  if {c, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [eventually-up-1-simp] : 
+     < C, Λ . (L, (c)-()<> I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (C', Λ' . L'), X (c <= sup(I), (d := Num("0.0")) . ((c)-(d)<> I f))) :: INV :: (GOALS, (c)-()<> I f) :: M' >
+  if {d, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [eventually-up-1-simp-hidden-loop] : 
+     < C, Λ . (L, (c)-()<> I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (C', Λ' . L'), X (c <= sup(I), (c)-()<> I f)) :: INV :: (GOALS, (c)-()<> I f) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [eventually-up-2-simp] : 
+     < C, Λ . (L, (c)-()<> I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], 
+                X (C', Λ' . L'), 
+                X (c >= inf(I), (c := inf(I), d := Num("0.0")) . ((c)-(d)<> I f))) :: (INV, c <= sup(I)) :: (GOALS, (c)-()<> I f) :: M' >
+  if {d, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [eventually-up-3-simp] : 
+     < C, Λ . (L, (c)-()<> I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], X (C', Λ' . L')) :: (INV, c <= sup(I)) :: (GOALS, (c)-()<> I f) :: M > 
+  if not isContradiction((C, C')) /\ inf(I) == Num("0.0") .
+
+  crl [eventually-up-2-simp-hidden-loop] : 
+     < C, Λ . (L, (c)-()<> I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], 
+                X (C', Λ' . L'), 
+                X (c >= inf(I), (c := inf(I)) . ((c)-()<> I f))) :: (INV, c <= sup(I)) :: (GOALS, (c)-()<> I f) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [eventually-updown-1-simp] : 
+     < C, Λ . (L, (c)-(d)<> I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (C', Λ' . L'), 
+                X (c <= sup(I), (empty) . ((c)-(d)<> I f))) :: INV :: (GOALS, (c)-(d)<> I f) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [eventually-updown-2-simp] : 
+     < C, Λ . (L, (c)-(d)<> I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], X (C', Λ' . L'), 
+                X (c >= inf(I), d <= inf(I), 
+                  (c := inf(I)) . ((c)-(d)<> I f))) :: (INV, c <= sup(I)) :: (GOALS, (c)-(d)<> I f) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [eventually-updown-3-simp] : 
+     < C, Λ . (L, (c)-(d)<> I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], X (C', Λ' . L'), 
+                X (c >= inf(I), d >= inf(I))) :: (INV, c <= sup(I)) :: (GOALS, (c)-(d)<> I f) :: M > 
+  if not isContradiction((C, C')) .
+endm
+
+--- previous version
+
+mod DECOMP-PREV-RULES is
+  pr DECOMP-RULES-AUX .
+
+  vars N N' N'' M M' : Nat .
+  vars f f1 f2 : Formula .
+  var I : Interval .
+  vars c d : Clock .
+  vars B B' BL BL' : Bool .
+  vars Ψ C L C' L' INV GOALS : Set{Judgement} .
+  var Φ : NeSet{Judgement} .
+  vars Λ Λ' : Set{ClkReset} .
+  var NM : Number .
+  vars CS CS1 CS2 : Set{Clock} .
+  var CMAP : CMap .
+
+-----------------------
+------- common --------
+-----------------------
+
+  crl [and-prev] : 
+     < C, Λ . (L, [f1 /\ f2], X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], [f2], X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [or-le-prev] : 
+     < C, Λ . (L, [f1 \/ f2], X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [or-ri-prev] : 
+     < C, Λ . (L, [f1 \/ f2], X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f2], X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [until-1-prev] : 
+     < C, Λ . (L, [f1 U f2] , X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], [f2], X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [until-2-prev] : 
+     < C, Λ . (L, [f1 U f2] , X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], X ([f1 U f2]), X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [release-1-prev] : 
+     < C, Λ . (L, [f1 R f2] , X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f1], X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [release-2-prev] : 
+     < C, Λ . (L, [f1 R f2] , X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f2], X ([f1 R f2]), X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  if not isContradiction((C, C')) .
+  
+  crl [release-3-prev] : 
+     < C, Λ . (L, [f1 R f2] , X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f2], X (*), X (C', Λ' . L)) :: INV :: GOALS :: M > 
+  if not isContradiction((C, C')) .
+
+-----------------------
+------- always --------
+-----------------------
+
+  crl [always-ipstl-prev] : 
+     < C, Λ . (L, [[] I f], X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, ((c := Num("0.0")) . ((c)==()[] I f)), X (C', Λ' . L')) :: INV :: (GOALS, [[] I f]) :: M' > 
+  if {c, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [always-up-1-prev] : 
+     < C, Λ . (L, (c)==()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), *), X (C', Λ' . L')) :: INV :: (GOALS, (c)==()[] I f) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [always-up-2-prev] : 
+     < C, Λ . (L, (c)==()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), (d := Num("0.0")) . ((c)==(d)[] I f)), X (C', Λ' . L')) :: INV :: (GOALS, (c)==()[] I f) :: M' >
+  if {d, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [always-up-3-prev] : 
+     < C, Λ . (L, (c)==()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, [f], (()**()[] I f), X (c >= inf(I)), X (C', Λ' . L')) :: (INV, c <= inf(I)) :: (GOALS, (c)==()[] I f) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [always-updown-1-prev] : 
+     < C, Λ . (L, (c)==(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), (c)==(d)[] I f), X (C', Λ' . L')) :: INV :: (GOALS, (c)==(d)[] I f) :: M >
+  if not isContradiction((C, C')) . 
+
+  crl [always-updown-2-prev] : 
+     < C, Λ . (L, (c)==(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, X (c <= inf(I), *), X (C', Λ' . L')) :: INV :: (GOALS, (c)==(d)[] I f) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [always-updown-3-prev] : 
+     < C, Λ . (L, (c)==(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M > 
+  => < C, Λ . (L, [f], (()**(d)[] I f), X (c >= inf(I)), X (C', Λ' . L')) 
+              :: (INV, c <= inf(I)) :: (GOALS, (c)==(d)[] I f) :: M > 
+  if not isContradiction((C, C')) .
+
+  crl [always-up-intersect-1-prev] : 
+     < C, Λ . (L, ()**()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, X ((d := Num("0.0")) . ([f], ()**(d)[] I f)), X (C', Λ' . L')) 
+            :: INV :: (GOALS, ()**()[] I f) :: M' >
+  if {d, M'} := clkFreshGen(M) /\ not isContradiction((C, C')) .
+
+  crl [always-up-intersect-2-prev] : 
+     < C, Λ . (L, ()**()[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, X (*), X (C', Λ' . L')) :: INV :: (GOALS, ()**()[] I f) :: M >
+  if not isContradiction((C, C')) .
+  
+  crl [always-updown-intersect-1-prev] : 
+     < C, Λ . (L, ()**(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, X ([f], ()**(d)[] I f, d <= sup(I)), X (C', Λ' . L')) 
+            :: INV :: (GOALS, ()**(d)[] I f) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [always-updown-intersect-2-prev] : 
+     < C, Λ . (L, ()**(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, X (d >= sup(I)), X (C', Λ' . L')) :: INV :: (GOALS, ()**(d)[] I f) :: M >
+  if not isContradiction((C, C')) .
+
+  crl [always-updown-intersect-3-prev] : 
+     < C, Λ . (L, ()**(d)[] I f, X (C', Λ' . L')) :: INV :: GOALS :: M >
+  => < C, Λ . (L, X (*), X (C', Λ' . L')) :: INV :: (GOALS, ()**(d)[] I f) :: M >
+  if not isContradiction((C, C')) .
+
+-----------------------
+----- eventually ------
+-----------------------
+
+endm
+
+smod DECOMP-RULE-APP is
+  pr DECOMP-RULES-COMPLEX .
+  pr DECOMP-RULES-SIMPLE .
+  pr DECOMP-PREV-RULES .
+
+  strat applyAll : @ DecompConf .
+  --- sd applyAll := (and 
+  ---     or-else (or-le | or-ri)
+  ---     or-else (until-1 | until-2)
+  ---     or-else (release-1 | release-2 | release-3)
+  ---     or-else always-ipstl 
+  ---     or-else eventually-ipstl
+  ---     or-else (always-up-1 | always-up-2 | always-up-3 | always-up-4)
+  ---     or-else (always-updown-1 | always-updown-2 | always-updown-3 | always-updown-4 | always-updown-5)
+  ---     or-else (eventually-up-1 | eventually-up-2)
+  ---     or-else (eventually-updown-1 | eventually-updown-2 | eventually-updown-3))! .
+  --- sd applyAll := (
+  ---     eventually-ipstl
+  ---     or-else (eventually-up-1)
+  ---     or-else (eventually-updown-1 | eventually-updown-2))! .
+
+--- testing purpose
+--- 
+  --- sd applyAll := (
+  ---     always-ipstl
+  ---     or-else (always-up-1 | always-up-2 | always-up-3 | always-up-4)
+  ---     or-else (always-updown-1 | always-updown-2 | always-updown-3 | always-updown-4 | always-updown-5))! .
+
+  --- sd applyAll := (
+  ---     always-ipstl-simp
+  ---     or-else (always-up-1-simp | always-up-2-simp | always-up-3-simp | always-up-4-simp)
+  ---     or-else (always-updown-1-simp | always-updown-2-simp | always-updown-3-simp | always-updown-4-simp | always-updown-5-simp))! .
+
+
+  sd applyAll := (and-simp
+      or-else (or-le-simp | or-ri-simp)
+      or-else (until-1-simp | until-2-simp)
+      or-else (release-1-simp | release-2-simp | release-3-simp)
+      or-else always-ipstl-simp
+      or-else eventually-ipstl-simp
+      or-else (always-up-1-simp | always-up-2-simp | always-up-3-simp | always-up-4-simp)
+      or-else (always-updown-1-simp | always-updown-2-simp | always-updown-3-simp | always-updown-4-simp | always-updown-5-simp)
+      or-else (eventually-up-1-simp | eventually-up-2-simp | eventually-up-3-simp)
+      or-else (eventually-updown-1-simp | eventually-updown-2-simp | eventually-updown-3-simp)
+      or-else (untimed-always-1-simp | untimed-always-2-simp)
+      or-else (untimed-eventually-1-simp | untimed-eventually-2-simp))! .
+
+
+  --- sd applyAll := (and-simp
+  ---     or-else (or-le-simp | or-ri-simp)
+  ---     or-else (until-1-simp | until-2-simp)
+  ---     or-else (release-1-simp | release-2-simp | release-3-simp)
+  ---     or-else always-ipstl-simp
+  ---     or-else eventually-ipstl-simp
+  ---     or-else (always-up-1-simp | always-up-2-simp | always-up-3-simp | always-up-4-simp | always-up-3-simp-hidden-loop | always-up-4-simp-hidden-loop)
+  ---     or-else (always-updown-1-simp | always-updown-2-simp | always-updown-3-simp | always-updown-4-simp | always-updown-5-simp)
+  ---     or-else (eventually-up-1-simp | eventually-up-2-simp | eventually-up-1-simp-hidden-loop | eventually-up-1-simp-hidden-loop)
+  ---     or-else (eventually-updown-1-simp | eventually-updown-2-simp | eventually-updown-3-simp)
+  ---     or-else (untimed-always-1-simp | untimed-always-2-simp)
+  ---     or-else (untimed-eventually-1-simp | untimed-eventually-2-simp))! .
+
+
+
+  --- sd applyAll := (and-prev
+  ---     or-else (or-le-prev | or-ri-prev)
+  ---     or-else (until-1-prev | until-2-prev)
+  ---     or-else (release-1-prev | release-2-prev | release-3-prev)
+  ---     or-else always-ipstl-prev
+  ---     or-else (always-up-1-prev | always-up-2-prev | always-up-3-prev)
+  ---     or-else (always-updown-1-prev | always-updown-2-prev | always-updown-3-prev)
+  ---     or-else (always-up-intersect-1-prev | always-up-intersect-2-prev)
+  ---     or-else (always-updown-intersect-1-prev | always-updown-intersect-2-prev | always-updown-intersect-3-prev))! .
+
+
+
+      --- non terminating for [][]p?
+  --- sd applyAll := (
+  ---     always-ipstl
+  ---     or-else (always-up-1 | always-up-2 | always-up-4)
+  ---     or-else (always-updown-4 | always-updown-5))! .
+
+  --- sd applyAll := (
+  ---     always-ipstl
+  ---     or-else (always-up-4)
+  ---     or-else (always-updown-4))! .
+endsm
+
+mod ID-GEN is 
+  pr NAT .
+  pr CONFIGURATION .
+  op nid : Nat -> Oid [ctor] .
+endm
+
+fmod TABLEAU-AUX is
+  sorts TState TTrans .
+endfm
+
+view TState from TRIV to TABLEAU-AUX is
+  sort Elt to TState .
+endv
+
+view TTrans from TRIV to TABLEAU-AUX is
+  sort Elt to TTrans .
+endv
+
+fmod TABLEAU is
+  pr SET{TState} .
+  pr SET{TTrans} .
+  pr SET{Judgement} .
+  pr SET{ClkReset} .
+
+  sort Tableau .
+
+  op <_,_> : Set{TState} Set{TTrans} -> Tableau [ctor] .
+
+--- TState : { (L, X (C', Λ' . L')) , Generator }
+  op [_] : Set{Judgement} -> TState [ctor] .
+  op _=[_][_]=>_ : TState Set{Judgement} Set{ClkReset} TState -> TTrans [ctor] .
+endfm
+
+fmod FRONTIER is
+  pr TABLEAU-AUX .
+  pr DECOMP-CONF .
+
+  sort Frontier .
+  op _@_ : TState DecompConf -> Frontier [ctor] .
+endfm
+
+view Frontier from TRIV to FRONTIER is
+  sort Elt to Frontier .
+endv
+
+fmod TABLEAU-RED is 
+  pr TABLEAU .
+
+  sort StInfo StatePair QState .
+  op {[_][_]<_>} : Set{Judgement} Set{ClkReset} TState -> StInfo [ctor] .
+  op {_,_} : TState TState -> StatePair [ctor] .
+  op [_] : Set{TState} -> QState [ctor] .
+endfm
+
+view StInfo from TRIV to TABLEAU-RED is
+  sort Elt to StInfo .
+endv
+
+view StatePair from TRIV to TABLEAU-RED is
+  sort Elt to StatePair .
+endv
+
+view QState from TRIV to TABLEAU-RED is
+  sort Elt to QState .
+endv
+
+smod TABLEAU-GEN is
+  pr GEN-AUX .
+  pr FLOAT .
+  pr TABLEAU .
+  pr META-LEVEL .
+  pr DECOMP-RULE-APP .
+  pr SET{TState} .
+  pr MAP{TState,GMap} .
+  pr MAP{TState,Set{Judgement}} .
+  pr LIST{Frontier} .
+  pr SET{StInfo} .
+  pr SET{StatePair} .
+  pr SET{QState} .
+
+  op p : Nat -> Prop [ctor] .
+
+  var f : Formula .
+  var I : Interval .
+  vars B B' B1 B2 : Bool .
+  vars c d c1 c2 : Clock .
+  vars Ψ Ψ' JS JS' INV GOALS : Set{Judgement} .
+  vars Φ Φ' : NeSet{Judgement} .
+  vars C C' L L' : Set{Judgement} .
+  vars Λ Λ' : Set{ClkReset} .
+  var CP : CIntvPred .
+  var IP : IntvPred .
+  vars N M LEN : Nat .
+  vars GE CL ML : DecompConf .
+  var INV-MAP : Map{TState,Set{Judgement}} .
+
+  var RES : DecompConf .
+  var CMAP : CMap .
+  vars NB NB' : Number .
+
+---   op mkInitGen : Formula -> DecompConf .
+---   eq mkInitGen(f) = < empty . ([f], X empty . empty) :: 0, 0 > .
+
+--- --- make next generator
+  op mkNextGenerator : DecompConf -> DecompConf .
+  eq mkNextGenerator(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: N, M >)
+   = < C', Λ' . (L', X (empty . empty)) :: empty :: empty :: N, M > .
+  eq mkNextGenerator(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: M >)
+   = < C', Λ' . (L', X (empty . empty)) :: empty :: empty :: M > .
+
+  op reduceDC : DecompConf -> DecompConf .
+  eq reduceDC(DC) = DC [owise] .
+---  ceq reduceDC(< C, Λ . (L, X (C', Λ' . L')) :: N, M >) = done
+---   if not intvPred?(L) /\ not intvPred?(L') .
+
+  --- eq reduceDC(< C, Λ . (Ψ, X (C', *, Λ' . (CP, L'))) :: INV :: N, M >) = wrong .
+  --- eq reduceDC(< C, Λ . (Ψ, X (C', *, Λ' . (CP, L'))) :: INV :: M >) = wrong .
+
+  eq < C, Λ . (Ψ, X (C', *, Λ' . (CP, L'))) :: INV :: GOALS :: M > = wrong .
+  eq < C, Λ . (Ψ, X (C', *, Λ' . (CP, L'))) :: INV :: GOALS :: N, M > = wrong .
+  eq < C, Λ . (Ψ, X (C', IP, *, Λ' . L')) :: INV :: GOALS :: M > = wrong .
+  eq < C, Λ . (Ψ, X (C', IP, *, Λ' . L')) :: INV :: GOALS :: N, M > = wrong .
+  eq < C, *, Λ . (Ψ, CP, X (C', Λ' . L')) :: INV :: GOALS :: M > = wrong .
+  eq < C, *, Λ . (Ψ, CP, X (C', Λ' . L')) :: INV :: GOALS :: N, M > = wrong .
+  eq < C, IP, *, Λ . (Ψ, X (C', Λ' . L')) :: INV :: GOALS :: M > = wrong .
+  eq < C, IP, *, Λ . (Ψ, X (C', Λ' . L')) :: INV :: GOALS :: N, M > = wrong .
+
+  op getLabel : Set{Judgement} -> Set{Judgement} .
+  op getGuard : Set{Judgement} -> Set{Judgement} .
+  op getReset : Set{Judgement} -> Set{ClkReset} .
+
+  --- eq getLabel(< C, Λ . (L, X (C', Λ' . L')) :: N, M >) = L . 
+
+  eq getLabel((C, Λ . L)) = L . 
+  eq getGuard((C, Λ . L)) = C .
+  eq getReset((C, Λ . L)) = Λ .
+
+  op getJudgement : DecompConf -> Set{Judgement} .
+  eq getJudgement(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: N, M >) = C, Λ . (L, X (C', Λ' . L')) .
+  eq getJudgement(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: M >) = C, Λ . (L, X (C', Λ' . L')) .
+
+  op getInvariant : DecompConf -> Set{Judgement} .
+  eq getInvariant(< Ψ :: INV :: GOALS :: N, M >) = INV .
+  eq getInvariant(< Ψ :: INV :: GOALS :: M >) = INV .
+
+  op intvPred? : Set{Judgement} -> Bool .
+  eq intvPred?((CP, Ψ)) = true .
+  eq intvPred?(Ψ) = false [owise] .
+
+  op isFinished : DecompConf -> Bool .
+  eq isFinished(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: N, M >) = not intvPred?(L') .
+  eq isFinished(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: M >) = not intvPred?(L') .
+
+  --- this is the algorithm part
+
+  op tab-module : -> Module .
+  eq tab-module = upModule('TABLEAU-GEN, false) .
+
+  sort State .
+  op {{_}} : Tableau -> State [ctor] .
+  op {{_},{_}} : Tableau Map{TState,Set{Judgement}} -> State [ctor] .
+  op {{_},{_},{_},{_}} : Tableau Map{TState,GMap} Map{TState,Set{Judgement}} List{Frontier} -> State [ctor] .
+  op {{_},{_},{_},{_},{_},_} : Tableau Map{TState,GMap} Map{TState,Set{Judgement}} List{Frontier} Frontier Nat -> State [ctor] .
+
+  op makeGen : Formula -> DecompConf .
+  eq makeGen(f) = < empty . ([f], X empty . empty) :: empty :: [f] :: 0, 0 > .
+
+  op makeGen-simp : Formula -> DecompConf .
+  eq makeGen-simp(f) = < empty . ([f], X empty . empty) :: empty :: [f] :: 0 > .
+
+  vars TL TL' : TermList .
+  vars TY TY' : Type .
+  vars T T' ST : Term .
+  vars PAT-MAP PAT-MAP' : Map{TState,GMap} .
+
+
+
+  vars T1 T2 : Set{Judgement} .
+  vars TJ JJ : Set{Judgement} .
+  vars C1 C2 : Set{Judgement} .
+  vars J1 J2 : Set{Judgement} .
+  vars SUBS : Substitution? .
+  var PAT : Term .
+  vars SS SS' : Set{TState} .
+  --- var LD : List{DecompConf} .
+  var debug DC : DecompConf .
+  vars GMAP GMAP' : GMap .
+  vars MAP MAP' : Map .
+  vars TS TS' : TState .
+  --- var DCL : List{DecompConf} .
+  var UNIF : UnificationTriple? .
+  var SUBST : RenameSubstitution .
+
+
+  --- op subsumed : Set{TState} TState -> Bool .
+---  ceq subsumed((SS, {[T1], [C1]}), {[T2], [C2]}) = 
+---   if B == true and B' == true 
+---   then true
+---   else 
+---     subsumed(SS, {[T2], [C2]})
+---   fi  
+---   if B := $subsumed(T1, T2) /\ B' := $subsumed(C1, C2) .
+  --- [print "subsumption\n" T1 "\n<------>\n" T2 "\n"] .
+
+---  ceq subsumed((SS, {[T1], [C1]}), {[T2], [C2]}) = true
+---   if $subsumed(T1, T2) == true and $subsumed(C1, C2) == true 
+---   [print "subsumption\n" T1 "\n<--CL-->\n" T2 "\n" C1 "\n<--GEN-->\n" C2 "\n"] . 
+---   eq subsumed((SS, {[T1], [C1]}), {[T2], [C2]}) = subsumed(SS, {[T2], [C2]}) [owise] .
+---   eq subsumed(empty, TS) = false .
+
+  sort SubsumeRes .
+  op {_,_,_} : Bool RenameSubstitution Map{TState,GMap} -> SubsumeRes [ctor] .
+
+--- Third argument bool means that we don't need to calculate subsumption checking
+  op subsumeCheck : Map{TState,GMap} TState Bool -> SubsumeRes .
+---  ceq subsumed((SS, TS), TS') = true 
+---   if UNIF := metaDisjointUnify(tab-module, upTerm(TS) =? upTerm(TS'), 0, 0)
+---   /\ not (UNIF == noUnifier or UNIF == noUnifierIncomplete) [print "<-------\n" TS "\n=========\n" TS' "\n\n" UNIF "\n*** subsumed ***\n"] . 
+---  ceq subsumed((SS, TS), TS') = false 
+---   if UNIF := metaDisjointUnify(tab-module, upTerm(TS) =? upTerm(TS'), 0, 0) 
+---   /\ UNIF == noUnifier or UNIF == noUnifierIncomplete .
+
+ ceq subsumeCheck(PAT-MAP, [JJ], true) = 
+  if $hasMapping(PAT-MAP, [TJ])
+  then 
+    --- there exists a renaming equivalent pattern
+    { true, makeRenameSubst(GMAP, PAT-MAP[[TJ]]), PAT-MAP }
+  else
+    --- if none exists, update mapping 
+    { false, none, insert([TJ], GMAP, PAT-MAP) } 
+  fi 
+  if {TJ, GMAP} := getPattern(JJ) .
+  --- [print "<-------\n" T1 "\n=========\n" T2 "\n*** subsumed ***\n" GMAP "\n***\n" GMAP' "\n--------\n" SUBST "\n*****************\n"] .
+  
+  eq subsumeCheck(PAT-MAP, TS, false) = { false, none, PAT-MAP } .
+
+  sorts RenameAssignment RenameSubstitution .
+  subsort RenameAssignment < RenameSubstitution .
+  op _<-|_ : Term Term -> RenameAssignment [ctor prec 63 format (n++i d d --)] .
+  op none : -> RenameSubstitution [ctor] .
+  op _;_ : RenameSubstitution RenameSubstitution -> RenameSubstitution
+    [ctor assoc comm id: none prec 65] .
+  eq A:RenameAssignment ; A:RenameAssignment = A:RenameAssignment .
+  eq T:Term <-| T:Term ; A:RenameAssignment = A:RenameAssignment .
+  eq T:Term <-| T:Term = none .
+
+  op rename : Set{Judgement} RenameSubstitution -> Set{Judgement} .
+  eq rename(Ψ, SUBST) = downTerm(applyRenameSubstitution(tab-module, upTerm(Ψ), SUBST), (empty).Set{Judgement}) .
+
+  op rename : TState RenameSubstitution -> TState .
+  eq rename(TS, SUBST) = downTerm(applyRenameSubstitution(tab-module, upTerm(TS), SUBST), [empty]) .
+
+  op rename : TTrans RenameSubstitution -> TTrans .
+ ceq rename(PT =[GUARD][RESET]=> TS, SUBST) = PT =[GUARD'][RESET']=> TS'
+  if TS' := downTerm(applyRenameSubstitution(tab-module, upTerm(TS), SUBST), [empty])
+  /\ GUARD' := downTerm(applyRenameSubstitution(tab-module, upTerm(GUARD), SUBST), (empty).Set{Judgement}) 
+  /\ RESET' := downTerm(applyRenameSubstitution(tab-module, upTerm(RESET), SUBST), (empty).Set{ClkReset}) .
+  --- [print "rename\n" PT "=[" GUARD "][" RESET "]=>" TS "\n\n------>\n\n" PT "=[" GUARD' "][" RESET' "]=>" TS' "\n**\n" SUBST "\n***********\n"] .
+
+  op applyRenameSubstitution : Module Term RenameSubstitution -> Term .
+  eq applyRenameSubstitution(M:Module, T:Term, S:RenameSubstitution) =
+    getTerm(metaNormalize(M:Module, $applyRenameSubstitution(T:Term, S:RenameSubstitution))) .
+
+  op $applyRenameSubstitution : NeTermList RenameSubstitution -> Term .
+  eq $applyRenameSubstitution(T:Term, (T':Term <-| T:Term ; S:RenameSubstitution)) = T':Term .
+  eq $applyRenameSubstitution(Q:Qid[TL:NeTermList], S:RenameSubstitution) =
+    Q:Qid[$applyRenameSubstitution(TL:NeTermList, S:RenameSubstitution)] .
+  eq $applyRenameSubstitution((T:Term, TL:NeTermList), S:RenameSubstitution) =
+    $applyRenameSubstitution(T:Term, S:RenameSubstitution), $applyRenameSubstitution(TL:NeTermList, S:RenameSubstitution) .
+  eq $applyRenameSubstitution(Q:Qid, S:RenameSubstitution) = Q:Qid [owise] .
+
+
+--- renaming substitution
+  op makeRenameSubst : GMap GMap -> RenameSubstitution .
+  eq makeRenameSubst((c1 -> d) ; MAP :: N, (c2 -> d) ; MAP' :: M) = upTerm(c2) <-| upTerm(c1) ; makeRenameSubst(MAP :: N, MAP' :: M) .
+  eq makeRenameSubst((B1 -> B') ; MAP :: N, (B2 -> B') ; MAP' :: M) = upTerm(B2) <-| upTerm(B1) ; makeRenameSubst(MAP :: N, MAP' :: M) .
+  eq makeRenameSubst(GMAP, GMAP') = none [owise] .
+
+
+---   op $subsumed : Set{Judgement} Set{Judgement} -> Bool .
+---   eq $subsumed(J1, J2) = true [owise] .
+---  ceq $subsumed(J1, J2) = false
+---   if UNIF := metaDisjointUnify(tab-module, upTerm(J1) =? upTerm(J2), 0, 0) 
+---   /\ UNIF == noUnifier or UNIF == noUnifierIncomplete .
+
+  sort TResult .
+  op {_,_,_} : TState Set{Judgement} Set{ClkReset} -> TResult [ctor] .
+
+  op makeTComponent : Set{Judgement} -> TResult .
+  eq makeTComponent((C, Λ . (L, X (C', Λ' . L')))) = {[(L, X (C', Λ' . L'))], C, Λ } .
+
+  op initDummy : -> TState [ctor] .
+
+  op step : DecompConf Nat -> State .
+  eq step(GE, CM) = $step({{< empty, empty >}, {empty}, {empty}, {initDummy @ GE}}, 1, CM) .
+  --- [print "start"] .
+
+  sort SrewRes .
+  --- Second bool : should we furthur check subsumption
+  --- Third bool : should we need to add it to generator
+  op {_,_,_} : DecompConf Bool Bool -> SrewRes [ctor] .
+  op failure : -> SrewRes [ctor] .
+
+  op $srewrite : DecompConf Nat -> SrewRes .
+ ceq $srewrite(GE, M) =
+     if CL == GE then {CL, true, false}
+     else 
+      if CL == wrong 
+      then {CL, false, false} 
+      else {CL, true, true} fi  
+    fi
+  if {ST, TY} := metaSrewrite(tab-module, upTerm(GE), 'applyAll[[empty]], breadthFirst, M) 
+  /\ CL := addExpandedLabels(downTerm(ST, wrong)) --- add labels that are just expanded 
+  .
+
+ ceq $srewrite(GE, M) = failure 
+  if failure == metaSrewrite(tab-module, upTerm(GE), 'applyAll[[empty]], breadthFirst, M) .
+
+  op addExpandedLabels : DecompConf -> DecompConf .
+  eq addExpandedLabels(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: M >)
+   = < C, Λ . (L, GOALS, X (C', Λ' . L')) :: INV :: empty :: M > .
+  eq addExpandedLabels(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: N, M >)
+   = < C, Λ . (L, GOALS, X (C', Λ' . L')) :: INV :: empty :: N, M > .
+  eq addExpandedLabels(DC) = DC [owise] .
+
+  vars CT CM : Nat .
+  var TAB : Tableau .
+  vars TRS TRS' : Set{TTrans} .
+  vars GUARD GUARD' : Set{Judgement} .
+  vars RESET RESET' : Set{ClkReset} .
+  var FRONS : List{Frontier} .
+  var PT : TState .
+  var SUBS-RES : Bool .
+
+  op $step : State Nat Nat -> State .
+  op $step : State Nat -> State .
+--- Second argument : List of DecompConf.
+--- Third argument : generator
+ ceq $step({{< SS, TRS >}, {PAT-MAP}, {INV-MAP}, {FRONS}, {PT @ GE}, N}, CT, CM) = 
+  if B == false
+    then $step({{< SS, TRS >}, {PAT-MAP}, {INV-MAP}, {FRONS}, {PT @ GE}, N + 1}, CT, CM)
+  else
+    $step($nextState({{< SS, TRS >}, {PAT-MAP}, {INV-MAP}, {FRONS}, {PT @ GE}, N}, ML, B'), CT, CM)
+  fi
+  if {ML, B, B'} := $srewrite(GE, N)
+  /\ LEN := size(FRONS) .
+  --- [print "step (" LEN ") " B " and " B'] .
+  --- [print "step (" LEN ")\n" "Old-CL\n" ML "\nCL\n" CL "\nGE" GE "\nDC : " B " and " B' "\n"] .
+
+  op $nextState : State DecompConf Bool -> State .
+ ceq $nextState({{< SS, TRS >}, {PAT-MAP}, {INV-MAP}, {FRONS}, {PT @ GE}, N}, ML, B) =
+  if SUBS-RES == true
+    --- should rename guard and reset because these are subsumed not equal.
+    then {{< SS, (TRS, rename(PT =[GUARD][RESET]=> TS, SUBST)) >}, {PAT-MAP'}, {insert(rename(TS, SUBST), rename(INV, SUBST), INV-MAP)}, {FRONS}, {PT @ GE}, N + 1}
+  else 
+    if B == false --- Add generator or not
+      then {{< (SS, TS), (TRS, PT =[GUARD][RESET]=> TS) >}, {PAT-MAP'}, {insert(TS, INV, INV-MAP)}, {FRONS}, {PT @ GE}, N + 1}
+      else 
+        {{< (SS, TS), (TRS, PT =[GUARD][RESET]=> TS) >}, {PAT-MAP'}, {insert(TS, INV, INV-MAP)}, {FRONS (TS @ mkNextGenerator(CL))}, {PT @ GE}, N + 1}
+      fi
+  fi
+  if CL := reduceNext(ML)
+  /\ {TS, GUARD, RESET} := makeTComponent(getJudgement(CL))
+  /\ INV := getInvariant(CL)
+  /\ {SUBS-RES, SUBST, PAT-MAP'} := subsumeCheck(PAT-MAP, TS, B) .
+  --- [print PT "\n==[" GUARD "][" RESET "]==>\n" TS "\n**********"] .
+  --- [print "\nOld-CL\n" ML "\nCL\n" CL "\nGE" GE "\n**********"] .
+  --- .
+
+
+ ceq $step({{TAB}, {PAT-MAP}, {INV-MAP}, {FRONS}, {PT @ GE}, N}, CT, CM) = $step({{TAB}, {PAT-MAP}, {INV-MAP}, {FRONS}}, CT, CM)
+  if failure == $srewrite(GE, N) . 
+  --- [print "step done\n" GE] .
+
+  eq $step({{< SS, TRS >}, {PAT-MAP}, {INV-MAP}, {(PT @ GE) FRONS}}, CT, CM) = 
+    --- if CT > CM then {{< SS, TRS >}}
+    --- else
+      $step({{< SS, TRS >}, {PAT-MAP}, {INV-MAP}, {FRONS}, {PT @ GE}, 0}, CT + 1, CM)
+    --- fi 
+    .
+
+  eq $step({{TAB}, {PAT-MAP}, {INV-MAP}, {nil}}, CT, CM) = {{TAB},{INV-MAP}} .
+
+  vars TS1 TS2 TS1' TS2' : TState .
+  vars TRS1 TRS2 TRS2' : Set{TTrans} .
+  vars NTRS : NeSet{TTrans} .
+  var TT : TTrans .
+  var TAB' : Tableau .
+
+--- Auxiliary functions for the 'simplify' function
+
+  op addSelfLoop : Tableau Map{TState,Set{Judgement}} -> Tableau .
+  eq addSelfLoop(< SS, TRS >, INV-MAP)
+   = < SS, (TRS, $makeSelfLoop(SS, TRS, INV-MAP)) > .
+
+  op $makeSelfLoop : Set{TState} Set{TTrans} Map{TState,Set{Judgement}} -> Set{TTrans} .
+  eq $makeSelfLoop((TS, SS), TRS, INV-MAP) = 
+    if isFinalState(TS, TRS) == true or TS == initDummy
+    then $makeSelfLoop(SS, TRS, INV-MAP)
+    else
+      TS =[INV-MAP[TS]][empty]=> TS,
+      $makeSelfLoop(SS, TRS, INV-MAP)
+    fi .
+  eq $makeSelfLoop(empty, TRS, INV-MAP) = empty .
+
+--- This is the old version.
+---( 
+  op simplify : Tableau -> Tableau .
+ ceq simplify(< (SS, [L, X Ψ], [L, X Ψ']), TRS >) 
+   = simplify(< (SS, [L, X Ψ]), TRS' >)
+  if isSameType(X Ψ, X Ψ')                               --- both states must be of same type
+  /\ outgoing([L, X Ψ], TRS) == outgoing([L, X Ψ'], TRS) --- target states are the same
+  /\ incoming([L, X Ψ], TRS) == incoming([L, X Ψ'], TRS) --- source states are the same
+  /\ TRS' := updateTRIn([L, X Ψ], [L, X Ψ'], updateTROut([L, X Ψ], [L, X Ψ'], TRS)) .
+  eq simplify(TAB) = TAB [owise] .
+
+  op simplify : Tableau -> Tableau .
+ ceq simplify(TAB) = simplify(TAB')
+  if TAB' := simplifyPostfix(simplifyPrefix(TAB))
+  /\ not (TAB' == TAB) .
+  eq simplify(TAB) = TAB [owise] .
+
+--- postfix equivalence
+
+  op simplifyPostfix : Tableau -> Tableau .
+ ceq simplifyPostfix(< (SS, [L, X Ψ], [L, X Ψ']), TRS >) 
+   = simplifyPostfix(< (SS, [L, X Ψ]), TRS' >)
+  if isSameType(X Ψ, X Ψ')                               --- both states must be of same type
+  /\ outgoing([L, X Ψ], TRS) == outgoing([L, X Ψ'], TRS) --- target states are the same
+  /\ TRS' := updateTRIn([L, X Ψ], [L, X Ψ'], updateTROut([L, X Ψ], [L, X Ψ'], TRS)) .
+  eq simplifyPostfix(TAB) = TAB [owise] .
+
+--- prefix equivalence
+  op simplifyPrefix : Tableau -> Tableau .
+ ceq simplifyPrefix(< (SS, [L, X Ψ], [L, X Ψ']), TRS >) 
+   = simplifyPrefix(< (SS, [L, X Ψ]), TRS' >)
+  if isSameType(X Ψ, X Ψ')                               --- both states must be of same type
+  /\ incoming([L, X Ψ], TRS) == incoming([L, X Ψ'], TRS) --- source states are the same
+  /\ getState(outgoing([L, X Ψ], TRS)) == getState(outgoing([L, X Ψ'], TRS))
+  /\ TRS' := updateTRIn([L, X Ψ], [L, X Ψ'], updateTROut([L, X Ψ], [L, X Ψ'], TRS)) .
+  eq simplifyPrefix(TAB) = TAB [owise] .
+
+
+  op outgoing : TState Set{TTrans} -> Set{StInfo} .
+  eq outgoing(TS, (TS =[GUARD][RESET]=> TS', TRS)) = {[GUARD][RESET]< TS' >}, outgoing(TS, TRS) .
+  eq outgoing(TS, TRS) = empty [owise] .
+
+  op incoming : TState Set{TTrans} -> Set{StInfo} .
+  eq incoming(TS, (TS' =[GUARD][RESET]=> TS, TRS)) = {[GUARD][RESET]< TS' >}, incoming(TS, TRS) .
+  eq incoming(TS, TRS) = empty [owise] .
+
+  var SINFO : Set{StInfo} .
+
+  op getState : Set{StInfo} -> Set{TState} .
+  eq getState(({[GUARD][RESET]< TS >}, SINFO)) = TS, getState(SINFO) .
+  eq getState(empty) = empty .
+---)
+
+--- auxiliary functions for checking state type
+  op isSameType : Set{Judgement} Set{Judgement} -> Bool .
+  eq isSameType(Ψ, Ψ') = isFinal(Ψ) == isFinal(Ψ') . 
+
+  op isFinal : Set{Judgement} -> Bool .
+  eq isFinal(X empty . empty) = true .
+  eq isFinal(Ψ) = false [owise] .
+
+--- move transitions
+
+  op updateTROut : TState TState Set{TTrans} -> Set{TTrans} .
+  eq updateTROut(TS1, TS2, (TRS, TS2 =[GUARD][RESET]=> TS')) 
+   = TS1 =[GUARD][RESET]=> TS', updateTROut(TS1, TS2, TRS) .
+  eq updateTROut(TS1, TS2, TRS) = TRS [owise] .
+
+  op updateTRIn : TState TState Set{TTrans} -> Set{TTrans} .
+  eq updateTRIn(TS1, TS2, (TRS, TS' =[GUARD][RESET]=> TS2)) 
+   = TS' =[GUARD][RESET]=> TS1, updateTRIn(TS1, TS2, TRS) .
+  eq updateTRIn(TS1, TS2, TRS) = TRS [owise] .
+
+  op isFinalState : TState Set{TTrans} -> Bool .
+  eq isFinalState(TS, (TS =[GUARD][RESET]=> TS', TRS)) = false .
+  eq isFinalState(TS, TRS) = true [owise] .
+
+  op getStateLabel : TState -> Set{Judgement} .
+  eq getStateLabel([L, X Ψ]) = filterProp(L) .
+  eq getStateLabel(TS) = empty [owise] .
+
+  op filterProp : Set{Judgement} -> Set{Judgement} .
+ ceq filterProp([f]) = empty if not f :: Prop . 
+  eq filterProp((Φ, Φ')) = filterProp(Φ), filterProp(Φ') .
+  eq filterProp(Ψ) = Ψ [owise] .
+
+--- quotient algorithm
+
+  sort DFlag .
+  ops FWD BWD : -> DFlag [ctor] .
+  var DFLAG : DFlag .
+
+--- make simulation relation
+  op makeSimRel : Tableau DFlag -> Set{StatePair} .
+ ceq makeSimRel(< SS, TRS >, DFLAG) = SSP'
+  if SSP  := $makeInitStatePairs(SS)
+  /\ SSP' := $makeSimRel(SSP, TRS, DFLAG) .
+
+  op $makeSimRel : Set{StatePair} Set{TTrans} DFlag -> Set{StatePair} .
+ ceq $makeSimRel(SSP, TRS, DFLAG) = $makeSimRel(SSP', TRS, DFLAG)
+  if SSP' := $refine(SSP, TRS, DFLAG)
+  /\ not (SSP' == SSP) . 
+
+  eq $makeSimRel(SSP, TRS, DFLAG) = SSP [owise] .
+
+
+--- # initialize potential relation R
+--- R := {(p, q) ∈ Q×Q | label(p) = label(q)} # if no labels, R := Q×Q
+
+  op $makeInitStatePairs : Set{TState} -> Set{StatePair} .
+  eq $makeInitStatePairs(SS) = $makeInitStatePairs(SS, SS) .
+
+  op $makeInitStatePairs : Set{TState} Set{TState} -> Set{StatePair} .
+  eq $makeInitStatePairs((TS, SS), SS') = $concat(TS, SS'), $makeInitStatePairs(SS, SS') .
+  eq $makeInitStatePairs(empty, SS') = empty .
+
+  op $concat : TState Set{TState} -> Set{StatePair} .
+  eq $concat(TS, (TS', SS')) = 
+    if isSameType(TS, TS') == true
+    then {TS, TS'}, $concat(TS, SS') 
+    else $concat(TS, SS') fi .
+  eq $concat(TS, empty) = empty .
+
+--- 
+
+  op $refine : Set{StatePair} Set{TTrans} DFlag -> Set{StatePair} .
+  eq $refine(SSP, TRS, DFLAG) = $refine(SSP, SSP, TRS, DFLAG) .
+
+  op $refine : Set{StatePair} Set{StatePair} Set{TTrans} DFlag -> Set{StatePair} .
+ ceq $refine(({TS1, TS2}, SSP'), SSP, TRS, DFLAG) =
+    if $simCheck(TRS1, TRS2, SSP, DFLAG) == false
+    then SSP'
+    else {TS1, TS2}, $refine(SSP', SSP, TRS, DFLAG) fi
+  if TRS1 := preORpost(TS1, TRS, DFLAG)
+  /\ TRS2 := preORpost(TS2, TRS, DFLAG) .
+  eq $refine(empty, SSP, TRS, DFLAG) = empty .
+
+  op $simCheck : Set{TTrans} Set{TTrans} Set{StatePair} DFlag -> Bool .
+  eq $simCheck(empty, NTRS, SSP, DFLAG) = false .
+  eq $simCheck(NTRS, empty, SSP, DFLAG) = false .
+  eq $simCheck(TRS, TRS, SSP, DFLAG) = true .
+  eq $simCheck(TRS1, TRS2, SSP, DFLAG) = $simCheckAux(TRS1, TRS2, SSP, DFLAG) [owise] .
+
+  op $simCheckAux : Set{TTrans} Set{TTrans} Set{StatePair} DFlag -> Bool .
+  eq $simCheckAux((TT, TRS1), TRS2, SSP, DFLAG) = 
+    if $check(TT, TRS2, SSP, DFLAG) == true
+    then $simCheckAux(TRS1, TRS2, SSP, DFLAG) --- continue checking
+    else 
+      false --- if any failed, the simulation failed
+    fi .
+
+  eq $simCheckAux(empty, TRS2, SSP, DFLAG) = true .
+  
+  op $check : TTrans Set{TTrans} Set{StatePair} DFlag -> Bool .
+  eq $check(TT, TRS, SSP, FWD) = $checkPost(TT, TRS, SSP) .
+  eq $check(TT, TRS, SSP, BWD) = $checkPre(TT, TRS, SSP) .
+
+  op $checkPre : TTrans Set{TTrans} Set{StatePair} -> Bool .
+  eq $checkPre(TS1 =[GUARD][RESET]=> TS1', 
+              (TS2 =[GUARD][RESET]=> TS2', TRS2), ({TS1, TS2}, SSP)) = true .
+  eq $checkPre(TT, TRS2, SSP) = false [owise] .
+
+  op $checkPost : TTrans Set{TTrans} Set{StatePair} -> Bool .
+  eq $checkPost(TS1 =[GUARD][RESET]=> TS1', 
+               (TS2 =[GUARD][RESET]=> TS2', TRS2), ({TS1', TS2'}, SSP)) = true .
+  eq $checkPost(TT, TRS2, SSP) = false [owise] .
+
+  op preORpost : TState Set{TTrans} DFlag -> Set{TTrans} .
+  eq preORpost(TS, TRS, FWD) = post(TS, TRS) .
+  eq preORpost(TS, TRS, BWD) = pre(TS, TRS) .
+
+  op post : TState Set{TTrans} -> Set{TTrans} .
+  eq post(TS, (TS =[GUARD][RESET]=> TS', TRS)) = TS =[GUARD][RESET]=> TS', post(TS, TRS) .
+  eq post(TS, TRS) = empty [owise] .
+
+  op pre : TState Set{TTrans} -> Set{TTrans} .
+  eq pre(TS, (TS' =[GUARD][RESET]=> TS, TRS)) = TS' =[GUARD][RESET]=> TS, pre(TS, TRS) .
+  eq pre(TS, TRS) = empty [owise] .
+
+--- make simulation equivalent relation
+--- sim_equiv := { (p, q) | (p, q) ∈ Sim AND (q, p) ∈ Sim }
+  op makeSimEquivRel : Set{StatePair} -> Set{StatePair} .
+  eq makeSimEquivRel(({TS1, TS2}, {TS2, TS1}, SSP)) = {TS1, TS2}, {TS2, TS1}, makeSimEquivRel(SSP) .
+  eq makeSimEquivRel(SSP) = SSP [owise] .
+  eq makeSimEquivRel(empty) = empty .
+
+  op simplify : Tableau -> Tableau .
+  eq simplify(TAB) = rmRedundantEdge($simplify(TAB)) .
+
+  op $simplify : Tableau -> Tableau .
+ ceq $simplify(TAB) = $simplify(TAB')
+  if TAB' := reduceGraph(reduceGraph(TAB, FWD), BWD)
+  /\ not (TAB == TAB') .
+  eq $simplify(TAB) = TAB [owise] .
+
+  op reduceGraph : Tableau DFlag -> Tableau .
+ ceq reduceGraph(TAB, DFLAG) = $reduceGraph(TAB, SSP)
+  if SSP := makeSimEquivRel(makeSimRel(TAB, DFLAG)) .
+
+  op $reduceGraph : Tableau Set{StatePair} -> Tableau .
+ ceq $reduceGraph(< (TS1, TS2, SS), TRS >, ({TS1, TS2}, SSP))
+   = $reduceGraph(< (TS1, SS), TRS' >, SSP)  
+  if TRS' := updateTRIn(TS1, TS2, updateTROut(TS1, TS2, TRS)) .
+
+  eq $reduceGraph(TAB, SSP) = TAB [owise] .
+
+  op isSameType : TState TState -> Bool .
+  eq isSameType([L, X Ψ], [L', X Ψ']) 
+   = filterProp(L) == filterProp(L') and isSameType(Ψ, Ψ') .
+  eq isSameType(initDummy, initDummy) = true .
+  eq isSameType(TS1, TS2) = false [owise] .
+
+  op isLabelEqual : TState TState -> Bool .
+  eq isLabelEqual(TS1, TS2) = getRealLabels(TS1) == getRealLabels(TS2) .
+
+  op getRealLabels : TState -> TState .
+  eq getRealLabels([L, X Ψ]) = [filterProp(L)] .
+  eq getRealLabels(TS) = TS [owise] .
+
+--- --- for printing purpose
+  op enumerate : Tableau -> Nat .
+ ceq enumerate(< SS, TRS >) = N
+  if N := enumST(SS) /\ M := enumTR(TRS) [print "Vertex: " N ", Edge: " M] .
+
+  vars SSP SSP' : Set{StatePair} .
+
+  op enumSSP : Set{StatePair} -> Nat .
+  eq enumSSP(({TS, TS'}, SSP)) = 1 + enumSSP(SSP) [print "{" TS " , " TS' "}"] .
+  eq enumSSP(empty) = 0 .
+
+  var TR : TTrans .
+
+  op enumTR : Set{TTrans} -> Nat .
+  eq enumTR((TRS, TR)) = 1 + enumTR(TRS) .
+  eq enumTR(empty) = 0 . 
+
+  op enumST : Set{TState} -> Nat .
+  eq enumST((TS, SS)) = 1 + enumST(SS) .
+  eq enumST(empty) = 0 .
+
+  op getTableau : State -> Tableau .
+  eq getTableau({{< SS, TRS >},{INV-MAP}}) = < (SS, initDummy), TRS > .
+
+  sorts EClock EClockVar EClockVal EClockJudgement . --- sort of evaluated clock judgement
+  subsort EClockVar EClockVal < EClock .
+
+  var EJ : EClockJudgement .
+  vars EC EC' : EClock .
+  var CS CS' : Set{Clock} .
+  vars CR CR' : Set{ClkReset} .
+  vars FL FR : String .
+
+  op _<=[_]_ : EClock Bool EClock -> EClockJudgement [ctor] .
+  op _>=[_]_ : EClock Bool EClock -> EClockJudgement [ctor] .
+  op _<=_ : EClock EClock -> EClockJudgement [ctor] .
+  op _>=_ : EClock EClock -> EClockJudgement [ctor] .
+
+  op [_] : Clock -> EClock .
+  op [_] : Number -> EClock .
+
+  op _[_] : Set{ClkReset} EClock -> EClock .
+  eq (c := NB, CR)[[c]] = [NB] .
+  eq (CR)[EC] = EC [owise] .
+  
+  op _[_] : Set{ClkReset} EClockJudgement -> EClockJudgement .
+
+  eq (CR)[EC <=[B] EC'] = CR[EC] <=[B] CR[EC'] .
+  eq (CR)[EC >=[B] EC'] = CR[EC] >=[B] CR[EC'] .
+  eq (CR)[EC <= EC'] = CR[EC] <= CR[EC'] .
+  eq (CR)[EC >= EC'] = CR[EC] >= CR[EC'] .
+
+  op eval : EClockJudgement -> Bool .
+  eq eval([Num(FL)] <=[true] [Num(FR)]) = float(FL) <= float(FR) . 
+  eq eval([Num(FL)] <=[false] [Num(FR)]) = float(FL) < float(FR) . 
+  eq eval([Num(FL)] >=[true] [Num(FR)]) = float(FL) >= float(FR) . 
+  eq eval([Num(FL)] >=[false] [Num(FR)]) = float(FL) > float(FR) . 
+  eq eval([c] >=[B] [Num("0.0")]) = true .
+  eq eval([Num("0.0")] <=[B] [c]) = true . 
+  eq eval([Num(FL)] <= [Num(FR)]) = float(FL) <= float(FR) .
+  eq eval([Num(FL)] >= [Num(FR)]) = float(FL) >= float(FR) .
+  eq eval([c] >= [Num("0.0")]) = true .
+  eq eval([Num("0.0")] <= [c]) = true . 
+  eq eval(EJ) = false [owise] . --- we don't know otherwise
+  --- eq eval([c <=[B] Num(M)]) = N < M [owise] . 
+  --- eq eval([c >=[B] Num(M)]) = N > M [owise] . 
+
+  --- op evalClockJudge : ClockJudgement ClkReset -> Bool .
+  --- eq evalClockJudge(c <=[true] Num(M), c := Num(N)) = N <= M . 
+  --- eq evalClockJudge(c <=[false] Num(M), c := Num(N)) = N < M . 
+  --- eq evalClockJudge(c >=[true] Num(M), c := Num(N)) = N >= M . 
+  --- eq evalClockJudge(c >=[false] Num(M), c := Num(N)) = N > M . 
+  --- eq evalClockJudge(c <=[B] Num(M), c := Num(N)) = N < M [owise] . 
+  --- eq evalClockJudge(c >=[B] Num(M), c := Num(N)) = N > M [owise] . 
+
+  vars BI BI' : Bool .
+  vars c' d' : Clock .
+  var C'' : Set{Judgement} .
+  var f' : Formula .
+  var I' : Interval .
+
+  op _⊑[_]_ : IntvPred Set{ClkReset} IntvPred -> Bool .
+  eq (B,c)-(d,B')[] I f ⊑[Λ] (BI,c')-(d',BI')[] I f
+   = eval(Λ[[c] <=[(not B) or BI] [c']]) and eval(Λ[[d'] <=[(not B') or BI'] [d]]) .
+  eq (c)-(d)[] I f ⊑[Λ] (c')-(d')[] I f
+   = eval(Λ[[c] <= [c']]) and eval(Λ[[d'] <= [d]]) .
+  eq (c)-(d)[] I f ⊑[Λ] (c')-(d')[] I' f' = false [owise] .
+  eq (c)-(d)<> I f ⊑[Λ] (c')-(d')<> I f
+   = eval(Λ[[c] <= [c']]) and eval(Λ[[d'] <= [d]]) .
+  eq (c)-(d)<> I f ⊑[Λ] (c')-(d')<> I' f' = false [owise] .
+
+  op $reduce : Set{ClkReset} Set{Judgement} CIntvPred -> Set{Judgement} .
+ ceq $reduce(Λ, ((B,c)-(d,B')[] I f, Ψ), (BI,c')-(d',BI')[] I f) = (B,c)-(d,B')[] I f, Ψ
+  if (BI,c')-(d',BI')[] I f ⊑[Λ] (B,c)-(d,B')[] I f == true .
+ ceq $reduce(Λ, ((c)-(d)[] I f, Ψ), (c')-(d')[] I f) = (c)-(d)[] I f, Ψ
+  if (c')-(d')[] I f ⊑[Λ] (c)-(d)[] I f == true .
+ ceq $reduce(Λ, ((c)-(d)<> I f, Ψ), (c')-(d')<> I f) = (c)-(d)<> I f, Ψ
+  if (c')-(d')<> I f ⊑[Λ] (c)-(d)<> I f == true .
+  
+ ceq $reduce(Λ, ((B,c)-(d,B')[] I f, Ψ), (BI,c')-(d',BI')[] I f) = (BI,c')-(d',BI')[] I f, Ψ
+  if (B,c)-(d,B')[] I f ⊑[Λ] (BI,c')-(d',BI')[] I f == true .
+ ceq $reduce(Λ, ((c)-(d)[] I f, Ψ), (c')-(d')[] I f) = (c')-(d')[] I f, Ψ
+  if (c)-(d)[] I f ⊑[Λ] (c')-(d')[] I f == true .
+ ceq $reduce(Λ, ((c)-(d)<> I f, Ψ), (c')-(d')<> I f) = (c')-(d')<> I f, Ψ
+  if (c)-(d)<> I f ⊑[Λ] (c')-(d')<> I f == true .
+  
+  eq $reduce(Λ, (Φ, Ψ), CP) = Φ, $reduce(Λ, Ψ, CP) [owise] .
+  eq $reduce(Λ, empty, CP) = empty .
+
+  op reduceNext : DecompConf -> DecompConf .
+ ceq reduceNext(< C, Λ . (L, X (C', Λ' . (L', (B,c)-(d,B')[] I f, (BI,c')-(d',BI')[] I f))) :: INV :: GOALS :: N, M >) 
+   = reduceNext(< C1, CR . (L, X (C2, CR' . Ψ')) :: INV :: GOALS :: N, M >)
+  if Ψ' := $reduce(Λ', (L', (B,c)-(d,B')[] I f), (BI,c')-(d',BI')[] I f) 
+  /\ CR' := rmRedundantCR(Ψ', Λ') /\ C2 := rmRedundantCC(C', fv(Ψ'))
+  /\ CR := rmRedundantCR((L, X (C2, CR' . Ψ')), Λ) 
+  /\ C1 := rmRedundantCC(C, fv((L, X (C2, CR' . Ψ')))) .
+
+ ceq reduceNext(< C, Λ . (L, X (C', Λ' . (L', (c)-(d)[] I f, (c')-(d')[] I f))) :: INV :: GOALS :: M >) 
+   = reduceNext(< C1, CR . (L, X (C2, CR' . Ψ')) :: INV :: GOALS :: M >)
+  if Ψ' := $reduce(Λ', (L', (c)-(d)[] I f), (c')-(d')[] I f) 
+  /\ CR' := rmRedundantCR(Ψ', Λ') /\ C2 := rmRedundantCC(C', fv(Ψ'))
+  /\ CR := rmRedundantCR((L, X (C2, CR' . Ψ')), Λ) 
+  /\ C1 := rmRedundantCC(C, fv((L, X (C2, CR' . Ψ')))) .
+
+ ceq reduceNext(< C, Λ . (L, X (C', Λ' . (L', (c)-(d)<> I f, (c')-(d')<> I f))) :: INV :: GOALS :: M >) 
+   = reduceNext(< C1, CR . (L, X (C2, CR' . Ψ')) :: INV :: GOALS :: M >)
+  if Ψ' := $reduce(Λ', (L', (c)-(d)<> I f), (c')-(d')<> I f) 
+  /\ CR' := rmRedundantCR(Ψ', Λ') /\ C2 := rmRedundantCC(C', fv(Ψ'))
+  /\ CR := rmRedundantCR((L, X (C2, CR' . Ψ')), Λ) 
+  /\ C1 := rmRedundantCC(C, fv((L, X (C2, CR' . Ψ')))) .
+
+  eq reduceNext(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: N, M >) = < C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: N, M > [owise] .
+  eq reduceNext(< C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: M >) = < C, Λ . (L, X (C', Λ' . L')) :: INV :: GOALS :: M > [owise] .
+
+--- remove free variables
+
+  op rmRedundantCR : Set{Judgement} Set{ClkReset} -> Set{ClkReset} .
+ ceq rmRedundantCR(Ψ, Λ) = rmClockCR(CS \ CS', Λ) 
+  if CS := clkVars(Λ) /\ CS' := fv(Ψ) .
+
+  op rmRedundantCC : Set{Judgement} Set{Clock} -> Set{Judgement} .
+  eq rmRedundantCC(Ψ, CS) = rmClockCC(fv(Ψ) \ CS, Ψ) .
+
+  op rmClockCC : Set{Clock} Set{Judgement} -> Set{Judgement} .
+  eq rmClockCC((c, CS), (c >=[B] NB, Ψ)) = rmClockCC((c, CS), Ψ) .
+  eq rmClockCC((c, CS), (c <=[B] NB, Ψ)) = rmClockCC((c, CS), Ψ) .
+  eq rmClockCC((c, CS), (c >= NB, Ψ)) = rmClockCC((c, CS), Ψ) .
+  eq rmClockCC((c, CS), (c <= NB, Ψ)) = rmClockCC((c, CS), Ψ) .
+  eq rmClockCC(CS, (Φ, Ψ)) = Φ, rmClockCC(CS, Ψ) [owise] .
+  eq rmClockCC(CS, empty) = empty .
+
+  op rmClockCR : Set{Clock} Set{ClkReset} -> Set{ClkReset} .
+  eq rmClockCR((c, CS), (c := NB, CR)) = rmClockCR((c, CS), CR) .
+  eq rmClockCR(CS, (c := NB, CR)) = c := NB, rmClockCR(CS, CR) [owise] .
+  eq rmClockCR(CS, empty) = empty .
+  
+--- for removing redundant edges in Tableau after generation
+
+  op rmRedundantEdge : Tableau -> Tableau .
+  eq rmRedundantEdge(< SS, TRS >)
+   = < SS, $rmSelfLoop($rmInfeasible(SS \ (initDummy), TRS)) > .
+
+  vars TRS-PRE TRS-POST : Set{TTrans} .
+  vars GUARD1 GUARD2 : Set{Judgement} .
+  vars RESET1 RESET2 : Set{ClkReset} .
+--- 
+  op $rmInfeasible : Set{TState} Set{TTrans} -> Set{TTrans} .
+ ceq $rmInfeasible((SS, TS), TRS)
+   = $rmInfeasible(SS, TRS')
+  if TRS-PRE := pre(TS, TRS) /\ TRS-POST := post(TS, TRS) 
+  /\ TRS' := $rmInfeasibleIncoming(TRS, TRS-PRE, TRS-POST) .
+  eq $rmInfeasible(empty, TRS) = TRS .
+
+  op $rmInfeasibleIncoming : Set{TTrans} Set{TTrans} Set{TTrans} -> Set{TTrans} .
+ ceq $rmInfeasibleIncoming(TRS, TRS-PRE, TRS-POST) = TRS \ TRS'
+  if $checkOutgoing(TRS-POST) == true 
+  /\ TRS' := $getInfeasibleIncoming(TRS-PRE, TRS-POST) .
+  eq $rmInfeasibleIncoming(TRS, TRS-PRE, TRS-POST) = TRS [owise] .
+
+--- check possible infeasible target outgoing
+--- currently, we target the state where its outgoings all contain c <= NB.
+  op $checkOutgoing : Set{TTrans} -> Bool .
+  eq $checkOutgoing((TS1 =[GUARD, c <= NB][RESET]=> TS2, TRS))
+   = $checkOutgoing(TRS) .
+  eq $checkOutgoing(empty) = true .
+  eq $checkOutgoing(TRS) = false [owise] .
+
+  op $getInfeasibleIncoming : Set{TTrans} Set{TTrans} -> Set{TTrans} .
+  eq $getInfeasibleIncoming((TS1 =[GUARD1, c >= NB][RESET1]=> TS, TRS-PRE), (TS =[GUARD2, c <= NB][RESET2]=> TS2, TRS-POST)) 
+  = TS1 =[GUARD1, c >= NB][RESET1]=> TS, $getInfeasibleIncoming(TRS-PRE, (TS =[GUARD2, c <= NB][RESET2]=> TS2, TRS-POST)) .
+  eq $getInfeasibleIncoming((TS1 =[GUARD1][RESET1, c := NB]=> TS, TRS-PRE), (TS =[GUARD2, c <= NB][RESET2]=> TS2, TRS-POST)) 
+  = TS1 =[GUARD1][RESET1, c := NB]=> TS, $getInfeasibleIncoming(TRS-PRE, (TS =[GUARD2, c <= NB][RESET2]=> TS2, TRS-POST)) .
+  eq $getInfeasibleIncoming(TRS-PRE, TRS-POST) = empty [owise] .
+
+
+--- this is redundant because we can self jump can be captured
+--- without jump by our construction
+  op $rmSelfLoop : Set{TTrans} -> Set{TTrans} .
+  eq $rmSelfLoop((TS =[GUARD][RESET]=> TS, TRS)) 
+   = $rmSelfLoop(TRS) .
+  eq $rmSelfLoop(TRS) = TRS [owise] .
+
+endsm
+
+smod TABLEAU-GEN-TEST is
+  pr NAT .
+  pr TABLEAU-GEN .
+
+---   ops a b c : -> Prop [ctor] .
+  ops I1 I2 : -> Number [ctor] .
+  
+  var f : Formula .
+  vars c d : Clock .
+  var B : Bool .
+  var RES : DecompConf .
+  vars TAB TAB' : Tableau .
+  var SS : Set{TState} .
+  var TRS : Set{TTrans} .
+  var INV-MAP : Map{TState,Set{Judgement}} .
+
+  op INTV : -> Interval .
+  eq INTV = | true, I1, I2, false | .
+
+  op intv : Nat -> Interval .
+  eq intv(0) = | true, Num("1.0"), Num("2.0"), true | .
+  eq intv(1) = | true, Num("2.0"), infty, true | .
+---   
+  op testF : Nat -> Formula .
+  ops f1 f2 f3 f5 f73 f73-sub1 f73-sub2 f73-sub3 f226 f226-sub1 f226-sub2 : -> Formula .
+  eq f73-sub1 = <> intv(0) [] | true, Num("0.0"), Num("2.0"), true | p(1) .
+  eq f73-sub2 = <> intv(0) [] | true, Num("0.0"), infty, true | p(2) .
+  eq f73-sub3 = [] | true, Num("0.0"), Num("2.0"), true | p(1) .
+  eq f73 = f73-sub1 /\ ([] | true, Num("0.0"), Num("1.0"), true | (f73-sub2 U f73-sub3)) .
+  eq f226 = f226-sub1 /\ f226-sub2 .
+  eq f226-sub1 = [] | true, Num("0.0"), infty, true | (([] | true, Num("2.0"), Num("10.0"), true | p(1)) \/ (<> | true, Num("0.0"), Num("2.0"), true | (p(2) R p(1)))) .
+  eq f226-sub2 = (<> | true, Num("3.0"), Num("5.0"), true | p(3)) R p(4) .
+  eq f5 = <> intv(0) (p(1) /\ ([] intv(0) p(2))) .
+  --- <> | true, Num(0), infty, true | (p(1) /\ ([] | true, Num(1), Num(6), true | p(2))) .
+  eq testF(0) = (<> intv(0) p(1)) /\ ([] | true, Num("0.0"), Num("2.0"), true | p(2)) .
+  eq testF(1) = (<> intv(0) (p(1) U p(2))) .
+  eq testF(2) = [] intv(0) ([] intv(0) p(1)) .
+  eq testF(3) = <> intv(0) p(1) .
+  eq testF(4) = <> intv(0) (p(1) \/ p(2)) .
+  eq testF(5) = <> intv(0) (<> intv(0) p(2)) .
+  eq testF(6) = [] intv(0) p(1) .
+  eq testF(7) = p(1) U p(2) .
+  eq testF(8) = (<> intv(1) p(1)) /\ (<> intv(1) p(2)) 
+            /\ (<> intv(1) p(3)) /\ (<> intv(1) p(4)) 
+            /\ (<> intv(1) p(5)) .
+  eq testF(9) = (<> intv(1) p(1)) /\ (<> intv(1) p(2)) 
+            /\ (<> intv(1) p(3)) .
+  eq testF(10) = ([] intv(1) p(1)) /\ ([] intv(1) p(2)) 
+            /\ ([] intv(1) p(3)) .
+  eq testF(11) = ([] intv(1) p(1)) /\ ([] intv(1) p(1)) 
+            /\ ([] intv(1) p(1)) .
+  eq testF(12) = [] intv(0) ([] intv(0) ([] intv(0) p(1))) .
+
+  op gen : Formula -> Tableau .
+  eq gen(f) = getTableau(step(makeGen-simp(f), 5)) .
+
+--- Helper for inspecting simplified tableaux with a dummy initial state.
+  op gen2 : Formula -> Tableau .
+ ceq gen2(f) = < (SS, initDummy), TRS >
+  if {{TAB},{INV-MAP}} := step(makeGen-simp(f), 5) 
+  /\ < SS, TRS > := $simplify(addSelfLoop(TAB, INV-MAP)) .
+endsm
+
+set print format off .
+set print attribute on .
+
+eof
+
+
+--- Vertex: 129, Edge: 3907
+--- rewrites: 75738338 in 130408ms cpu (130410ms real) (580779 rewrites/second)
+--- latest 97560ms
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(10)), 5)))) .
+
+--- step (0) true and false
+--- Vertex: 21, Edge: 3910
+--- rewrites: 306935566 in 402400ms cpu (402632ms real) (762762 rewrites/second)
+--- result NzNat: 21
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(12)), 5)))) .
+
+--- red enumerate((getTableau(step(makeGen-simp(testF(6)), 10)))) .
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(6)), 10)))) .
+
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(2)), 10)))) .
+--- red enumerate((getTableau(step(makeGen-simp(testF(10)), 10)))) .
+
+
+--- Vertex: 128, Edge: 2535
+--- rewrites: 37440500 in 51824ms cpu (51827ms real) (722454 rewrites/second)
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(9)), 10)))) .
+
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(8)), 10)))) .
+
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(f73), 3)))) .
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(f226), 10)))) .
+
+--- red enumerate((getTableau(step(makeGen-simp(f226), 10)))) .
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(5)), 10)))) .
+--- Vertex: 55, Edge: 12534
+--- rewrites: 659045713 in 1780528ms cpu (1780945ms real) (370140 rewrites/second)
+--- result NzNat: 55
+--- red enumerate(gen2(f226-sub1)) .
+--- red enumerate(simplify(gen(testF(0)))) .
+--- red enumerate(simplify(gen(testF(1)))) .
+--- red enumerate(simplify(gen(testF(2)))) .
+--- red enumerate(simplify(gen(testF(3)))) .
+--- red enumerate(simplify(gen(testF(4)))) .
+--- red enumerate(simplify(gen(testF(5)))) .
+--- red enumerate(simplify(gen(testF(6)))) .
+--- red enumerate(simplify(gen(testF(7)))) .
+
+
+--- v: 3, e: 5
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(7)), 10)))) .
+--- v: 5, e: 23
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(6)), 10)))) .
+--- v: 9, e: 224
+--- red enumerate(rmRedundant(getTableau(step(makeGen-simp(testF(2)), 10)))) .
+
+eof
+
+--- example of unsound subsumption
+
+unify 
+[($oc0:Bool,$clk0:Clock)-($clk1:Clock,true xor $oc1:Bool)[]| true,Num("1.0"),Num("2.0"),true | p(1)]
+=?
+[($oc1:Bool,$clk0:Clock)-($clk1:Clock,true xor $oc1:Bool)[]| true,Num("1.0"),Num("2.0"),true | p(1)] .
+
+eof
+
+srew fT4 using 
+  (and 
+  or-else (or-le | or-ri)
+  or-else (until-1 | until-2)
+  or-else (release-1 | release-2 | release-3)
+  or-else always-ipstl 
+  or-else eventually-ipstl
+  or-else (always-up-1 | always-up-2 | always-up-3 | always-up-4)
+  or-else (always-updown-1 | always-updown-2 | always-updown-3 | always-updown-4 | always-updown-5)
+  or-else (eventually-up-1 | eventually-up-2)
+  or-else (eventually-updown-1 | eventually-updown-2 | eventually-updown-3))! .

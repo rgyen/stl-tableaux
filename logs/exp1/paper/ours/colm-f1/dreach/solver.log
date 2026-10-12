@@ -1,0 +1,8 @@
+dReal Options:
+For k = 0, dReach tried 0 feasible paths, all of them are unsat.
+For k = 1, dReach tried 0 feasible paths, all of them are unsat.
+SMT: ./log/colm/f1/dreach/model/model_2_0.smt2, PATH : [11,7,5]
+unsat
+For k = 2, dReach tried 1 feasible paths, all of them are unsat.
+0.05user 0.03system 0:00.09elapsed 88%CPU (0avgtext+0avgdata 14280maxresident)k
+56inputs+136outputs (0major+8305minor)pagefaults 0swaps

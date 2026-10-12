@@ -1,0 +1,13 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/rail02/rail02.model
+> selected solver: dreal
+> threshold : 0.1
+max procs: 5
+bound: 0
+# bound: 0, 0
+bound: 1
+# bound: 1, 8
+bound: 2
+# bound: 2, 61
+bound: 3
+# bound: 3, 700
+bound: 4

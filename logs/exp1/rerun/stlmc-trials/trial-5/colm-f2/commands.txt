@@ -1,0 +1,4 @@
+# STLmc solver
+cd /home/artifact/stl-tableaux/results/exp1-trial-5/exp1-stlmc/colm-f2
+/home/artifact/stl-tableaux/.venv-stlmc-paper/bin/stlmc /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm.model -model-cfg /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm.cfg -model-specific-cfg /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/colm/colm-f2.cfg -parallel-core 5 -verbose -executable-path /home/artifact/stl-tableaux/.venv-stlmc-paper/bin/dreal
+

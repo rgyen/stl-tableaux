@@ -1,0 +1,8 @@
+dReal Options:
+For k = 0, dReach tried 0 feasible paths, all of them are unsat.
+For k = 1, dReach tried 0 feasible paths, all of them are unsat.
+SMT: ./log/vand/f2/dreach/model/model_2_0.smt2, PATH : [1,2,3]
+delta-sat with delta = 0.00100000000000000
+For k = 2, [1,2,3] -- SAT
+2.28user 0.03system 0:02.33elapsed 99%CPU (0avgtext+0avgdata 14552maxresident)k
+16inputs+96outputs (0major+6954minor)pagefaults 0swaps

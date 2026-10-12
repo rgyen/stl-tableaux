@@ -1,0 +1,43 @@
+int modeId;
+[0, 2] x;
+[0, 2] y;
+
+# Qx = 1, Qy = 1, R = 0.161
+#outside
+{
+    mode: modeId = 1;
+    inv:  (x - 1) * (x - 1) + (y - 1) * (y - 1) <= 0.161 * 0.161;
+    flow:
+		d/dt[x] = 3*x - 3 * x * y; 
+        d/dt[y] = x*y - y;
+    jump:
+	(x - 1) * (x - 1) + (y - 1) * (y - 1) <= 0.161 * 0.161 => 
+	    (and (modeId' = 2) (x' = x) (y' = y));
+
+}
+
+#inside
+{
+    mode: modeId = 2;
+    inv:  (x - 1) * (x - 1) + (y - 1) * (y - 1) >= 0.161 * 0.161;
+    flow:
+                d/dt[x] = 3*x - 3 * x * y;
+                d/dt[y] = x*y - y;
+    jump: 
+        (x - 1) * (x - 1) + (y - 1) * (y - 1) >= 0.161 * 0.161 =>
+            (and (modeId' = 1) (x' = x) (y' = y));
+
+}  
+
+
+init:
+(modeId = 2);
+(1.288 <= x); (x <= 1.312);
+(1 <= y); (y <= 1);
+
+proposition:
+
+goal:
+[f1]: (x >= 0) U[0.0, inf) (<>[0.0, inf) y <= 1);
+[f2]: (x >= 0 U[0.0, inf) y >= 1);
+[f3] : [][0.0, inf) ((y >= 1) -> (<> [0.0, inf) x < 1.8));

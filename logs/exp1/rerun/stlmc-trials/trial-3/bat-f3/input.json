@@ -1,0 +1,6 @@
+{
+  "id": "bat-f3",
+  "model": "bat",
+  "formula_id": "f3",
+  "dynamics": "linear"
+}

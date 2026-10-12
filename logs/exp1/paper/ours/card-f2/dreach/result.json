@@ -1,0 +1,13 @@
+{
+  "id": "card-f2",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    16,
+    75
+  ],
+  "status": "complete",
+  "solver_seconds": 12.04,
+  "outcome": "bounded_unsat"
+}

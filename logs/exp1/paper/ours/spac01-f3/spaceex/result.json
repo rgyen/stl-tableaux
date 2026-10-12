@@ -1,0 +1,13 @@
+{
+  "id": "spac01-f3",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    14,
+    43
+  ],
+  "status": "complete",
+  "solver_seconds": 1.66,
+  "outcome": "safe"
+}

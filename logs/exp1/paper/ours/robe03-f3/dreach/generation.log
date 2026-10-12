@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/robe03/robe03.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/robe03/robe03-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/robe03/robe03.model
+  automaton info: (# mode: 1, # jump: 0)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : ((y < (2 + 0.0005)) R[ 0.0, inf ) ([][ 1.1, 2.2 ] (z < (1 + 0.0005))))
+    size      : 4
+  Config
+    bound     : 1
+    threshold : 0.0005
+
+  finish construction
+    running time: 0.575s
+    tableau info: (# vertex: 33, # edge: 126)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.150s
+    tableau info: (# vertex: 11, # edge: 38)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.002s
+  automaton info: (# mode: 10, # jump: 35)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.003s
+  automaton info: (# mode: 11, # jump: 38)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.153s
+  automaton info: (# mode: 11, # jump: 38)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 11, # jump: 38)
+
+Converting the automaton to an input model of dreach
+  model file  : log/robe03/f3/dreach/model/model.drh
+  script file : log/robe03/f3/dreach/run.sh
+  running time: 0.527s

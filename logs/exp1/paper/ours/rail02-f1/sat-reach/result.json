@@ -1,0 +1,13 @@
+{
+  "id": "rail02-f1",
+  "tool": "sat-reach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    49,
+    277
+  ],
+  "status": "error",
+  "solver_seconds": null,
+  "outcome": "error"
+}

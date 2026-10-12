@@ -1,0 +1,13 @@
+{
+  "id": "lovo-f3",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    7,
+    12
+  ],
+  "status": "complete",
+  "solver_seconds": 726.44,
+  "outcome": "safe"
+}

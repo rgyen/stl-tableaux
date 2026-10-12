@@ -1,0 +1,15 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/bat/bat.model
+> selected solver: dreal
+> threshold : 0.0001
+max procs: 5
+bound: 0
+# bound: 0, 2
+bound: 1
+# bound: 1, 12
+bound: 2
+# bound: 2, 71
+bound: 3
+# bound: 3, 393
+bound: 4
+# bound: 4, 3111
+bound: 5

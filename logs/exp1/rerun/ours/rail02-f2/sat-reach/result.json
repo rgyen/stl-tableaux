@@ -1,0 +1,22 @@
+{
+  "id": "rail02-f2",
+  "tool": "sat-reach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "3fa57d284bed466d7fd7ef55817d6010aeec7f668bed5a503ddea252c27a16e4",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 2.783183326944709
+  },
+  "composed_ha": [
+    45,
+    272
+  ],
+  "status": "error",
+  "exit_code": 134,
+  "wall_seconds": 2.2903029648587108,
+  "solver_seconds": 2.2903029648587108,
+  "phase": "solver",
+  "outcome": "error"
+}

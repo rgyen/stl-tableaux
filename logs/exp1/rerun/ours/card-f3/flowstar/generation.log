@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/card-f3/flowstar/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/card/card.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/card/card-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/card/card.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : (or ([][ 5.0, 15.0 ] (duration < (10.0 + 0.1))) (<>[ 0.0, 5.0 ] ((u > (10.0 - 0.1)) R[ 0.0, inf ) (duration < (10.0 + 0.1)))))
+    size      : 7
+  Config
+    bound     : 5
+    threshold : 0.1
+
+  finish construction
+    running time: 0.301s
+    tableau info: (# vertex: 26, # edge: 69)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.019s
+    tableau info: (# vertex: 14, # edge: 37)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 13, # jump: 32)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.013s
+  automaton info: (# mode: 27, # jump: 159)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.380s
+  automaton info: (# mode: 14, # jump: 37)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 14, # jump: 37)
+
+Converting the automaton to an input model of flowstar
+  model file  : out/card/f3/flowstar/model/model.fs
+  script file : out/card/f3/flowstar/run.sh
+  running time: 0.030s

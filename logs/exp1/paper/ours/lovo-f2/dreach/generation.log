@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo-f2.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/lovo/lovo.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f2
+    formula   : ((x < (0 + 1e-06)) R[ 0.0, inf ) (y < (1 + 1e-06)))
+    size      : 3
+  Config
+    bound     : 5
+    threshold : 0.000001
+
+  finish construction
+    running time: 0.061s
+    tableau info: (# vertex: 5, # edge: 8)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.000s
+    tableau info: (# vertex: 4, # edge: 5)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.000s
+  automaton info: (# mode: 3, # jump: 3)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.002s
+  automaton info: (# mode: 7, # jump: 20)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.082s
+  automaton info: (# mode: 6, # jump: 13)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 6, # jump: 13)
+
+Converting the automaton to an input model of dreach
+  model file  : kmbae-lovo/lovo/f2/dreach/model/model.drh
+  script file : kmbae-lovo/lovo/f2/dreach/run.sh
+  running time: 0.382s

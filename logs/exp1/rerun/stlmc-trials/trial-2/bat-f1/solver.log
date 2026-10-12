@@ -1,0 +1,17 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/bat/bat.model
+> selected solver: dreal
+> threshold : 0.0001
+max procs: 5
+bound: 0
+# bound: 0, 1
+bound: 1
+# bound: 1, 10
+bound: 2
+# bound: 2, 39
+bound: 3
+total loop : 110
+size : 593
+goal : (<>[1.1,4.0] ((d1 >= 1) R[0.0,inf) (g1 <= 7)))
+result : False at bound 3 (time bound: 10)
+running time 13.73140 seconds
+======================================

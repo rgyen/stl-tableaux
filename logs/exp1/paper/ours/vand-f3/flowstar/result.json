@@ -1,0 +1,13 @@
+{
+  "id": "vand-f3",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    11,
+    42
+  ],
+  "status": "complete",
+  "solver_seconds": 23.96,
+  "outcome": "safe"
+}

@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/colm/colm.model -goal f2 -default-cfg ../../src/default.cfg -solver flowstar -o log >& log/colm/f2/flowstar/gen-log.txt
+
+# solver-launch
+bash out/colm/f2/flowstar/run.sh

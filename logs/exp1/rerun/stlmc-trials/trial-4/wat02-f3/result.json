@@ -1,0 +1,14 @@
+{
+  "id": "wat02-f3",
+  "status": "timeout",
+  "host": "node4",
+  "started_utc": "2026-10-12T11:31:39.794595+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "0114e4171c67432e8fe4750937404ec2bf357df3aefdcedcdd4cd8dd9f8fbd7c",
+  "exit_code": -9,
+  "outcome": "unknown",
+  "wall_seconds": 3600.05736416718,
+  "solver_status": null
+}

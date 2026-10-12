@@ -1,0 +1,9 @@
+dReal Options:
+For k = 0, dReach tried 0 feasible paths, all of them are unsat.
+For k = 1, dReach tried 0 feasible paths, all of them are unsat.
+For k = 2, dReach tried 0 feasible paths, all of them are unsat.
+SMT: ./log/car02/f1/dreach/model/model_3_0.smt2, PATH : [5,11,1,9]
+delta-sat with delta = 0.00100000000000000
+For k = 3, [5,11,1,9] -- SAT
+0.34user 0.03system 0:00.38elapsed 96%CPU (0avgtext+0avgdata 14356maxresident)k
+88inputs+176outputs (0major+10024minor)pagefaults 0swaps

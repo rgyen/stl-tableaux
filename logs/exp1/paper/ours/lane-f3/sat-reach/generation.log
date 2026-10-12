@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/lane/lane.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/lane/lane-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/linear/lane/lane.model
+  automaton info: (# mode: 7, # jump: 6)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : (<>[ 0.0, 32.0 ] ((w < (2.5 + 0.1)) U[ 0.0, inf ) (vx < (9 + 0.1))))
+    size      : 4
+  Config
+    bound     : 5
+    threshold : 0.1
+
+  finish construction
+    running time: 0.139s
+    tableau info: (# vertex: 12, # edge: 23)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.003s
+    tableau info: (# vertex: 9, # edge: 19)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 8, # jump: 16)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.034s
+  automaton info: (# mode: 57, # jump: 259)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 1.788s
+  automaton info: (# mode: 9, # jump: 19)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 9, # jump: 19)
+
+Converting the automaton to an input model of sat-reach
+  model file  : log/lane/f3/sat-reach/model/model.xml
+  conf  file  : log/lane/f3/sat-reach/model/model.cfg
+  script file : log/lane/f3/sat-reach/run.sh
+  running time: 0.009s

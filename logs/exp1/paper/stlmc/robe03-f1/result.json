@@ -1,0 +1,8 @@
+{
+  "id": "robe03-f1",
+  "tool": "stlmc",
+  "timeout_seconds": 3600,
+  "status": "complete",
+  "outcome": "bounded-satisfied",
+  "solver_seconds": 39.32
+}

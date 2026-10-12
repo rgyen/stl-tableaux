@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/linear/rail02/rail02.model -model-cfg ../../benchmarks/exp1/linear/rail02/rail02.cfg -model-specific-cfg ../../benchmarks/exp1/linear/rail02/rail02-f2.cfg -parallel-core 5 -verbose >& log/rail02/f2/stlmc/out-log.txt

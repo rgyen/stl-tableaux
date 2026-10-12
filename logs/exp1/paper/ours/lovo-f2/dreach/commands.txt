@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/lovo/lovo.model -goal f2 -default-cfg ../../src/default.cfg -solver dreach -o kmbae-lovo >& kmbae-lovo/lovo/f2/dreach/gen-log.txt
+
+# solver-launch
+bash out/lovo/f2/dreach/run.sh

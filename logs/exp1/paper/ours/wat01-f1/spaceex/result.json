@@ -1,0 +1,13 @@
+{
+  "id": "wat01-f1",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    13,
+    86
+  ],
+  "status": "complete",
+  "solver_seconds": 27.0,
+  "outcome": "unsafe"
+}

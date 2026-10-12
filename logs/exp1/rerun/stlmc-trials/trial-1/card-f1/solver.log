@@ -1,0 +1,11 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/card/card.model
+> selected solver: dreal
+> threshold : 0.1
+max procs: 5
+bound: 0
+# bound: 0, 2
+bound: 1
+# bound: 1, 10
+bound: 2
+# bound: 2, 80
+bound: 3

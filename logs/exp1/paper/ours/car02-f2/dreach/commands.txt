@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/car02/car02.model -goal f2 -default-cfg ../../src/default.cfg -solver dreach -o log >& log/car02/f2/dreach/gen-log.txt
+
+# solver-launch
+bash out/car02/f2/dreach/run.sh

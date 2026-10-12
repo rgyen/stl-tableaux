@@ -1,0 +1,226 @@
+--- Vendored STLAuto preprocessing equations; isolated module names.
+
+fmod PP-NUMBER is
+  pr FLOAT .
+
+  sort Number .
+  subsort FiniteFloat < Number .
+  op infty : -> Number [ctor] .
+endfm
+
+fmod PP-INTERVAL is
+  pr PP-NUMBER .
+
+  sort Interval .
+
+  vars LN RN : Number .
+  vars LB RB : Bool .
+
+  op |_,_,_,_| : Bool Number Number Bool -> Interval [ctor] .
+  ops inf sup : Interval -> Number .
+  eq inf(| LB, LN, RN, RB |) = LN .
+  eq sup(| LB, LN, RN, RB |) = RN .
+endfm
+
+fmod PP-EXPR is
+  pr PP-NUMBER .
+  pr STRING .
+
+  sorts Var EFloat Expr .
+  subsorts Var EFloat < Expr .
+
+  op var : String -> Var [ctor] .
+  --- A scoped variable is distinct from an unscoped string with the same display.
+  op var : String String -> Var [ctor] .
+
+  --- Native float literals with a concrete sort inside the Expr hierarchy.
+  op <ExprFloats> : -> EFloat [special (id-hook FloatSymbol)] .
+
+  op -_ : Expr -> Expr [ctor prec 15] .
+  ops sqrt sin cos tan asin acos atan : Expr -> Expr [ctor] .
+  op atan : Expr Expr -> Expr [ctor] .
+
+  op _^_ : Expr Expr -> Expr [ctor prec 29 gather(E e)] .
+  op _*_ : Expr Expr -> Expr [ctor prec 31 gather(E e)] .
+  op _/_ : Expr Expr -> Expr [ctor prec 31 gather(E e)] .
+  op _+_ : Expr Expr -> Expr [ctor prec 33 gather(E e)] .
+  op _-_ : Expr Expr -> Expr [ctor prec 33 gather(E e)] .
+endfm
+
+fmod PP-PROP is
+  pr PP-EXPR .
+
+  sort Prop .
+  op prop : String -> Prop [ctor] .
+  ops true false : -> Prop [ctor] .
+  --- Signal-domain side condition used when eliminating unbounded timed U/R.
+  op horizon : Number -> Prop [ctor] .
+
+  op _>_ : Expr Expr -> Prop [ctor prec 51] .
+  op _>=_ : Expr Expr -> Prop [ctor prec 51] .
+  op _<_ : Expr Expr -> Prop [ctor prec 51] .
+  op _<=_ : Expr Expr -> Prop [ctor prec 51] .
+  op _=_ : Expr Expr -> Prop [ctor prec 51] .
+  op _!=_ : Expr Expr -> Prop [ctor prec 51] .
+endfm
+
+--- STL formula
+fmod PP-FORMULA is
+  pr PP-INTERVAL .
+  inc PP-PROP .
+
+  sort Formula .
+  subsort Prop < Formula .
+
+  vars F G : Formula .
+  op universe : -> Interval [ctor] .
+  eq | true, 0.0, infty, false | = universe .
+  eq inf(universe) = 0.0 .
+  eq sup(universe) = infty .
+
+  op _/\_ : Formula Formula -> Formula [comm ctor gather(E e) prec 55] .
+  op _\/_ : Formula Formula -> Formula [comm ctor gather(E e) prec 59] .
+  op ~_ : Formula -> Formula [ctor prec 51] .
+  op _->_ : Formula Formula -> Formula [ctor prec 65] .
+  op _U[_]_ : Formula Interval Formula -> Formula [ctor prec 63] .
+  op _R[_]_ : Formula Interval Formula -> Formula [ctor prec 63] .
+  op []__ : Interval Formula -> Formula [prec 53] .
+  op <>__ : Interval Formula -> Formula [prec 53] .
+endfm
+
+
+fmod PP-STL-NORMALIZATION is
+  pr PP-FORMULA .
+
+  vars F G : Formula .
+  var I : Interval .
+  vars EL ER : Expr .
+  vars LN RN : Number .
+
+  --- Remove implication directly from Formula terms.
+  eq F -> G = (~ F) \/ G .
+
+  --- Negation normal form. Rewriting below subterms supplies recursion.
+  eq ~ true = false .
+  eq ~ false = true .
+  eq ~ (EL < ER) = EL >= ER .
+  eq ~ (EL <= ER) = EL > ER .
+  eq ~ (EL > ER) = EL <= ER .
+  eq ~ (EL >= ER) = EL < ER .
+  eq ~ (EL = ER) = EL != ER .
+  eq ~ (EL != ER) = EL = ER .
+  eq ~ ~ F = F .
+  eq ~ (F /\ G) = (~ F) \/ (~ G) .
+  eq ~ (F \/ G) = (~ F) /\ (~ G) .
+  eq ~ (F U[I] G) = (~ F) R[I] (~ G) .
+  eq ~ (F R[I] G) = (~ F) U[I] (~ G) .
+  eq ~ ([] I F) = <> I (~ F) .
+  eq ~ (<> I F) = [] I (~ F) .
+
+  --- Historical zero-lower-bound preprocessing maps timed until/release
+  --- to eventually/always on the right operand, omitting the left operand.
+  eq F U[| true, 0.0, RN, true |] G
+    = <> | true, 0.0, RN, true | G .
+  eq F R[| true, 0.0, RN, true |] G
+    = [] | true, 0.0, RN, true | G .
+
+ ceq F U[| true, LN, RN, true |] G
+    = (<> | true, LN, RN, true | G)
+      /\ ([] | true, 0.0, LN, true | (F U[universe] G))
+  if not (LN == 0.0) .
+ ceq F R[| true, LN, RN, true |] G
+    = ([] | true, LN, RN, true | G)
+      \/ (<> | true, 0.0, LN, true | (F R[universe] G))
+  if not (LN == 0.0) .
+
+  --- On finite signals, the prefix condition alone does not establish that
+  --- time a is still in the signal domain.  Keep that horizon obligation
+  --- explicit.  The release equation is its Boolean dual.
+ ceq F U[| true, LN, infty, false |] G
+    = ([] | true, 0.0, LN, true | (F U[universe] G))
+      /\ horizon(LN)
+  if not (LN == 0.0) .
+ ceq F R[| true, LN, infty, false |] G
+    = (<> | true, 0.0, LN, true | (F R[universe] G))
+      \/ (~ horizon(LN))
+  if not (LN == 0.0) .
+endfm
+
+
+fmod PP-STL-ROBUSTNESS is
+  pr PP-FORMULA .
+  vars F G : Formula .
+  var P : Prop .
+  var I : Interval .
+  vars EL ER : Expr .
+  var ε : EFloat .
+  ops weaken strengthen : Formula EFloat -> Formula .
+
+  --- Robustness transformations.
+  eq weaken(EL >= ER, ε) = EL >= (ER - ε) .
+  eq weaken(EL >  ER, ε) = EL >  (ER - ε) .
+  eq weaken(EL <= ER, ε) = EL <= (ER + ε) .
+  eq weaken(EL <  ER, ε) = EL <  (ER + ε) .
+  eq weaken(EL =  ER, ε)
+    = (EL >= (ER - ε)) /\ (EL <= (ER + ε)) .
+  eq weaken(EL != ER, ε)
+    = (EL < (ER + ε)) \/ (EL > (ER - ε)) .
+  --- Definition 5.3: negation reverses robustness polarity.
+  eq weaken(~ F, ε) = ~ strengthen(F, ε) .
+  eq weaken(F /\ G, ε) = weaken(F, ε) /\ weaken(G, ε) .
+  eq weaken(F \/ G, ε) = weaken(F, ε) \/ weaken(G, ε) .
+  --- F -> G abbreviates (~ F) \/ G, hence the antecedent is contravariant.
+  eq weaken(F -> G, ε) = strengthen(F, ε) -> weaken(G, ε) .
+  eq weaken(F U[I] G, ε) = weaken(F, ε) U[I] weaken(G, ε) .
+  eq weaken(F R[I] G, ε) = weaken(F, ε) R[I] weaken(G, ε) .
+  eq weaken([] I F, ε) = [] I weaken(F, ε) .
+  eq weaken(<> I F, ε) = <> I weaken(F, ε) .
+  eq weaken(P, ε) = P [owise] .
+
+  eq strengthen(EL >= ER, ε) = EL >= (ER + ε) .
+  eq strengthen(EL >  ER, ε) = EL >  (ER + ε) .
+  eq strengthen(EL <= ER, ε) = EL <= (ER - ε) .
+  eq strengthen(EL <  ER, ε) = EL <  (ER - ε) .
+  eq strengthen(EL =  ER, ε)
+    = (EL >= (ER + ε)) /\ (EL <= (ER - ε)) .
+  eq strengthen(EL != ER, ε)
+    = (EL < (ER - ε)) \/ (EL > (ER + ε)) .
+  eq strengthen(~ F, ε) = ~ weaken(F, ε) .
+  eq strengthen(F /\ G, ε) = strengthen(F, ε) /\ strengthen(G, ε) .
+  eq strengthen(F \/ G, ε) = strengthen(F, ε) \/ strengthen(G, ε) .
+  eq strengthen(F -> G, ε) = weaken(F, ε) -> strengthen(G, ε) .
+  eq strengthen(F U[I] G, ε) = strengthen(F, ε) U[I] strengthen(G, ε) .
+  eq strengthen(F R[I] G, ε) = strengthen(F, ε) R[I] strengthen(G, ε) .
+  eq strengthen([] I F, ε) = [] I strengthen(F, ε) .
+  eq strengthen(<> I F, ε) = <> I strengthen(F, ε) .
+  eq strengthen(P, ε) = P [owise] .
+
+endfm
+
+
+fmod PP-STL-TABLEAU-READY is
+  pr PP-FORMULA .
+  vars F G : Formula .
+  var P : Prop .
+  var I : Interval .
+  op tableauReady : Formula -> Bool .
+
+  eq tableauReady(P) = true .
+  eq tableauReady(~ P) = true .
+  eq tableauReady(F /\ G) = tableauReady(F) and tableauReady(G) .
+  eq tableauReady(F \/ G) = tableauReady(F) and tableauReady(G) .
+  eq tableauReady(F U[universe] G)
+    = tableauReady(F) and tableauReady(G) .
+  eq tableauReady(F R[universe] G)
+    = tableauReady(F) and tableauReady(G) .
+  eq tableauReady([] I F) = tableauReady(F) .
+  eq tableauReady(<> I F) = tableauReady(F) .
+  eq tableauReady(F) = false [owise] .
+endfm
+
+
+fmod PP-STL-FORMULA-OPERATIONS is
+  pr PP-STL-NORMALIZATION .
+  pr PP-STL-ROBUSTNESS .
+  pr PP-STL-TABLEAU-READY .
+endfm

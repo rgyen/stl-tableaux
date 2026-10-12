@@ -1,0 +1,14 @@
+{
+  "id": "bat-f3",
+  "status": "timeout",
+  "host": "node2",
+  "started_utc": "2026-10-12T03:54:15.714013+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "794c12be020a5db884da8ad6879a8172c698ca5b58bcb3ff730ddd7974e36dfe",
+  "exit_code": -9,
+  "outcome": "unknown",
+  "wall_seconds": 3600.0448748329654,
+  "solver_status": null
+}

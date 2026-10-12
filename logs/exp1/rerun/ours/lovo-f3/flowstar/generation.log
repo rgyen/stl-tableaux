@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/lovo-f3/flowstar/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : (<>[ 0.0, inf ) (and (y >= (1.0 - 1e-06)) ([][ 0.0, inf ) (x >= (1.8 - 1e-06)))))
+    size      : 5
+  Config
+    bound     : 5
+    threshold : 0.000001
+
+  finish construction
+    running time: 0.105s
+    tableau info: (# vertex: 7, # edge: 12)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.001s
+    tableau info: (# vertex: 5, # edge: 6)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.000s
+  automaton info: (# mode: 4, # jump: 4)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.003s
+  automaton info: (# mode: 9, # jump: 26)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.072s
+  automaton info: (# mode: 7, # jump: 12)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 7, # jump: 12)
+
+Converting the automaton to an input model of flowstar
+  model file  : out/lovo/f3/flowstar/model/model.fs
+  script file : out/lovo/f3/flowstar/run.sh
+  running time: 0.008s

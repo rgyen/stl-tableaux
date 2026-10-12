@@ -1,0 +1,159 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT=$(cd -- "$(dirname -- "$0")" && pwd)
+ACTION=${1:-help}
+if [ $# -gt 0 ]; then shift; fi
+export LD_LIBRARY_PATH="$ROOT/.tools/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+PYTHON=${PYTHON:-$ROOT/.venv-stl-tableaux/bin/python}
+export STL_TABLEAUX_CLI_PROG="./reproduce $ACTION"
+# Representative subset for `quick`: Exp1 cases where STLmc finishes and where it times out, and Exp2 formulas across the complexity range.
+QUICK_EXP1="lane-f1 lane-f2 thm02-f2 oscl-f1 wat01-f1 rail02-f3 spac01-f1 wat02-f1 car02-f2 robe03-f1 lovo-f1 vand-f1"
+QUICK_EXP2="f11 f83 f6 f13 f7 f10 f5 f43 f42 f61 f125 f19 f22 f34 f104 f57 f168 f9 f58 f15 f114"
+show_help() {
+  cat <<'HELP'
+Usage: ./reproduce COMMAND TARGET [OPTIONS]
+
+Commands:
+  setup         Install Python environments and supplied external tools.
+  smoke         Run a small Exp1/Exp2 check (60-second timeout).
+  quick         Run a representative subset and generate all reports (about 30 minutes).
+  run exp1      Run our model checking approach and the STLmc baseline.
+  run exp2      Construct and reduce tableaux for the Exp2 formulas.
+  run all       Run Exp1 followed by Exp2.
+  gen fig17     Generate the Exp1 runtime comparison (PNG/PDF/CSV).
+  gen fig18     Generate the Exp2 complexity plot (PNG/PDF/CSV).
+  gen table2    Generate tableau/HA size tables (PNG/HTML/CSV).
+  gen table3    Generate model checking result tables (PNG/HTML/CSV).
+  help          Show this help.
+
+Run options:
+  --method METHOD   Exp1 only: ours, stlmc or all (default: all).
+  --workers N       Concurrent jobs (default: automatic, accounting for STLmc cores).
+  --timeout SEC     Timeout in seconds (default: 3600).
+  --stlmc-timeout S  Separate STLmc timeout (Exp1 only).
+  --stlmc-cores N         Cores per STLmc job (default: 5).
+  --ids ID [...]    Selected cases, e.g. lane-f1 or f1 f2.
+  --output DIR      Experiment output root (default: results/).
+
+Generation options:
+  --input DIR       Result input root (fig17/table2/table3: results/;
+                    fig18: results/exp2-automata/).
+  --output DIR      Generated-file directory (default: results/reports/).
+
+Run output directories:
+  Exp1 ours         <output root>/exp1-ours/
+  Exp1 STLmc        <output root>/exp1-stlmc/
+  Exp2              <output root>/exp2-automata/
+Output directories are created automatically. Exp1 generation reads both
+method subdirectories under --input (an experiment output root, or
+logs/exp1/paper). Exp2 generation reads an Exp2 result directory or an
+experiment output root.
+
+Examples:
+  ./reproduce setup --tools-bundle /path/to/tools.tar.gz
+  ./reproduce run exp1 --method ours --output results/exp1-run
+  ./reproduce run exp2 --output results/exp2-run
+  ./reproduce gen fig17 --input results/exp1-run
+  ./reproduce gen fig18 --input results/exp2-run
+  ./reproduce gen table2 --input results/exp1-run
+  ./reproduce gen table3 --input results/exp1-run
+
+Use ./reproduce run exp1 --help or ./reproduce gen --help for details.
+HELP
+}
+show_gen_help() {
+  cat <<'HELP'
+Usage: ./reproduce gen {fig17|fig18|table2|table3} [OPTIONS]
+
+Targets:
+  fig17   Exp1 runtime comparison (PNG/PDF/CSV).
+  fig18   Exp2 tableau size versus complexity (PNG/PDF/CSV).
+  table2  Tableau and hybrid automaton sizes (PNG/HTML/CSV).
+  table3  Model checking times and outcomes (PNG/HTML/CSV).
+
+Options:
+  --input DIR   Result input root.
+                Default for fig17/table2/table3: results/
+                Default for fig18: results/exp2-automata/
+  --output DIR  Generated-file directory (default: results/reports/).
+  -h, --help    Show this common generation help.
+
+Examples:
+  ./reproduce gen fig17 --input logs/exp1/paper
+  ./reproduce gen fig18 --input logs/exp2
+  ./reproduce gen table2 --input logs/exp1/paper
+  ./reproduce gen table3 --input logs/exp1/paper
+HELP
+}
+case "$ACTION" in
+ help|--help|-h) show_help ;;
+ setup) exec bash "$ROOT/scripts/setup.sh" "$@" ;;
+ smoke)
+   for ARG in "$@"; do
+     if [ "$ARG" = --help ] || [ "$ARG" = -h ]; then
+       printf '%s\n' 'Usage: ./reproduce smoke' 'Runs Exp2 f4 and Exp1 lane-f1 with a 60-second timeout.' 'Outputs: results/smoke-exp2/ and results/smoke-exp1/.'
+       exit 0
+     fi
+   done
+   if [ $# -gt 0 ]; then printf '%s\n' 'smoke does not accept options.' >&2; exit 2; fi
+   "$PYTHON" "$ROOT/scripts/exp2.py" --ids f4 --timeout 60 --output "$ROOT/results/smoke-exp2" &&
+   "$PYTHON" "$ROOT/scripts/exp1.py" --ids lane-f1 --timeout 60 --output "$ROOT/results/smoke-exp1" ;;
+ quick)
+   for ARG in "$@"; do
+     if [ "$ARG" = --help ] || [ "$ARG" = -h ]; then
+       printf '%s\n' 'Usage: ./reproduce quick' 'Runs 12 Exp1 cases and 21 Exp2 formulas with a 300-second timeout,' 'then generates Figures 17/18 and Tables 2/3.' 'Outputs: results/quick/ (reports in results/quick/reports/).'
+       exit 0
+     fi
+   done
+   if [ $# -gt 0 ]; then printf '%s\n' 'quick does not accept options.' >&2; exit 2; fi
+   OUT="$ROOT/results/quick"
+   # shellcheck disable=SC2086
+   "$PYTHON" "$ROOT/scripts/exp1.py" --ids $QUICK_EXP1 --timeout 300 --output "$OUT"
+   # shellcheck disable=SC2086
+   "$PYTHON" "$ROOT/scripts/exp2.py" --ids $QUICK_EXP2 --timeout 300 --output "$OUT"
+   for REPORT in plot table2 table3; do
+     "$PYTHON" "$ROOT/scripts/exp1.py" --report "$REPORT" --input "$OUT" --output "$OUT/reports"
+   done
+   "$PYTHON" "$ROOT/scripts/exp2.py" --report plot --input "$OUT" --output "$OUT/reports" ;;
+ run)
+   case "${1:-}" in
+     ""|--help|-h)
+       printf '%s\n' 'Usage: ./reproduce run {exp1|exp2|all} [OPTIONS]' 'Use ./reproduce run exp1 --help or ./reproduce run exp2 --help for options.'; exit 0 ;;
+     exp1|exp2)
+       EXPERIMENT=$1; shift
+       export STL_TABLEAUX_CLI_PROG="./reproduce run $EXPERIMENT"
+       exec "$PYTHON" "$ROOT/scripts/$EXPERIMENT.py" "$@" ;;
+     all)
+       shift
+       for ARG in "$@"; do
+         if [ "$ARG" = --help ] || [ "$ARG" = -h ]; then
+           printf '%s\n' 'Usage: ./reproduce run all [COMMON RUN OPTIONS]' 'Runs Exp1 followed by Exp2.' 'Options: --workers, --timeout, --output.' 'Use separate run commands for experiment-specific options.'; exit 0
+         fi
+       done
+       export STL_TABLEAUX_CLI_PROG="./reproduce run all"
+       "$PYTHON" "$ROOT/scripts/exp1.py" "$@"
+       exec "$PYTHON" "$ROOT/scripts/exp2.py" "$@" ;;
+     *) printf 'Unknown run target: %s\n' "$1" >&2; exit 2 ;;
+   esac ;;
+ gen)
+   for ARG in "$@"; do
+     if [ "$ARG" = --help ] || [ "$ARG" = -h ]; then
+       show_gen_help; exit 0
+     fi
+   done
+   case "${1:-}" in
+     ""|--help|-h)
+       show_gen_help; exit 0 ;;
+     fig17|fig18|table2|table3)
+       TARGET=$1; shift
+       export STL_TABLEAUX_CLI_PROG="./reproduce gen $TARGET"
+       if [ "$TARGET" = fig18 ]; then
+         exec "$PYTHON" "$ROOT/scripts/exp2.py" --report plot "$@"
+       fi
+       REPORT=$TARGET
+       if [ "$TARGET" = fig17 ]; then REPORT=plot; fi
+       exec "$PYTHON" "$ROOT/scripts/exp1.py" --report "$REPORT" "$@" ;;
+     *) printf 'Unknown generation target: %s\n' "$1" >&2; exit 2 ;;
+   esac ;;
+ *) printf 'Unknown command: %s\n' "$ACTION" >&2; show_help >&2; exit 2 ;;
+esac

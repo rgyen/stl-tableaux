@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/nonlinear/robe03/robe03.model -model-cfg ../../benchmarks/exp1/nonlinear/robe03/robe03.cfg -model-specific-cfg ../../benchmarks/exp1/nonlinear/robe03/robe03-f1.cfg -parallel-core 5 -verbose >& log/robe03/f1/stlmc/out-log.txt

@@ -1,0 +1,247 @@
+
+#Variables
+ax
+vx
+sy
+t
+gClk
+sx
+vy
+w
+#End
+
+
+#Location
+Locname: mode_id_0
+
+LocId: 1
+
+Inv: -20.0 <= vy & -20.0 <= sx & vx <= 20.0 & -20.0 <= w & -20.0 <= vx & -20.0 <= ax & gClk >= 0.0 & gClk <= 100.0 & vy <= 20.0 & sx <= 20.0 & -20.0 <= sy & ax <= 20.0 & w <= 20.0 & sy <= 20.0 & sx <= -12.9 & sx + 10.0 <= 0.0
+
+Flow:
+    gClk = 1.0
+    vy = -2.0 * vy
+    ax = -0.01 * sx + -0.103 + 0.84 + -0.3 * vx + -0.5 * ax
+    w = -2.0 * w
+    vx = 0.1 * ax
+    sy = 0.1 * vy
+    sx = vx + -2.5
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 100.0
+
+    Reset:
+
+        vx' = vx
+
+        vy' = vy
+
+        t' = t
+
+        gClk' = gClk
+
+        sx' = sx
+
+        sy' = sy
+
+        ax' = ax
+
+        w' = w
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_1
+
+LocId: 2
+
+Inv: -20.0 <= vy & -20.0 <= sx & vx <= 20.0 & -20.0 <= w & -20.0 <= vx & -20.0 <= ax & gClk >= 0.0 & gClk <= 100.0 & vy <= 20.0 & sx <= 20.0 & -20.0 <= sy & ax <= 20.0 & w <= 20.0 & sy <= 20.0 & sx + 10.0 <= 0.0
+
+Flow:
+    gClk = 1.0
+    vy = -2.0 * vy
+    ax = -0.01 * sx + -0.103 + 0.84 + -0.3 * vx + -0.5 * ax
+    w = -2.0 * w
+    vx = 0.1 * ax
+    sy = 0.1 * vy
+    sx = vx + -2.5
+    t = 1.0
+#End
+
+#End
+#Location
+Locname: mode_id_2
+
+LocId: 3
+
+Inv: gClk >= 0.0 & gClk <= 100.0
+
+Flow:
+    ax = 0.0
+    vx = 0.0
+    sy = 0.0
+    sx = 0.0
+    vy = 0.0
+    w = 0.0
+    gClk = 1.0
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: true
+
+    Reset:
+
+        vx' = vx
+
+        vy' = vy
+
+        gClk' = 0.0
+
+        t' = t
+
+        sx' = sx
+
+        sy' = sy
+
+        ax' = ax
+
+        w' = w
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_0
+
+    DestId: 1
+
+
+    Guard: true
+
+    Reset:
+
+        vx' = vx
+
+        vy' = vy
+
+        gClk' = 0.0
+
+        t' = t
+
+        sx' = sx
+
+        sy' = sy
+
+        ax' = ax
+
+        w' = w
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_3
+
+LocId: 4
+
+Inv: -20.0 <= vy & -20.0 <= sx & vx <= 20.0 & -20.0 <= w & -20.0 <= vx & -20.0 <= ax & sy <= 4.1 & gClk >= 0.0 & gClk <= 100.0 & vy <= 20.0 & sx <= 20.0 & -20.0 <= sy & ax <= 20.0 & w <= 20.0 & sy <= 20.0 & sx + 10.0 <= 0.0
+
+Flow:
+    gClk = 1.0
+    vy = -2.0 * vy
+    ax = -0.01 * sx + -0.103 + 0.84 + -0.3 * vx + -0.5 * ax
+    w = -2.0 * w
+    vx = 0.1 * ax
+    sy = 0.1 * vy
+    sx = vx + -2.5
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_0
+
+    DestId: 1
+
+
+    Guard: true
+
+    Reset:
+
+        vx' = vx
+
+        vy' = vy
+
+        t' = t
+
+        gClk' = gClk
+
+        sx' = sx
+
+        sy' = sy
+
+        ax' = ax
+
+        w' = w
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 100.0
+
+    Reset:
+
+        vx' = vx
+
+        vy' = vy
+
+        t' = t
+
+        gClk' = gClk
+
+        sx' = sx
+
+        sy' = sy
+
+        ax' = ax
+
+        w' = w
+
+    #End
+
+#End
+#End
+
+#Init
+
+loc=mode_id_2: t >= 0.0 & t <= 0.0 & gClk >= 0.0 & gClk <= 0.0 & vx <= 3.3 & 0.0 <= sy & vy <= 0.1 & 0.0 <= ax & t = 0.0 & -15.0 <= sx & sx <= -14.95 & gClk = 0.0 & w <= 0.1 & 0.0 <= w & 3.25 <= vx & ax <= 0.1 & 0.0 <= vy & sy <= 0.1
+
+#Forbidden
+
+mode_id_1: true

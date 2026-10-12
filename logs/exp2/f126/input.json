@@ -1,0 +1,14 @@
+{
+  "id": "f126",
+  "formula_file": "benchmarks/exp2/pool.txt",
+  "prepared": "(<>[ 0.0, inf ) (and (x1 > (1142.0 - 0.01)) ([][ 1.1, 6.0 ] (x2 < (1149.0 + 0.01)))))",
+  "size": 5,
+  "depth": 2,
+  "resolution": 2,
+  "operators": [
+    "FinallyFormula",
+    "GloballyFormula"
+  ],
+  "complexity": 21,
+  "prepared_sha256": "00468abfb3363cc3a58474b4bf492e991f6a382b42671858d7f4e813267bcde6"
+}

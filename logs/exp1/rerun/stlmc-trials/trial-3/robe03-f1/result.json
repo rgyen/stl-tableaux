@@ -1,0 +1,14 @@
+{
+  "id": "robe03-f1",
+  "status": "complete",
+  "host": "node3",
+  "started_utc": "2026-10-12T10:25:59.553863+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "97b033445099bb09805f279ee8850b7c331fe438df2e24f97518aa7425a44c01",
+  "exit_code": 0,
+  "outcome": "bounded-satisfied",
+  "wall_seconds": 22.763045692816377,
+  "solver_status": null
+}

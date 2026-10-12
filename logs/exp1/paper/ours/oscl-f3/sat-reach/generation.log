@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/linear/oscl/oscl.model
+  automaton info: (# mode: 4, # jump: 4)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : (<>[ 0.0, inf ) ([][ 1.1, 6.0 ] (y < (13 + 0.001))))
+    size      : 3
+  Config
+    bound     : 5
+    threshold : 0.001
+
+  finish construction
+    running time: 0.160s
+    tableau info: (# vertex: 12, # edge: 35)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.003s
+    tableau info: (# vertex: 7, # edge: 14)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 6, # jump: 11)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.017s
+  automaton info: (# mode: 25, # jump: 115)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.887s
+  automaton info: (# mode: 25, # jump: 115)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 25, # jump: 115)
+
+Converting the automaton to an input model of sat-reach
+  model file  : log/oscl/f3/sat-reach/model/model.xml
+  conf  file  : log/oscl/f3/sat-reach/model/model.cfg
+  script file : log/oscl/f3/sat-reach/run.sh
+  running time: 0.067s

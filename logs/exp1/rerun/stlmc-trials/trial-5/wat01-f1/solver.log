@@ -1,0 +1,22 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/wat01/wat01.model
+> selected solver: dreal
+> threshold : 0.01
+max procs: 5
+bound: 0
+# bound: 0, 2
+bound: 1
+# bound: 1, 6
+bound: 2
+# bound: 2, 15
+bound: 3
+# bound: 3, 34
+bound: 4
+# bound: 4, 81
+bound: 5
+# bound: 5, 180
+total loop : 318
+size : 1337
+goal : ((<>[0.0,inf) (x2 >= 5.911)) U[0.0,inf) (x1 <= 4.433))
+result : True up to bound 5 (time bound: 20)
+running time 68.54252 seconds
+======================================

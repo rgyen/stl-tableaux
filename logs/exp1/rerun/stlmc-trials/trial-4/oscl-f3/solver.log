@@ -1,0 +1,22 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl.model
+> selected solver: dreal
+> threshold : 0.001
+max procs: 5
+bound: 0
+# bound: 0, 1
+bound: 1
+# bound: 1, 8
+bound: 2
+# bound: 2, 31
+bound: 3
+# bound: 3, 160
+bound: 4
+# bound: 4, 343
+bound: 5
+# bound: 5, 1203
+total loop : 1746
+size : 2034
+goal : ([][0.0,inf) (<>[1.1,6.0] (y >= 13)))
+result : True up to bound 5 (time bound: 8)
+running time 1099.82578 seconds
+======================================

@@ -1,0 +1,6 @@
+{
+  "id": "rail02-f2",
+  "model": "rail02",
+  "formula_id": "f2",
+  "dynamics": "linear"
+}

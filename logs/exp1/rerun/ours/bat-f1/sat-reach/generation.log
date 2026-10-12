@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/bat-f1/sat-reach/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/bat/bat.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/bat/bat-f1.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/linear/bat/bat.model
+  automaton info: (# mode: 3, # jump: 3)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f1
+    formula   : ([][ 1.1, 4.0 ] ((d1 < (1.0 + 0.0001)) U[ 0.0, inf ) (g1 > (7.0 - 0.0001))))
+    size      : 4
+  Config
+    bound     : 5
+    threshold : 0.0001
+
+  finish construction
+    running time: 0.489s
+    tableau info: (# vertex: 25, # edge: 119)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.128s
+    tableau info: (# vertex: 10, # edge: 37)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.002s
+  automaton info: (# mode: 9, # jump: 34)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.013s
+  automaton info: (# mode: 28, # jump: 234)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.645s
+  automaton info: (# mode: 27, # jump: 204)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 27, # jump: 204)
+
+Converting the automaton to an input model of sat-reach
+  model file  : out/bat/f1/sat-reach/model/model.xml
+  conf  file  : out/bat/f1/sat-reach/model/model.cfg
+  script file : out/bat/f1/sat-reach/run.sh
+  running time: 0.063s

@@ -1,0 +1,21 @@
+dReal Options:
+For k = 0, dReach tried 0 feasible paths, all of them are unsat.
+For k = 1, dReach tried 0 feasible paths, all of them are unsat.
+For k = 2, dReach tried 0 feasible paths, all of them are unsat.
+SMT: ./out/wat02/f3/dreach/model/model_3_0.smt2, PATH : [6,11,25,23]
+unsat
+SMT: ./out/wat02/f3/dreach/model/model_3_1.smt2, PATH : [6,11,26,23]
+unsat
+SMT: ./out/wat02/f3/dreach/model/model_3_2.smt2, PATH : [6,13,25,23]
+unsat
+SMT: ./out/wat02/f3/dreach/model/model_3_3.smt2, PATH : [6,13,26,23]
+unsat
+SMT: ./out/wat02/f3/dreach/model/model_3_4.smt2, PATH : [6,14,25,23]
+unsat
+SMT: ./out/wat02/f3/dreach/model/model_3_5.smt2, PATH : [6,14,26,23]
+unsat
+SMT: ./out/wat02/f3/dreach/model/model_3_6.smt2, PATH : [6,16,25,23]
+delta-sat with delta = 0.00100000000000000
+For k = 3, [6,16,25,23] -- SAT
+0.58user 0.07system 0:00.68elapsed 94%CPU (0avgtext+0avgdata 14328maxresident)k
+136inputs+504outputs (0major+27561minor)pagefaults 0swaps

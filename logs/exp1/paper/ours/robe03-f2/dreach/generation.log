@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/robe03/robe03.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/robe03/robe03-f2.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/robe03/robe03.model
+  automaton info: (# mode: 1, # jump: 0)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f2
+    formula   : (or ([][ 1.0, 5.0 ] (z < (1 + 0.5))) (<>[ 0.0, 1.0 ] ((y < (2 + 0.5)) R[ 0.0, inf ) (z < (1 + 0.5)))))
+    size      : 7
+  Config
+    bound     : 1
+    threshold : 0.5
+
+  finish construction
+    running time: 0.292s
+    tableau info: (# vertex: 26, # edge: 69)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.018s
+    tableau info: (# vertex: 14, # edge: 37)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.002s
+  automaton info: (# mode: 13, # jump: 32)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.003s
+  automaton info: (# mode: 14, # jump: 37)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.137s
+  automaton info: (# mode: 14, # jump: 37)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 14, # jump: 37)
+
+Converting the automaton to an input model of dreach
+  model file  : log/robe03/f2/dreach/model/model.drh
+  script file : log/robe03/f2/dreach/run.sh
+  running time: 0.588s

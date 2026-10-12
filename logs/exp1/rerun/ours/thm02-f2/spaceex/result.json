@@ -1,0 +1,22 @@
+{
+  "id": "thm02-f2",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "8898cbdebe5473551e923c935a8ba57aa49657093989eccb71cc16a514b73e66",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.820426263846457
+  },
+  "composed_ha": [
+    6,
+    13
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 0.146338548976928,
+  "solver_seconds": 0.146338548976928,
+  "phase": "solver",
+  "outcome": "safe"
+}

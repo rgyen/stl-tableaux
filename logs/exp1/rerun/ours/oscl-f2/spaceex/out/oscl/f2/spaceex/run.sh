@@ -1,0 +1,1 @@
+./../../../../../.tools/spaceex/spaceex_exe/spaceex -m ./out/oscl/f2/spaceex/model/model.xml -g ./out/oscl/f2/spaceex/model/model.cfg >& ./out/oscl/f2/spaceex/out-log.txt

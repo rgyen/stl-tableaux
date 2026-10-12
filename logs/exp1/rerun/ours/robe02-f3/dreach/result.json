@@ -1,0 +1,22 @@
+{
+  "id": "robe02-f3",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "3b22c68a2cca8d6e4c666bc68953fdf974a27175d25f90f6e6c6053ddb0458cd",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 2.3237384357489645
+  },
+  "composed_ha": [
+    10,
+    37
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 0.1698979176580906,
+  "solver_seconds": 0.1698979176580906,
+  "phase": "solver",
+  "outcome": "bounded_unsat"
+}

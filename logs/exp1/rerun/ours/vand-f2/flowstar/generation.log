@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/vand-f2/flowstar/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/vand/vand.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/vand/vand-f2.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/vand/vand.model
+  automaton info: (# mode: 1, # jump: 0)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f2
+    formula   : ((y <= (15.0 + 1.0)) R[ 0.0, inf ) (x <= (40.0 + 1.0)))
+    size      : 3
+  Config
+    bound     : 5
+    threshold : 1
+
+  finish construction
+    running time: 0.071s
+    tableau info: (# vertex: 5, # edge: 8)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.000s
+    tableau info: (# vertex: 4, # edge: 5)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.000s
+  automaton info: (# mode: 3, # jump: 3)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.001s
+  automaton info: (# mode: 4, # jump: 5)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.021s
+  automaton info: (# mode: 4, # jump: 5)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 4, # jump: 5)
+
+Converting the automaton to an input model of flowstar
+  model file  : out/vand/f2/flowstar/model/model.fs
+  script file : out/vand/f2/flowstar/run.sh
+  running time: 0.006s

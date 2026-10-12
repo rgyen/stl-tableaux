@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo-f1.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/lovo/lovo.model
+  automaton info: (# mode: 2, # jump: 2)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f1
+    formula   : ((x < (0 + 1e-06)) R[ 0.0, inf ) ([][ 0.0, inf ) (y > (1 - 1e-06))))
+    size      : 4
+  Config
+    bound     : 5
+    threshold : 0.000001
+
+  finish construction
+    running time: 0.115s
+    tableau info: (# vertex: 11, # edge: 26)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.003s
+    tableau info: (# vertex: 5, # edge: 8)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.000s
+  automaton info: (# mode: 4, # jump: 6)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.003s
+  automaton info: (# mode: 9, # jump: 34)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.121s
+  automaton info: (# mode: 7, # jump: 18)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 7, # jump: 18)
+
+Converting the automaton to an input model of flowstar
+  model file  : kmbae-lovo/lovo/f1/flowstar/model/model.fs
+  script file : kmbae-lovo/lovo/f1/flowstar/run.sh
+  running time: 0.006s

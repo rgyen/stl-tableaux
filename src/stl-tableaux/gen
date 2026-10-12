@@ -1,0 +1,183 @@
+#!/usr/bin/env python3
+import os
+import argparse
+from stl2tableaux.parser.stlmc import *
+from stl2tableaux.parser.config import *
+from stl2tableaux.encoding.automata.goal.stl import *
+from stl2tableaux.hybrid_automaton.utils import *
+
+
+def get_formula_info(goal: StlGoal):
+    size = size_of_formula(goal._formula)
+    depth = count_nested(goal._formula)
+    return goal._formula, size, depth
+
+
+def size_of_formula(formula: Formula):
+    size = 0
+
+    q = [formula]
+    while len(q) > 0:
+        f = q.pop()
+        size += 1
+        # if isinstance(f, Temporal):
+        #     size += 1
+
+        if isinstance(f, MultinaryFormula):
+            for c in f.children:
+                q.append(c)
+
+        if isinstance(f, BinaryFormula):
+            q.append(f.left)
+            q.append(f.right)
+
+        if isinstance(f, UnaryFormula):
+            q.append(f.child)
+
+    return size
+
+
+def count_nested(formula: Formula):
+
+    max_depth = 0
+
+    q = [(0, formula)]
+    while len(q) > 0:
+        d, f = q.pop()
+        # calc current depth
+        if isinstance(f, Temporal):
+            c_d = d + 1
+        else:
+            c_d = d
+
+        if isinstance(f, MultinaryFormula):
+            for c in f.children:
+                q.append((c_d, c))
+
+        if isinstance(f, BinaryFormula):
+            q.append((c_d, f.left))
+            q.append((c_d, f.right))
+
+        if isinstance(f, UnaryFormula):      
+            q.append((c_d, f.child))
+
+        if isinstance(f, Proposition):
+            if d > max_depth:
+                max_depth = d
+
+    return max_depth
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('file', nargs='?', type=str, help="input file")
+    parser.add_argument('-goal', nargs='?', type=str, help="goal label")
+    parser.add_argument('-default-cfg', metavar='C', type=str,
+                        help="set a configuration file (default: \'./default.cfg\')")
+    parser.add_argument('-cfg', metavar='C', type=str,
+                        help="set a configuration file (default: \'<file>.cfg\')")
+    parser.add_argument("-dump-tableau", help="dump tableau", action="store_true")
+    parser.add_argument("--tableau-only", action="store_true", help="stop after tableau construction and reduction")
+    args = parser.parse_args()
+
+    try:
+        # check input file
+        if args.file is None:
+            raise ValueError("should provide an input file")
+    
+        if not os.path.exists(args.file):
+            raise ValueError("\'{}\' does not exist".format(args.file))
+
+        if os.path.isdir(args.file):
+            raise ValueError("\'{}\' is not a file".format(args.file))
+        
+        fn, dir = os.path.basename(args.file).split(".")[0], os.path.dirname(args.file)
+        
+        gen_all = False
+
+        # check goal
+        if args.goal is None:
+            gen_all = True
+
+        # get config
+        if args.default_cfg is None:
+            args.default_cfg = "./default.cfg"
+
+        if not os.path.exists(args.default_cfg):
+            raise ValueError("default config \'{}\' does not exist".format(args.default_cfg))
+        
+        if args.cfg is None:
+            args.cfg = "{}/{}.cfg".format(dir, fn)
+
+        if not os.path.exists(args.cfg):
+            raise ValueError("\'{}\' does not exist".format(args.cfg))
+
+        if os.path.isdir(args.cfg):
+            raise ValueError("\'{}\' is not a file".format(args.cfg))
+
+        print()
+        print("---------------------------------")
+        print("------ Input Configuration ------")
+        print("---------------------------------")
+        print()
+
+        print("Reading configurations")
+        print(indented_str("default cfg  : {}".format(args.default_cfg), 2))
+        config = ConfigParser().read(args.default_cfg)
+
+        print(indented_str("file cfg     : {}".format(args.cfg), 2))
+        config = ConfigParser().read(args.cfg, config)
+
+        # set dump option
+        common = config.get_section("common")
+        if args.dump_tableau:
+            common.set_value("dump", "true")
+        
+        # add prop dict to configuration and override solver
+        _, formulas = STLmcParser().parse_from_file(args.file)
+        common.arguments["prop_dict"] = formulas.propositions
+        label_goals = formulas.labeled
+
+        goals: List[StlGoal] = list()
+        for label in label_goals:
+            if gen_all:
+                goals.append(StlGoal(label_goals[label], config))
+                continue
+
+            if label == args.goal:
+                goals.append(StlGoal(label_goals[label], config))
+                break
+        
+        if len(goals) <= 0:
+            raise Exception("nothing to generate")
+
+        goal = goals[0]
+
+        print()
+        print("---------------------------------")
+        print("---- STL Tableau Construction ---")
+        print("---------------------------------")
+        print()
+
+        print("Information")
+        f, size, depth = get_formula_info(goal)
+        print(indented_str("goal    : {}".format(args.goal), 2))
+        print(indented_str("formula : {}".format(f), 2))
+        print(indented_str("size    : {}".format(size), 2))
+        print(indented_str("depth   : {}".format(depth), 2))
+
+        s = time.time()
+        g_a = goal.encode(tableau_only=args.tableau_only)
+        e = time.time()
+
+        print()
+        print("Total info")
+        if not args.tableau_only:
+            print(indented_str("automaton info: ({})".format(get_ha_size(g_a)), 2))
+        print(indented_str("running time: {:.3f}s".format(e - s), 2))
+
+    except Exception as err:
+        import traceback
+        print(traceback.print_exc())
+        print("error: {}".format(err))
+        raise SystemExit(1)

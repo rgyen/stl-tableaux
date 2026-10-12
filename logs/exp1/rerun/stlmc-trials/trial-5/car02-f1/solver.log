@@ -1,0 +1,22 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/car02/car02.model
+> selected solver: dreal
+> threshold : 0.001
+max procs: 5
+bound: 0
+# bound: 0, 2
+bound: 1
+# bound: 1, 9
+bound: 2
+# bound: 2, 56
+bound: 3
+# bound: 3, 175
+bound: 4
+# bound: 4, 901
+bound: 5
+# bound: 5, 4173
+total loop : 5316
+size : 2245
+goal : ([][0.0,inf) (theta1 > 1))
+result : True up to bound 5 (time bound: 5)
+running time 2216.23195 seconds
+======================================

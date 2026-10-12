@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/nonlinear/colm/colm.model -goal f1 -default-cfg ../../src/default.cfg -solver dreach -o log >& log/colm/f1/dreach/gen-log.txt
+
+# solver-launch
+bash out/colm/f1/dreach/run.sh

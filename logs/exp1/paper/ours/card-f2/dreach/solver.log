@@ -1,0 +1,279 @@
+dReal Options:
+For k = 0, dReach tried 0 feasible paths, all of them are unsat.
+For k = 1, dReach tried 0 feasible paths, all of them are unsat.
+For k = 2, dReach tried 0 feasible paths, all of them are unsat.
+SMT: ./log/card/f2/dreach/model/model_3_0.smt2, PATH : [6,7,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_3_1.smt2, PATH : [6,7,12,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_3_2.smt2, PATH : [6,8,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_3_3.smt2, PATH : [6,11,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_3_4.smt2, PATH : [6,11,5,15]
+unsat
+For k = 3, dReach tried 5 feasible paths, all of them are unsat.
+SMT: ./log/card/f2/dreach/model/model_4_0.smt2, PATH : [6,7,2,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_1.smt2, PATH : [6,7,2,12,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_2.smt2, PATH : [6,7,10,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_3.smt2, PATH : [6,7,10,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_4.smt2, PATH : [6,7,12,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_5.smt2, PATH : [6,7,12,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_6.smt2, PATH : [6,7,12,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_7.smt2, PATH : [6,7,12,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_8.smt2, PATH : [6,8,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_9.smt2, PATH : [6,8,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_10.smt2, PATH : [6,8,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_11.smt2, PATH : [6,8,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_12.smt2, PATH : [6,8,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_13.smt2, PATH : [6,8,16,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_14.smt2, PATH : [6,8,16,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_15.smt2, PATH : [6,11,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_16.smt2, PATH : [6,11,3,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_17.smt2, PATH : [6,11,3,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_18.smt2, PATH : [6,11,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_19.smt2, PATH : [6,11,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_20.smt2, PATH : [6,11,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_21.smt2, PATH : [6,11,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_22.smt2, PATH : [6,11,13,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_23.smt2, PATH : [6,11,13,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_24.smt2, PATH : [6,11,13,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_25.smt2, PATH : [6,11,13,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_26.smt2, PATH : [6,11,16,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_4_27.smt2, PATH : [6,11,16,10,15]
+unsat
+For k = 4, dReach tried 28 feasible paths, all of them are unsat.
+SMT: ./log/card/f2/dreach/model/model_5_0.smt2, PATH : [6,7,2,10,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_1.smt2, PATH : [6,7,2,10,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_2.smt2, PATH : [6,7,2,12,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_3.smt2, PATH : [6,7,2,12,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_4.smt2, PATH : [6,7,2,12,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_5.smt2, PATH : [6,7,2,12,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_6.smt2, PATH : [6,7,10,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_7.smt2, PATH : [6,7,10,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_8.smt2, PATH : [6,7,10,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_9.smt2, PATH : [6,7,10,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_10.smt2, PATH : [6,7,10,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_11.smt2, PATH : [6,7,10,16,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_12.smt2, PATH : [6,7,10,16,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_13.smt2, PATH : [6,7,12,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_14.smt2, PATH : [6,7,12,3,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_15.smt2, PATH : [6,7,12,3,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_16.smt2, PATH : [6,7,12,4,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_17.smt2, PATH : [6,7,12,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_18.smt2, PATH : [6,7,12,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_19.smt2, PATH : [6,7,12,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_20.smt2, PATH : [6,7,12,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_21.smt2, PATH : [6,7,12,13,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_22.smt2, PATH : [6,7,12,13,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_23.smt2, PATH : [6,7,12,13,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_24.smt2, PATH : [6,7,12,13,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_25.smt2, PATH : [6,7,12,16,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_26.smt2, PATH : [6,7,12,16,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_27.smt2, PATH : [6,8,1,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_28.smt2, PATH : [6,8,1,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_29.smt2, PATH : [6,8,1,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_30.smt2, PATH : [6,8,1,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_31.smt2, PATH : [6,8,1,13,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_32.smt2, PATH : [6,8,1,13,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_33.smt2, PATH : [6,8,1,13,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_34.smt2, PATH : [6,8,1,13,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_35.smt2, PATH : [6,8,9,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_36.smt2, PATH : [6,8,9,3,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_37.smt2, PATH : [6,8,9,3,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_38.smt2, PATH : [6,8,9,4,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_39.smt2, PATH : [6,8,9,13,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_40.smt2, PATH : [6,8,9,13,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_41.smt2, PATH : [6,8,9,13,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_42.smt2, PATH : [6,8,9,13,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_43.smt2, PATH : [6,8,9,16,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_44.smt2, PATH : [6,8,9,16,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_45.smt2, PATH : [6,8,16,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_46.smt2, PATH : [6,8,16,2,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_47.smt2, PATH : [6,8,16,2,12,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_48.smt2, PATH : [6,8,16,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_49.smt2, PATH : [6,8,16,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_50.smt2, PATH : [6,8,16,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_51.smt2, PATH : [6,8,16,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_52.smt2, PATH : [6,8,16,10,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_53.smt2, PATH : [6,8,16,10,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_54.smt2, PATH : [6,11,1,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_55.smt2, PATH : [6,11,1,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_56.smt2, PATH : [6,11,1,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_57.smt2, PATH : [6,11,1,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_58.smt2, PATH : [6,11,1,13,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_59.smt2, PATH : [6,11,1,13,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_60.smt2, PATH : [6,11,1,13,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_61.smt2, PATH : [6,11,1,13,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_62.smt2, PATH : [6,11,3,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_63.smt2, PATH : [6,11,3,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_64.smt2, PATH : [6,11,3,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_65.smt2, PATH : [6,11,3,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_66.smt2, PATH : [6,11,3,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_67.smt2, PATH : [6,11,3,13,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_68.smt2, PATH : [6,11,3,13,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_69.smt2, PATH : [6,11,3,13,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_70.smt2, PATH : [6,11,3,13,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_71.smt2, PATH : [6,11,3,16,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_72.smt2, PATH : [6,11,3,16,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_73.smt2, PATH : [6,11,9,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_74.smt2, PATH : [6,11,9,3,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_75.smt2, PATH : [6,11,9,3,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_76.smt2, PATH : [6,11,9,4,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_77.smt2, PATH : [6,11,9,13,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_78.smt2, PATH : [6,11,9,13,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_79.smt2, PATH : [6,11,9,13,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_80.smt2, PATH : [6,11,9,13,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_81.smt2, PATH : [6,11,9,16,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_82.smt2, PATH : [6,11,9,16,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_83.smt2, PATH : [6,11,13,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_84.smt2, PATH : [6,11,13,3,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_85.smt2, PATH : [6,11,13,3,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_86.smt2, PATH : [6,11,13,4,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_87.smt2, PATH : [6,11,13,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_88.smt2, PATH : [6,11,13,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_89.smt2, PATH : [6,11,13,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_90.smt2, PATH : [6,11,13,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_91.smt2, PATH : [6,11,13,16,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_92.smt2, PATH : [6,11,13,16,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_93.smt2, PATH : [6,11,16,1,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_94.smt2, PATH : [6,11,16,2,10,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_95.smt2, PATH : [6,11,16,2,12,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_96.smt2, PATH : [6,11,16,9,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_97.smt2, PATH : [6,11,16,9,4,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_98.smt2, PATH : [6,11,16,9,5,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_99.smt2, PATH : [6,11,16,9,14,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_100.smt2, PATH : [6,11,16,10,1,15]
+unsat
+SMT: ./log/card/f2/dreach/model/model_5_101.smt2, PATH : [6,11,16,10,14,15]
+unsat
+For k = 5, dReach tried 102 feasible paths, all of them are unsat.
+12.04user 2.48system 0:14.82elapsed 98%CPU (0avgtext+0avgdata 44068maxresident)k
+88inputs+9816outputs (0major+1261787minor)pagefaults 0swaps

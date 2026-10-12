@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/oscl-f1/sat-reach/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl-f1.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/linear/oscl/oscl.model
+  automaton info: (# mode: 4, # jump: 4)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f1
+    formula   : ([][ 0.0, 3.0 ] ((x3 < (1.0 + 0.1)) U[ 0.0, inf ) (y > (10.0 - 0.1))))
+    size      : 4
+  Config
+    bound     : 5
+    threshold : 0.1
+
+  finish construction
+    running time: 0.219s
+    tableau info: (# vertex: 19, # edge: 45)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.012s
+    tableau info: (# vertex: 8, # edge: 24)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 7, # jump: 22)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.025s
+  automaton info: (# mode: 29, # jump: 206)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.842s
+  automaton info: (# mode: 24, # jump: 141)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 24, # jump: 141)
+
+Converting the automaton to an input model of sat-reach
+  model file  : out/oscl/f1/sat-reach/model/model.xml
+  conf  file  : out/oscl/f1/sat-reach/model/model.cfg
+  script file : out/oscl/f1/sat-reach/run.sh
+  running time: 0.093s

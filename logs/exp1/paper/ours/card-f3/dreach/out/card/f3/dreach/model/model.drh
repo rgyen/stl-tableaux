@@ -1,0 +1,371 @@
+// Created by Hyst v1.6
+// Hybrid Automaton in dReach
+// Converted from file: tmp0.961779541147218$$_f3_b5_se_drh.xml
+// Command Line arguments: -input tmp0.961779541147218$$_f3_b5_se_drh.xml -t dreach "" -o log/card/f3/dreach/model/model.drh
+
+
+
+[ -10, 10 ] v;
+[ 0, 10 ] duration;
+[ -10, 10 ] u;
+[0,60] time;
+[0,90] clk0;
+[0,90] gClk;
+[0,90] clk1;
+
+// mode_id_0
+{
+    mode 1;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (0.0 <= duration) (gClk >= 0.0)))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (duration < 10.0 + 0.1) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_0 -> mode_id_10 (1 -> 11)
+            (and (clk0 >= 0.0) (and (clk1 >= 0.0) (gClk >= 90.0))) ==> @11(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_0 -> mode_id_2 (1 -> 3)
+            (and (clk0 >= 0.0) (and (clk1 >= 0.0) (gClk >= 90.0))) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_0 -> mode_id_10 (1 -> 11)
+            (and (clk0 >= 0.0) (clk1 >= 0.0)) ==> @11(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_0 -> mode_id_3 (1 -> 4)
+            (and (clk0 >= 0.0) (and (clk1 >= 0.0) (gClk >= 90.0))) ==> @4(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_0 -> mode_id_3 (1 -> 4)
+            (and (clk0 >= 0.0) (clk1 >= 0.0)) ==> @4(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_0
+}
+
+// mode_id_1
+{
+    mode 2;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (u > 10.0 - 0.1) (0.0 <= duration)))) (and (and (duration < 5.0) (and (gClk >= 0.0) (-10.0 <= v))) (and (duration <= 10.0) (and (duration < 10.0 + 0.1) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_1 -> mode_id_3 (2 -> 4)
+            (and (clk0 >= 0.0) (clk1 >= 0.0)) ==> @4(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_1 -> mode_id_10 (2 -> 11)
+            (and (clk0 >= 0.0) (clk1 >= 0.0)) ==> @11(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_1 -> mode_id_2 (2 -> 3)
+            (and (clk0 >= 0.0) (and (clk1 >= 0.0) (gClk >= 90.0))) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_1
+}
+
+// mode_id_2
+{
+    mode 3;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (gClk >= 0.0))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (0.0 <= duration) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+
+    // end mode_id_2
+}
+
+// mode_id_3
+{
+    mode 4;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (u > 10.0 - 0.1) (gClk >= 0.0)))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (0.0 <= duration) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_3 -> mode_id_2 (4 -> 3)
+            (true) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_3
+}
+
+// mode_id_4
+{
+    mode 5;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (0.0 <= duration) (gClk >= 0.0)))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (duration < 10.0 + 0.1) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_4 -> mode_id_13 (5 -> 14)
+            (clk0 >= 5.0) ==> @14(and (clk0' = 5.0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_4 -> mode_id_2 (5 -> 3)
+            (and (gClk >= 90.0) (clk0 >= 5.0)) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_4
+}
+
+// mode_id_5
+{
+    mode 6;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (gClk >= 0.0))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (0.0 <= duration) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_5 -> mode_id_2 (6 -> 3)
+            (and (gClk >= 90.0) (clk0 <= 5.0)) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_5 -> mode_id_13 (6 -> 14)
+            (clk0 <= 5.0) ==> @14(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_5
+}
+
+// mode_id_6
+{
+    mode 7;
+    invt:
+        (and (gClk >= 0.0) (gClk <= 90.0));
+    flow:
+        d/dt[duration] = 0.0;
+        d/dt[v] = 0.0;
+        d/dt[u] = 0.0;
+        d/dt[clk0] = 0.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk1] = 0.0;
+
+    jump:
+        // mode_id_6 -> mode_id_7 (7 -> 8)
+            (true) ==> @8(and (clk0' = 0.0) (duration' = duration) (clk1' = clk1) (gClk' = 0.0) (u' = u) (v' = v));
+
+        // mode_id_6 -> mode_id_4 (7 -> 5)
+            (true) ==> @5(and (clk0' = 0.0) (duration' = duration) (clk1' = clk1) (gClk' = 0.0) (u' = u) (v' = v));
+
+        // mode_id_6 -> mode_id_11 (7 -> 12)
+            (true) ==> @12(and (clk0' = 0.0) (duration' = duration) (clk1' = clk1) (gClk' = 0.0) (u' = u) (v' = v));
+
+        // mode_id_6 -> mode_id_12 (7 -> 13)
+            (true) ==> @13(and (clk0' = 0.0) (duration' = duration) (clk1' = clk1) (gClk' = 0.0) (u' = u) (v' = v));
+
+        // mode_id_6 -> mode_id_8 (7 -> 9)
+            (true) ==> @9(and (clk0' = 0.0) (duration' = duration) (clk1' = clk1) (gClk' = 0.0) (u' = u) (v' = v));
+
+    // end mode_id_6
+}
+
+// mode_id_7
+{
+    mode 8;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (gClk >= 0.0))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (0.0 <= duration) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_7 -> mode_id_0 (8 -> 1)
+            (clk0 <= 5.0) ==> @1(and (clk0' = clk0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_7 -> mode_id_9 (8 -> 10)
+            (clk0 <= 5.0) ==> @10(and (clk0' = clk0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_7
+}
+
+// mode_id_8
+{
+    mode 9;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (0.0 <= duration) (gClk >= 0.0)))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (duration < 10.0 + 0.1) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_8 -> mode_id_3 (9 -> 4)
+            (true) ==> @4(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_8 -> mode_id_0 (9 -> 1)
+            (clk0 >= 0.0) ==> @1(and (clk0' = 0.0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_8 -> mode_id_10 (9 -> 11)
+            (true) ==> @11(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_8 -> mode_id_2 (9 -> 3)
+            (gClk >= 90.0) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_8 -> mode_id_1 (9 -> 2)
+            (clk0 >= 0.0) ==> @2(and (clk0' = 0.0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_8 -> mode_id_9 (9 -> 10)
+            (clk0 >= 0.0) ==> @10(and (clk0' = 0.0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_8
+}
+
+// mode_id_9
+{
+    mode 10;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (u > 10.0 - 0.1) (gClk >= 0.0)))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (0.0 <= duration) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_9 -> mode_id_2 (10 -> 3)
+            (and (clk0 >= 0.0) (clk1 >= 0.0)) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_9
+}
+
+// mode_id_10
+{
+    mode 11;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (0.0 <= duration) (gClk >= 0.0)))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (duration < 10.0 + 0.1) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_10 -> mode_id_3 (11 -> 4)
+            (true) ==> @4(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_10 -> mode_id_2 (11 -> 3)
+            (gClk >= 90.0) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_10
+}
+
+// mode_id_11
+{
+    mode 12;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (u > 10.0 - 0.1) (gClk >= 0.0)))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (0.0 <= duration) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_11 -> mode_id_9 (12 -> 10)
+            (clk0 >= 0.0) ==> @10(and (clk0' = 0.0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_11 -> mode_id_2 (12 -> 3)
+            (true) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_11 -> mode_id_0 (12 -> 1)
+            (clk0 >= 0.0) ==> @1(and (clk0' = 0.0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_11
+}
+
+// mode_id_12
+{
+    mode 13;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (gClk >= 0.0))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (0.0 <= duration) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_12 -> mode_id_13 (13 -> 14)
+            (clk0 <= 5.0) ==> @14(and (clk0' = clk0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_12 -> mode_id_2 (13 -> 3)
+            (and (gClk >= 90.0) (clk0 <= 5.0)) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_12 -> mode_id_5 (13 -> 6)
+            (clk0 <= 5.0) ==> @6(and (clk0' = clk0) (duration' = duration) (clk1' = 0.0) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_12
+}
+
+// mode_id_13
+{
+    mode 14;
+    invt:
+        (and (and (and (gClk <= 90.0) (u <= 10.0)) (and (-10.0 <= u) (and (0.0 <= duration) (gClk >= 0.0)))) (and (and (duration < 5.0) (-10.0 <= v)) (and (duration <= 10.0) (and (duration < 10.0 + 0.1) (v <= 10.0)))));
+    flow:
+        d/dt[clk1] = 1.0;
+        d/dt[gClk] = 1.0;
+        d/dt[clk0] = 1.0;
+        d/dt[u] = -0.9 * u * u - u * u * u - 0.9 * u - v + 1.0;
+        d/dt[duration] = 1.0;
+        d/dt[v] = u - 2.0 * v;
+
+    jump:
+        // mode_id_13 -> mode_id_2 (14 -> 3)
+            (and (clk1 >= 15.0) (clk0 >= 5.0)) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+        // mode_id_13 -> mode_id_2 (14 -> 3)
+            (and (gClk >= 90.0) (clk0 >= 5.0)) ==> @3(and (clk0' = clk0) (duration' = duration) (clk1' = clk1) (gClk' = gClk) (u' = u) (v' = v));
+
+    // end mode_id_13
+}
+// end modes
+
+init:
+@7 (and (and (and (0.0 <= duration) (duration <= 0.01)) (and (0.0 <= u) (clk0 = 0.0))) (and (and (0.0 <= v) (gClk = 0.0)) (and (v <= 0.01) (and (clk1 = 0.0) (u <= 0.01)))));
+
+goal:
+@3 true;

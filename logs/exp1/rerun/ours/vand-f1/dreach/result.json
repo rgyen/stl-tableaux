@@ -1,0 +1,22 @@
+{
+  "id": "vand-f1",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "1406fec04e64a034467f68243d2f5ddad54fbb0323f2ce8a60cf4b1197383e1b",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.824422580190003
+  },
+  "composed_ha": [
+    8,
+    14
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 6.007042116951197,
+  "solver_seconds": 6.007042116951197,
+  "phase": "solver",
+  "outcome": "unsafe"
+}

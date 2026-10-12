@@ -1,0 +1,22 @@
+{
+  "id": "oscl-f2",
+  "tool": "sat-reach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "d597c97ee9b4e7dc53e5ae63a0d3beed7050da17b5373086da4169a20a2b47ec",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.7199490861967206
+  },
+  "composed_ha": [
+    21,
+    85
+  ],
+  "status": "error",
+  "exit_code": 134,
+  "wall_seconds": 1.303489319048822,
+  "solver_seconds": 1.303489319048822,
+  "phase": "solver",
+  "outcome": "error"
+}

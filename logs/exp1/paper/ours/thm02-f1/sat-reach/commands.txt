@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/linear/thm02/thm02.model -goal f1 -default-cfg ../../src/default.cfg -solver sat-reach -o log >& log/thm02/f1/sat-reach/gen-log.txt
+
+# solver-launch
+bash out/thm02/f1/sat-reach/run.sh

@@ -1,0 +1,7304 @@
+
+#Variables
+x2
+x1
+t
+clk0
+gClk
+clk2
+clk1
+#End
+
+
+#Location
+Locname: mode_id_0
+
+LocId: 1
+
+Inv: x2 <= 9.0 & x1 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_6
+
+    DestId: 7
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: x2 >= 6.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: x2 >= 6.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_14
+
+    DestId: 15
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: x2 >= 6.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_20
+
+    DestId: 21
+
+
+    Guard: x2 >= 6.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_1
+
+LocId: 2
+
+Inv: x2 <= 9.0 & x1 <= 9.0 & 0.0 <= x1 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_5
+
+    DestId: 6
+
+
+    Guard: true
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_2
+
+LocId: 3
+
+Inv: x2 <= 9.0 & x1 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x2 >= 1.9 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_12
+
+    DestId: 13
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_11
+
+    DestId: 12
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_3
+
+LocId: 4
+
+Inv: x2 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 8.0 & x2 >= 1.9 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_8
+
+    DestId: 9
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: clk2 >= 2.0 & clk0 >= 2.0 & gClk >= 20.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: clk2 >= 2.0 & gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: clk2 <= 2.0 & clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: clk2 <= 2.0 & clk0 >= 2.0 & gClk >= 20.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: clk2 >= 2.0 & clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_4
+
+LocId: 5
+
+Inv: x1 >= 1.0 & x2 >= 1.0 & 0.0 <= x1 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x1 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x1 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_5
+
+    DestId: 6
+
+
+    Guard: true
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_5
+
+LocId: 6
+
+Inv: true
+
+Flow:
+    x2 = 0.0
+    x1 = 0.0
+    clk0 = 0.0
+    gClk = 0.0
+    clk2 = 0.0
+    clk1 = 0.0
+    t = 1.0
+#End
+
+#End
+#Location
+Locname: mode_id_6
+
+LocId: 7
+
+Inv: x1 >= 1.0 & x2 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_21
+
+    DestId: 22
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_0
+
+    DestId: 1
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_18
+
+    DestId: 19
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_8
+
+    DestId: 9
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_7
+
+LocId: 8
+
+Inv: gClk >= 0.0 & gClk <= 20.0
+
+Flow:
+    x2 = 0.0
+    x1 = 0.0
+    clk0 = 0.0
+    gClk = 1.0
+    clk2 = 0.0
+    clk1 = 0.0
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_11
+
+    DestId: 12
+
+
+    Guard: true
+
+    Reset:
+
+        clk0' = 0.0
+
+        clk1' = clk1
+
+        gClk' = 0.0
+
+        t' = t
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_6
+
+    DestId: 7
+
+
+    Guard: true
+
+    Reset:
+
+        clk0' = 0.0
+
+        clk1' = clk1
+
+        gClk' = 0.0
+
+        t' = t
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_8
+
+LocId: 9
+
+Inv: x2 <= 9.0 & x1 <= 9.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x2 >= 1.9 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: clk2 <= 2.0 & clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: clk2 >= 2.0 & clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: clk2 <= 2.0 & clk0 >= 2.0 & gClk >= 20.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: clk2 >= 2.0 & gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: clk2 >= 2.0 & clk0 >= 2.0 & gClk >= 20.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_9
+
+LocId: 10
+
+Inv: x2 <= 9.0 & x1 <= 9.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x2 >= 1.9 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_2
+
+    DestId: 3
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_11
+
+    DestId: 12
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_11
+
+    DestId: 12
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_12
+
+    DestId: 13
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_8
+
+    DestId: 9
+
+
+    Guard: clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_10
+
+LocId: 11
+
+Inv: x2 <= 9.0 & x1 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x2 >= 1.9 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: clk2 <= 2.0 & clk0 >= 2.0 & gClk >= 20.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: clk2 >= 2.0 & gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: clk2 <= 2.0 & clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: clk2 >= 2.0 & clk0 >= 2.0 & gClk >= 20.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: clk2 >= 2.0 & clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_11
+
+LocId: 12
+
+Inv: x1 >= 1.0 & x2 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x2 >= 1.9 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_8
+
+    DestId: 9
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_9
+
+    DestId: 10
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_2
+
+    DestId: 3
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_12
+
+LocId: 13
+
+Inv: x2 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 8.0 & x2 >= 1.9 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_11
+
+    DestId: 12
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_2
+
+    DestId: 3
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_9
+
+    DestId: 10
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_2
+
+    DestId: 3
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_8
+
+    DestId: 9
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: clk0 >= 2.0
+
+    Reset:
+
+        clk0' = 2.0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_13
+
+LocId: 14
+
+Inv: x2 >= 1.0 & 0.0 <= x1 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 8.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_5
+
+    DestId: 6
+
+
+    Guard: true
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_14
+
+LocId: 15
+
+Inv: x2 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 8.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_8
+
+    DestId: 9
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_18
+
+    DestId: 19
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_6
+
+    DestId: 7
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_20
+
+    DestId: 21
+
+
+    Guard: clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_0
+
+    DestId: 1
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_21
+
+    DestId: 22
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_0
+
+    DestId: 1
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_15
+
+LocId: 16
+
+Inv: x2 <= 9.0 & x1 >= 1.0 & 0.0 <= x1 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x1 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x1 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_5
+
+    DestId: 6
+
+
+    Guard: true
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_16
+
+LocId: 17
+
+Inv: x2 <= 9.0 & x1 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: clk2 <= 2.0 & gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_20
+
+    DestId: 21
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_17
+
+LocId: 18
+
+Inv: x1 >= 1.0 & x2 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x2 >= 1.9 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: clk2 >= 2.0 & clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: clk2 >= 2.0 & clk0 >= 2.0 & gClk >= 20.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: clk2 >= 2.0 & gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: clk2 <= 2.0 & clk0 >= 2.0 & gClk >= 20.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: clk2 <= 2.0 & clk0 >= 2.0 & gClk >= 20.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_8
+
+    DestId: 9
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk2 >= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0 & clk0 >= 2.0 & clk1 >= 5.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_18
+
+LocId: 19
+
+Inv: x2 <= 9.0 & x1 <= 9.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_20
+
+    DestId: 21
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: clk2 <= 2.0 & gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_19
+
+LocId: 20
+
+Inv: x1 >= 1.0 & x2 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = -0.8
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: clk2 <= 2.0 & gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_18
+
+    DestId: 19
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_20
+
+LocId: 21
+
+Inv: x2 >= 1.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 8.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = -0.6
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: clk2 <= 2.0 & gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_18
+
+    DestId: 19
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0 & x2 <= 3.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & clk2 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+#End
+#Location
+Locname: mode_id_21
+
+LocId: 22
+
+Inv: x2 <= 9.0 & x1 <= 9.0 & 0.0 <= x1 & x1 >= 3.9 & 0.0 <= x2 & gClk >= 0.0 & gClk <= 20.0 & x2 <= 10.0 & x1 <= 10.0
+
+Flow:
+    clk1 = 1.0
+    gClk = 1.0
+    clk0 = 1.0
+    clk2 = 1.0
+    x2 = 1.0
+    x1 = 0.9
+    t = 1.0
+#End
+
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_6
+
+    DestId: 7
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_1
+
+    DestId: 2
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_13
+
+    DestId: 14
+
+
+    Guard: x2 >= 6.0 & gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_15
+
+    DestId: 16
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: x2 >= 6.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_18
+
+    DestId: 19
+
+
+    Guard: clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_6
+
+    DestId: 7
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_20
+
+    DestId: 21
+
+
+    Guard: x2 >= 6.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_10
+
+    DestId: 11
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_19
+
+    DestId: 20
+
+
+    Guard: x2 >= 6.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_3
+
+    DestId: 4
+
+
+    Guard: x2 >= 6.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_0
+
+    DestId: 1
+
+
+    Guard: 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_14
+
+    DestId: 15
+
+
+    Guard: x2 >= 6.0 & 0.0 <= x1 & 0.0 <= x2 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_4
+
+    DestId: 5
+
+
+    Guard: gClk >= 20.0 & clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = clk1
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = clk2
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_17
+
+    DestId: 18
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_8
+
+    DestId: 9
+
+
+    Guard: clk0 <= 2.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+Transition:
+
+    Dest: mode_id_16
+
+    DestId: 17
+
+
+    Guard: clk0 <= 2.0 & 0.0 <= x1 & 0.0 <= x2 & x1 >= 5.0 & x2 <= 10.0 & x1 <= 10.0
+
+    Reset:
+
+        clk0' = clk0
+
+        clk1' = 0.0
+
+        t' = t
+
+        gClk' = gClk
+
+        x1' = x1
+
+        x2' = x2
+
+        clk2' = 0.0
+
+    #End
+
+#End
+#End
+
+#Init
+
+loc=mode_id_7: t >= 0.0 & t <= 0.0 & clk2 = 0.0 & gClk >= 0.0 & gClk <= 0.0 & clk2 >= 0.0 & clk2 <= 0.0 & clk0 = 0.0 & 4.4 <= x1 & t = 0.0 & gClk = 0.0 & 5.9 <= x2 & clk1 = 0.0 & x2 <= 6.0 & clk0 >= 0.0 & clk0 <= 0.0 & clk1 >= 0.0 & clk1 <= 0.0 & x1 <= 4.5
+
+#Forbidden
+
+mode_id_5: true

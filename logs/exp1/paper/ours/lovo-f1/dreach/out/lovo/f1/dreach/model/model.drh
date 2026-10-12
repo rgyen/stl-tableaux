@@ -1,0 +1,190 @@
+// Created by Hyst v1.6
+// Hybrid Automaton in dReach
+// Converted from file: tmp0.44346329334910684$$_f1_b5_se_drh.xml
+// Command Line arguments: -input tmp0.44346329334910684$$_f1_b5_se_drh.xml -t dreach "" -o kmbae-lovo/lovo/f1/dreach/model/model.drh
+
+
+
+[ 0, 2 ] x;
+[ 0, 2 ] y;
+[0,2] time;
+[0,5] gClk;
+
+// mode_id_0
+{
+    mode 1;
+    invt:
+        (and (and (and (x < 0.0 + 0.000001) (y <= 2.0)) (and (0.0 <= x) (0.0 <= y))) (and (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)) (and (gClk >= 0.0) (gClk <= 5.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[y] = x * y - y;
+        d/dt[x] = 3.0 * x - 3.0 * x * y;
+
+    jump:
+        // mode_id_0 -> mode_id_6 (1 -> 7)
+            (true) ==> @7(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_0 -> mode_id_7 (1 -> 8)
+            (and (and (y <= 2.0) (0.0 <= x)) (and (0.0 <= y) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)))) ==> @8(and (gClk' = gClk) (x' = x) (y' = y));
+
+    // end mode_id_0
+}
+
+// mode_id_1
+{
+    mode 2;
+    invt:
+    flow:
+        d/dt[gClk] = 0.0;
+        d/dt[x] = 0.0;
+        d/dt[y] = 0.0;
+
+    jump:
+
+    // end mode_id_1
+}
+
+// mode_id_2
+{
+    mode 3;
+    invt:
+        (and (gClk >= 0.0) (gClk <= 5.0));
+    flow:
+        d/dt[y] = 0.0;
+        d/dt[x] = 0.0;
+        d/dt[gClk] = 1.0;
+
+    jump:
+        // mode_id_2 -> mode_id_0 (3 -> 1)
+            (true) ==> @1(and (gClk' = 0.0) (x' = x) (y' = y));
+
+        // mode_id_2 -> mode_id_5 (3 -> 6)
+            (true) ==> @6(and (gClk' = 0.0) (x' = x) (y' = y));
+
+    // end mode_id_2
+}
+
+// mode_id_3
+{
+    mode 4;
+    invt:
+        (and (and (and (y <= 2.0) (0.0 <= x)) (and (0.0 <= y) ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) <= 0.161 * 0.161))) (and (and (y > 1.0 - 0.000001) (x <= 2.0)) (and (gClk >= 0.0) (gClk <= 5.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[y] = x * y - y;
+        d/dt[x] = 3.0 * x - 3.0 * x * y;
+
+    jump:
+        // mode_id_3 -> mode_id_7 (4 -> 8)
+            (gClk >= 5.0) ==> @8(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_3 -> mode_id_6 (4 -> 7)
+            (and (and (y <= 2.0) (and (0.0 <= x) (0.0 <= y))) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) <= 0.161 * 0.161) (and (gClk >= 5.0) (x <= 2.0)))) ==> @7(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_3 -> mode_id_5 (4 -> 6)
+            (and (and (y <= 2.0) (0.0 <= x)) (and (0.0 <= y) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) <= 0.161 * 0.161) (x <= 2.0)))) ==> @6(and (gClk' = gClk) (x' = x) (y' = y));
+
+    // end mode_id_3
+}
+
+// mode_id_4
+{
+    mode 5;
+    invt:
+        (and (and (and (x < 0.0 + 0.000001) (y <= 2.0)) (and (0.0 <= x) (0.0 <= y))) (and (and (y > 1.0 - 0.000001) ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161)) (and (x <= 2.0) (and (gClk >= 0.0) (gClk <= 5.0)))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[y] = x * y - y;
+        d/dt[x] = 3.0 * x - 3.0 * x * y;
+
+    jump:
+        // mode_id_4 -> mode_id_5 (5 -> 6)
+            (true) ==> @6(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_4 -> mode_id_7 (5 -> 8)
+            (and (and (y <= 2.0) (and (0.0 <= x) (0.0 <= y))) (and (gClk >= 5.0) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)))) ==> @8(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_4 -> mode_id_3 (5 -> 4)
+            (and (and (y <= 2.0) (0.0 <= x)) (and (0.0 <= y) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)))) ==> @4(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_4 -> mode_id_6 (5 -> 7)
+            (gClk >= 5.0) ==> @7(and (gClk' = gClk) (x' = x) (y' = y));
+
+    // end mode_id_4
+}
+
+// mode_id_5
+{
+    mode 6;
+    invt:
+        (and (and (and (y <= 2.0) (0.0 <= x)) (and (0.0 <= y) (y > 1.0 - 0.000001))) (and (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)) (and (gClk >= 0.0) (gClk <= 5.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[y] = x * y - y;
+        d/dt[x] = 3.0 * x - 3.0 * x * y;
+
+    jump:
+        // mode_id_5 -> mode_id_6 (6 -> 7)
+            (gClk >= 5.0) ==> @7(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_5 -> mode_id_0 (6 -> 1)
+            (gClk >= 5.0) ==> @1(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_5 -> mode_id_4 (6 -> 5)
+            (true) ==> @5(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_5 -> mode_id_3 (6 -> 4)
+            (and (and (y <= 2.0) (0.0 <= x)) (and (0.0 <= y) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)))) ==> @4(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_5 -> mode_id_7 (6 -> 8)
+            (and (and (y <= 2.0) (and (0.0 <= x) (0.0 <= y))) (and (gClk >= 5.0) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)))) ==> @8(and (gClk' = gClk) (x' = x) (y' = y));
+
+    // end mode_id_5
+}
+
+// mode_id_6
+{
+    mode 7;
+    invt:
+        (and (and (y <= 2.0) (and (0.0 <= x) (0.0 <= y))) (and (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)) (and (gClk >= 0.0) (gClk <= 5.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[y] = x * y - y;
+        d/dt[x] = 3.0 * x - 3.0 * x * y;
+
+    jump:
+        // mode_id_6 -> mode_id_1 (7 -> 2)
+            (true) ==> @2(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_6 -> mode_id_7 (7 -> 8)
+            (and (and (y <= 2.0) (0.0 <= x)) (and (0.0 <= y) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) >= 0.161 * 0.161) (x <= 2.0)))) ==> @8(and (gClk' = gClk) (x' = x) (y' = y));
+
+    // end mode_id_6
+}
+
+// mode_id_7
+{
+    mode 8;
+    invt:
+        (and (and (y <= 2.0) (and (0.0 <= x) (0.0 <= y))) (and (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) <= 0.161 * 0.161) (x <= 2.0)) (and (gClk >= 0.0) (gClk <= 5.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[y] = x * y - y;
+        d/dt[x] = 3.0 * x - 3.0 * x * y;
+
+    jump:
+        // mode_id_7 -> mode_id_6 (8 -> 7)
+            (and (and (y <= 2.0) (0.0 <= x)) (and (0.0 <= y) (and ((x - 1.0) * (x - 1.0) + (y - 1.0) * (y - 1.0) <= 0.161 * 0.161) (x <= 2.0)))) ==> @7(and (gClk' = gClk) (x' = x) (y' = y));
+
+        // mode_id_7 -> mode_id_1 (8 -> 2)
+            (true) ==> @2(and (gClk' = gClk) (x' = x) (y' = y));
+
+    // end mode_id_7
+}
+// end modes
+
+init:
+@3 (and (and (1.0 <= y) (x <= 1.312)) (and (gClk = 0.0) (and (1.288 <= x) (y <= 1.0))));
+
+goal:
+@2 true;

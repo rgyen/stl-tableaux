@@ -1,0 +1,8 @@
+# generation
+cd /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/lovo-f2/flowstar
+/home/artifact/stl-tableaux/.venv-stlauto-paper/bin/python -u /home/artifact/stl-tableaux/src/stl-tableaux/run /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.model -goal f2 -solver flowstar -default-cfg /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/lovo-f2/flowstar/default.cfg -o out
+
+# solver-launch
+cd /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/lovo-f2/flowstar
+bash /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/lovo-f2/flowstar/out/lovo/f2/flowstar/run.sh
+

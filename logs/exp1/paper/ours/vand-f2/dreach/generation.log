@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/vand/vand.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/vand/vand-f2.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/nonlinear/vand/vand.model
+  automaton info: (# mode: 1, # jump: 0)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f2
+    formula   : ((y <= (15 + 1.0)) R[ 0.0, inf ) (x <= (40 + 1.0)))
+    size      : 3
+  Config
+    bound     : 5
+    threshold : 1
+
+  finish construction
+    running time: 0.065s
+    tableau info: (# vertex: 5, # edge: 8)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.000s
+    tableau info: (# vertex: 4, # edge: 5)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.000s
+  automaton info: (# mode: 3, # jump: 3)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.001s
+  automaton info: (# mode: 4, # jump: 5)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.016s
+  automaton info: (# mode: 4, # jump: 5)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 4, # jump: 5)
+
+Converting the automaton to an input model of dreach
+  model file  : log/vand/f2/dreach/model/model.drh
+  script file : log/vand/f2/dreach/run.sh
+  running time: 0.415s

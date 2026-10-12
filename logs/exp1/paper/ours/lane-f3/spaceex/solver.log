@@ -1,0 +1,65 @@
+Computing reachable states... 
+Iteration 0... 7 sym states passed, 3 waiting 0.0130001s
+Iteration 1... 18 sym states passed, 6 waiting 0.0950001s
+Iteration 2... 25 sym states passed, 8 waiting 0.0840001s
+Iteration 3... 29 sym states passed, 9 waiting 0.0760001s
+Iteration 4... 33 sym states passed, 10 waiting 0.371001s
+Iteration 5... 35 sym states passed, 10 waiting 0.309001s
+Iteration 6... 42 sym states passed, 12 waiting 0.336001s
+Iteration 7... 44 sym states passed, 12 waiting 0.294001s
+Iteration 8... 45 sym states passed, 11 waiting 0.287001s
+Iteration 9... 49 sym states passed, 12 waiting 0.311001s
+Iteration 10... 56 sym states passed, 14 waiting 0.338001s
+Iteration 11... 60 sym states passed, 15 waiting 0.313001s
+Iteration 12... 67 sym states passed, 17 waiting 0.334001s
+Iteration 13... 69 sym states passed, 17 waiting 0.628001s
+Iteration 14... 71 sym states passed, 17 waiting 0.620001s
+Iteration 15... 73 sym states passed, 17 waiting 0.598001s
+Iteration 16... 74 sym states passed, 16 waiting 0.607001s
+Iteration 17... 76 sym states passed, 16 waiting 0.657001s
+Iteration 18... 78 sym states passed, 16 waiting 0.664001s
+Iteration 19... 79 sym states passed, 15 waiting 0.608001s
+Iteration 20... 81 sym states passed, 15 waiting 0.672001s
+Iteration 21... 83 sym states passed, 15 waiting 0.690001s
+Iteration 22... 84 sym states passed, 14 waiting 0.666001s
+Iteration 23... 86 sym states passed, 14 waiting 0.703001s
+Iteration 24... 88 sym states passed, 14 waiting 0.697001s
+Iteration 25... 90 sym states passed, 14 waiting 0.690001s
+Iteration 26... 92 sym states passed, 14 waiting 0.712001s
+Iteration 27... 93 sym states passed, 13 waiting 0.631001s
+Iteration 28... 95 sym states passed, 13 waiting 0.703001s
+Iteration 29... 97 sym states passed, 13 waiting 0.718001s
+Iteration 30... 98 sym states passed, 12 waiting 0.735001s
+Iteration 31... 100 sym states passed, 12 waiting 0.820001s
+Iteration 32... 101 sym states passed, 11 waiting 0.904001s
+Iteration 33... 102 sym states passed, 10 waiting 0.731001s
+Iteration 34... 104 sym states passed, 10 waiting 0.841001s
+Iteration 35... 105 sym states passed, 9 waiting 0.734001s
+Iteration 36... 107 sym states passed, 9 waiting 0.856001s
+Iteration 37... 108 sym states passed, 8 waiting 0.720001s
+Iteration 38... 110 sym states passed, 8 waiting 0.865001s
+Iteration 39... 111 sym states passed, 7 waiting 0.720001s
+Iteration 40... 113 sym states passed, 7 waiting 0.872001s
+Iteration 41... 114 sym states passed, 6 waiting 0.713001s
+Iteration 42... 116 sym states passed, 6 waiting 0.878001s
+Iteration 43... 117 sym states passed, 5 waiting 1.32701s
+Iteration 44... 118 sym states passed, 4 waiting 1.30601s
+Iteration 45... 119 sym states passed, 3 waiting 1.31801s
+Iteration 46... 120 sym states passed, 2 waiting 1.31601s
+Iteration 47... 121 sym states passed, 1 waiting 1.27501s
+Iteration 48... 122 sym states passed, 0 waiting 1.24601s
+Found fixpoint after 49 iterations.
+Computing reachable states done after 32.6301s
+Forbidden states are reachable.
+Output of reachable bad states... 
+Bounds on the variables over the entire set:
+ax: [-1.85583,1.57591]
+ax: [-1.85583,1.57591]
+
+Location-wise bounds on the variables:
+
+Location: loc(subsystem)==mode_id_0
+ax: [-1.85583,1.57591]
+ax: [-1.85583,1.57591]
+
+1.08201s

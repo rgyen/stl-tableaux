@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stl2tableaux"
+version = "0.1.0"
+description = "Interval-based tableaux for STL and automata-based robust STL model checking"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "GPL-3.0-only"}
+dependencies = ["maude==1.5.0", "lark==1.3.1", "z3-solver==4.15.4.0", "sympy==1.14.0"]
+
+[tool.setuptools]
+package-dir = {stl2tableaux = "src/stl-tableaux"}
+packages = [
+    "stl2tableaux",
+    "stl2tableaux.constraints",
+    "stl2tableaux.converter",
+    "stl2tableaux.encoding",
+    "stl2tableaux.encoding.automata",
+    "stl2tableaux.encoding.automata.goal",
+    "stl2tableaux.encoding.automata.model",
+    "stl2tableaux.encoding.robust",
+    "stl2tableaux.graph",
+    "stl2tableaux.hybrid_automaton",
+    "stl2tableaux.objects",
+    "stl2tableaux.parser",
+    "stl2tableaux.smt",
+    "stl2tableaux.syntax",
+    "stl2tableaux.tree",
+    "stl2tableaux.util",
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.maude", "*.lark"]

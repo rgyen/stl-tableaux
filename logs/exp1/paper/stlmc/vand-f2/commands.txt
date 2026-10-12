@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/nonlinear/vand/vand.model -model-cfg ../../benchmarks/exp1/nonlinear/vand/vand.cfg -model-specific-cfg ../../benchmarks/exp1/nonlinear/vand/vand-f2.cfg -parallel-core 5 -verbose >& log/vand/f2/stlmc/out-log.txt

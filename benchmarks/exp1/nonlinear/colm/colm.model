@@ -1,0 +1,27 @@
+# model description:
+#
+int modeId;
+[-1000, 1000] x;
+[-1000, 1000] y;
+{
+    mode:
+        modeId = 1;
+    inv:
+    flow:
+        d/dt[x] = 0.1 * y;
+        d/dt[y] = 0.2 * x - 0.1 * x * x * x - 0.02 * y + 0.01;
+    jump:
+}
+init:
+(modeId = 1);
+ (x >= -0.5); (x <= -0.4); 
+(y >= -0.5); (y <= -0.4); 
+
+proposition:
+
+#boudn: 10, timebound : 50, time-horizon : 30
+goal:
+[f1]: <>[10, 20] ([] [20, 28] (y > 3)) ;
+[f2]: (y >= 100 R[6, 30] x <= 40);
+[f3]: ([][10, 20] x > 4) U[0, inf) y >= 6; # thershold: 0.5
+

@@ -1,0 +1,17 @@
+{
+  "id": "f86",
+  "implementation": "automata",
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 5.734880938660353,
+  "raw": [
+    24,
+    120
+  ],
+  "reduced": [
+    10,
+    33
+  ],
+  "generation_seconds": 0.539,
+  "reduction_seconds": 0.17
+}

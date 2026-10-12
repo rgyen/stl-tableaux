@@ -1,0 +1,4 @@
+# STLmc solver
+cd /home/artifact/stl-tableaux/results/exp1-trial-5/exp1-stlmc/spac01-f1
+/home/artifact/stl-tableaux/.venv-stlmc-paper/bin/stlmc /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac01/spac01.model -model-cfg /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac01/spac01.cfg -model-specific-cfg /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac01/spac01-f1.cfg -parallel-core 5 -verbose -executable-path /home/artifact/stl-tableaux/.venv-stlmc-paper/bin/dreal
+

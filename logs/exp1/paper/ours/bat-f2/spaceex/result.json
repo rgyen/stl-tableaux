@@ -1,0 +1,13 @@
+{
+  "id": "bat-f2",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    25,
+    134
+  ],
+  "status": "timeout",
+  "solver_seconds": 3600.0,
+  "outcome": "timeout"
+}

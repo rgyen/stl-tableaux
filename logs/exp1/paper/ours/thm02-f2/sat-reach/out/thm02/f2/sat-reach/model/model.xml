@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sspaceex version="0.2" math="SpaceEx">
+	<component id="140165671738336">
+		<param name="gClk" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="t" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x0" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<location id="0" name="mode_id_0" x="200" y="200" width="100" height="100">
+			<flow>gClk' == 1.0 &amp; 
+x1' == -0.045 * (0.97 * x1 - 0.03 * x0) &amp; 
+x0' == -0.015 * (0.98 * x0 - 0.01 * x1) &amp; 
+t' == 1.0</flow>
+			<invariant>x0 &gt;= 10 &amp; 
+gClk &lt;= 25.0 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+gClk &gt;= 0.0 &amp; 
+x1 &gt;= 10 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</invariant>
+		</location>
+		<location id="1" name="mode_id_1" x="210" y="210" width="100" height="100">
+			<flow>gClk' == 1.0 &amp; 
+x0' == 0.015 * (100 - (0.98 * x0 - 0.01 * x1)) &amp; 
+x1' == -0.045 * (0.97 * x1 - 0.03 * x0) &amp; 
+t' == 1.0</flow>
+			<invariant>gClk &lt;= 25.0 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+gClk &gt;= 0.0 &amp; 
+x1 &gt;= 10 &amp; 
+x0 &lt;= 30 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</invariant>
+		</location>
+		<location id="2" name="mode_id_2" x="220" y="220" width="100" height="100">
+			<flow>gClk' == 1.0 &amp; 
+x1' == -0.045 * (0.97 * x1 - 0.03 * x0) &amp; 
+x0' == -0.015 * (0.98 * x0 - 0.01 * x1) &amp; 
+t' == 1.0</flow>
+			<invariant>x0 &gt;= 10 &amp; 
+x0 &gt;= (19 - 0.0001) &amp; 
+gClk &lt;= 25.0 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+gClk &gt;= 0.0 &amp; 
+x1 &gt;= 10 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</invariant>
+		</location>
+		<location id="3" name="mode_id_3" x="230" y="230" width="100" height="100">
+			<flow>x1' == 0.0 &amp; 
+x0' == 0.0 &amp; 
+gClk' == 1.0 &amp; 
+t' == 1.0</flow>
+			<invariant>gClk &gt;= 0.0 &amp; 
+gClk &lt;= 25.0</invariant>
+		</location>
+		<location id="4" name="mode_id_4" x="240" y="240" width="100" height="100">
+			<flow>gClk' == 0.0 &amp; 
+x1' == 0.0 &amp; 
+x0' == 0.0 &amp; 
+t' == 1.0</flow>
+			<invariant />
+		</location>
+		<location id="5" name="mode_id_5" x="250" y="250" width="100" height="100">
+			<flow>gClk' == 1.0 &amp; 
+x1' == 0.045 * (200 - (0.97 * x1 - 0.03 * x0)) &amp; 
+x0' == -0.015 * (0.98 * x0 - 0.01 * x1) &amp; 
+t' == 1.0</flow>
+			<invariant>gClk &lt;= 25.0 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+gClk &gt;= 0.0 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35 &amp; 
+x1 &lt;= 30</invariant>
+		</location>
+		<location id="6" name="mode_id_6" x="260" y="260" width="100" height="100">
+			<flow>gClk' == 1.0 &amp; 
+x1' == 0.045 * (200 - (0.97 * x1 - 0.03 * x0)) &amp; 
+x0' == -0.015 * (0.98 * x0 - 0.01 * x1) &amp; 
+t' == 1.0</flow>
+			<invariant>x0 &gt;= (19 - 0.0001) &amp; 
+gClk &lt;= 25.0 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+gClk &gt;= 0.0 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35 &amp; 
+x1 &lt;= 30</invariant>
+		</location>
+		<transition source="5" target="4">
+			<guard />
+			<assignment>x1 := x1 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x0 := x0</assignment>
+		</transition>
+		<transition source="2" target="0">
+			<guard>gClk &gt;= 25.0</guard>
+			<assignment>x1 := x1 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x0 := x0</assignment>
+		</transition>
+		<transition source="5" target="0">
+			<guard>x1 &gt;= 26 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="1" target="0">
+			<guard>x0 &gt;= 25 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="0" target="5">
+			<guard>x1 &lt;= 16 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="1" target="4">
+			<guard />
+			<assignment>x1 := x1 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x0 := x0</assignment>
+		</transition>
+		<transition source="5" target="1">
+			<guard>x0 &lt;= 17 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="0" target="1">
+			<guard>x0 &lt;= 17 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="0" target="4">
+			<guard />
+			<assignment>x1 := x1 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x0 := x0</assignment>
+		</transition>
+		<transition source="2" target="6">
+			<guard>x1 &lt;= 16 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="1" target="5">
+			<guard>x1 &lt;= 16 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="6" target="0">
+			<guard>gClk &gt;= 25.0 &amp; 
+x1 &gt;= 26 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="3" target="2">
+			<guard />
+			<assignment>gClk := 0.0 &amp; 
+t := t &amp; 
+x1 := x1 &amp; 
+x0 := x0</assignment>
+		</transition>
+		<transition source="6" target="2">
+			<guard>x1 &gt;= 26 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="2" target="5">
+			<guard>gClk &gt;= 25.0 &amp; 
+x1 &lt;= 16 &amp; 
+x0 &lt;= 35 &amp; 
+10 &lt;= x1 &amp; 
+10 &lt;= x0 &amp; 
+x1 &lt;= 35</guard>
+			<assignment>x0 := x0 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x1 := x1</assignment>
+		</transition>
+		<transition source="6" target="5">
+			<guard>gClk &gt;= 25.0</guard>
+			<assignment>x1 := x1 &amp; 
+t := t &amp; 
+gClk := gClk &amp; 
+x0 := x0</assignment>
+		</transition>
+	</component>
+	<component id="system">
+		<param name="gClk" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="t" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x0" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<bind component="140165671738336" as="subsystem">
+			<map key="gClk">gClk</map>
+			<map key="x1">x1</map>
+			<map key="t">t</map>
+			<map key="x0">x0</map>
+		</bind>
+	</component>
+</sspaceex>

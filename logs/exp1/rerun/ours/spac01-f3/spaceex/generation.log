@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/spac01-f3/spaceex/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac01/spac01.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac01/spac01-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac01/spac01.model
+  automaton info: (# mode: 3, # jump: 7)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : (<>[ 30.0, 75.0 ] (and ((x + y) >= (100.0 - 0.1)) ([][ 1.0, 3.0 ] ((x + y) > (55.0 - 0.1)))))
+    size      : 5
+  Config
+    bound     : 5
+    threshold : 0.1
+
+  finish construction
+    running time: 1.118s
+    tableau info: (# vertex: 30, # edge: 169)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.151s
+    tableau info: (# vertex: 14, # edge: 43)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.003s
+  automaton info: (# mode: 13, # jump: 40)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.063s
+  automaton info: (# mode: 40, # jump: 494)
+
+Removing contradiction
+  removing unreachable: 0.001s
+  running time: 2.503s
+  automaton info: (# mode: 14, # jump: 43)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 14, # jump: 43)
+
+Converting the automaton to an input model of spaceex
+  model file  : out/spac01/f3/spaceex/model/model.xml
+  conf  file  : out/spac01/f3/spaceex/model/model.cfg
+  script file : out/spac01/f3/spaceex/run.sh
+  running time: 0.019s

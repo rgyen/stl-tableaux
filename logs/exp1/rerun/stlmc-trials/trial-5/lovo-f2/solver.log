@@ -1,0 +1,22 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/lovo/lovo.model
+> selected solver: dreal
+> threshold : 0.000001
+max procs: 5
+bound: 0
+# bound: 0, 1
+bound: 1
+# bound: 1, 5
+bound: 2
+# bound: 2, 8
+bound: 3
+# bound: 3, 18
+bound: 4
+# bound: 4, 41
+bound: 5
+# bound: 5, 83
+total loop : 156
+size : 492
+goal : ((x >= 0) U[0.0,inf) (y >= 1))
+result : True up to bound 5 (time bound: 5)
+running time 847.19286 seconds
+======================================

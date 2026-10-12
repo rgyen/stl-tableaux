@@ -1,0 +1,14 @@
+{
+  "id": "vand-f3",
+  "status": "timeout",
+  "host": "node3",
+  "started_utc": "2026-10-12T11:23:01.035307+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "1406fec04e64a034467f68243d2f5ddad54fbb0323f2ce8a60cf4b1197383e1b",
+  "exit_code": -9,
+  "outcome": "unknown",
+  "wall_seconds": 3600.039165503811,
+  "solver_status": null
+}

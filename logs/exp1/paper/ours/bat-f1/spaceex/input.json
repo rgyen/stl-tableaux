@@ -1,0 +1,6 @@
+{
+  "id": "bat-f1",
+  "model": "bat",
+  "formula_id": "f1",
+  "dynamics": "linear"
+}

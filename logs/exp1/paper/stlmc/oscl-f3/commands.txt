@@ -1,0 +1,2 @@
+# STLmc solver
+stlmc ../../benchmarks/exp1/linear/oscl/oscl.model -model-cfg ../../benchmarks/exp1/linear/oscl/oscl.cfg -model-specific-cfg ../../benchmarks/exp1/linear/oscl/oscl-f3.cfg -parallel-core 5 -verbose >& log/oscl/f3/stlmc/out-log.txt

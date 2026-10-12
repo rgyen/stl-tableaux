@@ -1,0 +1,22 @@
+{
+  "id": "car02-f3",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "0e137b864c55485e83e23f4830e924d85c66a2ce6a25ebf50c9618b34b7a8330",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 4.729131640866399
+  },
+  "composed_ha": [
+    25,
+    319
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 126.34551833709702,
+  "solver_seconds": 126.34551833709702,
+  "phase": "solver",
+  "outcome": "unsafe"
+}

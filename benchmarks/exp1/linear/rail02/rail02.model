@@ -1,0 +1,65 @@
+# logging: ode
+# model description:
+#
+# There exist a train and a crossing barrier on a
+# circular track. The train is moving around the track.
+# The barrier closes or opens depending on the distance
+# to the train. The goal of the barrier is to prevent others
+# from entering the track when the train passes by.
+
+int modeId;
+[-20, 100] x; [0, 90] pb; [-50, 50] vb;
+# far
+{ mode: modeId = 1;
+  inv:  x > 60;
+  flow: d/dt[x] = -30; 
+        d/dt[pb] = vb;
+        d/dt[vb] = 0;
+  jump: x < 80 => (and (modeId' = 2) 
+                       (pb' = pb) (x' = x) 
+                       (vb' = 6));
+        x < 70 => (and (modeId' = 3) 
+                       (pb' = pb) 
+                       (x' = x) (vb' = 8));
+}
+# approach
+{ mode: modeId = 2;
+  inv:  x > 20;
+  flow: d/dt[x] = -5; 
+        d/dt[pb] = vb;
+        d/dt[vb] = 0.3;
+  jump: x < 80 => (and (modeId' = 3) 
+                       (pb' = pb) 
+                       (x' = x) (vb' = vb));
+}
+# close
+{ mode: modeId = 3;
+  inv:  x > 10;
+  flow: d/dt[x] = -5; 
+        d/dt[pb] = vb;
+        d/dt[vb] = 0.5;
+  jump: x < 20 => (and (modeId' = 4)
+                       (pb' = pb) 
+                       (x' = x) (vb' = -4));
+}
+# past
+{ mode: modeId = 4;
+  inv:  x > -10;
+  flow: d/dt[x] = -5; 
+        d/dt[pb] = vb;
+        d/dt[vb] = -1;
+  jump: (x < 0) => (and (modeId' = 1) 
+                        (pb' = pb) (vb' = 0)
+                        (x' = 100 + x));
+}
+init: modeId = 1; 
+      89 <= x; x <= 90;
+      0 <= pb; pb <= 0.5; 
+      vb = 0;
+
+proposition:
+
+goal:
+[f1]: [][0, 3](vb > 6 -> <>[2, 4] vb > 32); 
+[f2]: (<>[1, 3] pb >= 52) R[0, inf) vb <= 10;  
+[f3]: <>[0, inf) ([] [2, 4] vb <= -10);

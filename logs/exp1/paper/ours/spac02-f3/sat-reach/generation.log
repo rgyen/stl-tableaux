@@ -1,0 +1,73 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : ../../src/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac02/spac02.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac02/spac02-f3.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: ../../benchmarks/exp1/linear/spac02/spac02.model
+  automaton info: (# mode: 3, # jump: 4)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f3
+    formula   : (<>[ 0.0, inf ) (and (x > (56 - 0.005)) ([][ 1.1, 6.0 ] (x < (50 + 0.005)))))
+    size      : 5
+  Config
+    bound     : 5
+    threshold : 0.005
+
+  finish construction
+    running time: 0.168s
+    tableau info: (# vertex: 12, # edge: 35)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.003s
+    tableau info: (# vertex: 7, # edge: 14)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.001s
+  automaton info: (# mode: 6, # jump: 11)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.012s
+  automaton info: (# mode: 19, # jump: 104)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.350s
+  automaton info: (# mode: 14, # jump: 51)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 14, # jump: 51)
+
+Converting the automaton to an input model of sat-reach
+  model file  : log/spac02/f3/sat-reach/model/model.xml
+  conf  file  : log/spac02/f3/sat-reach/model/model.cfg
+  script file : log/spac02/f3/sat-reach/run.sh
+  running time: 0.030s

@@ -1,0 +1,6 @@
+{
+  "id": "card-f3",
+  "model": "card",
+  "formula_id": "f3",
+  "dynamics": "nonlinear"
+}

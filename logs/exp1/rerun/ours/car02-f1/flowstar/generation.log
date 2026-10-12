@@ -1,0 +1,72 @@
+
+---------------------------------
+------ Input Configuration ------
+---------------------------------
+
+Reading configurations
+  default cfg  : /home/artifact/stl-tableaux/results/exp1-node1/exp1-ours/car02-f1/flowstar/default.cfg
+  model cfg    : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/car02/car02.cfg
+  specific cfg : /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/car02/car02-f1.cfg
+
+-----------------------------------
+----- System Hybrid Automaton -----
+-----------------------------------
+
+Reading an input model
+  file: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/car02/car02.model
+  automaton info: (# mode: 4, # jump: 16)
+
+-----------------------------------
+----- STL Tableau Construction ----
+-----------------------------------
+
+Information
+  Formula
+    goal      : f1
+    formula   : (<>[ 0.0, inf ) (theta1 <= (1.0 + 0.001)))
+    size      : 2
+  Config
+    bound     : 5
+    threshold : 0.001
+
+  finish construction
+    running time: 0.060s
+    tableau info: (# vertex: 4, # edge: 5)
+
+Applying tableau reduction
+
+  merging states with prefix and postfix equivalence
+    running time: 0.000s
+    tableau info: (# vertex: 4, # edge: 4)
+
+-----------------------------------
+- Tableau to Automata Translation -
+-----------------------------------
+
+  running time: 0.000s
+  automaton info: (# mode: 3, # jump: 2)
+
+-----------------------------------
+--- Hybrid Automata Composition ---
+-----------------------------------
+
+Composing the tableau and system automaton
+  running time: 0.008s
+  automaton info: (# mode: 13, # jump: 90)
+
+Removing contradiction
+  removing unreachable: 0.000s
+  running time: 0.343s
+  automaton info: (# mode: 13, # jump: 90)
+
+-----------------------------------
+------- Reachability Solver -------
+-----------------------------------
+
+Composed hybrid automaton
+  automaton info: (# mode: 13, # jump: 90)
+
+Converting the automaton to an input model of flowstar
+  model file  : out/car02/f1/flowstar/model/model.fs
+  script file : out/car02/f1/flowstar/run.sh
+  running time: 0.023s

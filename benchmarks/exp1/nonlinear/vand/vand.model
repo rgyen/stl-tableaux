@@ -1,0 +1,31 @@
+int modeId;
+[0, 100] x;
+[0, 100] y;
+
+
+{
+   mode:
+	modeId = 1;
+   inv:
+
+   flow:
+	d/dt[x] = 0.1 * y; 
+	d/dt[y] = -0.15 * (x * x * y + x + y);
+   jump:
+}
+
+
+init:
+(modeId = 1); 
+(1 <= x); (x <= 1.2); 
+(1 <= y); (y <= 1.2);
+
+proposition:
+
+#timebound : 100, time-horizon: 50
+goal:
+[f1]: (<>[0, 40] x > 8) R[0, inf) (y > 12); # threshold: 1
+[f2]: (y > 15 U[0, inf) x > 40); 
+[f3]: (<>[0, inf) y > 50) R[10, 40] x <= 40;
+
+

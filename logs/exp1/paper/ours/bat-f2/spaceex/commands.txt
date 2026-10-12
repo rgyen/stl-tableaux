@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/linear/bat/bat.model -goal f2 -default-cfg ../../src/default.cfg -solver spaceex -o log >& log/bat/f2/spaceex/gen-log.txt
+
+# solver-launch
+bash out/bat/f2/spaceex/run.sh

@@ -1,0 +1,19 @@
+{
+  "experiment": "exp1",
+  "status": "complete",
+  "host": "node2",
+  "python": "3.9.2",
+  "command": "/home/artifact/stl-tableaux/.venv-stlauto-paper/bin/python /home/artifact/stl-tableaux/scripts/exp1.py --method stlmc --cores 5 --timeout 3600 --output results/exp1-node2",
+  "workers": 6,
+  "worker_mode": "automatic",
+  "available_cpus": 32,
+  "total": 48,
+  "finished": 48,
+  "remaining": 0,
+  "started": 1791777255.5630972,
+  "statuses": {
+    "complete": 24,
+    "timeout": 24
+  },
+  "completed": 1791795523.6655807
+}

@@ -1,0 +1,14 @@
+{
+  "id": "colm-f3",
+  "status": "timeout",
+  "host": "node1",
+  "started_utc": "2026-10-12T10:00:34.202801+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "3ab79f2be9a39266fa81ea3059b962d73c6e5b48cf8160a874be75d5625acdeb",
+  "exit_code": -9,
+  "outcome": "unknown",
+  "wall_seconds": 3600.0404875949025,
+  "solver_status": null
+}

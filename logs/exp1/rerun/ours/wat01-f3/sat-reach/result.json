@@ -1,0 +1,22 @@
+{
+  "id": "wat01-f3",
+  "tool": "sat-reach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "004dbbd91f090d92dafab87fd11bc75d72169148f7030645ca9756dda0869056",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 2.1774701648391783
+  },
+  "composed_ha": [
+    21,
+    210
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 2.052637054119259,
+  "solver_seconds": 2.052637054119259,
+  "phase": "solver",
+  "outcome": "safe"
+}

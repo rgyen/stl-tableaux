@@ -1,0 +1,138 @@
+// Created by Hyst v1.6
+// Hybrid Automaton in dReach
+// Converted from file: tmp0.19562524318554209$$_f1_b5_se_drh.xml
+// Command Line arguments: -input tmp0.19562524318554209$$_f1_b5_se_drh.xml -t dreach "" -o log/wat02/f1/dreach/model/model.drh
+
+
+
+[ 0, 10 ] x;
+[0,4] time;
+[0,8] gClk;
+
+// mode_id_0
+{
+    mode 1;
+    invt:
+        (and (and (0.0 <= x) (x <= 10.0)) (and (gClk >= 0.0) (and (x < 8.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = 0.8 - 0.0443 * sqrt(x);
+
+    jump:
+        // mode_id_0 -> mode_id_4 (1 -> 5)
+            (true) ==> @5(and (gClk' = gClk) (x' = x));
+
+        // mode_id_0 -> mode_id_5 (1 -> 6)
+            (and (x <= 10.0) (and (0.0 <= x) (x >= 2.0))) ==> @6(and (gClk' = gClk) (x' = x));
+
+    // end mode_id_0
+}
+
+// mode_id_1
+{
+    mode 2;
+    invt:
+        (and (gClk >= 0.0) (gClk <= 8.0));
+    flow:
+        d/dt[x] = 0.0;
+        d/dt[gClk] = 1.0;
+
+    jump:
+        // mode_id_1 -> mode_id_6 (2 -> 7)
+            (true) ==> @7(and (gClk' = 0.0) (x' = x));
+
+    // end mode_id_1
+}
+
+// mode_id_2
+{
+    mode 3;
+    invt:
+        (and (and (0.0 <= x) (x <= 10.0)) (and (gClk >= 0.0) (and (x < 8.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = 0.8 - 0.0443 * sqrt(x);
+
+    jump:
+        // mode_id_2 -> mode_id_3 (3 -> 4)
+            (true) ==> @4(and (gClk' = gClk) (x' = x));
+
+        // mode_id_2 -> mode_id_6 (3 -> 7)
+            (and (x <= 10.0) (and (0.0 <= x) (x >= 2.0))) ==> @7(and (gClk' = gClk) (x' = x));
+
+    // end mode_id_2
+}
+
+// mode_id_3
+{
+    mode 4;
+    invt:
+        (and (and (0.0 <= x) (and (x <= 10.0) (x < 0.0 + 0.001))) (and (gClk >= 0.0) (and (x < 8.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = 0.8 - 0.0443 * sqrt(x);
+
+    jump:
+        // mode_id_3 -> mode_id_0 (4 -> 1)
+            (true) ==> @1(and (gClk' = gClk) (x' = x));
+
+    // end mode_id_3
+}
+
+// mode_id_4
+{
+    mode 5;
+    invt:
+    flow:
+        d/dt[gClk] = 0.0;
+        d/dt[x] = 0.0;
+
+    jump:
+
+    // end mode_id_4
+}
+
+// mode_id_5
+{
+    mode 6;
+    invt:
+        (and (and (x > 1.0) (0.0 <= x)) (and (x <= 10.0) (and (gClk >= 0.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = -0.0443 * sqrt(x);
+
+    jump:
+        // mode_id_5 -> mode_id_0 (6 -> 1)
+            (and (x <= 10.0) (and (0.0 <= x) (x < 5.0))) ==> @1(and (gClk' = gClk) (x' = x));
+
+        // mode_id_5 -> mode_id_4 (6 -> 5)
+            (true) ==> @5(and (gClk' = gClk) (x' = x));
+
+    // end mode_id_5
+}
+
+// mode_id_6
+{
+    mode 7;
+    invt:
+        (and (and (x > 1.0) (0.0 <= x)) (and (x <= 10.0) (and (gClk >= 0.0) (gClk <= 8.0))));
+    flow:
+        d/dt[gClk] = 1.0;
+        d/dt[x] = -0.0443 * sqrt(x);
+
+    jump:
+        // mode_id_6 -> mode_id_2 (7 -> 3)
+            (and (x <= 10.0) (and (0.0 <= x) (x < 5.0))) ==> @3(and (gClk' = gClk) (x' = x));
+
+        // mode_id_6 -> mode_id_3 (7 -> 4)
+            (and (x <= 10.0) (and (0.0 <= x) (x < 5.0))) ==> @4(and (gClk' = gClk) (x' = x));
+
+    // end mode_id_6
+}
+// end modes
+
+init:
+@2 (and (x <= 4.5) (and (gClk = 0.0) (4.0 <= x)));
+
+goal:
+@5 true;

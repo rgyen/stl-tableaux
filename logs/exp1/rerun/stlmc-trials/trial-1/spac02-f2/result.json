@@ -1,0 +1,14 @@
+{
+  "id": "spac02-f2",
+  "status": "complete",
+  "host": "node2",
+  "started_utc": "2026-10-12T04:54:16.165074+00:00",
+  "timeout_seconds": 3600,
+  "parallel_cores": 5,
+  "stlmc_version": "1.0.0.dev3",
+  "model_sha256": "5f99f446df426dab5b662d3c174fae4963abe2f2ad5572eae9433a62d154731d",
+  "exit_code": 0,
+  "outcome": "bounded-satisfied",
+  "wall_seconds": 708.1555065251887,
+  "solver_status": null
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lovo-f1",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "d08f1963cfa9a7e6e79ecc5a3c1a49c0191597941473e91f4ace5f17306c16ff",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 1.4956922391429543
+  },
+  "composed_ha": [
+    7,
+    18
+  ],
+  "status": "timeout",
+  "exit_code": -9,
+  "wall_seconds": 3600.038160601631,
+  "solver_seconds": 3600.038160601631,
+  "phase": "solver",
+  "outcome": "timeout"
+}

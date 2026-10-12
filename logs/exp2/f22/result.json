@@ -1,0 +1,17 @@
+{
+  "id": "f22",
+  "implementation": "automata",
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 6.739706182386726,
+  "raw": [
+    65,
+    271
+  ],
+  "reduced": [
+    15,
+    52
+  ],
+  "generation_seconds": 1.369,
+  "reduction_seconds": 0.614
+}

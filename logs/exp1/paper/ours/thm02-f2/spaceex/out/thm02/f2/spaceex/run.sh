@@ -1,0 +1,1 @@
+./../../3rd_party/spaceex/spaceex_exe/spaceex -m ./log/thm02/f2/spaceex/model/model.xml -g ./log/thm02/f2/spaceex/model/model.cfg >& ./log/thm02/f2/spaceex/out-log.txt

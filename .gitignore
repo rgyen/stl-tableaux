@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv*/
+results/
+*.egg-info/
+build/
+dist/
+3rd_party/
+.tools/
+archives/
+/paper/
+
+# Raw local experiment outputs
+experiments/

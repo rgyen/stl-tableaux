@@ -1,0 +1,5 @@
+# generation
+../../src/run ../../benchmarks/exp1/linear/oscl/oscl.model -goal f1 -default-cfg ../../src/default.cfg -solver sat-reach -o log >& log/oscl/f1/sat-reach/gen-log.txt
+
+# solver-launch
+bash out/oscl/f1/sat-reach/run.sh

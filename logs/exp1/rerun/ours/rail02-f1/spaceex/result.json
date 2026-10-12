@@ -1,0 +1,22 @@
+{
+  "id": "rail02-f1",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "3fa57d284bed466d7fd7ef55817d6010aeec7f668bed5a503ddea252c27a16e4",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 2.8242896706797183
+  },
+  "composed_ha": [
+    49,
+    277
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 6.410567265935242,
+  "solver_seconds": 6.410567265935242,
+  "phase": "solver",
+  "outcome": "unsafe"
+}

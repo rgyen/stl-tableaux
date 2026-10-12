@@ -1,0 +1,22 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/linear/spac02/spac02.model
+> selected solver: dreal
+> threshold : 0.5
+max procs: 5
+bound: 0
+# bound: 0, 1
+bound: 1
+# bound: 1, 5
+bound: 2
+# bound: 2, 18
+bound: 3
+# bound: 3, 118
+bound: 4
+# bound: 4, 495
+bound: 5
+# bound: 5, 1929
+total loop : 2566
+size : 1289
+goal : (<>[0.0,4.0] ((x >= 30) U[0.0,inf) (vx <= -2)))
+result : True up to bound 5 (time bound: 5)
+running time 714.17860 seconds
+======================================

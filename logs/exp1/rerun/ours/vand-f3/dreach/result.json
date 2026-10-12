@@ -1,0 +1,22 @@
+{
+  "id": "vand-f3",
+  "tool": "dreach",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "1406fec04e64a034467f68243d2f5ddad54fbb0323f2ce8a60cf4b1197383e1b",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 4.042772336862981
+  },
+  "composed_ha": [
+    11,
+    42
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 2.2800487908534706,
+  "solver_seconds": 2.2800487908534706,
+  "phase": "solver",
+  "outcome": "bounded_unsat"
+}

@@ -1,0 +1,52 @@
+int modeId;
+[10, 35] x0;            [10, 35] x1;
+const k0 = 0.015;       const k1 = 0.045;
+const h0 = 100;   	    const h1 = 200;
+const c0 = 0.98;        const c1 = 0.97;
+const d0 = 0.01;        const d1 = 0.03;
+
+{ mode: modeId = 1;
+  inv:  x0 >= 10;        x1 >= 10;
+  flow:
+    d/dt[x0] = - k0 * (c0 * x0 - d0 * x1);
+    d/dt[x1] = - k1 * (c1 * x1 - d1 * x0);
+  jump:
+    x0 <= 17 => (and (modeId' = 3)
+                     (x0' = x0) (x1' = x1));
+    x1 <= 16 => (and (modeId' = 2)
+                     (x0' = x0) (x1' = x1));
+}
+{ mode: modeId = 2;
+  inv:  10 <= x0;        x1 <= 30;
+  flow:
+    d/dt[x0] = - k0 * (c0 * x0 - d0 * x1);
+    d/dt[x1] = k1 * (h1 - (c1 * x1 - d1 * x0));
+  jump:
+    x0 <= 17 => (and (modeId' = 3)
+                         (x0' = x0) (x1' = x1));
+    x1 >= 26 => (and (modeId' = 1)
+                     (x0' = x0) (x1' = x1));
+}
+{ mode: modeId = 3;
+  inv:  x0 <= 30;        x1 >= 10;
+  flow:
+    d/dt[x0] = k0 * (h0 - (c0 * x0 - d0 * x1));
+    d/dt[x1] = - k1 * (c1 * x1 - d1 * x0);
+  jump:
+    x1 <= 16 => (and (modeId' = 2)
+                         (x0' = x0) (x1' = x1));
+    x0 >= 25 => (and (modeId' = 1)
+                     (x0' = x0) (x1' = x1));
+}
+init: modeId = 1;  
+18 <= x0;  x0 <= 22;
+18 <= x1;  x1 <= 22;
+    
+proposition:
+  [p1]: x0 - x1 >= 4;    [p2]: x0 - x1 <= -3;
+
+goal:
+
+[f1]: <>[0,17](x0 >= 19 U[0.0, inf) x1 <= 19); 
+[f2]: <>[0, inf) (x1 >= 3 U[0.0, inf) x0 <= 19);           
+[f3]: <>[0, inf) (x0 >= 19 R[0.0, inf) x1 <= 17);

@@ -1,0 +1,13 @@
+{
+  "id": "oscl-f2",
+  "tool": "spaceex",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "composed_ha": [
+    21,
+    85
+  ],
+  "status": "complete",
+  "solver_seconds": 2.12,
+  "outcome": "safe"
+}

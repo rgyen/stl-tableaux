@@ -1,0 +1,15 @@
+> running a model: /home/artifact/stl-tableaux/benchmarks/exp1/nonlinear/wat02/wat02.model
+> selected solver: dreal
+> threshold : 2
+max procs: 5
+bound: 0
+# bound: 0, 2
+bound: 1
+# bound: 1, 4
+bound: 2
+# bound: 2, 10
+bound: 3
+# bound: 3, 137
+bound: 4
+# bound: 4, 2770
+bound: 5

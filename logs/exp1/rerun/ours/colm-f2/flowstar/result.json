@@ -1,0 +1,22 @@
+{
+  "id": "colm-f2",
+  "tool": "flowstar",
+  "timeout_seconds": 3600,
+  "implementation": "automata",
+  "model_sha256": "3ab79f2be9a39266fa81ea3059b962d73c6e5b48cf8160a874be75d5625acdeb",
+  "generation": {
+    "status": "complete",
+    "exit_code": 0,
+    "wall_seconds": 2.151249373331666
+  },
+  "composed_ha": [
+    12,
+    41
+  ],
+  "status": "complete",
+  "exit_code": 0,
+  "wall_seconds": 255.417848627083,
+  "solver_seconds": 255.417848627083,
+  "phase": "solver",
+  "outcome": "safe"
+}
